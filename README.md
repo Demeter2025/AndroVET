@@ -15,7 +15,7 @@ tqdm
 These can be installed using pip
 
 AndroVET requires a MySQL database containing the provided table 'bugs' (we uploaded a .sql dump file)
-If you are not used to SQL databases, please install lampp (XAMPP for Linux) 
+If you are not used to SQL databases, please install lampp 
 run sudo /opt/lampp start
 open the web browser and navigate to localhost (127.0.0.1)
 select MyPHPAdmin
@@ -56,7 +56,7 @@ argv[7] = set similarity treshold for Layer2 -> recommended value 85.5
 
 ## CONTACT US
 
-This is a research open source project, feel free to use it and modify it as needed. If you find any problem executing AndroVET please contact us at eluqu004@fiu.edu
+This is a research open source project, feel free to use it and modify it as needed. If you find any problem executing AndroVET please contact us at researchmail016@gmail.com
 We will do our best to answer your questions.
 
 ## License
