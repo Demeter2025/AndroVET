@@ -1,0 +1,101 @@
+REPORT FOR LinageOS/18.1
+DETECTED CVEs:
+WE FOUND TRACES OF = 22CVEs
+THE COMPLETE LIST IS:
+CVE-2020-0023,CVE-2020-0239,CVE-2017-0663,CVE-2019-2092,CVE-2017-0391,CVE-2017-0670,CVE-2017-13195,CVE-2017-7376,CVE-2017-13232,CVE-2016-3898,CVE-2016-3883,CVE-2016-3875,CVE-2015-6609,CVE-2016-3825,CVE-2016-0831,CVE-2016-0804,CVE-2015-6624,CVE-2015-1541,CVE-2017-13314,CVE-2019-14087,CVE-2022-22822,CVE-2020-13871
+SEVERITY DISTRIBUTION:
+SEVERITY:
+
+critical = 3
+high = 8
+medium = 10
+low = 0
+
+===================================================
+CONFIDENTIALITY:
+
+none = 6
+low = 0
+partial = 2
+high = 12
+complete = 1
+
+===================================================
+INTEGRITY:
+
+none = 11
+low = 0
+partial = 0
+high = 9
+complete = 1
+
+===================================================
+AVAILABILTY:
+
+none = 7
+low = 0
+partial = 0
+high = 13
+complete = 1
+
+===================================================
+ATTACK_COMPLEXITY:
+
+low = 19
+medium = 2
+high = 0
+
+===================================================
+ATTACK_VECTOR:
+
+local = 11
+network = 9
+adjecent_network = 0
+physical = 1
+
+===================================================
+USER_REQUIRED:
+
+required = 7
+not_required = 14
+
+===================================================
+TYPE:
+
+app spec = 0
+android = 14
+library = 5
+vendor = 0
+hardware = 1
+kernel = 1
+other = 0
+
+===================================================
+CWE:
+
+CWE-862 = {'count': 3, 'detail': 'Missing Authorization'}
+CWE-787 = {'count': 2, 'detail': 'Out-of-bounds Write'}
+NVD-CWE-noinfo = {'count': 2, 'detail': ''}
+CWE-835 = {'count': 1, 'detail': "Loop with Unreachable Exit Condition ('Infinite Loop')"}
+CWE-119 = {'count': 4, 'detail': 'Failure to Constrain Operations within the Bounds of a Memory Buffer'}
+CWE-200 = {'count': 3, 'detail': 'Information Exposure'}
+CWE-284 = {'count': 3, 'detail': 'Access Control (Authorization) Issues'}
+CWE-264 = {'count': 1, 'detail': 'Permissions \xa0Privileges \xa0and Access Controls'}
+CWE-416 = {'count': 1, 'detail': 'Use After Free'}
+cwe-190 = {'count': 1, 'detail': 'Integer Overflow or Wraparound'}
+cwe-416 = {'count': 1, 'detail': 'Use After Free'}
+
+===================================================
+USER_PRIVILEGES:
+
+none = 12
+low = 5
+medium = 0
+high = 0
+
+===================================================
+MISSING_INFO:
+
+CVE-2017-13314
+
+===================================================

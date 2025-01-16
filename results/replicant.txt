@@ -1,0 +1,130 @@
+REPORT FOR replicant
+DETECTED CVEs:
+WE FOUND TRACES OF = 166CVEs
+THEY WERE CLASSIFIED AS: 
+MISSING PATCH: 78 
+BUG LINES: 88
+THE COMPLETE LIST IS:
+CVE-2015-1541,CVE-2017-0492,CVE-2017-0493,CVE-2017-0873,CVE-2017-0874,CVE-2017-13148,CVE-2017-13176,CVE-2017-13180,CVE-2017-13192,CVE-2017-13195,CVE-2017-13197,CVE-2017-13228,CVE-2017-13233,CVE-2017-13230,CVE-2017-13248,CVE-2017-13249,CVE-2017-13250,CVE-2017-13276,CVE-2017-13279,CVE-2017-13285,CVE-2017-13310,CVE-2017-13313,CVE-2017-13315,CVE-2018-9412,CVE-2018-9421,CVE-2018-9451,CVE-2018-9466,CVE-2018-9470,CVE-2018-9472,CVE-2018-9440,CVE-2018-9487,CVE-2018-9468,CVE-2018-9491,CVE-2018-9492,CVE-2018-9497,CVE-2018-9499,CVE-2018-9524,CVE-2018-9531,CVE-2018-9523,CVE-2018-9548,CVE-2019-1995,CVE-2019-2004,CVE-2019-2027,CVE-2019-2028,CVE-2019-2044,CVE-2019-2046,CVE-2019-2047,CVE-2019-2095,CVE-2019-2097,CVE-2019-2105,CVE-2019-2129,CVE-2019-2177,CVE-2019-2115,CVE-2019-2184,CVE-2019-2205,CVE-2019-2232,CVE-2020-0007,CVE-2020-0093,CVE-2020-0115,CVE-2020-8597,CVE-2020-0256,CVE-2020-0245,CVE-2020-0380,CVE-2020-0408,CVE-2020-0421,CVE-2020-0453,CVE-2020-0294,CVE-2016-6328,CVE-2021-0325,CVE-2020-0417,CVE-2021-0600,CVE-2021-0597,CVE-2021-0519,CVE-2021-0642,CVE-2021-0688,CVE-2021-0695,CVE-2021-0705,CVE-2021-0650,CVE-2021-39707,CVE-2022-20135,CVE-2022-20142,CVE-2022-20230,CVE-2022-23990,CVE-2018-9452,CVE-2019-2096,CVE-2020-0032,CVE-2022-24958,CVE-2019-10581,CVE-2016-6706,CVE-2017-0391,CVE-2017-0405,CVE-2017-0601,CVE-2017-13156,CVE-2017-13159,CVE-2017-0855,CVE-2017-13191,CVE-2017-13196,CVE-2017-13199,CVE-2017-13208,CVE-2017-13234,CVE-2017-13277,CVE-2017-13287,CVE-2017-13314,CVE-2018-9338,CVE-2018-9340,CVE-2018-9341,CVE-2018-9345,CVE-2018-9346,CVE-2018-9347,CVE-2018-9348,CVE-2018-9437,CVE-2018-9459,CVE-2018-9547,CVE-2019-1997,CVE-2019-2005,CVE-2019-1990,CVE-2019-2051,CVE-2019-2090,CVE-2019-2091,CVE-2019-2092,CVE-2019-2107,CVE-2019-2106,CVE-2019-2125,CVE-2019-2209,CVE-2019-2218,CVE-2019-2222,CVE-2019-2223,CVE-2019-2229,CVE-2020-0015,CVE-2020-0026,CVE-2020-0239,CVE-2020-0381,CVE-2020-0384,CVE-2020-0385,CVE-2020-0386,CVE-2020-0394,CVE-2020-0412,CVE-2020-0448,CVE-2021-0315,CVE-2019-9376,CVE-2021-0320,CVE-2021-0326,CVE-2021-0333,CVE-2021-0336,CVE-2021-0487,CVE-2021-0481,CVE-2021-0506,CVE-2021-0523,CVE-2021-0586,CVE-2021-0604,CVE-2021-0603,CVE-2021-0645,CVE-2021-0926,CVE-2020-0338,CVE-2021-0643,CVE-2021-39665,CVE-2022-20126,CVE-2022-20133,CVE-2021-0981,CVE-2022-23852,CVE-2022-20393,CVE-2022-20197,CVE-2020-0227,CVE-2021-0598,CVE-2022-20358,CVE-2021-1972
+SEVERITY DISTRIBUTION:
+SEVERITY:
+
+critical = 11
+high = 91
+medium = 44
+low = 2
+
+===================================================
+CONFIDENTIALITY:
+
+none = 23
+low = 2
+partial = 1
+high = 122
+complete = 0
+
+===================================================
+INTEGRITY:
+
+none = 56
+low = 0
+partial = 0
+high = 92
+complete = 0
+
+===================================================
+AVAILABILTY:
+
+none = 38
+low = 0
+partial = 0
+high = 110
+complete = 0
+
+===================================================
+ATTACK_COMPLEXITY:
+
+low = 143
+medium = 1
+high = 4
+
+===================================================
+ATTACK_VECTOR:
+
+local = 94
+network = 52
+adjecent_network = 1
+physical = 1
+
+===================================================
+USER_REQUIRED:
+
+required = 69
+not_required = 79
+
+===================================================
+TYPE:
+
+app spec = 0
+android = 131
+library = 13
+vendor = 0
+hardware = 2
+kernel = 2
+other = 0
+
+===================================================
+CWE:
+
+CWE-284 = {'count': 1, 'detail': 'Access Control (Authorization) Issues'}
+CWE-1021 = {'count': 10, 'detail': 'Improper Restriction of Rendered UI Layers or Frames'}
+CWE-922 = {'count': 1, 'detail': 'Insecure Storage of Sensitive Information'}
+CWE-20 = {'count': 15, 'detail': 'Improper Input Validation'}
+CWE-787 = {'count': 37, 'detail': 'Out-of-bounds Write'}
+CWE-416 = {'count': 6, 'detail': 'Use After Free'}
+CWE-835 = {'count': 3, 'detail': "Loop with Unreachable Exit Condition ('Infinite Loop')"}
+CWE-119 = {'count': 4, 'detail': 'Failure to Constrain Operations within the Bounds of a Memory Buffer'}
+CWE-400 = {'count': 1, 'detail': "Uncontrolled Resource Consumption ('Resource Exhaustion')"}
+CWE-834 = {'count': 2, 'detail': 'Excessive Iteration'}
+CWE-125 = {'count': 7, 'detail': 'Out-of-bounds Read'}
+CWE-190 = {'count': 8, 'detail': 'Integer Overflow or Wraparound'}
+CWE-863 = {'count': 2, 'detail': 'Incorrect Authorization'}
+CWE-908 = {'count': 4, 'detail': 'Use of Uninitialized Resource'}
+CWE-862 = {'count': 14, 'detail': 'Missing Authorization'}
+NVD-CWE-noinfo = {'count': 9, 'detail': ''}
+CWE-843 = {'count': 2, 'detail': "Access of Resource Using Incompatible Type ('Type Confusion')"}
+CWE-362 = {'count': 3, 'detail': 'Use After Free'}
+CWE-275 = {'count': 1, 'detail': ''}
+CWE-415 = {'count': 2, 'detail': 'Double Free'}
+CWE-682 = {'count': 1, 'detail': 'Incorrect Calculation'}
+CWE-120 = {'count': 2, 'detail': "Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')"}
+CWE-755 = {'count': 2, 'detail': 'Improper Handling of Exceptional Conditions'}
+CWE-276 = {'count': 4, 'detail': 'Incorrect Default Permissions'}
+CWE-269 = {'count': 8, 'detail': 'Improper Privilege Management'}
+CWE-610 = {'count': 1, 'detail': 'Externally Controlled Reference to a Resource in Another Sphere'}
+cwe-763 = {'count': 1, 'detail': 'Release of Invalid Pointer or Reference'}
+CWE-264 = {'count': 1, 'detail': 'Permissions \xa0Privileges \xa0and Access Controls'}
+CWE-732 = {'count': 1, 'detail': 'Incorrect Permission Assignment for Critical Resource'}
+CWE-434 = {'count': 1, 'detail': 'Unrestricted Upload of File with Dangerous Type'}
+CWE-200 = {'count': 1, 'detail': 'Information Exposure'}
+CWE-772 = {'count': 3, 'detail': 'Missing Release of Resource after Effective Lifetime'}
+CWE-22 = {'count': 1, 'detail': "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"}
+CWE-330 = {'count': 1, 'detail': 'Use of Insufficiently Random Values'}
+CWE-1188 = {'count': 2, 'detail': 'Insecure Default Initialization of Resource'}
+NVD-CWE-Other = {'count': 1, 'detail': ''}
+CWE-287 = {'count': 1, 'detail': 'Improper Authentication'}
+
+===================================================
+USER_PRIVILEGES:
+
+none = 82
+low = 62
+medium = 0
+high = 0
+
+===================================================
+MISSING_INFO:
+
+CVE-2017-0405,CVE-2018-9487,CVE-2015-1541,CVE-2018-9345,CVE-2018-9348,CVE-2019-2044,CVE-2018-9468,CVE-2017-13310,CVE-2017-13313,CVE-2018-9340,CVE-2018-9346,CVE-2017-13315,CVE-2017-13314,CVE-2018-9412,CVE-2018-9472,CVE-2018-9470,CVE-2016-6706,CVE-2018-9440,CVE-2018-9421,CVE-2018-9338,CVE-2018-9341,CVE-2018-9466
+
+===================================================
