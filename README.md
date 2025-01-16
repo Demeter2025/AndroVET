@@ -1,5 +1,5 @@
 # AndroVET
-<img src='https://github.com/HIPERION2021/AndroVet/blob/main/Logo.png' />
+<img src='https://github.com/demeter2025/AndroVet/blob/main/Logo.png' />
 
 AndroVET is an android based custom OS vulnerability exploration tool. It is tailored for Android custom OS but it can be used in any other system by replacing the bug diff code database.
 
