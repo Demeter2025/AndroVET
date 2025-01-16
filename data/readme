@@ -1,1 +1,2 @@
 Please note that these files are compressed in zip format. Each zip contains a MySql dump.
+To use them, please install lampp and create a database called "mydata". The tables "bugs" and "common" should be imported into "mydata"
