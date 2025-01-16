@@ -1,0 +1,102 @@
+REPORT FOR calyxOS
+DETECTED CVEs:
+WE FOUND TRACES OF = 21CVEs
+THE COMPLETE LIST IS:
+CVE-2021-0646,CVE-2020-0239,CVE-2020-0408,CVE-2017-0663,CVE-2021-0520,CVE-2019-2219,CVE-2019-2091,CVE-2017-0383,CVE-2017-0391,CVE-2017-0670,CVE-2017-13195,CVE-2016-3898,CVE-2016-3883,CVE-2016-3875,CVE-2015-6609,CVE-2016-3825,CVE-2016-0831,CVE-2016-0804,CVE-2015-1541,CVE-2017-13314,CVE-2019-14087
+SEVERITY DISTRIBUTION:
+SEVERITY:
+
+critical = 1
+high = 10
+medium = 9
+low = 0
+
+===================================================
+CONFIDENTIALITY:
+
+none = 5
+low = 0
+partial = 1
+high = 13
+complete = 1
+
+===================================================
+INTEGRITY:
+
+none = 8
+low = 0
+partial = 0
+high = 11
+complete = 1
+
+===================================================
+AVAILABILTY:
+
+none = 5
+low = 0
+partial = 0
+high = 14
+complete = 1
+
+===================================================
+ATTACK_COMPLEXITY:
+
+low = 17
+medium = 1
+high = 2
+
+===================================================
+ATTACK_VECTOR:
+
+local = 15
+network = 4
+adjecent_network = 0
+physical = 1
+
+===================================================
+USER_REQUIRED:
+
+required = 7
+not_required = 13
+
+===================================================
+TYPE:
+
+app spec = 0
+android = 15
+library = 4
+vendor = 0
+hardware = 1
+kernel = 0
+other = 0
+
+===================================================
+CWE:
+
+CWE-20 = {'count': 1, 'detail': 'Improper Input Validation'}
+CWE-862 = {'count': 2, 'detail': 'Missing Authorization'}
+CWE-787 = {'count': 2, 'detail': 'Out-of-bounds Write'}
+CWE-190 = {'count': 2, 'detail': 'Integer Overflow or Wraparound'}
+CWE-362 = {'count': 2, 'detail': 'Use After Free'}
+CWE-416 = {'count': 2, 'detail': 'Race Condition'}
+NVD-CWE-noinfo = {'count': 2, 'detail': ''}
+CWE-835 = {'count': 1, 'detail': "Loop with Unreachable Exit Condition ('Infinite Loop')"}
+CWE-284 = {'count': 3, 'detail': 'Access Control (Authorization) Issues'}
+CWE-264 = {'count': 1, 'detail': 'Permissions \xa0Privileges \xa0and Access Controls'}
+CWE-119 = {'count': 3, 'detail': 'Failure to Constrain Operations within the Bounds of a Memory Buffer'}
+CWE-200 = {'count': 1, 'detail': 'Information Exposure'}
+
+===================================================
+USER_PRIVILEGES:
+
+none = 10
+low = 8
+medium = 0
+high = 0
+
+===================================================
+MISSING_INFO:
+
+CVE-2017-13314
+
+===================================================
