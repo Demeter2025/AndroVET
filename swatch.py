@@ -3,6 +3,7 @@ import os
 from tqdm import tqdm
 import json
 import multiprocessing
+from functools import partial
 import tools
 import parse_vec
 import comp_vec
@@ -61,7 +62,7 @@ def find_all(name, struct):
     else:
         return 'error' #no file was found with the name and the structure on it.
   
-def task01(item):
+def task01(item, fol):
     optional_path = False
     f = item['file_add'].strip()[1:] 
     if f == "/dev/null":
@@ -71,14 +72,13 @@ def task01(item):
     if struct == '/':
         struct = ''
     
-    #tmp0 = '/media/esteban/Elements/' + system + struct +f
-    tmp0 = '/media/esteban/c6f637af-2294-40bd-8bf5-386c09d46d1b/' + system + struct +f
-   
+    #tmp0 = '/media/esteban/c6f637af-2294-40bd-8bf5-386c09d46d1b/' + system + struct +f
+    tmp0 = fol + struct +f
     tmp_arr = [tmp0]
     
     if not os.path.exists(tmp0):
         optional_path = True
-        possible = find_all(tmp0 ,'/media/esteban/c6f637af-2294-40bd-8bf5-386c09d46d1b/' + system + item['struct'].strip())
+        possible = find_all(tmp0 , fol + item['struct'].strip())
         if possible is None or len(possible) == 0 or possible == 'error':
             return [None, [item['CVE'], tmp0]]
             
@@ -293,18 +293,30 @@ def task01(item):
    
 
 def run():
-    debug = True
+    debug = sys.argv[5]
     global report
     report = list()
     global report2
     report2 = list()
     failed = dict()
     
-    argv1 = '/media/esteban/c6f637af-2294-40bd-8bf5-386c09d46d1b/' + system
     #argv1 = '/media/esteban/c6f637af-2294-40bd-8bf5-386c09d46d1b/' + system
-    argv2 = '/home/esteban/Desktop/tempo/tests/' + system 
-    argv3 = 'true'
-    argv4 = 85.5
+    argv1 = sys.argv[1]
+    system = argv1.split('/')[-1].strip()
+    #argv2 = '/home/esteban/Desktop/tempo/tests/' + system 
+    argv2 = sys.argv[2]
+    
+    #argv3 = 'true'
+    argv3 = sys.arg[3]
+    if argv3 not in ['ture','false']:
+        argv3 = 'false'
+    if len(sys.argv) < 5:
+        arvg4 = 85.5
+    else:
+        try:
+            argv4 = int(sys.argv[4])
+        except:
+            argv4 = 85.5
     
 
     if not os.path.exists(argv1):
@@ -324,7 +336,7 @@ def run():
 
     global files
     print('Building Source Tree...\n')
-    files = tools.walk_folder(argv1)#(sys.argv[1])
+    files = tools.walk_folder(argv1)
     
     print('Reading data bases...\n')
     try:
@@ -333,7 +345,6 @@ def run():
                               database='mydata',
                               use_pure=False)
     
-        #sql_select_Query = "SELECT * from bugs WHERE CVE IN ('CVE-2015-1541', 'CVE-2016-3765', 'CVE-2016-3883', 'CVE-2017-0663', 'CVE-2016-1839', 'CVE-2017-13195', 'CVE-2020-0017', 'CVE-2020-0092', 'CVE-2020-0408', 'CVE-2019-2219', 'CVE-2021-0520', 'CVE-2022-20115', 'CVE-2022-20219', 'CVE-2017-15849', 'CVE-2019-14087', 'CVE-2015-6609', 'CVE-2015-6624', 'CVE-2016-0804', 'CVE-2016-0831', 'CVE-2016-3825', 'CVE-2016-3826', 'CVE-2016-3875', 'CVE-2016-3898', 'CVE-2017-0383', 'CVE-2017-0391', 'CVE-2017-0670', 'CVE-2017-13314', 'CVE-2019-2091', 'CVE-2020-0239', 'CVE-2021-0596', 'CVE-2021-0646')"
         sql_select_Query = "SELECT * from bugs WHERE ID > 0"; 
         sql_select_Query2 = "SELECT * from common WHERE ID > 0"
         cursor = link.cursor(dictionary=True)
@@ -351,7 +362,7 @@ def run():
             cursor.close()
             print("MySQL connection is closed\n")
     if len(bugs) == 0:
-        print('Nothing to do, please check your database is being correctly provided')
+        print('Nothing to do, please check your database is available')
         sys.exit()
     print('Starting Layer 1...')
     grouped_results = defaultdict(list)
@@ -368,10 +379,12 @@ def run():
     file = ""
     global buffer
     buffer = []
-
+    
+    
     with multiprocessing.Pool() as pool:
         report = []
         with tqdm(total=len(records)) as pbar:
+            task00 = partial(task01, fol=sys.argv[1])
             for result in pool.imap(task01, records):
                 pbar.update(1)
                 result_val, avoid_res = result[0], result[1]
@@ -387,7 +400,7 @@ def run():
                         failed[my_k] = [my_v]
 
     savepath = argv2
-    if debug == False:
+    if debug == True:
         with open(savepath + "/cvereport.json", 'w') as m:
             json.dump(report, m) 
             m.close()
@@ -569,10 +582,8 @@ def run():
         with open(argv2 + now, 'w') as myfile:
             json.dump(detected, myfile) 
             myfile.close()            
-    print('All tasks done, please refer to final report.txt for our resutls\n')
-    if debug == True:
         print('==============================\nINTERMIDIATE FILES\n==============================\nAVOID: Contains CVEs related to missing files\nDETECTED_VEC: contains partial results of Layer 2 (only those that where detected during execution)\nREPORT_VEC: contains the CVEs for which we found suspicious traces\nREPORT is an intermidiate report of Layer 1 containing the block counts')
-    
+    print('All tasks done, please refer to final report.txt for our resutls\n')
 
 if __name__ == '__main__':
     run()
