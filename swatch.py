@@ -59,7 +59,6 @@ def task01(item, fol):
     if struct == '/':
         struct = ''
     
-    #tmp0 = '/media/esteban/c6f637af-2294-40bd-8bf5-386c09d46d1b/' + system + struct +f
     tmp0 = fol + struct +f
     tmp_arr = [tmp0]
     
@@ -287,13 +286,9 @@ def run():
     report2 = list()
     failed = dict()
     
-    #argv1 = '/media/esteban/c6f637af-2294-40bd-8bf5-386c09d46d1b/' + system
     argv1 = sys.argv[1]
     system = argv1.split('/')[-1].strip()
-    #argv2 = '/home/esteban/Desktop/tempo/tests/' + system 
     argv2 = sys.argv[2]
-    
-    #argv3 = 'true'
     argv3 = sys.arg[3]
     if argv3 not in ['ture','false']:
         argv3 = 'false'
