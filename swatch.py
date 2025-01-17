@@ -12,19 +12,6 @@ import sys
 from collections import defaultdict
 
 
-#sys.argv[1] = custom OS folder
-#sys.argv[2] = save results folder
-#sys.argv[3] = true/false => print results of the first layer
-#sys.argv[4] = recommended value 85.5 -> set similarity treshold for Layer2  
-#example of undetectable patch CVE-2016-3875
-#================================================================================================================================================
-#TODO: As is now, if a problematic block (bug) is found (after all the checks: syntax and patch precence in the file), we mark the vulnerability.
-# A Better approach would be grouping the database rows according to the blocks variable
-# this will allow to check all of the lines as a group each time. When there are multiple files, this will help a to avoid false results. 
-#=================================================================================================================================================
-system = 'LinageOS/16.0'
-
-
 def test(rep):
    
     [records, cves, bugs] = tools.unique(rep)
