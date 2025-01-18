@@ -280,6 +280,10 @@ def task01(item, fol):
 
 def run():
     debug = sys.argv[5]
+    if debug.lower().strip() == 'true':
+        debug = True
+    else:
+        debug = False
     global report
     report = list()
     global report2
@@ -289,16 +293,19 @@ def run():
     argv1 = sys.argv[1]
     system = argv1.split('/')[-1].strip()
     argv2 = sys.argv[2]
-    argv3 = sys.arg[3]
-    if argv3 not in ['ture','false']:
-        argv3 = 'false'
+    argv3 = sys.argv[3]
+    if argv3.lower().split() == 'true':
+        argv3 = True
+    else:
+        argv3 = False
+
     if len(sys.argv) < 5:
-        arvg4 = 85.5
+        argv4 = 85.5
     else:
         try:
             argv4 = int(sys.argv[4])
         except:
-            argv4 = 85.5
+            argv4  = 85.5
     
 
     if not os.path.exists(argv1):
@@ -367,7 +374,7 @@ def run():
         report = []
         with tqdm(total=len(records)) as pbar:
             task00 = partial(task01, fol=sys.argv[1])
-            for result in pool.imap(task01, records):
+            for result in pool.imap(task00, records):
                 pbar.update(1)
                 result_val, avoid_res = result[0], result[1]
                 if result_val is not None:
@@ -434,19 +441,8 @@ def run():
             json.dump(failed_list, myfile2) 
             myfile2.close()
         
-    if argv3 == 'true':
+    if argv3 == True:
        test(report2)
-
-    # ===================================OPEN FOR TESTING========================================== 
-    # with open(argv2 +'/report.json', 'r') as f:
-    #     report2 = json.load(f)
-    #     f.close()
-    
-    # with open(argv2 + '/cvereport.json', 'r') as f:
-    #     report = json.load(f)
-    #     f.close()
-    #================================================================================================
-
 
     print('\nStarting Layer 2...')
     
