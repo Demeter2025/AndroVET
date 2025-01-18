@@ -19,39 +19,37 @@ If you are not used to SQL databases, please install lampp
 run sudo /opt/lampp start
 open the web browser and navigate to localhost (127.0.0.1)
 select MyPHPAdmin
-create a new database
-import the .sql file with the bugs table.
+create a new database called "mydata"
+import bugs.sql and common.sql.
 
 the lampp SQL server MUST be ACTIVE to use AndroVET.
 
-to deactivate the SQL server please go to your terminal and write
-
+To deactivate the SQL server please go to your terminal and write
 sudo /opt/lampp/lampp stop
 
 
 ## Notes
 
-Please note, AndroVET was tailored with accuracy in mind but its abstraction layer can consume a considerable amount of system resources. We recommend AT LEAST 16 GB of RAM to run the app without any issues. The status bar can fail to update during runtime because of the nature of multiprocessing, the app takes close to 30 minutes to evaluate a complete android repo,  but the time can vary according to system resources. Please be patient.
+Please note, AndroVET was tailored with accuracy in mind and can consume a considerable amount of system resources. We recommend AT LEAST 16 GB of RAM to run the app without any issues. The status bar can fail to update during runtime because of the nature of multiprocessing. If you note this situation, pleasse be patient. AndroVET takes close to 30 minutes to evaluate a complete Android repo, if you run in a laptop or a slower computer the execution time can be as long as 70 minutes.
 
 ## HOW TO USE AndroVET
 
 to run the app plase clone the repo and go to its main folder.
-run the swatch.py by executing python swatch.py [parameters...] 
-provide the following parameters:
+run:
+python swatch.py <ARGV1> <ARGV2> <ARGV3> <ARGV4> <ARGV5> 
+Where the arguments are as follows:
 
 argv[1] = custom OS folder
 
-argv[2] = datbase name
+argv[2] = A folder to save results (if it doesn't exists, the folder will be created for you)
 
-argv[3] = datbase user
+argv[3] = True/False => prints the results of the Precision layer in the terminal
 
-argv[4] = datbase password
+argv[4] = set similarity treshold for Layer2 -> recommended value 85.5
 
-argv[5] = save results folder
+argv[5] = True/False => Generates debuging information files. If set to True a short description will be provided in the terminal.
 
-argv[6] = true/false => print results of the precision layer
-
-argv[7] = set similarity treshold for Layer2 -> recommended value 85.5  
+Pleae note, if there is any error in the Abstraction Layer, AndroVET will notify the user and generate debug files and partial results despite of argv[5] value. This allows a technical user to load partial results in memory and run AndroVET from its last valid state.
 
 
 ## CONTACT US
@@ -61,7 +59,7 @@ We will do our best to answer your questions.
 
 ## License
 
-    Copyright [2022] [Esteban Luques]
+    Copyright [2022] [---------]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
