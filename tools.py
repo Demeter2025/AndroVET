@@ -4,6 +4,217 @@ import re
 from difflib import SequenceMatcher
 
 
+def fix_used_context(used2, buffer, set_lines=None):
+    
+    if set_lines is None:
+        set_lines = []
+    
+    set_lines_set = set(set_lines)  
+    
+    def gen_combos(tokens_arr, buffer):
+        buffer_lengths = [len(s) for s in buffer]
+        if not buffer_lengths:
+            min_len = max_len = 0
+        else:
+            min_len = min(buffer_lengths)
+            max_len = max(buffer_lengths)
+        
+        buffer_clean = [x.replace(' new ', '').replace(' ', '') for x in buffer]
+        buffer_clean_to_orig = {clean: orig for clean, orig in zip(buffer_clean, buffer)}
+        buffer_clean_set = set(buffer_clean)
+        
+        result = {}
+        
+        for section, value in tokens_arr.items():
+            result[section] = {}
+            for group, sequence in value.items():
+                combinations = set()
+                space_checks = []
+                
+                for t_line in sequence['lines']:
+                    t_line_clean = t_line.replace(' new ', '').replace(' ', '').strip()
+                    if t_line_clean in buffer_clean_set:
+                        space_checks.append({
+                            'old': t_line, 
+                            'new': buffer_clean_to_orig[t_line_clean]
+                        })
+                    elif t_line_clean + '{' in buffer_clean_set:
+                        space_checks.append({
+                            'old': t_line, 
+                            'new': buffer_clean_to_orig[t_line_clean + '{']
+                        })
+                    elif t_line_clean.startswith('if') and 'else' + t_line_clean in buffer_clean_set:
+                        space_checks.append({
+                            'old': t_line, 
+                            'new': buffer_clean_to_orig['else' + t_line_clean]
+                        })
+                
+                tokens = sequence['tokens']
+                n = len(tokens)
+                
+                for i in range(n):
+                    combo_parts = []
+                    for j in range(i, n):
+                        combo_parts.append(tokens[j])
+                        combo = ''.join(combo_parts)
+                        combo_len = len(combo)
+                   
+                        if combo_len < min_len:
+                            continue
+                        if combo_len > max_len:
+                            break
+                        
+                        if combo in buffer_clean_set:
+                            combinations.add(combo)
+                
+                result[section][group] = {
+                    'combinations': combinations,
+                    'orig_lines': sequence['lines'],
+                    'space_match': space_checks
+                }
+        
+        return result
+    
+    token_pattern = re.compile(r'\s+|\w+|[^\w\s]')
+    buffer_set = set(buffer) 
+    
+    tokens_keys = {}
+    for top_key, dict_2 in used2.items():
+        tokens_keys[top_key] = {}
+        for second_key in dict_2.keys(): 
+            if second_key not in buffer_set:
+                tokens_keys[top_key][second_key] = {
+                    'tokens': token_pattern.findall(second_key),
+                    'missing': True
+                }
+            else:
+                tokens_keys[top_key][second_key] = {'missing': False}
+    
+    
+    tokens = {}
+    for first_key, dict_3 in tokens_keys.items():
+        tokens[first_key] = {}
+        counter = 0
+        tokens[first_key][counter] = {'tokens': [], 'lines': []}
+        
+        for second_key, token_info in dict_3.items():
+            if token_info['missing']:
+                if tokens[first_key][counter]['tokens']:
+                    tokens[first_key][counter]['tokens'].append(' ')
+                tokens[first_key][counter]['tokens'].extend(token_info['tokens'])
+                tokens[first_key][counter]['lines'].append(second_key)
+            else:
+                counter = len(tokens[first_key])
+                tokens[first_key][counter] = {'tokens': [], 'lines': []}
+    
+    filtered_buffer = [x for x in buffer if x not in set_lines_set]
+    combos = gen_combos(tokens, filtered_buffer)
+    
+    reset = copy.deepcopy(used2)
+    
+    for key, value in combos.items():
+        for key2, val2 in value.items():
+            for item in val2['space_match']:
+                reset[key][item['old']] -= 1
+                reset[key][item['new']] = reset[key].get(item['new'], 0) + 1
+            
+            combinations_list = list(val2['combinations'])
+            if combinations_list:
+                test_line = ' '.join(combinations_list)
+                
+                for line in val2['orig_lines']:
+                    if line.strip() in test_line:
+                        test_line = test_line.replace(line, '', 1)  
+                        reset[key][line] -= 1
+                
+                for entry in combinations_list:
+                    reset[key][entry] = 1
+        
+        reset[key] = {k: v for k, v in reset[key].items() if v > 0}
+    
+    return [
+        reset,
+        [x.strip() for x in reset.get('plus', {}).keys()],
+        [x.strip() for x in reset.get('before', {}).keys()],
+        [x.strip() for x in reset.get('after', {}).keys()],
+        [x.strip() for x in reset.get('minus', {}).keys()]
+    ]
+
+
+def fix_report(report, to_del):
+    new_report = []
+    for item in report:
+        if item['ID'] not in to_del:
+            new_report.append(item)
+    return new_report
+
+
+
+
+def fix_used_check(used_check, change_indices):
+    new_dic = copy.deepcopy(used_check)
+    new_dic['plus'] = {}
+    changes = change_indices.keys()
+    for key, value in used_check['plus'].items():
+        if key not in changes:
+            new_dic['plus'][key] =  value
+        else:
+            for lin in change_indices[key]:
+                new_dic['plus'][lin] = value
+    return new_dic      
+
+
+
+def find_patch_comb(buffer, patch, aft_strip, bfr_strip):
+    def control(j, aft_strip, bfr_strip):
+        lines = [x.strip() for x in buffer[max(j-5, 0):min(j+5, len(buffer)-1)]]
+        return any(x in lines for x in aft_strip) and any(x in lines for x in bfr_strip)
+    my_neg = {'', '{','}'}
+    new_patch = []
+    indices = {}
+    for line in patch:
+        sequence = []
+        for start in range(len(buffer)):
+            if start == len(buffer) - 1:
+                new_patch.append(line)
+                continue
+            if buffer[start].strip() not in my_neg and buffer[start].strip() in line:
+                sequence.append(buffer[start].strip())
+                for j in range(start+1, min(start+5, len(buffer)-1), 1):
+                    if buffer[j].strip() in my_neg:
+                        continue
+                    elif buffer[j].strip() in line and control(j,aft_strip, bfr_strip):
+                        sequence.append(buffer[j].strip())
+                    else:
+                        break
+            if len(sequence) > 1:
+                new_patch += sequence
+                indices[line] = sequence
+                break
+            else:
+                sequence = []
+    return [new_patch, indices] 
+
+
+
+def group_db(data_list):
+    
+    if not data_list:
+        return []
+    for item in data_list:
+        item['_cve_sort'] = item['CVE'].strip() if isinstance(item['CVE'], str) else str(item['CVE']).strip()
+        item['_bug_sort'] = item['bug'].strip() if isinstance(item['bug'], str) else str(item['bug']).strip()
+        
+    sorted_list = sorted(data_list, key=lambda x: (x['_cve_sort'], x['_bug_sort']))
+    for item in sorted_list:
+        if '_cve_sort' in item:
+            del item['_cve_sort']
+        if '_bug_sort' in item:
+            del item['_bug_sort']
+    
+    return sorted_list
+
+
 def group_indices(indices):
     if len(indices) == 0:
         return []
@@ -1090,7 +1301,7 @@ def split2_param(params, mode=0):
                 fin.extend([x.strip() for x in res.split(' + ')])
             else:
                 fin.append(res)
-            fin = [x.strip() for x in fin if len(x.strip()) > 0]
+            fin = [x.strip() for x in fin if len(x.strip()) > 1]
             if len(fin) > 0:
                 result2[ind] = fin
                 result[ind] = ''
@@ -1501,7 +1712,6 @@ def fix_range(start, end, bfr_strip, aft_strip, minus_strip, buffer):
         line = check_(cl(buffer[i]).strip(), bfr_strip)
         if line.startswith("double_rule"):
             line = line.split("dr_check")[1].strip()
-        
         if any(get_similarity_ratio(line.strip(), x.strip()) >= 0.89 for x in bfr_strip):
             s = i
             break
@@ -1540,6 +1750,7 @@ def fix_range(start, end, bfr_strip, aft_strip, minus_strip, buffer):
 
  
 def check_for_patch(buffer, plus_strip, minus_strip, aft_strip, bfr_strip, used2):
+    
     conditions = {} 
     testarr = []
     for item in plus_strip:
@@ -1560,7 +1771,6 @@ def check_for_patch(buffer, plus_strip, minus_strip, aft_strip, bfr_strip, used2
             conditions[item.strip()] = testarr  
 
     for index, line in enumerate(buffer):
-       
         used3 = copy.deepcopy(used2)
         line = check_(line.strip(), plus_strip)
         if line.startswith("double_rule"):
@@ -1584,10 +1794,12 @@ def check_for_patch(buffer, plus_strip, minus_strip, aft_strip, bfr_strip, used2
             ed = index + len(aft_strip) + len(plus_strip) + 5
             if ed > len(buffer) - 1:
                 ed = len(buffer) - 1
-            [s,e] = fix_range(st, ed, bfr_strip, aft_strip, plus_strip, buffer)  
+            [s,e] = fix_range(st, ed, bfr_strip, aft_strip, plus_strip, buffer)
+            
             for lnm in range(s, e):
+                line2 = buffer[lnm].strip()
                 for group_index, group in enumerate([bfr_strip, aft_strip, plus_strip]):
-                    line2 = check_(buffer[lnm].strip(), group)
+                    line2 = check_(buffer[lnm].strip(), group) #this will probably never run, redundant now (example code to build the token function).... needs to be removed carefully to impove runtime.
                     if line2.startswith("double_rule"):
                         line1 = line2.split("dr_check")[1].strip()
                         line20 = line2.split("dr_check")[2].strip()
@@ -1610,8 +1822,7 @@ def check_for_patch(buffer, plus_strip, minus_strip, aft_strip, bfr_strip, used2
                             continue
                         else:
                             line2 = buffer[lnm]
-
-
+                        
                 line2 = check_(buffer[lnm].strip(), plus_strip)
                 if line2.startswith("double_rule"):
                     line1 = line2.split("dr_check")[1].strip()
@@ -1717,7 +1928,7 @@ def check_conditional(plus_conditions, line, used):
             return [True, key]
     return [False, ""]
 
-def check_(line, list):
+def check_(line, list): #the entire function is covered by the tokenization function, needs to be deleted to improve runtime ---- CAREFULLY!!! no time rn...
     v2 = copy.deepcopy(line)
     lines_present = []
     t_line = copy.deepcopy(line)
@@ -1758,16 +1969,18 @@ def check_(line, list):
         else:
             return line
 
-    t = (' ').join(line.split(' ')[1:])
+    t = ('').join(line.split(' ')[1:])
     if t in list:
         return t
+    #here is the case of a patch line that contains more than one code line (the iverse of the frist case)
         
     return line
 
-def test_adding(bfr, aft, buffer, plus_strip, used2, bfr_strip, aft_strip, minus_strip, extension=''):
+def test_adding(bfr, aft, buffer, plus_strip, used2, bfr_strip, aft_strip, minus_strip, extension='', mode = 0):
     #here we check for memset patches, we need a more elegant way to do it... for now this is effective enough
     #we only check if the variable is decleared directly in the stack. otherwise the rest of test_adding will run normally 
     values = [' null ', ' nullptr ', ' 0 ']
+    
     if len(plus_strip) == 1 and plus_strip[0].startswith('memset'):
         poss = ['if', 'else if', 'elseif', 'while', 'do', 'for']
         my_var = plus_strip[0][plus_strip[0].find('(') + 1: plus_strip[0].find(',')] #leverage the memset() syntax to read the variable
@@ -1813,23 +2026,37 @@ def test_adding(bfr, aft, buffer, plus_strip, used2, bfr_strip, aft_strip, minus
     
     exceptions = {'{','}',' ', ';'}
     valid = ['cpp', 'cc', 'c', 'cxx', 'java', 'kt', 'kts', 'ktm', 'h']
+    comments = ['*', '//', '/*']
+    if extension not in ['cpp', 'cc', 'c', 'cxx', 'h']:
+        comments.append('#')
     counter_context = 0
     
     if extension.strip() not in valid: # files like .rc cannot be analyzed using context because they may contain simple line instructions. So even if there is no context the missing inst. should be marked.
         counter_context += 1
-
+    t_lines = plus_strip + bfr_strip + aft_strip
     for index, line in enumerate(buffer):
+        
         line = cl(line)                
         if (line.strip() in used2["before"] or line.strip() in used2["after"]) and line.strip() != '@Override': #this is too common of a line, it may lead to false positives.
             counter_context += 1
-
             
         if index == len(buffer) - 1: #reached the last line! the patch was not found or its only partially there
-            if counter_context > 0:
-                return False
+            if mode == 0 and any(line.strip().startswith(tuple(comments)) for line in plus_strip):
+                plus_strip = [x.strip() for x in plus_strip if not any(x.strip().startswith(k) for k in ['/*', '*'])]
+                used2['plus'] = {k:v for k,v in used2['plus'].items() if k.strip() in plus_strip}
+                try:
+                    return test_adding(bfr, aft, buffer, plus_strip, used2, bfr_strip, aft_strip, minus_strip, extension, 1)
+                except:
+                    if counter_context > 0:
+                        return False
+                    else:
+                        return True                     
             else:
-                return True
-                
+                if counter_context > 0:
+                    return False
+                else:
+                    return True
+                    
         
         if extension == "rc":
             for element in plus_strip:
@@ -1854,28 +2081,32 @@ def test_adding(bfr, aft, buffer, plus_strip, used2, bfr_strip, aft_strip, minus
                 old_line = 'Placeholder'                            
         
         if line.strip() in plus_strip or line.strip().startswith('if '): #added the or condition for the modified if conditional statements
-            reset = copy.deepcopy(used2)
+            
             plus_count = 0
             only_import = all(x.startswith('import') for x in plus_strip)
-            if line.startswith('import') and reset["plus"][line] > 0:
-                reset["plus"][line] -= 1
-                plus_count += 1
-
-            
+                        
             con_counter = 0
             final = index + len(plus_strip) + len(aft) + 1
             if final > len(buffer) - 1:
                 final = len(buffer) - 1
             
             [s,e] = fix_range(index - len(bfr), final, bfr_strip, aft_strip, minus_strip, buffer)
+            reset = copy.deepcopy(used2)
+            en = e
+            if e < len(buffer) - 1:
+                en += 1
+            
+            if line.startswith('import') and reset["plus"][line] > 0:
+                reset["plus"][line] -= 1
+                plus_count += 1
+
             range_indices = []
             checked = []
 
             for lnm in range(s,e):
                 
                 [blnm, test_result] =  check_optional_syntax(cl(buffer[lnm]).strip(), plus_strip)
-                myline = check_(blnm.strip(), plus_strip)
-                
+                myline = check_(blnm.strip(), plus_strip) #this and the souble_rule are now redundant and never should run. They should be eliminated in next versions.
                 if myline.strip() == old_line.strip():
                     myline = line
 
@@ -1922,7 +2153,7 @@ def test_adding(bfr, aft, buffer, plus_strip, used2, bfr_strip, aft_strip, minus
                                             myline = item
 
                     
-                    if myline in plus_strip  and reset["plus"][myline] > 0:
+                    if myline in plus_strip and reset["plus"][myline] > 0:
                         plus_count += 1
                         checked.append(lnm)
                         reset["plus"][myline] = reset["plus"][myline] - 1
@@ -1967,6 +2198,7 @@ def test_adding(bfr, aft, buffer, plus_strip, used2, bfr_strip, aft_strip, minus
                                     plus_count += 1
                                     done.append(lin)
                                     break   
+            
             
             if only_import == True and len(plus_strip) == plus_count:
                 return True #imports order dont make a difference.
@@ -2035,6 +2267,8 @@ def calculate_blocks(arr):
             bugcounter = 1
             if len(record['rem'].strip()) > 0:
                 replace_count = 1
+            else:
+                replace_count = 0
             cve = record['CVE']
             bug = record['bug']
         if index == len(arr) - 1:
@@ -2118,7 +2352,7 @@ def compare_block(lengths, bfr_strip, plus_strip, minus_strip, aft_strip, buffer
     valid = ['cpp', 'cc', 'c', 'cxx', 'java', 'kt', 'kts', 'ktm']
     values = [' null ',' nullptr ',' 0 ']
     used_check = copy.deepcopy(used)
-        
+    used_count = copy.deepcopy(used) 
     final = lengths['plus'] + lengths['minus'] + lengths['after'] + index + 3
     if final > len(buffer) - 1:
         final = len(buffer) - 1
@@ -2141,9 +2375,8 @@ def compare_block(lengths, bfr_strip, plus_strip, minus_strip, aft_strip, buffer
     if len(aft_strip) == 0:
         lim_aft = 0
     
-
     [s,e] = fix_range(index, final, bfr_strip, aft_strip, minus_strip, buffer)
-    used_count = copy.deepcopy(used)
+        
     my_indices = {
         'before' : [],
         'plus' : [],
@@ -2257,7 +2490,17 @@ def compare_block(lengths, bfr_strip, plus_strip, minus_strip, aft_strip, buffer
                 return True
         else:
             if (aft_count >= lim_aft and context_bfr >= lim_bfr) and (plus_count < len(plus_strip) / 2 or plus_count == 0) : #this is because sometime a bug line may still be there but it does not affect the patch (e.g. 2022-20219 - catch line)
-                if not check_for_patch(buffer, plus_strip, minus_strip, aft_strip, bfr_strip, used_check):
+                
+                patch_precence = check_for_patch(buffer, plus_strip, minus_strip, aft_strip, bfr_strip, used_check)
+                if not patch_precence:
+                    reset, plus, before, after, minus = fix_used_context(used_check, buffer, bfr_strip + plus_strip + minus_strip + aft_strip )
+                    patch_precence = check_for_patch(buffer, plus, minus, after, before, reset)
+                    # new_patch, change_indices = find_patch_comb(buffer, plus_strip, aft_strip, bfr_strip)
+                    # if len(new_patch) > len(plus_strip):
+                    #     used_check_2 = fix_used_check(used_check, change_indices)
+                    #     patch_precence = check_for_patch(buffer, new_patch, minus_strip, aft_strip, bfr_strip, used_check_2)
+                    
+                if patch_precence == False:
                     if check_indices(my_indices, buffer) == True:
                         return True
                     else:
