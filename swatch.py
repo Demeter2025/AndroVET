@@ -10,6 +10,7 @@ import counts
 import sys
 import re
 from collections import defaultdict
+import argparse
 
 
 #sys.argv[1] = custom OS folder
@@ -78,7 +79,7 @@ def task01(item):
         optional_path = True
         possible = find_all(tmp0 ,'/media/csl/ACOS/' + system + item['struct'].strip())
         if possible is None or len(possible) == 0 or possible == 'error':
-            return [None, [item['CVE'], [item['ID'], tmp0]]]
+            return [None, [item['CVE'], {'id': item['ID'], 'file': tmp0}]]
             
         else:
             #print("file found at " + possible)
@@ -86,10 +87,10 @@ def task01(item):
     
         
     plus = tools.clean(item['plus'].split(",+"), 0)
-    if len(plus) > 0 and plus[0].startswith("+"):
+    if len(plus) > 0 and plus[0].startswith("+") and not plus[0].startswith("++"):
         plus[0] = plus[0][1:].strip()   
     rem = tools.clean(item['rem'].split(",-"), 0)
-    if len(rem) > 0 and rem[0].startswith("-"):
+    if len(rem) > 0 and rem[0].startswith("-") and not rem[0].startswith("--"):
         rem[0] = rem[0][1:].strip()
     bfr = tools.clean_2comm(tools.clean(tools.fixsplit(item['context_bfr']).split("`"), 0))
     aft = tools.clean_2comm(tools.clean(tools.fixsplit(item['context_aft']).split("`"), 0))
@@ -97,13 +98,41 @@ def task01(item):
     
     #prepeare the counts for the file blocks comparisons
     exceptions = {'{','}',' ', ';'}
-    plus_strip = [tools.cl(x) for x in plus if x not in exceptions and len(x.strip()) > 0]
-    minus_strip = [tools.cl(x) for x in rem if x not in exceptions and len(x.strip()) > 0]
-    bfr_strip = [tools.cl(x) for x in bfr if x not in exceptions and len(x.strip()) > 0] 
-    aft_strip = [tools.cl(x) for x in aft if x not in exceptions and not x.startswith('Powered by') and len(x.strip()) > 0] 
-    tabulation = False
+    plus_strip = [tools.cl(re.sub(r'\s+', ' ', x).lower().strip()) for x in plus if x not in exceptions and len(x.strip()) > 0]
+    minus_strip = [tools.cl(re.sub(r'\s+', ' ', x).lower().strip()) for x in rem if x not in exceptions and len(x.strip()) > 0]
+    bfr_strip = [tools.cl(re.sub(r'\s+', ' ', x).lower().strip()) for x in bfr if x not in exceptions and len(x.strip()) > 0] 
+    aft_strip = [tools.cl(re.sub(r'\s+', ' ', x).lower().strip()) for x in aft if x not in exceptions and not x.startswith('Powered by') and len(x.strip()) > 0] 
+    
+    extension = tmp0.split('.')[-1]    
+    comments = ['/', '//', '/*', '*']
+    if extension not in ['c', 'h', 'ccp', 'ccx']:
+        comments.append('#')
+    
+    t = { 
+            'ID': item['ID'],
+            'CVE': 'patch found',
+            'BUG' : 'patch found',
+            'range' : 'patch found',
+            'rem' : 'patch found',
+            'plus' : 'patch found',
+            'context_bfr' : 'patch found',
+            'context_aft' : 'patch found',
+            'file' : 'patch found',
+            'type' : 'patch found',
+            'tabulation' : False,
+            'commented' : False,
+            'import' : 'patch found'
+        }
     if minus_strip == plus_strip:
-        tabulation = True
+        t['tabulation'] = True
+        return [t, {}]
+    import_val = False
+    if all(x.startswith('import') for x in minus_strip):
+        import_val = True
+    if all(any(line.strip().startswith(k) for k in comments) for line in plus_strip) and len(minus_strip) == 0:
+        t['commented'] = True
+        return [t, {}]
+    
     lengths = {
         'before' : len(bfr),
         'plus' : len(plus),
@@ -136,21 +165,12 @@ def task01(item):
             except:
                 pass
                     
-        if buffer == "none" or len(buffer) == 0:
-            return [None, []]
+        if buffer == "none" and file_count == len(tmp_arr) - 1 and len(my_results) == 0:
+            return [None, [item['CVE'], {'id': item['ID'], 'file': tmp0}]]
         for ind, line in enumerate(buffer):
-            buffer[ind] = re.sub(r'\s+', ' ', line).strip()
+            buffer[ind] = re.sub(r'\s+', ' ', line).lower().strip()
 
-        extension = tmp.split('.')[-1]    
-        comments = ['/', '//', '/*', '*']
-        if extension not in ['c', 'h', 'ccp', 'ccx']:
-            comments.append('#')
-
-        if all(any(line.strip().startswith(k) for k in comments) for line in plus_strip) and len(minus_strip) == 0:
-            commented_patch = True
-        else:
-            commented_patch = False   
-        
+                     
         used = {
             'plus':{},
             'minus':{},
@@ -187,21 +207,7 @@ def task01(item):
                 used["before"][item5] = amount
                 tempo["before"].append(item5)
 
-        if commented_patch == True or tabulation == True:
-            reptmp = {
-                'ID': item['ID'],
-                'CVE': 'patch found',
-                'BUG' : 'patch found',
-                'range' : 'patch found',
-                'rem' : 'patch found',
-                'plus' : 'patch found',
-                'context_bfr' : 'patch found',
-                'context_aft' : 'patch found',
-                'file' : 'patch found',
-                'type' : 'patch found',
-                'import' : 'patch found'
-                        }
-            my_results[file_count] = reptmp
+        
         else:
             for i in range(len(buffer)):
             
@@ -222,9 +228,7 @@ def task01(item):
 
                     if tools.compare_block(lengths, bfr_strip, plus_strip, minus_strip, aft_strip, buffer, i, used, extension):
                         #print(item[4] + ' block FOUND!!!')
-                        import_val = False
-                        if all(x.startswith('import') for x in minus_strip):
-                            import_val = True
+                       
                         reptmp = {
                             'ID': item['ID'],
                             'CVE': item['CVE'],
@@ -239,8 +243,7 @@ def task01(item):
                             'import' : import_val
                         }
                         my_results[file_count] = reptmp
-                        #return reptmp
-                        
+                                                
                 
                 elif i == len(buffer) - 1:
                     if len(plus_strip) > 0 and len(minus_strip) == 0: #add only
@@ -299,24 +302,38 @@ def task01(item):
                                 'import' : 'patch found'
                             }
                             my_results[file_count] = reptmp
-                    else:
-                        if len(my_results) == 0:
-                            return [None, []]
+                    # else:
+                    #     if len(my_results) == 0:
+                    #         return [t, []]
+    if len(my_results) == 0:
+        t['BUG'] = 'no results'
+        return [t, []]
     if 'hardware' in tmp0:
         for i2 in my_results:
             if 'CVE' in my_results[i2]['CVE']:
                 return [my_results[i2], []]
-        return [None, []]
+        t['BUG'] = 'no results'
+        return [t, []]
                                
     else:
         for i2 in my_results:
             if my_results[i2]['CVE'] == 'patch found':
-                return [None, []]
+                return [my_results[i2], []]
         
     return [my_results[0], []]
    
 
 def run():
+    # parser = argparse.ArgumentParser(description="AndroVET")
+    # parser.add_argument('-i', '--input', required=True, help='Input COS root folder')
+    # parser.add_argument('-o', '--output', required=True, help='Output folder')
+    # parser.add_argument('-t', '--threshold', type=float, default=85.5, help='Similarity threshold value')
+    # parser.add_argument('-s', '--skip', type=bool, default=False, help='Skip Precision if you have previouse reports you want ot use')
+    # parser.add_argument('-d', '--database', default='mydata', help='database name')
+    # parser.add_argument('-du', '--dbuser', default='root', help='database user')
+    # parser.add_argument('-dp', '--dbpass', default='root', help='database password')
+    # args = parser.parse_args()
+
     testing = False
     debug = True
     global report
@@ -399,12 +416,16 @@ def run():
     if testing == False:
         with multiprocessing.Pool() as pool:
             report = []
+            matched = []
             with tqdm(total=len(records)) as pbar:
                 for result in pool.imap(task01, records):
                     pbar.update(1)
                     result_val, avoid_res = result[0], result[1]
                     if result_val is not None:
-                        report.append(result_val)
+                        if result_val['CVE'] == 'patch found':
+                            matched.append(result_val)
+                        else:
+                            report.append(result_val)
                                     
                     if len(avoid_res) > 0:
                         my_k = avoid_res[0] 

@@ -904,23 +904,47 @@ def check_open_par(string, x):
     else:
         return [True, indices]
 
-def check_null(values, present_value, line, bfr_strip, plus_strip, minus_strip, aft_strip, mode, used_check = {}):
-    my_values = [x for x in values if x != present_value]
-    for val in my_values:
-        ext_line = copy.deepcopy(line).replace(present_value, val) 
+def check_null(values, present_value, line, bfr_strip, plus_strip, minus_strip, aft_strip, mode, used_check={}):
+    used_check = {
+        key: used_check.get(key, {}) for key in ['before', 'plus', 'minus', 'after']
+    }
+
+    strips = {
+        'before': bfr_strip,
+        'plus': plus_strip,
+        'minus': minus_strip,
+        'after': aft_strip,
+    }
+    other_values = [v for v in values if v != present_value]
+    for val in other_values:
+        ext_line = copy.deepcopy(line).replace(present_value, val)
         if mode == 0:
-            if ext_line in bfr_strip and line not in bfr_strip and used_check['before'][ext_line] > 0:
-                return ext_line
-            elif ext_line in plus_strip and line not in plus_strip and used_check['plus'][ext_line] > 0:
-                return ext_line
-            elif ext_line in minus_strip and line not in minus_strip and used_check['minus'][ext_line] > 0:
-                return ext_line
-            elif ext_line in aft_strip and line not in aft_strip and used_check['after'][ext_line] > 0:
-                return ext_line
+            for key in strips:
+                if ext_line in strips[key] and line not in strips[key] and used_check[key].get(ext_line, 0) > 0:
+                    return ext_line
         elif mode == 1:
             if ext_line in plus_strip and line not in plus_strip:
                 return ext_line
+
     return line
+
+# def check_null(values, present_value, line, bfr_strip, plus_strip, minus_strip, aft_strip, mode, used_check = {}):
+#     my_values = [x for x in values if x != present_value]
+#     for val in my_values:
+#         ext_line = copy.deepcopy(line).replace(present_value, val) 
+#         if mode == 0:
+#             if ext_line in bfr_strip and line not in bfr_strip and used_check['before'][ext_line] > 0:
+#                 return ext_line
+#             elif ext_line in plus_strip and line not in plus_strip and used_check['plus'][ext_line] > 0:
+#                 return ext_line
+#             elif ext_line in minus_strip and line not in minus_strip and used_check['minus'][ext_line] > 0:
+#                 return ext_line
+#             elif ext_line in aft_strip and line not in aft_strip and used_check['after'][ext_line] > 0:
+#                 return ext_line
+#         elif mode == 1:
+#             if ext_line in plus_strip and line not in plus_strip:
+#                 return ext_line
+#     return line
 
     
   
@@ -1979,7 +2003,7 @@ def check_(line, list): #the entire function is covered by the tokenization func
 def test_adding(bfr, aft, buffer, plus_strip, used2, bfr_strip, aft_strip, minus_strip, extension='', mode = 0):
     #here we check for memset patches, we need a more elegant way to do it... for now this is effective enough
     #we only check if the variable is decleared directly in the stack. otherwise the rest of test_adding will run normally 
-    values = [' null ', ' nullptr ', ' 0 ']
+    values = [' null ', ' nullptr ', ' 0 ', ' null,', ' nullptr,', ' NULL ', ' NULL,']
     
     if len(plus_strip) == 1 and plus_strip[0].startswith('memset'):
         poss = ['if', 'else if', 'elseif', 'while', 'do', 'for']
@@ -2035,7 +2059,7 @@ def test_adding(bfr, aft, buffer, plus_strip, used2, bfr_strip, aft_strip, minus
         counter_context += 1
     t_lines = plus_strip + bfr_strip + aft_strip
     for index, line in enumerate(buffer):
-        
+     
         line = cl(line)                
         if (line.strip() in used2["before"] or line.strip() in used2["after"]) and line.strip() != '@Override': #this is too common of a line, it may lead to false positives.
             counter_context += 1
@@ -2137,12 +2161,12 @@ def test_adding(bfr, aft, buffer, plus_strip, used2, bfr_strip, aft_strip, minus
                 else:
                     
                     for present_value in values:
-                        if present_value in myline:
+                        if present_value in myline.lower():
                             myline = check_null(values, present_value, myline, bfr_strip, plus_strip, minus_strip, aft_strip, 1)
                     
 
                     if not any(myline.startswith(x) for x in ['if ', 'while', 'for ']): #this is to take in count lines that have some changes in variables, we dont do this in the first part (bugs) because the change may be part of the bug fix. Its the closest thing to the hash approach but without discarting changes 
-                        if '(' in myline and ')' in myline:
+                        if '(' in myline and ')' in myline and myline not in t_lines:
                             test = myline[:myline.find('(')]
                             test_par_params = get_params(myline)
                             for item in plus_strip:
@@ -2183,22 +2207,21 @@ def test_adding(bfr, aft, buffer, plus_strip, used2, bfr_strip, aft_strip, minus
             #this function tries to make sure small variations are not being ignored, we allow a 25% difference in missing lines IF half of the patch and all of the context lines are detected.
             #this will work only with relativley long pathces (more than 3 lines) so we can have some assurance that we are looking at the right change site
             tot = len(reset['plus'])
-            if tot > 3 and len(range_indices) > 1 and plus_count < len(plus_strip): #at least two indices to limit, and at least one missing line 
-                if plus_count >= tot / 2 and con_counter == len(reset['before']) + len(reset['after']):
+            if tot >= 3 and len(range_indices) > 1 and plus_count < len(plus_strip): #at least two indices to limit, and at least one missing line 
+                if plus_count >= tot / 2 and con_counter >= (len(reset['before']) + len(reset['after'])) / 2:
                         check_range = [x for x in range(range_indices[0], range_indices[-1]+1) if x not in checked and x not in range_indices]
                         missing_lines = [x.strip() for x in reset['plus'].keys() if reset['plus'][x] > 0]
+                        done = set()
                         for ind in check_range:
-                            done = []
                             for lin in missing_lines:
                                 if buffer[ind].strip() in lin.strip() or lin.strip() in buffer[ind].strip():
-                                    plus_count += 1
-                                    done.append(lin)
+                                    done.add(lin)
                                     break
                                 elif len(lin.strip()) > 30 and get_similarity_ratio(buffer[ind].strip(), lin.strip()) >= 0.75 and lin not in done:
-                                    plus_count += 1
-                                    done.append(lin)
+                                    done.add(lin)
                                     break   
-            
+                        plus_count += len(done)
+                            
             
             if only_import == True and len(plus_strip) == plus_count:
                 return True #imports order dont make a difference.
@@ -2208,8 +2231,10 @@ def test_adding(bfr, aft, buffer, plus_strip, used2, bfr_strip, aft_strip, minus
                 if len_patch > 1 and plus_count - comm_val >= (len_patch - comm_val) / 2:
                     return True
            
-                       
-            if plus_count == len_patch or (len_patch > 3 and plus_count >= int(len_patch*0.75)): #found all of the added files, the patch is present. (we allow a 75% of the patch if the patch is at leas 4 lines.)
+            t_val = 0.75
+            if len_patch >= 20:
+                t_val = 0.6           
+            if plus_count == len_patch or (len_patch > 3 and plus_count >= int(len_patch*t_val)): #found all of the added files, the patch is present. (we allow a 75% of the patch if the patch is at leas 4 lines.)
                 if len(plus_strip) == 1:
                     if (extension in valid and con_counter > 0) or extension not in valid:
                         return True
@@ -2350,7 +2375,7 @@ def test_aft(arr, start, end):
 
 def compare_block(lengths, bfr_strip, plus_strip, minus_strip, aft_strip, buffer, index, used, extension=''):
     valid = ['cpp', 'cc', 'c', 'cxx', 'java', 'kt', 'kts', 'ktm']
-    values = [' null ',' nullptr ',' 0 ']
+    values = [' null ',' nullptr ',' 0 ', ' null,',' nullptr,', ' NULL ', ' NULL,']
     used_check = copy.deepcopy(used)
     used_count = copy.deepcopy(used) 
     final = lengths['plus'] + lengths['minus'] + lengths['after'] + index + 3
