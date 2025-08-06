@@ -379,7 +379,7 @@ def fix_bool_vars(string0):
     for string in ret_0:
             
         if string.strip().startswith('('):
-            string = string[string.find('(')+1:] #this is a cast
+            string = string[string.find('(')+1:] 
         if '.' in string and '(' in string:
             sec_par = string[string.find('(')+1:string.rfind(')')]
             sec_ins = string[:string.find('(')]
@@ -482,7 +482,7 @@ def get_par_tup(params):
             
         elif char in ['&', '|'] and len(indices) == 0:
             if ind < len(params) - 1:
-                if params[ind+1] == char and ind-1 not in split_vals_res: #the first character is equal to the second one
+                if params[ind+1] == char and ind-1 not in split_vals_res: 
                     split_vals_res.append(ind)
         
     return [results, split_vals_res]
@@ -506,11 +506,11 @@ def split_cond_pars(params, mode=0):
     my_result = {}
     for param in new_params:
         
-        #sometimes a parenthesizes condition may have different comparisons inside, we still take the type form the "outermost" condition we got in the first step
+        
         test = copy.deepcopy(param)
         if '(' in param and ')' in param:
             [res_par_param, split_param] = get_par_tup(param)
-            for parind, par in enumerate(res_par_param): #clean outermost parenthesis if they are a related pair. 
+            for parind, par in enumerate(res_par_param):  
                 if par[0] == 0 and par[1] == len(param) - 1:
                     param = param[1:-1]
                     del res_par_param[parind]
@@ -521,7 +521,7 @@ def split_cond_pars(params, mode=0):
 
             for par in res_par_param:
                 test = test.replace(test[par[0]:par[1]+1], '')
-            #here I extract the variables from param (test was used only for geting the type)
+            
             tmp_arr = []
             st = 0
             for start, end in res_par_param:
@@ -536,7 +536,7 @@ def split_cond_pars(params, mode=0):
             if test_par.strip().split(' ')[0].strip() in ['==', '<','>', '!=', '<=', '>=']:
                 test_par = test_par[2:].strip() 
             tmp_arr.append(test_par)
-            #a patch may contain a partial conditional as context, if the last entry is a split sign it will add an empty param,0 which will give an error (empty var-class in split_struct)
+            
             tmp_arr = [x.strip() for x in tmp_arr if len(x.strip()) > 0 and x.strip() != '(' and x.strip() != ')']
         else:
             tmp_arr = [param]
@@ -550,7 +550,7 @@ def split_cond_pars(params, mode=0):
             cond_type = 'b'
         
         cond_vars = []
-        #here I work with each para to take the vars, first check there is no && or || sign in a parenthesized section.
+        
         arr = []
         for p in tmp_arr:
             if '&&' in p and '||' not in p:
@@ -736,7 +736,7 @@ def split_cond_pars(params, mode=0):
         
 
 
-def check_equality(lines, prev_lines): #this checks if an instruction is assigned to a variable making it an assignment line. if it does, it fixes the issue. 
+def check_equality(lines, prev_lines): 
     res = False
     for lin_ind, lin in enumerate(lines):
         for lin_p in prev_lines:
@@ -751,7 +751,7 @@ def check_equality(lines, prev_lines): #this checks if an instruction is assigne
                     lines[lin_ind] = lin_p
                     res = True
                     break
-            
+            #DO NOT USE THIS !!!!
             # elif lin.startswith('if') and lin_p.startswith('if'):
             #     cond_lin = lin[lin.find('(') + 1:lin.rfind(')')].strip()
             #     cond_lin_p = lin_p[lin_p.find('(') + 1:lin_p.rfind(')')].strip()
@@ -928,26 +928,7 @@ def check_null(values, present_value, line, bfr_strip, plus_strip, minus_strip, 
 
     return line
 
-# def check_null(values, present_value, line, bfr_strip, plus_strip, minus_strip, aft_strip, mode, used_check = {}):
-#     my_values = [x for x in values if x != present_value]
-#     for val in my_values:
-#         ext_line = copy.deepcopy(line).replace(present_value, val) 
-#         if mode == 0:
-#             if ext_line in bfr_strip and line not in bfr_strip and used_check['before'][ext_line] > 0:
-#                 return ext_line
-#             elif ext_line in plus_strip and line not in plus_strip and used_check['plus'][ext_line] > 0:
-#                 return ext_line
-#             elif ext_line in minus_strip and line not in minus_strip and used_check['minus'][ext_line] > 0:
-#                 return ext_line
-#             elif ext_line in aft_strip and line not in aft_strip and used_check['after'][ext_line] > 0:
-#                 return ext_line
-#         elif mode == 1:
-#             if ext_line in plus_strip and line not in plus_strip:
-#                 return ext_line
-#     return line
-
-    
-  
+ 
 
 def check_combinations_and_match(t_line, line, t_line_subs, line_subs):
     line_subs2 = copy.deepcopy(line_subs)
@@ -994,7 +975,7 @@ def placeholder_check(line, plus_strip):
 def get_similarity_ratio(path, path_arr):
     return SequenceMatcher(None, path, path_arr).ratio()
 
-def is_line_complete(line): #this needs a better implementation, is messy and can lead to a wrongly reconstructed intruction.
+def is_line_complete(line): #this needs a better implementation
     is_log = False
     if '(' in line and 'LOG' in line.strip()[:line.find('(')]:
         is_log = True
@@ -1793,7 +1774,7 @@ def check_for_patch(buffer, plus_strip, minus_strip, aft_strip, bfr_strip, used2
             for i, x in enumerate(testarr):
                 testarr[i] = x.strip()
             conditions[item.strip()] = testarr  
-
+    buffer.append('/* Extra Line */')
     for index, line in enumerate(buffer):
         used3 = copy.deepcopy(used2)
         line = check_(line.strip(), plus_strip)
@@ -2003,8 +1984,8 @@ def check_(line, list): #the entire function is covered by the tokenization func
 def test_adding(bfr, aft, buffer, plus_strip, used2, bfr_strip, aft_strip, minus_strip, extension='', mode = 0):
     #here we check for memset patches, we need a more elegant way to do it... for now this is effective enough
     #we only check if the variable is decleared directly in the stack. otherwise the rest of test_adding will run normally 
-    values = [' null ', ' nullptr ', ' 0 ', ' null,', ' nullptr,', ' NULL ', ' NULL,']
-    
+    values = [' null ', ' nullptr ', ' 0 ', ' null,', ' nullptr,']
+    buffer.append('/* Extra Line /*')
     if len(plus_strip) == 1 and plus_strip[0].startswith('memset'):
         poss = ['if', 'else if', 'elseif', 'while', 'do', 'for']
         my_var = plus_strip[0][plus_strip[0].find('(') + 1: plus_strip[0].find(',')] #leverage the memset() syntax to read the variable
@@ -2061,7 +2042,7 @@ def test_adding(bfr, aft, buffer, plus_strip, used2, bfr_strip, aft_strip, minus
     for index, line in enumerate(buffer):
      
         line = cl(line)                
-        if (line.strip() in used2["before"] or line.strip() in used2["after"]) and line.strip() != '@Override': #this is too common of a line, it may lead to false positives.
+        if (line.strip() in used2["before"] or line.strip() in used2["after"]) and line.strip() != '@override': #this is too common of a line, it may lead to false positives.
             counter_context += 1
             
         if index == len(buffer) - 1: #reached the last line! the patch was not found or its only partially there
@@ -2097,14 +2078,14 @@ def test_adding(bfr, aft, buffer, plus_strip, used2, bfr_strip, aft_strip, minus
 
         [line, test_result] =  check_optional_syntax(line, plus_strip)
         
-        old_line = 'Placeholder'
+        old_line = 'placeholder'
         if len(plus_strip) <= 3:
             try:
                 [old_line, line] = placeholder_check(line, plus_strip)  
             except:
-                old_line = 'Placeholder'                            
-        
-        if line.strip() in plus_strip or line.strip().startswith('if '): #added the or condition for the modified if conditional statements
+                old_line = 'placeholder'                            
+        included = one_last_check(line, plus_strip)
+        if line.strip() in plus_strip or line.strip().startswith('if ') or included != None: #added the or condition for the modified if conditional statements
             
             plus_count = 0
             only_import = all(x.startswith('import') for x in plus_strip)
@@ -2176,7 +2157,7 @@ def test_adding(bfr, aft, buffer, plus_strip, used2, bfr_strip, aft_strip, minus
                                         if check_substinrgs(test_arr, test_par_params):
                                             myline = item
 
-                    
+                    test_add = one_last_check(myline, plus_strip)
                     if myline in plus_strip and reset["plus"][myline] > 0:
                         plus_count += 1
                         checked.append(lnm)
@@ -2196,10 +2177,16 @@ def test_adding(bfr, aft, buffer, plus_strip, used2, bfr_strip, aft_strip, minus
                             plus_count += 1
                             checked.append(lnm)
                             reset["plus"][key] -= 1
-                       
-            if old_line != 'Placeholder' and 'FLAG' in old_line: #some scattered FLAGS instructions will produce false possitive, this takes care of it. Of course, changing the file to instructions will solve it and is more elegant, but it will be costly. 
+                    
+                    elif test_add != None:
+                        if reset["plus"][test_add] > 0:
+                            plus_count =+ 1
+                            checked.append(lnm)
+                            reset["plus"][test_add] = reset["plus"][test_add] - 1
+            
+            if old_line != 'placeholder' and 'flag' in old_line: #some scattered FLAGS instructions will produce false possitive, this takes care of it. Of course, changing the file to instructions will solve it and is more elegant, but it will be costly. 
                 for key in reset['plus'].keys():
-                    if str(key).strip().startswith('getWindow') and reset['plus'][key] > 0:
+                    if str(key).strip().startswith('getwindow') and reset['plus'][key] > 0:
                         plus_count += 1
                         reset['plus'][key] -= 1
             
@@ -2372,10 +2359,18 @@ def test_aft(arr, start, end):
             if line in arr:
                 counter += 1
 
+def one_last_check(line, source):
+    if line.endswith(')'):
+        line = line[:-1]
+    for l in source:
+        if l in line:
+            return l
+        else:
+            return None
 
 def compare_block(lengths, bfr_strip, plus_strip, minus_strip, aft_strip, buffer, index, used, extension=''):
     valid = ['cpp', 'cc', 'c', 'cxx', 'java', 'kt', 'kts', 'ktm']
-    values = [' null ',' nullptr ',' 0 ', ' null,',' nullptr,', ' NULL ', ' NULL,']
+    values = [' null ',' nullptr ',' 0 ', ' null,',' nullptr,']
     used_check = copy.deepcopy(used)
     used_count = copy.deepcopy(used) 
     final = lengths['plus'] + lengths['minus'] + lengths['after'] + index + 3
@@ -2514,7 +2509,7 @@ def compare_block(lengths, bfr_strip, plus_strip, minus_strip, aft_strip, buffer
             if aft_count == len(aft_strip) and plus_count == 0: #xml  files dont follow the same rules, so if the removed instruction is there is enough 
                 return True
         else:
-            if (aft_count >= lim_aft and context_bfr >= lim_bfr) and (plus_count < len(plus_strip) / 2 or plus_count == 0) : #this is because sometime a bug line may still be there but it does not affect the patch (e.g. 2022-20219 - catch line)
+            if (aft_count >= lim_aft or context_bfr >= lim_bfr) and plus_count > 0 : 
                 
                 patch_precence = check_for_patch(buffer, plus_strip, minus_strip, aft_strip, bfr_strip, used_check)
                 if not patch_precence:

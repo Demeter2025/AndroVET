@@ -253,14 +253,15 @@ def gen_vector(plus_s, bfr_s, aft_s, extension, prev_lines, mode=0):
     else:
     #arrenge the lines in an array of non trivial lines
     #writing logs wont affect the flow and may appear and generate lower similarity rates, we ignore those. 
-        plus = tools.clean(plus_s.split(",+"))
-        if len(plus) > 0 and plus[0].strip().startswith("+"):
-            if plus[0].strip() == "+":
-                del plus[0]
-            else:
-                plus[0] = plus[0][1:].strip()   
+        
+        plus = tools.clean(re.sub(r'\s+', ' ', line).strip() for line in plus_s.split(",+"))
+        if len(plus) > 0 and plus[0].strip().startswith("+") and not plus[0].startswith("++"):
+            plus[0] = plus[0][1:].strip()  
+            
         bfr = tools.clean(tools.fixsplit(bfr_s).split("`"), 0)
         aft = tools.clean(tools.fixsplit(aft_s).split("`"), 0)
+        bfr = [re.sub(r'\s+', ' ', line).strip() for line in bfr]
+        aft = [re.sub(r'\s+', ' ', line).strip() for line in aft]
         for linef_ind, linef in enumerate(aft):
             if 'Powered by' in linef:
                 linef = linef[:linef.find('Powered by')]
@@ -983,6 +984,9 @@ def parse(plus, bfr, aft, file, ext, my_range):
             break
         except:
             pass
+    for ind, line in enumerate(buffer):
+            buffer[ind] = re.sub(r'\s+', ' ', line).strip()
+
     vars = [v.strip() for v in vars if len(v) > 0 and v.strip() != 'null' and v != 'TAG']
     vars2 = [v.strip() for v in vars if len(v) > 0 and v.strip().lower() not in ['true', 'false']]
     if len(vars2) > 3:

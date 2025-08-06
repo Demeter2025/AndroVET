@@ -10,9 +10,9 @@ import counts
 import sys
 import re
 from collections import defaultdict
-import argparse
-
-
+import time
+from datetime import datetime
+import gc
 #sys.argv[1] = custom OS folder
 #sys.argv[2] = save results folder
 #sys.argv[3] = true/false => print results of the first layer
@@ -23,7 +23,6 @@ import argparse
 # A Better approach would be grouping the database rows according to the blocks variable
 # this will allow to check all of the lines as a group each time. When there are multiple files, this will help a to avoid false results. 
 #=================================================================================================================================================
-system = 'GrapheneOS'
 
 
 def test(rep):
@@ -72,14 +71,14 @@ def task01(item):
     struct = item['struct'].strip()
     if struct == '/':
         struct = ''
-    tmp0 = '/media/csl/ACOS/' + system + struct +f
+    tmp0 = '/media/csl/COS/' + system + struct +f
     tmp_arr = [tmp0]
     
     if not os.path.exists(tmp0):
         optional_path = True
-        possible = find_all(tmp0 ,'/media/csl/ACOS/' + system + item['struct'].strip())
+        possible = find_all(tmp0 ,'/media/csl/COS/' + system + item['struct'].strip())
         if possible is None or len(possible) == 0 or possible == 'error':
-            return [None, [item['CVE'], {'id': item['ID'], 'file': tmp0}]]
+            return [None,  {'CVE': item['CVE'], 'ID': item['ID'], 'file': tmp0}]
             
         else:
             #print("file found at " + possible)
@@ -107,30 +106,42 @@ def task01(item):
     comments = ['/', '//', '/*', '*']
     if extension not in ['c', 'h', 'ccp', 'ccx']:
         comments.append('#')
+    my_type = 'replace'
+    if (item['rem']) == 0:
+        my_type = 'add'
     
     t = { 
             'ID': item['ID'],
-            'CVE': 'patch found',
-            'BUG' : 'patch found',
-            'range' : 'patch found',
-            'rem' : 'patch found',
-            'plus' : 'patch found',
-            'context_bfr' : 'patch found',
-            'context_aft' : 'patch found',
-            'file' : 'patch found',
-            'type' : 'patch found',
+            'CVE': item['CVE'],
+            'BUG' : item['bug'],
+            'range' : item['ind_range'],
+            'rem' : item['rem'],
+            'plus' : item['plus'],
+            'context_bfr' : item['context_bfr'],
+            'context_aft' : item['context_aft'],
+            'file' : tmp0,
+            'type' : my_type,
             'tabulation' : False,
             'commented' : False,
-            'import' : 'patch found'
+            'no_rf': False,
+            'optional_path_no_patch_check': False,
+            'inconclusive' : False,
+            'import' : 'patch found',
+            'patch_found' : True
+
         }
     if minus_strip == plus_strip:
         t['tabulation'] = True
+        del aft, bfr, rem, plus, plus_strip, minus_strip, aft_strip, bfr_strip
+        gc.collect()
         return [t, {}]
     import_val = False
     if all(x.startswith('import') for x in minus_strip):
         import_val = True
     if all(any(line.strip().startswith(k) for k in comments) for line in plus_strip) and len(minus_strip) == 0:
         t['commented'] = True
+        del aft, bfr, rem, plus, plus_strip, minus_strip, aft_strip, bfr_strip
+        gc.collect()
         return [t, {}]
     
     lengths = {
@@ -164,12 +175,13 @@ def task01(item):
                 break
             except:
                 pass
-                    
         if buffer == "none" and file_count == len(tmp_arr) - 1 and len(my_results) == 0:
-            return [None, [item['CVE'], {'id': item['ID'], 'file': tmp0}]]
+            del aft, bfr, rem, plus, plus_strip, minus_strip, aft_strip, bfr_strip
+            gc.collect()
+            return [None,  {'CVE': item['CVE'], 'ID': item['ID'], 'file': tmp0}]
         for ind, line in enumerate(buffer):
             buffer[ind] = re.sub(r'\s+', ' ', line).lower().strip()
-
+        buffer.append('testLine - avoiding errors on short files')
                      
         used = {
             'plus':{},
@@ -206,29 +218,58 @@ def task01(item):
             if item5 not in tempo["before"]:
                 used["before"][item5] = amount
                 tempo["before"].append(item5)
-
+        k = 0
+        if len(minus_strip) == 0:
+            k = len(buffer) - 1
         
-        else:
-            for i in range(len(buffer)):
+        for i in range(k, len(buffer), 1):
+        
+            tempo_line = tools.check_(tools.cl(buffer[i]).strip(), minus_strip)
+            if tempo_line.startswith("double_rule"):
+                tempo_line = tempo_line.split("dr_check")[1].strip()
+
+            if extension == "rc" and len(minus_strip) > 0:
+                if minus_strip[0].strip() in tempo_line:
+                    ext_text = tempo_line.replace(minus_strip[0], "")
+                    if "=" in ext_text and len(ext_text.split("=")[-1].strip().split(" ") ) == 1:
+                        tempo_line = minus_strip[0]
+                    elif "-" in ext_text and len(ext_text.split("-")[-1].strip().split(" ") ) == 1:
+                        tempo_line = minus_strip[0] 
+
+            if len(minus_strip) > 0 and tempo_line == minus_strip[0].strip() and i < len(buffer) - 1:
+
+                if tools.compare_block(lengths, bfr_strip, plus_strip, minus_strip, aft_strip, buffer, i, used, extension):
+                    #print(item[4] + ' block FOUND!!!')
+                    
+                    reptmp = {
+                        'ID': item['ID'],
+                        'CVE': item['CVE'],
+                        'BUG' : item['bug'],
+                        'range' : item['ind_range'],
+                        'rem' : item['rem'],
+                        'plus' : item['plus'],
+                        'context_bfr' : item['context_bfr'],
+                        'context_aft' : item['context_aft'],
+                        'file' : tmp,
+                        'type' : 'replace',
+                        'import' : import_val,
+                        'tablulation' : False,
+                        'commented' : False,
+                        'no_rf' : False,
+                        'optional_path_no_patch_check': False,
+                        'inconclusive' : False,
+                        'patch_found' : False
+                    }
+                    my_results[file_count] = reptmp
+                                            
             
-                tempo_line = tools.check_(tools.cl(buffer[i]).strip(), minus_strip)
-                if tempo_line.startswith("double_rule"):
-                    tempo_line = tempo_line.split("dr_check")[1].strip()
-
-                if extension == "rc" and len(minus_strip) > 0:
-                    if minus_strip[0].strip() in tempo_line:
-                        ext_text = tempo_line.replace(minus_strip[0], "")
-                        if "=" in ext_text and len(ext_text.split("=")[-1].strip().split(" ") ) == 1:
-                            tempo_line = minus_strip[0]
-                        elif "-" in ext_text and len(ext_text.split("-")[-1].strip().split(" ") ) == 1:
-                            tempo_line = minus_strip[0] 
-
-                
-                if len(minus_strip) > 0 and tempo_line == minus_strip[0].strip() and i != len(buffer) - 1:
-
-                    if tools.compare_block(lengths, bfr_strip, plus_strip, minus_strip, aft_strip, buffer, i, used, extension):
-                        #print(item[4] + ' block FOUND!!!')
-                       
+            elif i == len(buffer) - 1:
+                if len(plus_strip) > 0 and len(minus_strip) == 0: #add only
+                    ret_stat = False
+                    if all(x.strip().startswith('import') for x in plus_strip):
+                        ret_stat = True
+                    
+                    if len(struct.strip()) == 0: #if the repo directory is empty we cant find the right file 'we need to find a way to check for these CVEs '
                         reptmp = {
                             'ID': item['ID'],
                             'CVE': item['CVE'],
@@ -239,91 +280,110 @@ def task01(item):
                             'context_bfr' : item['context_bfr'],
                             'context_aft' : item['context_aft'],
                             'file' : tmp,
-                            'type' : 'replace',
-                            'import' : import_val
+                            'tablulation' : False,
+                            'commented' : ret_stat,
+                            'no_rf': True,
+                            'import' : False,
+                            'optional_path_no_patch_check': False,
+                            'inconclusive' : False,
+                            'patch_found' : True
+
                         }
                         my_results[file_count] = reptmp
-                                                
-                
-                elif i == len(buffer) - 1:
-                    if len(plus_strip) > 0 and len(minus_strip) == 0: #add only
-                        ret_stat = False
-                        if all(x.strip().startswith('import') for x in plus_strip):
-                            ret_stat = True
-                        
-                        if len(struct.strip()) == 0: #if the repo directory is empty we cant find the right file 'we need to find a way to check for these CVEs '
-                            reptmp = {
-                                'ID': item['ID'],
-                                'CVE': 'patch found'
-                            }
-                            my_results[file_count] = reptmp
-                        elif optional_path == True and 'hardware' not in tmp0:
-                            reptmp = {
-                                'ID': item['ID'],
-                                'CVE': 'patch found',
-                                'BUG' : 'patch found',
-                                'range' : 'patch found',
-                                'rem' : 'patch found',
-                                'plus' : 'patch found',
-                                'context_bfr' : 'patch found',
-                                'context_aft' : 'patch found',
-                                'file' : 'patch found',
-                                'type' : 'patch found',
-                                'import' : 'patch found'
-                            }
-                            my_results[file_count] = reptmp
-                        elif tools.test_adding(bfr, aft, buffer, plus_strip, used, bfr_strip, aft_strip, minus_strip, extension ) == False:
-                            reptmp = {
-                                'ID': item['ID'],
-                                'CVE': item['CVE'],
-                                'BUG' : item['bug'],
-                                'range' : item['ind_range'],
-                                'rem' : item['rem'],
-                                'plus' : item['plus'],
-                                'context_bfr' : item['context_bfr'],
-                                'context_aft' : item['context_aft'],
-                                'file' : tmp,
-                                'type' : 'add',
-                                'import' : ret_stat
-                            }
-                            my_results[file_count] = reptmp
-                        else:
-                            reptmp = {
-                                'ID': item['ID'],
-                                'CVE': 'patch found',
-                                'BUG' : 'patch found',
-                                'range' : 'patch found',
-                                'rem' : 'patch found',
-                                'plus' : 'patch found',
-                                'context_bfr' : 'patch found',
-                                'context_aft' : 'patch found',
-                                'file' : 'patch found',
-                                'type' : 'patch found',
-                                'import' : 'patch found'
-                            }
-                            my_results[file_count] = reptmp
-                    # else:
-                    #     if len(my_results) == 0:
-                    #         return [t, []]
+                    elif optional_path == True and 'hardware' not in tmp0:
+                        reptmp = {
+                            'ID': item['ID'],
+                            'CVE': item['CVE'],
+                            'BUG' : item['bug'],
+                            'range' : item['ind_range'],
+                            'rem' : item['rem'],
+                            'plus' : item['plus'],
+                            'context_bfr' : item['context_bfr'],
+                            'context_aft' : item['context_aft'],
+                            'file' : tmp,
+                            'type' : 'add',
+                            'tabulation' : False,
+                            'commented' : False,
+                            'no_rf': False,
+                            'optional_path_no_patch_check': True,
+                            'inconclusive' : False,
+                            'import' : ret_stat,
+                            'patch_found' : True
+                        }
+                        my_results[file_count] = reptmp
+
+                    elif tools.test_adding(bfr, aft, buffer, plus_strip, used, bfr_strip, aft_strip, minus_strip, extension ) == False:
+                        reptmp = {
+                            'ID': item['ID'],
+                            'CVE': item['CVE'],
+                            'BUG' : item['bug'],
+                            'range' : item['ind_range'],
+                            'rem' : item['rem'],
+                            'plus' : item['plus'],
+                            'context_bfr' : item['context_bfr'],
+                            'context_aft' : item['context_aft'],
+                            'file' : tmp,
+                            'type' : 'add',
+                            'inconclusive' : False,
+                            'import' : ret_stat,
+                            'patch_found' : False
+                        }
+                        my_results[file_count] = reptmp
+                    else:
+                        reptmp = {
+                            'ID': item['ID'],
+                            'CVE': item['CVE'],
+                            'BUG' : item['bug'],
+                            'range' : item['ind_range'],
+                            'rem' : item['rem'],
+                            'plus' : item['plus'],
+                            'context_bfr' : item['context_bfr'],
+                            'context_aft' : item['context_aft'],
+                            'file' : tmp,
+                            'type' : 'add',
+                            'tabulation' : False,
+                            'commented' : False,
+                            'no_rf': False,
+                            'optional_path_no_patch_check': False,
+                            'inconclusive' : False,
+                            'import' : ret_stat,
+                            'patch_found' : True
+                        }
+                        my_results[file_count] = reptmp
+                else:
+                    if len(my_results) == 0:
+                        del aft, bfr, rem, plus, plus_strip, minus_strip, aft_strip, bfr_strip, buffer
+                        gc.collect()
+                        t['inconclusive'] = True
+                        return [t, []]
+    del aft, bfr, rem, plus, plus_strip, minus_strip, aft_strip, bfr_strip, buffer
+    gc.collect()
     if len(my_results) == 0:
-        t['BUG'] = 'no results'
+        t['inconclusive'] = True
         return [t, []]
     if 'hardware' in tmp0:
         for i2 in my_results:
             if 'CVE' in my_results[i2]['CVE']:
                 return [my_results[i2], []]
-        t['BUG'] = 'no results'
+        t['inconclusive'] = True
         return [t, []]
                                
     else:
         for i2 in my_results:
-            if my_results[i2]['CVE'] == 'patch found':
+            if my_results[i2]['patch_found'] == True:
                 return [my_results[i2], []]
-        
-    return [my_results[0], []]
+
+    try:
+        if type(my_results[0]) == dict:
+            return [my_results[0], []]
+        else:
+            return [None,  {'CVE': item['CVE'], 'ID': item['ID'], 'file': tmp0}]
+
+    except:    
+        return [None,  {'CVE': item['CVE'], 'ID': item['ID'], 'file': tmp0}]
    
 
-def run():
+def run(cos):
     # parser = argparse.ArgumentParser(description="AndroVET")
     # parser.add_argument('-i', '--input', required=True, help='Input COS root folder')
     # parser.add_argument('-o', '--output', required=True, help='Output folder')
@@ -333,7 +393,9 @@ def run():
     # parser.add_argument('-du', '--dbuser', default='root', help='database user')
     # parser.add_argument('-dp', '--dbpass', default='root', help='database password')
     # args = parser.parse_args()
-
+    start = datetime.now()
+    global system
+    system = cos[0]
     testing = False
     debug = True
     global report
@@ -344,7 +406,7 @@ def run():
     if testing == True:
         debug = False
     
-    argv1 = '/media/csl/ACOS/' + system
+    argv1 = '/media/csl/COS/' + system
     argv2 = '/home/csl/Desktop/tempo/tests/' + system 
     argv3 = 'true'
     argv4 = 85.5
@@ -413,6 +475,7 @@ def run():
     global buffer
     buffer = []
 
+    print('Working with ' + system + '\n')
     if testing == False:
         with multiprocessing.Pool() as pool:
             report = []
@@ -422,14 +485,14 @@ def run():
                     pbar.update(1)
                     result_val, avoid_res = result[0], result[1]
                     if result_val is not None:
-                        if result_val['CVE'] == 'patch found':
+                        if result_val['patch_found'] == True:
                             matched.append(result_val)
                         else:
                             report.append(result_val)
                                     
-                    if len(avoid_res) > 0:
-                        my_k = avoid_res[0] 
-                        my_v = avoid_res[1]
+                    elif len(avoid_res) > 0:
+                        my_k = avoid_res['CVE'] 
+                        my_v = {'ID' : avoid_res['ID'], 'file': avoid_res['file']} 
                         if my_k in failed.keys():
                             failed[my_k].append(my_v)
                         else:
@@ -472,6 +535,9 @@ def run():
             report2.append(t)
  
     if debug == True:
+        with open(savepath + "/report_match.json", 'w') as myfile:
+            json.dump(matched, myfile)
+            myfile.close() 
         with open(savepath + "/report.json", 'w') as myfile:
             json.dump(report2, myfile) 
             myfile.close()
@@ -488,14 +554,17 @@ def run():
        test(report2)
 
     if testing == True: # this happens if we have report files and want to skip Precision to test something specific (such as similarity values)
-        with open(argv2 +'/report.json', 'r') as f:
-            report2 = json.load(f)
-            f.close()
-        
-        with open(argv2 + '/cvereport.json', 'r') as f:
-            report = json.load(f)
-            f.close()
-        debug = True
+        try:
+            with open(argv2 +'/report.json', 'r') as f:
+                report2 = json.load(f)
+                f.close()
+            
+            with open(argv2 + '/cvereport.json', 'r') as f:
+                report = json.load(f)
+                f.close()
+            debug = True
+        except Exception as e:
+            print('Something went wrong : ' + str(e))
 
     print('\nStarting Abstraction Layer ...')
     
@@ -549,16 +618,16 @@ def run():
                     final_vals.append(0) #patterns can only be read from java, c++ or kotlin. anything else is set to 0 similarity - we could try to make rules for other extensions such as xml in the future.
             #if len(final_vals) > 0 and all(x >= argv4 for x in final_vals):
                 #detected.append(element)
-            if len(final_vals) == 1 and any(x >= argv4 for x in final_vals):
-                detected.append(element)
-            #some times a patter may be broken in a patch (e.g. not returning) if we have more than one block to check we relax the requirments. 
-            elif len(final_vals) > 1 and tools.check_vals(final_vals, argv4) ==  True and sum(final_vals) / len(final_vals) > 80: 
-                detected.append(element)
+            if len(final_vals) == 1 and final_vals[0] >= argv4:
+                detected.append(my_list[element])
+            #some times a pattern may be broken in a patch (e.g. not returning) if we have more than one block to check we relax the requirments. 
+            elif len(final_vals) > 1 and tools.check_vals(final_vals, argv4) ==  True and sum(final_vals) / len(final_vals) >= 80: 
+                detected.append(my_list[element])
             else:
                 final_report.append(element) 
     
       
-    ver = 15 #filter by version lower than...
+    ver = cos[1] #filter by version lower than...
     results = []
     arr = [row for row in common if row['CVE'] in final_report]
     pattern = r'^(\d+(\.\d+)?)(([,;])(\d+(\.\d+)?))*$'
@@ -592,9 +661,11 @@ def run():
         
     now = "/final_report.txt"
     make_rep_vec = False
+    end = datetime.now()
     with open(argv2 + now, 'w') as myfile:
         try:
             myfile.write('REPORT FOR ' + str(system) + '\nDETECTED CVEs:\n' )
+            myfile.write('Elapsed Time = ' + str(end - start) + '\n')
             string = ",".join(final_report)
             myfile.write('WE FOUND TRACES OF = ' + str(len(final_report)) +  'CVEs\nTHE COMPLETE LIST IS:\n' + string + '\nSEVERITY DISTRIBUTION:\n')
             for tag in analisys.keys():
@@ -630,6 +701,14 @@ def run():
     
 
 if __name__ == '__main__':
-    run()
+    #cos_list = [['AOKP', 9],['ArrowOS', 13],['calyxOS', 14],['crDroid', 15],['dotOS', 12],['evolutionX', 15],['GrapheneOS', 15],['LinageOS/21_0', 14],['LinageOS/22_1', 15],['replicant', 15],['ResurrectionX', 10]]
+    cos_list = [['LinageOS', 12],['LinageOS_20_0', 13],['paranoid', 13]]
     
-    
+    for cos in cos_list:
+        try:
+            run(cos)
+            print('sleeping 5 seconds...')
+            time.sleep(5)
+        except:
+            continue
+        
