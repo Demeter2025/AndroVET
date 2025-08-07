@@ -19,7 +19,7 @@ Multiprocessing:
 AndroVET requires two MySQL databases you will find them in the data folder.
 If you are not used to SQL databases, please install lampp 
 once it is installed start the Apache and MySql servers:
-<pre> ```sudo /opt/lampp/lampp start ``` </pre>
+<pre> sudo /opt/lampp/lampp start </pre>
 open the web browser and navigate to localhost (127.0.0.1)
 select MyPHPAdmin
 create a new database called "mydata"
@@ -40,9 +40,9 @@ Please note, AndroVET was tailored with accuracy in mind and can consume a consi
 usage: file.py [-h] -i INPUT -o OUTPUT [-t THRESHOLD] [-s SKIP]
                [-d DATABASE] [-du DBUSER] [-dp DBPASS] -v VERSION
 
-AndroVET
+## AndroVET ARGUMENTS:
 
-optional arguments:
+<pre>
   -h, --help            show this help message and exit
   -i INPUT, --input INPUT
                         Input COS root folder
@@ -60,6 +60,7 @@ optional arguments:
                         database password
   -v VERSION, --version VERSION
                         Set up the Android version (and below) filter
+</pre>
 
 The default values are:
 database = 'mydata'
@@ -67,6 +68,8 @@ dbuser = 'root'
 dbpassword = ''
 threshold = 85.5
 skip = Fasle
+
+## REQUIRED ARGUMENTS
 Three values (input , output, and version) are REQUIRED. 
 
 ## CONTACT US
