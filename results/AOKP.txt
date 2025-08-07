@@ -1,0 +1,109 @@
+REPORT FOR AOKP
+DETECTED CVEs:
+Elapsed Time = 0:53:30.672532
+WE FOUND TRACES OF = 31CVEs
+THE COMPLETE LIST IS:
+CVE-2021-0326,CVE-2021-0650,CVE-2021-0586,CVE-2021-0642,CVE-2019-2124,CVE-2019-9376,CVE-2020-0381,CVE-2020-0386,CVE-2020-0394,CVE-2020-0421,CVE-2021-0506,CVE-2021-0481,CVE-2021-0433,CVE-2021-0437,CVE-2021-0331,CVE-2021-0330,CVE-2021-0333,CVE-2021-0336,CVE-2021-0337,CVE-2021-0315,CVE-2020-0385,CVE-2020-0384,CVE-2019-2218,CVE-2017-0391,CVE-2017-0670,CVE-2018-9559,CVE-2016-3875,CVE-2016-3825,CVE-2016-0831,CVE-2016-0804,CVE-2021-1972
+SEVERITY DISTRIBUTION:
+SEVERITY:
+
+critical = 2
+high = 18
+medium = 11
+low = 0
+
+===================================================
+CONFIDENTIALITY:
+
+none = 4
+low = 0
+partial = 0
+high = 27
+complete = 0
+
+===================================================
+INTEGRITY:
+
+none = 10
+low = 0
+partial = 0
+high = 21
+complete = 0
+
+===================================================
+AVAILABILTY:
+
+none = 8
+low = 0
+partial = 0
+high = 23
+complete = 0
+
+===================================================
+ATTACK_COMPLEXITY:
+
+low = 30
+medium = 0
+high = 1
+
+===================================================
+ATTACK_VECTOR:
+
+local = 24
+network = 4
+adjecent_network = 2
+physical = 1
+
+===================================================
+USER_REQUIRED:
+
+required = 15
+not_required = 16
+
+===================================================
+TYPE:
+
+app spec = 0
+android = 28
+library = 2
+vendor = 0
+hardware = 1
+kernel = 0
+other = 0
+
+===================================================
+CWE:
+
+CWE-787 = {'count': 6, 'detail': 'Out-of-bounds Write (4.14)'}
+CWE-125 = {'count': 1, 'detail': 'Out-of-bounds Read (4.14)'}
+CWE-1021 = {'count': 8, 'detail': 'Improper Restriction of Rendered UI Layers or Frames (4.14)'}
+CWE-862 = {'count': 2, 'detail': 'Missing Authorization (4.14)'}
+NVD-CWE-noinfo = {'count': 3, 'detail': 'NVD-CWE-noinfo'}
+CWE-834 = {'count': 1, 'detail': 'Excessive Iteration (4.14)'}
+CWE-190 = {'count': 1, 'detail': 'Integer Overflow or Wraparound (4.14)'}
+CWE-1188 = {'count': 2, 'detail': 'Initialization of a Resource with an Insecure Default (4.14)'}
+CWE-755 = {'count': 1, 'detail': 'Improper Handling of Exceptional Conditions (4.14)'}
+CWE-20 = {'count': 1, 'detail': 'Improper Input Validation (4.14)'}
+CWE-415 = {'count': 1, 'detail': 'Double Free (4.14)'}
+CWE-416 = {'count': 1, 'detail': 'Use After Free (4.14)'}
+CWE-732 = {'count': 1, 'detail': 'Incorrect Permission Assignment for Critical Resource (4.14)'}
+CWE-312 = {'count': 1, 'detail': 'Cleartext Storage of Sensitive Information (4.14)'}
+CWE-264 = {'count': 1, 'detail': 'Permissions'}
+CWE-119 = {'count': 2, 'detail': 'Improper Restriction of Operations within the Bounds of a Memory Buffer (4.14)'}
+CWE-200 = {'count': 1, 'detail': 'Exposure of Sensitive Information to an Unauthorized Actor (4.14)'}
+CWE-120 = {'count': 1, 'detail': "Buffer Copy without Checking Size of Input ('Classic Buffer Overflow') (4.14)"}
+
+===================================================
+USER_PRIVILEGES:
+
+none = 16
+low = 15
+medium = 0
+high = 0
+
+===================================================
+MISSING_INFO:
+
+
+
+===================================================

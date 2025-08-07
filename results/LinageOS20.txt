@@ -1,0 +1,103 @@
+REPORT FOR LinageOS_20_0
+DETECTED CVEs:
+Elapsed Time = 1:11:04.706576
+WE FOUND TRACES OF = 18CVEs
+THE COMPLETE LIST IS:
+CVE-2021-0646,CVE-2021-0645,CVE-2020-0239,CVE-2020-0248,CVE-2020-0386,CVE-2020-0394,CVE-2021-0336,CVE-2019-2091,CVE-2017-0383,CVE-2017-0391,CVE-2017-0670,CVE-2016-3898,CVE-2016-3875,CVE-2015-6609,CVE-2016-3825,CVE-2016-0831,CVE-2016-0804,CVE-2017-13314
+SEVERITY DISTRIBUTION:
+SEVERITY:
+
+critical = 1
+high = 8
+medium = 8
+low = 0
+
+===================================================
+CONFIDENTIALITY:
+
+none = 4
+low = 0
+partial = 0
+high = 12
+complete = 0
+
+===================================================
+INTEGRITY:
+
+none = 6
+low = 0
+partial = 0
+high = 10
+complete = 0
+
+===================================================
+AVAILABILTY:
+
+none = 4
+low = 0
+partial = 0
+high = 12
+complete = 0
+
+===================================================
+ATTACK_COMPLEXITY:
+
+low = 16
+medium = 0
+high = 0
+
+===================================================
+ATTACK_VECTOR:
+
+local = 14
+network = 1
+adjecent_network = 0
+physical = 1
+
+===================================================
+USER_REQUIRED:
+
+required = 7
+not_required = 9
+
+===================================================
+TYPE:
+
+app spec = 0
+android = 14
+library = 2
+vendor = 0
+hardware = 0
+kernel = 0
+other = 0
+
+===================================================
+CWE:
+
+CWE-787 = {'count': 1, 'detail': 'Out-of-bounds Write (4.14)'}
+CWE-863 = {'count': 1, 'detail': 'Incorrect Authorization (4.14)'}
+CWE-862 = {'count': 2, 'detail': 'Missing Authorization (4.14)'}
+NVD-CWE-noinfo = {'count': 3, 'detail': 'NVD-CWE-noinfo'}
+CWE-1021 = {'count': 2, 'detail': 'Improper Restriction of Rendered UI Layers or Frames (4.14)'}
+CWE-1188 = {'count': 2, 'detail': 'Initialization of a Resource with an Insecure Default (4.14)'}
+CWE-732 = {'count': 1, 'detail': 'Incorrect Permission Assignment for Critical Resource (4.14)'}
+CWE-190 = {'count': 1, 'detail': 'Integer Overflow or Wraparound (4.14)'}
+CWE-284 = {'count': 1, 'detail': 'Improper Access Control (4.14)'}
+CWE-264 = {'count': 1, 'detail': 'Permissions'}
+CWE-119 = {'count': 2, 'detail': 'Improper Restriction of Operations within the Bounds of a Memory Buffer (4.14)'}
+CWE-200 = {'count': 1, 'detail': 'Exposure of Sensitive Information to an Unauthorized Actor (4.14)'}
+
+===================================================
+USER_PRIVILEGES:
+
+none = 9
+low = 7
+medium = 0
+high = 0
+
+===================================================
+MISSING_INFO:
+
+CVE-2017-13314,CVE-2015-6609
+
+===================================================
