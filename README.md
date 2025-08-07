@@ -9,7 +9,6 @@ AndroVET abstraction layer supports C, C++, Java and Kotlin. The precision layer
 Before using AndoroVet please make sure you installed:
 
 tqdm:
-These can be installed using pip
 <pre> pip install tqdm </pre>
 MySql connector:
 <pre> pip install mysql-connector-python </pre>
