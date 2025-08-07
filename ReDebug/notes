@@ -1,1 +1,1 @@
-
+This version of redebug was altered to avoid crashin if the target file is not utf-8 encoded.
