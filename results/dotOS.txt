@@ -1,0 +1,103 @@
+REPORT FOR dotOS
+DETECTED CVEs:
+Elapsed Time = 1:04:32.016980
+WE FOUND TRACES OF = 26CVEs
+THE COMPLETE LIST IS:
+CVE-2021-0646,CVE-2020-0023,CVE-2020-0239,CVE-2020-0248,CVE-2020-0386,CVE-2020-0394,CVE-2019-2091,CVE-2019-2092,CVE-2017-0383,CVE-2017-0391,CVE-2017-0670,CVE-2016-3898,CVE-2016-3875,CVE-2015-6609,CVE-2016-3825,CVE-2016-0831,CVE-2016-0804,CVE-2017-13314,CVE-2022-20419,CVE-2022-20413,CVE-2022-20358,CVE-2022-20354,CVE-2022-23852,CVE-2022-20412,CVE-2022-20355,CVE-2022-20415
+SEVERITY DISTRIBUTION:
+SEVERITY:
+
+critical = 2
+high = 10
+medium = 12
+low = 1
+
+===================================================
+CONFIDENTIALITY:
+
+none = 5
+low = 1
+partial = 0
+high = 18
+complete = 0
+
+===================================================
+INTEGRITY:
+
+none = 10
+low = 0
+partial = 0
+high = 14
+complete = 0
+
+===================================================
+AVAILABILTY:
+
+none = 7
+low = 0
+partial = 0
+high = 17
+complete = 0
+
+===================================================
+ATTACK_COMPLEXITY:
+
+low = 24
+medium = 0
+high = 0
+
+===================================================
+ATTACK_VECTOR:
+
+local = 21
+network = 2
+adjecent_network = 0
+physical = 1
+
+===================================================
+USER_REQUIRED:
+
+required = 6
+not_required = 18
+
+===================================================
+TYPE:
+
+app spec = 0
+android = 21
+library = 3
+vendor = 0
+hardware = 0
+kernel = 0
+other = 0
+
+===================================================
+CWE:
+
+CWE-787 = {'count': 1, 'detail': 'Out-of-bounds Write (4.14)'}
+CWE-862 = {'count': 5, 'detail': 'Missing Authorization (4.14)'}
+NVD-CWE-noinfo = {'count': 7, 'detail': 'NVD-CWE-noinfo'}
+CWE-1021 = {'count': 2, 'detail': 'Improper Restriction of Rendered UI Layers or Frames (4.14)'}
+CWE-1188 = {'count': 2, 'detail': 'Initialization of a Resource with an Insecure Default (4.14)'}
+CWE-190 = {'count': 2, 'detail': 'Integer Overflow or Wraparound (4.14)'}
+CWE-284 = {'count': 1, 'detail': 'Improper Access Control (4.14)'}
+CWE-264 = {'count': 1, 'detail': 'Permissions'}
+CWE-119 = {'count': 2, 'detail': 'Improper Restriction of Operations within the Bounds of a Memory Buffer (4.14)'}
+CWE-200 = {'count': 1, 'detail': 'Exposure of Sensitive Information to an Unauthorized Actor (4.14)'}
+CWE-125 = {'count': 1, 'detail': 'Out-of-bounds Read (4.14)'}
+CWE-20 = {'count': 1, 'detail': 'Improper Input Validation (4.14)'}
+
+===================================================
+USER_PRIVILEGES:
+
+none = 9
+low = 14
+medium = 0
+high = 1
+
+===================================================
+MISSING_INFO:
+
+CVE-2015-6609,CVE-2017-13314
+
+===================================================

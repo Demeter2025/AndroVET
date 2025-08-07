@@ -1,0 +1,112 @@
+REPORT FOR ResurrectionX
+DETECTED CVEs:
+Elapsed Time = 2:59:31.395510
+WE FOUND TRACES OF = 46CVEs
+THE COMPLETE LIST IS:
+CVE-2021-0927,CVE-2021-0926,CVE-2021-0928,CVE-2021-0919,CVE-2021-0653,CVE-2021-0651,CVE-2021-0652,CVE-2021-0705,CVE-2019-2124,CVE-2020-0386,CVE-2020-0394,CVE-2020-0453,CVE-2017-0663,CVE-2019-2131,CVE-2017-0391,CVE-2017-0670,CVE-2017-13195,CVE-2017-7376,CVE-2016-3875,CVE-2015-6609,CVE-2016-3825,CVE-2016-0831,CVE-2019-14087,CVE-2021-39628,CVE-2021-39659,CVE-2021-39809,CVE-2022-20004,CVE-2021-39700,CVE-2022-20126,CVE-2022-20133,CVE-2022-20221,CVE-2022-20197,CVE-2022-20358,CVE-2022-23852,CVE-2022-25314,CVE-2022-20412,CVE-2022-20344,CVE-2022-20346,CVE-2022-20006,CVE-2022-20135,CVE-2022-23990,CVE-2022-20112,CVE-2022-20143,CVE-2021-39707,CVE-2022-20142,CVE-2022-20114
+SEVERITY DISTRIBUTION:
+SEVERITY:
+
+critical = 2
+high = 25
+medium = 17
+low = 2
+
+===================================================
+CONFIDENTIALITY:
+
+none = 11
+low = 2
+partial = 0
+high = 32
+complete = 0
+
+===================================================
+INTEGRITY:
+
+none = 20
+low = 0
+partial = 0
+high = 25
+complete = 0
+
+===================================================
+AVAILABILTY:
+
+none = 11
+low = 0
+partial = 0
+high = 34
+complete = 0
+
+===================================================
+ATTACK_COMPLEXITY:
+
+low = 43
+medium = 0
+high = 2
+
+===================================================
+ATTACK_VECTOR:
+
+local = 36
+network = 7
+adjecent_network = 1
+physical = 1
+
+===================================================
+USER_REQUIRED:
+
+required = 10
+not_required = 35
+
+===================================================
+TYPE:
+
+app spec = 0
+android = 37
+library = 6
+vendor = 0
+hardware = 1
+kernel = 0
+other = 0
+
+===================================================
+CWE:
+
+CWE-281 = {'count': 1, 'detail': 'Improper Preservation of Permissions (4.14)'}
+CWE-862 = {'count': 6, 'detail': 'Missing Authorization (4.14)'}
+CWE-20 = {'count': 2, 'detail': 'Improper Input Validation (4.14)'}
+CWE-755 = {'count': 2, 'detail': 'Improper Handling of Exceptional Conditions (4.14)'}
+CWE-190 = {'count': 4, 'detail': 'Integer Overflow or Wraparound (4.14)'}
+CWE-362 = {'count': 3, 'detail': "Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition') (4.14)"}
+NVD-CWE-Other = {'count': 1, 'detail': 'Other'}
+NVD-CWE-noinfo = {'count': 8, 'detail': 'NVD-CWE-noinfo'}
+CWE-1021 = {'count': 2, 'detail': 'Improper Restriction of Rendered UI Layers or Frames (4.14)'}
+CWE-1188 = {'count': 3, 'detail': 'Initialization of a Resource with an Insecure Default (4.14)'}
+CWE-787 = {'count': 1, 'detail': 'Out-of-bounds Write (4.14)'}
+CWE-835 = {'count': 1, 'detail': "Loop with Unreachable Exit Condition ('Infinite Loop') (4.14)"}
+CWE-119 = {'count': 2, 'detail': 'Improper Restriction of Operations within the Bounds of a Memory Buffer (4.14)'}
+CWE-264 = {'count': 1, 'detail': 'Permissions'}
+CWE-200 = {'count': 1, 'detail': 'Exposure of Sensitive Information to an Unauthorized Actor (4.14)'}
+CWE-416 = {'count': 1, 'detail': 'Use After Free (4.14)'}
+CWE-668 = {'count': 1, 'detail': 'Exposure of Resource to Wrong Sphere (4.14)'}
+CWE-125 = {'count': 4, 'detail': 'Out-of-bounds Read (4.14)'}
+CWE-269 = {'count': 2, 'detail': 'Improper Privilege Management (4.14)'}
+CWE-770 = {'count': 1, 'detail': 'Allocation of Resources Without Limits or Throttling (4.14)'}
+CWE-610 = {'count': 1, 'detail': 'Externally Controlled Reference to a Resource in Another Sphere (4.14)'}
+
+===================================================
+USER_PRIVILEGES:
+
+none = 16
+low = 28
+medium = 0
+high = 1
+
+===================================================
+MISSING_INFO:
+
+CVE-2015-6609
+
+===================================================
