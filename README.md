@@ -6,17 +6,20 @@ AndroVET is an android based custom OS vulnerability exploration tool. It is tai
 AndroVET abstraction layer supports C, C++, Java and Kotlin. The precision layer works with any programming language.
 
 ## Necesary dependencies
-Before using AndoroVet please make sure you installed the following dependencies:
+Before using AndoroVet please make sure you installed:
 
-mysql-connector-python
-multiprocessing 
-tqdm
-
+tqdm:
 These can be installed using pip
+<pre> ```bash pip install tqdm ``` </pre>
+MySql connector:
+<pre> ```bash pip install mysql-connector-python ``` </pre>
+Multiprocessing:
+<pre> ```bash pip install multiprocessing ``` </pre>
 
-AndroVET requires a MySQL database containing the provided table 'bugs' (we uploaded a .sql dump file)
+AndroVET requires two MySQL databases you will find them in the data folder.
 If you are not used to SQL databases, please install lampp 
-run sudo /opt/lampp start
+once it is installed start the Apache and MySql servers:
+<pre> ```sudo /opt/lampp/lampp start ``` </pre>
 open the web browser and navigate to localhost (127.0.0.1)
 select MyPHPAdmin
 create a new database called "mydata"
@@ -30,27 +33,41 @@ sudo /opt/lampp/lampp stop
 
 ## Notes
 
-Please note, AndroVET was tailored with accuracy in mind and can consume a considerable amount of system resources. We recommend AT LEAST 16 GB of RAM to run the app without any issues. The status bar can fail to update during runtime because of the nature of multiprocessing. If you note this situation, pleasse be patient. AndroVET takes close to 30 minutes to evaluate a complete Android repo, if you run in a laptop or a slower computer the execution time can be as long as 70 minutes.
+Please note, AndroVET was tailored with accuracy in mind and can consume a considerable amount of system resources. We recommend AT LEAST 16 GB of RAM to run the app without any issues. The status bar can fail to update during runtime due to the nature of multiprocessing. If you note this situation, pleasse be patient. AndroVET takes one hour in average to evaluate a complete Android repo, if you run in a laptop or a slower computer the execution time can be as long as 2 hours.
 
 ## HOW TO USE AndroVET
 
-to run the app plase clone the repo and go to its main folder.
-run:
-python swatch.py <ARGV1> <ARGV2> <ARGV3> <ARGV4> <ARGV5> 
-Where the arguments are as follows:
+usage: file.py [-h] -i INPUT -o OUTPUT [-t THRESHOLD] [-s SKIP]
+               [-d DATABASE] [-du DBUSER] [-dp DBPASS] -v VERSION
 
-argv[1] = custom OS folder
+AndroVET
 
-argv[2] = A folder to save results (if it doesn't exists, the folder will be created for you)
+optional arguments:
+  -h, --help            show this help message and exit
+  -i INPUT, --input INPUT
+                        Input COS root folder
+  -o OUTPUT, --output OUTPUT
+                        Output folder
+  -t THRESHOLD, --threshold THRESHOLD
+                        Similarity threshold value
+  -s SKIP, --skip SKIP  Skip Precision if you have previouse reports you want
+                        ot use
+  -d DATABASE, --database DATABASE
+                        database name
+  -du DBUSER, --dbuser DBUSER
+                        database user
+  -dp DBPASS, --dbpass DBPASS
+                        database password
+  -v VERSION, --version VERSION
+                        Set up the Android version (and below) filter
 
-argv[3] = True/False => prints the results of the Precision layer in the terminal
-
-argv[4] = set similarity treshold for Layer2 -> recommended value 85.5
-
-argv[5] = True/False => Generates debuging information files. If set to True a short description will be provided in the terminal.
-
-Pleae note, if there is any error in the Abstraction Layer, AndroVET will notify the user and generate debug files and partial results despite of argv[5] value. This allows a technical user to load partial results in memory and run AndroVET from its last valid state.
-
+The default values are:
+database = 'mydata'
+dbuser = 'root'
+dbpassword = ''
+threshold = 85.5
+skip = Fasle
+Three values (input , output, and version) are REQUIRED. 
 
 ## CONTACT US
 
