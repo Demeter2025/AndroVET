@@ -10,11 +10,11 @@ Before using AndoroVet please make sure you installed:
 
 tqdm:
 These can be installed using pip
-<pre> ```bash pip install tqdm ``` </pre>
+<pre> pip install tqdm </pre>
 MySql connector:
-<pre> ```bash pip install mysql-connector-python ``` </pre>
+<pre> pip install mysql-connector-python </pre>
 Multiprocessing:
-<pre> ```bash pip install multiprocessing ``` </pre>
+<pre> pip install multiprocessing </pre>
 
 AndroVET requires two MySQL databases you will find them in the data folder.
 If you are not used to SQL databases, please install lampp 
