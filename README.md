@@ -41,7 +41,7 @@ usage: file.py [-h] -i INPUT -o OUTPUT [-t THRESHOLD] [-s SKIP]
                [-d DATABASE] [-du DBUSER] [-dp DBPASS] -v VERSION
 
 
-<pre> optional arguments:<br> -h, --help    show this help message and exit <br>-i INPUT, --input INPUT    Input COS root folder <br>-o OUTPUT, --output OUTPUT    Output folder <br>-t THRESHOLD, --threshold THRESHOLD    Similarity threshold value <br>-s SKIP, --skip SKIP    Skip Precision if you have skip files <br>-d DATABASE, --database DATABASE    database name <br>-du DBUSER, --dbuser DBUSER    database user <br>-dp DBPASS, --dbpass DBPASS    database password <br>-v VERSION, --version VERSION    Set up the Android version (and below)  database = 'mydata' dbuser = 'root' dbpassword = '' threshold = 85.5 skip = False Required: input, output, and version </pre>
+<pre><br>-h, --help    show this help message and exit <br>-i INPUT, --input INPUT    Input COS root folder <br>-o OUTPUT, --output OUTPUT    Output folder <br>-t THRESHOLD, --threshold THRESHOLD    Similarity threshold value <br>-s SKIP, --skip SKIP    Skip Precision if you have skip files <br>-d DATABASE, --database DATABASE    database name <br>-du DBUSER, --dbuser DBUSER    database user <br>-dp DBPASS, --dbpass DBPASS    database password <br>-v VERSION, --version VERSION    Set up the Android version (and below)</pre>
 
 The default values are:
 database = 'mydata'
