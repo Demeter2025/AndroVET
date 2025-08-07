@@ -5,7 +5,7 @@ AndroVET is an android based custom OS vulnerability exploration tool. It is tai
 
 AndroVET abstraction layer supports C, C++, Java and Kotlin. The precision layer works with any programming language.
 
-## Necesary dependencies
+## WHAT YOU NEED
 Before using AndoroVet please make sure you installed:
 
 tqdm:
@@ -40,27 +40,7 @@ Please note, AndroVET was tailored with accuracy in mind and can consume a consi
 usage: file.py [-h] -i INPUT -o OUTPUT [-t THRESHOLD] [-s SKIP]
                [-d DATABASE] [-du DBUSER] [-dp DBPASS] -v VERSION
 
-## AndroVET ARGUMENTS:
-
-<pre>
-  -h, --help            show this help message and exit
-  -i INPUT, --input INPUT
-                        Input COS root folder
-  -o OUTPUT, --output OUTPUT
-                        Output folder
-  -t THRESHOLD, --threshold THRESHOLD
-                        Similarity threshold value
-  -s SKIP, --skip SKIP  Skip Precision if you have previouse reports you want
-                        ot use
-  -d DATABASE, --database DATABASE
-                        database name
-  -du DBUSER, --dbuser DBUSER
-                        database user
-  -dp DBPASS, --dbpass DBPASS
-                        database password
-  -v VERSION, --version VERSION
-                        Set up the Android version (and below) filter
-</pre>
+<pre> ```text optional arguments: -h, --help show this help message and exit -i INPUT, --input INPUT Input COS root folder -o OUTPUT, --output OUTPUT Output folder -t THRESHOLD, --threshold THRESHOLD Similarity threshold value -s SKIP, --skip SKIP Skip Precision if you have previouse reports you want ot use -d DATABASE, --database DATABASE database name -du DBUSER, --dbuser DBUSER database user -dp DBPASS, --dbpass DBPASS database password -v VERSION, --version VERSION Set up the Android version (and below) filter Default values: database = 'mydata' dbuser = 'root' dbpassword = '' threshold = 85.5 skip = False Required: input, output, and version ``` </pre>
 
 The default values are:
 database = 'mydata'
