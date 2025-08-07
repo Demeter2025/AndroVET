@@ -13,16 +13,7 @@ from collections import defaultdict
 import time
 from datetime import datetime
 import gc
-#sys.argv[1] = custom OS folder
-#sys.argv[2] = save results folder
-#sys.argv[3] = true/false => print results of the first layer
-#sys.argv[4] = recommended value 85.5 -> set similarity treshold for Layer2  
-#example of undetectable patch CVE-2016-3875
-#================================================================================================================================================
-#TODO: As is now, if a problematic block (bug) is found (after all the checks: syntax and patch precence in the file), we mark the vulnerability.
-# A Better approach would be grouping the database rows according to the blocks variable
-# this will allow to check all of the lines as a group each time. When there are multiple files, this will help a to avoid false results. 
-#=================================================================================================================================================
+import argparse
 
 
 def test(rep):
@@ -46,7 +37,7 @@ def find_all(name, struct):
         if f_name == k.split('/')[-1].strip() and struct in k:
             retval.append(k)
 
-    if len(retval) > 1: #if there are more than one possible file, we test similarity to decicde which one we want to use. 
+    if len(retval) > 1:  
         val_sim = {}
         for p in retval:
             val_sim[p] = tools.get_similarity_ratio(name , p)
@@ -58,9 +49,9 @@ def find_all(name, struct):
                 retval.append(key)
     
     if len(retval) > 0:
-        return retval #more than one file may have the same similarity. we return all of those. 
+        return retval 
     else:
-        return 'error' #no file was found with the name and the structure on it.
+        return 'error' 
   
 def task01(item):
     optional_path = False
@@ -71,17 +62,16 @@ def task01(item):
     struct = item['struct'].strip()
     if struct == '/':
         struct = ''
-    tmp0 = '/media/csl/COS/' + system + struct +f
+    tmp0 = my_folder + struct +f
     tmp_arr = [tmp0]
     
     if not os.path.exists(tmp0):
         optional_path = True
-        possible = find_all(tmp0 ,'/media/csl/COS/' + system + item['struct'].strip())
+        possible = find_all(tmp0 , my_folder + item['struct'].strip())
         if possible is None or len(possible) == 0 or possible == 'error':
             return [None,  {'CVE': item['CVE'], 'ID': item['ID'], 'file': tmp0}]
             
         else:
-            #print("file found at " + possible)
             tmp_arr = possible
     
         
@@ -94,8 +84,7 @@ def task01(item):
     bfr = tools.clean_2comm(tools.clean(tools.fixsplit(item['context_bfr']).split("`"), 0))
     aft = tools.clean_2comm(tools.clean(tools.fixsplit(item['context_aft']).split("`"), 0))
       
-    
-    #prepeare the counts for the file blocks comparisons
+
     exceptions = {'{','}',' ', ';'}
     plus_strip = [tools.cl(re.sub(r'\s+', ' ', x).lower().strip()) for x in plus if x not in exceptions and len(x.strip()) > 0]
     minus_strip = [tools.cl(re.sub(r'\s+', ' ', x).lower().strip()) for x in rem if x not in exceptions and len(x.strip()) > 0]
@@ -154,7 +143,7 @@ def task01(item):
         
     my_results = {}
     
-    if len(tmp_arr) > 1: #if more than one file is possible, we check if there are files on the correct relative path and use only those
+    if len(tmp_arr) > 1:
         t01 = tmp0.split('/')[-2]
         struct_c  = struct + '/'
         tmp_arr_2 = []
@@ -239,7 +228,6 @@ def task01(item):
             if len(minus_strip) > 0 and tempo_line == minus_strip[0].strip() and i < len(buffer) - 1:
 
                 if tools.compare_block(lengths, bfr_strip, plus_strip, minus_strip, aft_strip, buffer, i, used, extension):
-                    #print(item[4] + ' block FOUND!!!')
                     
                     reptmp = {
                         'ID': item['ID'],
@@ -269,7 +257,7 @@ def task01(item):
                     if all(x.strip().startswith('import') for x in plus_strip):
                         ret_stat = True
                     
-                    if len(struct.strip()) == 0: #if the repo directory is empty we cant find the right file 'we need to find a way to check for these CVEs '
+                    if len(struct.strip()) == 0: 
                         reptmp = {
                             'ID': item['ID'],
                             'CVE': item['CVE'],
@@ -384,32 +372,32 @@ def task01(item):
    
 
 def run(cos):
-    # parser = argparse.ArgumentParser(description="AndroVET")
-    # parser.add_argument('-i', '--input', required=True, help='Input COS root folder')
-    # parser.add_argument('-o', '--output', required=True, help='Output folder')
-    # parser.add_argument('-t', '--threshold', type=float, default=85.5, help='Similarity threshold value')
-    # parser.add_argument('-s', '--skip', type=bool, default=False, help='Skip Precision if you have previouse reports you want ot use')
-    # parser.add_argument('-d', '--database', default='mydata', help='database name')
-    # parser.add_argument('-du', '--dbuser', default='root', help='database user')
-    # parser.add_argument('-dp', '--dbpass', default='root', help='database password')
-    # args = parser.parse_args()
+    parser = argparse.ArgumentParser(description="AndroVET")
+    parser.add_argument('-i', '--input', required=True, help='Input COS root folder')
+    parser.add_argument('-o', '--output', required=True, help='Output folder')
+    parser.add_argument('-t', '--threshold', type=float, default=85.5, help='Similarity threshold value')
+    parser.add_argument('-s', '--skip', type=bool, default=False, help='Skip Precision if you have skip files')
+    parser.add_argument('-s', '--skip', action='store_true', help='Skip Precision Layer IF you have skip files')
+    parser.add_argument('-d', '--database', default='mydata', help='database name')
+    parser.add_argument('-du', '--dbuser', default='root', help='database user')
+    parser.add_argument('-dp', '--dbpass', default='', help='database password')
+    parser.add_argument('-v', '--version', required=True, help='Set up the Android version (and below) filter')
+    args = parser.parse_args()
+    
     start = datetime.now()
-    global system
-    system = cos[0]
-    testing = False
-    debug = True
+    global my_folder
+    my_folder = args.input
+    testing = args.skip
     global report
     report = list()
     global report2
     report2 = list()
     failed = dict()
-    if testing == True:
-        debug = False
     
-    argv1 = '/media/csl/COS/' + system
-    argv2 = '/home/csl/Desktop/tempo/tests/' + system 
-    argv3 = 'true'
-    argv4 = 85.5
+    
+    argv1 = args.input
+    argv2 = args.output 
+    argv4 = args.threshold
     
 
     if not os.path.exists(argv1):
@@ -429,16 +417,15 @@ def run(cos):
 
     global files
     print('Building Source Tree...\n')
-    files = tools.walk_folder(argv1)#(sys.argv[1])
+    files = tools.walk_folder(argv1)
     
     print('Reading data bases...\n')
     try:
-        link = mysql.connector.connect(user='project', password='project8487',
+        link = mysql.connector.connect(user=f'{args.dbuser}', password=f'{args.dbpass}',
                               host='127.0.0.1',
-                              database='mydata',
+                              database=f'{args.database}',
                               use_pure=False)
     
-        #sql_select_Query = "SELECT * from bugs WHERE CVE IN ('CVE-2015-1541', 'CVE-2016-3765', 'CVE-2016-3883', 'CVE-2017-0663', 'CVE-2016-1839', 'CVE-2017-13195', 'CVE-2020-0017', 'CVE-2020-0092', 'CVE-2020-0408', 'CVE-2019-2219', 'CVE-2021-0520', 'CVE-2022-20115', 'CVE-2022-20219', 'CVE-2017-15849', 'CVE-2019-14087', 'CVE-2015-6609', 'CVE-2015-6624', 'CVE-2016-0804', 'CVE-2016-0831', 'CVE-2016-3825', 'CVE-2016-3826', 'CVE-2016-3875', 'CVE-2016-3898', 'CVE-2017-0383', 'CVE-2017-0391', 'CVE-2017-0670', 'CVE-2017-13314', 'CVE-2019-2091', 'CVE-2020-0239', 'CVE-2021-0596', 'CVE-2021-0646')"
         sql_select_Query = "SELECT * from bugs WHERE ID > 0"; 
         sql_select_Query2 = "SELECT * from common WHERE ID > 0"
         cursor = link.cursor(dictionary=True)
@@ -475,7 +462,6 @@ def run(cos):
     global buffer
     buffer = []
 
-    print('Working with ' + system + '\n')
     if testing == False:
         with multiprocessing.Pool() as pool:
             report = []
@@ -498,8 +484,6 @@ def run(cos):
                         else:
                             failed[my_k] = [my_v]
 
-    savepath = argv2
-    
     for row in blocks:
         consider = False
         ty = 'add'        
@@ -520,7 +504,7 @@ def run(cos):
             ty = 'replace'
             found_rep = len([x for x in res if x['type'] ==  'replace'])
             if found > int(row['count'] / 2) and found_rep >= int(row['replace'] *0.75):
-                consider = True #if we find the bug in a file we consider it vulnerable (when different files are evaluated a file can contain a patch and give an erroneous result)
+                consider = True 
         total = row['count']
         
         t = {
@@ -534,26 +518,10 @@ def run(cos):
         if len(res) > 0:
             report2.append(t)
  
-    if debug == True:
-        with open(savepath + "/report_match.json", 'w') as myfile:
-            json.dump(matched, myfile)
-            myfile.close() 
-        with open(savepath + "/report.json", 'w') as myfile:
-            json.dump(report2, myfile) 
-            myfile.close()
-        with open(savepath + "/bloks.json", 'w') as b:
-            json.dump(blocks, b)
-        with open(savepath + "/cvereport.json", 'w') as m:
-            json.dump(report, m) 
-            m.close()
-        with open(savepath + "/avoid.json", 'w') as myfile2:
-            json.dump(failed, myfile2) 
-            myfile2.close()
-   
-    if argv3 == 'true':
-       test(report2)
+    if testing == False:
+        test(report2)
 
-    if testing == True: # this happens if we have report files and want to skip Precision to test something specific (such as similarity values)
+    if testing == True:
         try:
             with open(argv2 +'/report.json', 'r') as f:
                 report2 = json.load(f)
@@ -564,7 +532,7 @@ def run(cos):
                 f.close()
             debug = True
         except Exception as e:
-            print('Something went wrong : ' + str(e))
+            print(f'We could not find your skip files, are you sure they are in the output directory?.\n{e}')
 
     print('\nStarting Abstraction Layer ...')
     
@@ -584,6 +552,7 @@ def run(cos):
         else:
             add_only.append(item)
             my_list[item['CVE'].strip()] = list_comp
+    
     print("PATCH ONLY CVEs = " + str(len(add_only)))
     print("REPLECEMENT CVEs = " + str(len(replace)))
     print('========================================')
@@ -598,7 +567,7 @@ def run(cos):
             final_vals = []
             for i in my_list[element]:
                 
-                if i['import'] == True: #sometimes import lines are deleted and the same functionality is implemented using another lib. we ignore import lines here, since they dont contain useful patterns anyways
+                if i['import'] == True: 
                     continue
                 #check the extension
                 ext = i['file'].split(".")[-1].strip()
@@ -606,28 +575,25 @@ def run(cos):
                 if ext in valid:
                     [vector, vecs] = parse_vec.parse(i['plus'], i['context_bfr'], i['context_aft'], i['file'], ext, i['range'])
                     values = []
-                    if len(vecs) > 50 or len(vecs) == 0 or vecs[0] == 'Layer_1': #so many vectors means the vars are not enough to detect the right range
+                    if len(vecs) > 50 or len(vecs) == 0 or vecs[0] == 'Layer_1':
                         continue
                     elif vector == 'comments' or vecs[0] == 'checked':
-                        values.append(100) #in this case we decide the file fully patched because the patch is a comment and there is no vulnerability on this block
+                        values.append(100)
                         continue
                     for v in vecs:
                         values.append(comp_vec.compare_arrays(vector, v))
                     final_vals.append(max(values))
                 else:
-                    final_vals.append(0) #patterns can only be read from java, c++ or kotlin. anything else is set to 0 similarity - we could try to make rules for other extensions such as xml in the future.
-            #if len(final_vals) > 0 and all(x >= argv4 for x in final_vals):
-                #detected.append(element)
+                    final_vals.append(0) 
             if len(final_vals) == 1 and final_vals[0] >= argv4:
                 detected.append(my_list[element])
-            #some times a pattern may be broken in a patch (e.g. not returning) if we have more than one block to check we relax the requirments. 
             elif len(final_vals) > 1 and tools.check_vals(final_vals, argv4) ==  True and sum(final_vals) / len(final_vals) >= 80: 
                 detected.append(my_list[element])
             else:
                 final_report.append(element) 
     
       
-    ver = cos[1] #filter by version lower than...
+    ver = args.version 
     results = []
     arr = [row for row in common if row['CVE'] in final_report]
     pattern = r'^(\d+(\.\d+)?)(([,;])(\d+(\.\d+)?))*$'
@@ -658,13 +624,29 @@ def run(cos):
     final_report = results
     
     analisys = counts.calculate(final_report, common)
-        
-    now = "/final_report.txt"
-    make_rep_vec = False
-    end = datetime.now()
-    with open(argv2 + now, 'w') as myfile:
+
+    detail = defaultdict()
+    for entry in report:
+        detail[entry['CVE']].append(entry)
+    save = argv2 + '/affected_files.txt'
+    with open(save.replace('//', '/'), 'w') as myfile0:
         try:
-            myfile.write('REPORT FOR ' + str(system) + '\nDETECTED CVEs:\n' )
+            for k,v in detail.items():
+                for member in v:
+                    if member['type'] == 'add':
+                        myfile0.write(f"[+] We found traces of a missing patch for {member['CVE']} in: {member['file']}\n")
+                    elif member['type'] == 'replace':
+                        myfile0.write(f"[+] We found traces of {member['CVE']} in: {member['file']}\n")
+
+        except Exception as e:
+            myfile0.write(f'Something went wrong: \n{e}\n If the final report cannot be generated you will find skip files...')
+        
+    save = argv2 + "/final_report.txt"
+    end = datetime.now()
+    skip = False
+    with open(save.replace('//', '/'), 'w') as myfile:
+        try:
+            myfile.write(f'REPORT FOR ' + {my_folder.split('/')[-1]} + '\nDETECTED CVEs:\n' )
             myfile.write('Elapsed Time = ' + str(end - start) + '\n')
             string = ",".join(final_report)
             myfile.write('WE FOUND TRACES OF = ' + str(len(final_report)) +  'CVEs\nTHE COMPLETE LIST IS:\n' + string + '\nSEVERITY DISTRIBUTION:\n')
@@ -680,35 +662,21 @@ def run(cos):
                     myfile.write(string + '\n')
                 myfile.write('\n===================================================\n')
         except:
-            myfile.write('Something went wrong, please find the CVE traces in report_vec.json' )
-            make_rep_vec = True   
+            myfile0.write(f'Something went wrong: \n{e}')
+            myfile0.write(f'We created skip files for you to run only Abstraction\nIf you find the same problem again please send us the skip files and the error')
+            skip = True
         myfile.close()   
-            
-       
-    if debug == True or make_rep_vec == True:
-        now = "/report_vec.json"
-        with open(argv2 + now, 'w') as myfile:
-            json.dump(final_report, myfile) 
-            myfile.close()            
-    if debug == True:
-        now = "/report_vec_detected.json"
-        with open(argv2 + now, 'w') as myfile:
-            json.dump(detected, myfile) 
-            myfile.close()            
-    print('All tasks done, please refer to final report.txt for our resutls\n')
-    if debug == True:
-        print('==============================\nINTERMIDIATE FILES\n==============================\nAVOID: Contains CVEs related to missing files\nDETECTED_VEC: contains partial results of Layer 2 (only those that where detected during execution)\nREPORT_VEC: contains the CVEs for which we found suspicious traces\nREPORT is an intermidiate report of Layer 1 containing the block counts')
-    
+    if skip == True:
+        save = my_folder + "/report.json"
+        with open(save.replace('//', '/'), 'w') as myfile:
+            json.dump(report2, myfile)
+        save = my_folder + "/cvereport.json"
+        with open(save.replace('//', '/'), 'w') as myfile:
+            json.dump(report, myfile) 
+        print('We created Skip files.\nTo use them please save them in the output folder and set -s')    
+    print('All tasks done, please refer to FinalReport.txt for our resutls\n')
+        
 
 if __name__ == '__main__':
-    #cos_list = [['AOKP', 9],['ArrowOS', 13],['calyxOS', 14],['crDroid', 15],['dotOS', 12],['evolutionX', 15],['GrapheneOS', 15],['LinageOS/21_0', 14],['LinageOS/22_1', 15],['replicant', 15],['ResurrectionX', 10]]
-    cos_list = [['LinageOS', 12],['LinageOS_20_0', 13],['paranoid', 13]]
-    
-    for cos in cos_list:
-        try:
-            run(cos)
-            print('sleeping 5 seconds...')
-            time.sleep(5)
-        except:
-            continue
+    run()
         
