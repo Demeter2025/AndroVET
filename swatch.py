@@ -371,7 +371,7 @@ def task01(item):
         return [None,  {'CVE': item['CVE'], 'ID': item['ID'], 'file': tmp0}]
    
 
-def run(cos):
+def run():
     parser = argparse.ArgumentParser(description="AndroVET")
     parser.add_argument('-i', '--input', required=True, help='Input COS root folder')
     parser.add_argument('-o', '--output', required=True, help='Output folder')
