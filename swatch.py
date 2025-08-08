@@ -62,12 +62,12 @@ def task01(item):
     struct = item['struct'].strip()
     if struct == '/':
         struct = ''
-    tmp0 = my_folder + struct +f
+    tmp0 = argv1 + struct +f
     tmp_arr = [tmp0]
     
     if not os.path.exists(tmp0):
         optional_path = True
-        possible = find_all(tmp0 , my_folder + item['struct'].strip())
+        possible = find_all(tmp0 , argv1 + item['struct'].strip())
         if possible is None or len(possible) == 0 or possible == 'error':
             return [None,  {'CVE': item['CVE'], 'ID': item['ID'], 'file': tmp0}]
             
@@ -384,8 +384,6 @@ def run():
     args = parser.parse_args()
     
     start = datetime.now()
-    global my_folder
-    my_folder = args.input
     testing = args.skip
     global report
     report = list()
@@ -393,9 +391,13 @@ def run():
     report2 = list()
     failed = dict()
     
-    
+    global argv1
     argv1 = args.input
-    argv2 = args.output 
+    if argv1.endswith('/'):
+        argv1 = argv2[:-1] 
+    argv2 = args.output
+    if argv2.endswith('/'):
+        argv2 = argv2[:-1] 
     argv4 = args.threshold
     
 
@@ -645,7 +647,7 @@ def run():
     skip = False
     with open(save.replace('//', '/'), 'w') as myfile:
         try:
-            myfile.write(f'REPORT FOR ' + {my_folder.split('/')[-1]} + '\nDETECTED CVEs:\n' )
+            myfile.write(f'REPORT FOR ' + {argv1.split('/')[-1]} + '\nDETECTED CVEs:\n' )
             myfile.write('Elapsed Time = ' + str(end - start) + '\n')
             string = ",".join(final_report)
             myfile.write('WE FOUND TRACES OF = ' + str(len(final_report)) +  'CVEs\nTHE COMPLETE LIST IS:\n' + string + '\nSEVERITY DISTRIBUTION:\n')
@@ -666,10 +668,10 @@ def run():
             skip = True
         myfile.close()   
     if skip == True:
-        save = my_folder + "/report.json"
+        save = argv2 + "/report.json"
         with open(save.replace('//', '/'), 'w') as myfile:
             json.dump(report2, myfile)
-        save = my_folder + "/cvereport.json"
+        save = argv2 + "/cvereport.json"
         with open(save.replace('//', '/'), 'w') as myfile:
             json.dump(report, myfile) 
         print('We created Skip files.\nTo use them please save them in the output folder and set -s')    
@@ -678,4 +680,3 @@ def run():
 
 if __name__ == '__main__':
     run()
-        
