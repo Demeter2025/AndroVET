@@ -376,7 +376,6 @@ def run():
     parser.add_argument('-i', '--input', required=True, help='Input COS root folder')
     parser.add_argument('-o', '--output', required=True, help='Output folder')
     parser.add_argument('-t', '--threshold', type=float, default=85.5, help='Similarity threshold value')
-    parser.add_argument('-s', '--skip', type=bool, default=False, help='Skip Precision if you have skip files')
     parser.add_argument('-s', '--skip', action='store_true', help='Skip Precision Layer IF you have skip files')
     parser.add_argument('-d', '--database', default='mydata', help='database name')
     parser.add_argument('-du', '--dbuser', default='root', help='database user')
