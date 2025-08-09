@@ -626,7 +626,7 @@ def run():
     
     analisys = counts.calculate(final_report, common)
 
-    detail = defaultdict()
+    detail = defaultdict(list)
     for entry in report:
         detail[entry['CVE']].append(entry)
     save = argv2 + '/affected_files.txt'
