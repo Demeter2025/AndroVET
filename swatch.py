@@ -534,7 +534,8 @@ def run():
             debug = True
         except Exception as e:
             print(f'We could not find your skip files, are you sure they are in the output directory?.\n{e}')
-
+            sys.exit()
+           
     print('\nStarting Abstraction Layer ...')
     
     [records, cves, bugs2] = tools.unique(report2)
