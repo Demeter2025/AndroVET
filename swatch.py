@@ -647,7 +647,7 @@ def run():
     skip = False
     with open(save.replace('//', '/'), 'w') as myfile:
         try:
-            myfile.write(f'REPORT FOR ' + {argv1.split('/')[-1]} + '\nDETECTED CVEs:\n' )
+            myfile.write(f'REPORT FOR ' + {str(argv1.split('/')[-1])} + '\nDETECTED CVEs:\n' )
             myfile.write('Elapsed Time = ' + str(end - start) + '\n')
             string = ",".join(final_report)
             myfile.write('WE FOUND TRACES OF = ' + str(len(final_report)) +  'CVEs\nTHE COMPLETE LIST IS:\n' + string + '\nSEVERITY DISTRIBUTION:\n')
@@ -662,7 +662,7 @@ def run():
                     string = ",".join(analisys[tag])
                     myfile.write(string + '\n')
                 myfile.write('\n===================================================\n')
-        except:
+        except Exception as e:
             myfile0.write(f'Something went wrong: \n{e}')
             myfile0.write(f'We created skip files for you to run only Abstraction\nIf you find the same problem again please send us the skip files and the error')
             skip = True
