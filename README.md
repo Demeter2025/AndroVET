@@ -3,7 +3,7 @@
 
 AndroVET is an android based custom OS vulnerability exploration tool. It is tailored for Android custom OS but it can be used in any other system by replacing the bug diff code database.
 
-AndroVET abstraction layer supports C, C++, Java and Kotlin. The precision layer works with any programming language.
+AndroVET abstraction layer supports header files, C, C++, Java and Kotlin. The precision layer works with any programming language.
 
 ## WHAT YOU NEED
 Before using AndoroVet please make sure you installed:
