@@ -394,7 +394,7 @@ def run():
     global argv1
     argv1 = args.input
     if argv1.endswith('/'):
-        argv1 = argv2[:-1] 
+        argv1 = argv1[:-1] 
     argv2 = args.output
     if argv2.endswith('/'):
         argv2 = argv2[:-1] 
