@@ -23,6 +23,8 @@ open the web browser and navigate to localhost (127.0.0.1)
 select MyPHPAdmin
 create a new database called "mydata"
 import bugs.sql and common.sql.
+Please note that these files may exceed teh maximum size allowed by the default PHP configuration.
+If you get an max_size error, please open /opt/lammp/php.ini and increase teh value as needed.
 
 the lampp SQL server MUST be ACTIVE to use AndroVET.
 
