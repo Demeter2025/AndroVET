@@ -2,7 +2,10 @@ import copy
 import os
 import re
 from difflib import SequenceMatcher
-
+import parse_vec
+import comp_vec
+from collections import Counter
+import html
 
 def fix_used_context(used2, buffer, set_lines=None):
     
@@ -165,38 +168,6 @@ def fix_used_check(used_check, change_indices):
 
 
 
-def find_patch_comb(buffer, patch, aft_strip, bfr_strip):
-    def control(j, aft_strip, bfr_strip):
-        lines = [x.strip() for x in buffer[max(j-5, 0):min(j+5, len(buffer)-1)]]
-        return any(x in lines for x in aft_strip) and any(x in lines for x in bfr_strip)
-    my_neg = {'', '{','}'}
-    new_patch = []
-    indices = {}
-    for line in patch:
-        sequence = []
-        for start in range(len(buffer)):
-            if start == len(buffer) - 1:
-                new_patch.append(line)
-                continue
-            if buffer[start].strip() not in my_neg and buffer[start].strip() in line:
-                sequence.append(buffer[start].strip())
-                for j in range(start+1, min(start+5, len(buffer)-1), 1):
-                    if buffer[j].strip() in my_neg:
-                        continue
-                    elif buffer[j].strip() in line and control(j,aft_strip, bfr_strip):
-                        sequence.append(buffer[j].strip())
-                    else:
-                        break
-            if len(sequence) > 1:
-                new_patch += sequence
-                indices[line] = sequence
-                break
-            else:
-                sequence = []
-    return [new_patch, indices] 
-
-
-
 def group_db(data_list):
     
     if not data_list:
@@ -262,28 +233,6 @@ def calc_levels(lines):
 
     
     levels0 = [x for x in levels.values()]
-    # result = {}
-    # result[0] = []
-    # counter = 0
-    # for index, input in enumerate(levels0):
-    #     if input == 0:
-    #         result[0].append(index)
-    #     else:
-    #         if index == 0 or levels0[index - 1] == 0:
-    #             counter += 1
-    #             st = index
-    #         try:
-    #             if levels0[index + 1] == 0:
-    #                 result[counter] = [st, index]
-    #         except:
-    #             result[counter] = [st, index]
-    # for key in result.keys():
-    #     if key == 0:
-    #         for value in result[key]:
-    #             levels0[value] == 0
-    #     else:
-    #         for ind in range(result[key][0], result[key][1]+1):
-    #             levels0[ind] = key
     
     for ind, line in enumerate(lines):
         if line.strip() in exceptions or len(line.strip()) < 1 or line.strip().startswith('android_errorWriteLog'):
@@ -947,10 +896,10 @@ def check_combinations_and_match(t_line, line, t_line_subs, line_subs):
 
 
 def placeholder_check(line, plus_strip):
-    pattern = r"(?=.*[A-Z_])[A-Z_]+"
+    pattern = r"(?=.*[a-z_])[a-z_]+"
     line_subs = re.findall(pattern, line)
     line_subs = [x.strip() for x in line_subs if len(x) > 3 and '_' in x]
-    if len(line_subs) > 0 and '_FLAG' in line: #this function only tries to fix imported flags (is common to see these particular changes in the patch over time) any other op will be treated normally. 
+    if len(line_subs) > 0 and '_flag' in line: #this function only tries to fix imported flags (is common to see these particular changes in the patch over time) any other op will be treated normally. 
         for t_line in plus_strip:
             t_line_subs = re.findall(pattern, t_line)
             t_line_subs = [x.strip() for x in t_line_subs if len(x) > 0 and '_' in x]
@@ -1320,8 +1269,13 @@ def split2_param(params, mode=0):
 
 
 def cl(line):
-    line = line.replace('(Locale.ROOT)','()').replace('(Locale.ENGLISH)','()').strip()
-    return line
+    line = re.sub(r'\(Locale\.[^)]+\)', '()', line) #this is for tags.. 
+    if line.strip().startswith("#include"):
+        line.replace('<', '"')
+        line.replace('>', '"')
+        if '/' in line:
+            line = '#include "' + line.split('/')[-1]
+    return html.unescape(line)
 
 def combine_ifs(arr):
     try:
@@ -2218,16 +2172,16 @@ def test_adding(bfr, aft, buffer, plus_strip, used2, bfr_strip, aft_strip, minus
                 if len_patch > 1 and plus_count - comm_val >= (len_patch - comm_val) / 2:
                     return True
            
-            t_val = 0.75
+            t_val = 0.70
             if len_patch >= 20:
                 t_val = 0.6           
-            if plus_count == len_patch or (len_patch > 3 and plus_count >= int(len_patch*t_val)): #found all of the added files, the patch is present. (we allow a 75% of the patch if the patch is at leas 4 lines.)
+            if plus_count == len_patch or (len_patch > 3 and plus_count >= int(len_patch*t_val)): #found all of the added files, the patch is present. (we allow a 70% of the patch if the patch is at leas 4 lines.)
                 if len(plus_strip) == 1:
                     if (extension in valid and con_counter > 0) or extension not in valid:
                         return True
                 else:
                     return True
-            elif len(plus_strip) > 10 and plus_count >= (len(plus_strip) * 7 / 10): #we saw some changes hard to discard and that may affect the second layer too. In large patches the 70% of the patch is enough to assure the file is not vulnerable.
+            elif len(plus_strip) > 10 and plus_count >= (len(plus_strip) * 7 / 10): #we saw some changes hard to discard and that may affect the second layer too. In large patches the 70% of the patch is enough the missmatch can be something we lost or was deleted.
                 return True
             else:
                 continue
@@ -2309,6 +2263,7 @@ def clean(context, mode=0):
     for line in context:
         if len(line.strip()) > 0:
             #this replace the html special characters read by the scrapper
+            # we use html unescape in the raw lines, but some of these survive so we make sure.
             line = line.replace("&lt;", "<")
             line = line.replace("&gt;", ">")
             line = line.replace("&amp;", "&")
@@ -2515,11 +2470,6 @@ def compare_block(lengths, bfr_strip, plus_strip, minus_strip, aft_strip, buffer
                 if not patch_precence:
                     reset, plus, before, after, minus = fix_used_context(used_check, buffer, bfr_strip + plus_strip + minus_strip + aft_strip )
                     patch_precence = check_for_patch(buffer, plus, minus, after, before, reset)
-                    # new_patch, change_indices = find_patch_comb(buffer, plus_strip, aft_strip, bfr_strip)
-                    # if len(new_patch) > len(plus_strip):
-                    #     used_check_2 = fix_used_check(used_check, change_indices)
-                    #     patch_precence = check_for_patch(buffer, new_patch, minus_strip, aft_strip, bfr_strip, used_check_2)
-                    
                 if patch_precence == False:
                     if check_indices(my_indices, buffer) == True:
                         return True
@@ -2530,14 +2480,46 @@ def compare_block(lengths, bfr_strip, plus_strip, minus_strip, aft_strip, buffer
     else:
         return False
 
-        #========================================================================================================================
-        # TODO: use teh parent function to check the change-site but it may affect runtime. 
-        # we dont know how the context was modified... we need a better way to decide, 
-        # but our set of transofrmations will normally be enough. (the find parent in thi file is a place holder, do not work!!)
-        # the real find_parent is long (465 lines) and makes the runtime considerable slower...
-        #========================================================================================================================
+        #=====================================================================================================================================
+        # TODO: use the parent function to check the change-site, we tried  but it affects runtime too much. 
+        # we dont know how the context was modified...
+        #======================================================================================================================================
+
+def abstraction(ele):
+    argv4 = ele[1][0]
+    final_vals = []
+    det = []
+    not_det = []
+    for i in ele[1][1]: 
+        if i['import'] == True: 
+            continue
+        #check the extension
+        ext = i['file'].split(".")[-1].strip()
+        valid = ['cpp', 'cc', 'c', 'cxx', 'java', 'kt', 'kts', 'ktm']
+        if ext in valid:
+            [vector, vecs] = parse_vec.parse(i['plus'], i['context_bfr'], i['context_aft'], i['file'], ext, i['range'])
+            values = []
+            if len(vecs) > 50 or len(vecs) == 0 or vecs[0] == 'Layer_1':
+                continue
+            elif vector == 'comments' or vecs[0] == 'checked':
+                values.append(100)
+                continue
+            for v in vecs:
+                values.append(comp_vec.compare_arrays(vector, v))
+            final_vals.append(max(values))
+            if max(values) >= argv4:
+                det.append(i)
+            else:
+                not_det.append(i)
+        else:
+            final_vals.append(0)       
         
-   
+    if len(final_vals) == 1 and final_vals[0] >= argv4:
+        return [0, ele[1][1], [det, not_det]] 
+    elif len(final_vals) > 1 and check_vals(final_vals, argv4) ==  True and sum(final_vals) / len(final_vals) >= argv4: 
+        return [0, ele[1][1], [det, not_det]] 
+    else:
+        return [1, ele[1][1][0]['CVE'], [det, not_det]] 
 def unique (array):
     total = []
     cve = []
@@ -2550,4 +2532,13 @@ def unique (array):
             bug.append(item['bug'].strip())
     return [total, cve, bug]
 
-
+def fix_vals(report2, det):
+    pair_counts = Counter((d["CVE"], d["BUG"]) for d in det)
+    for ind, entry in enumerate(report2):
+        key = (entry.get("CVE"), entry.get("bug"))
+        curr = int(entry['found'])
+        found = pair_counts.get(key, 0)
+        entry['found'] = max(0, curr - found)
+        entry['ratio'] = float(entry['found'] / entry['total'])
+        report2[ind] = {k:v for k,v in entry.items() if k not in ['found','total']}
+    return report2

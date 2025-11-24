@@ -10,10 +10,11 @@ import counts
 import sys
 import re
 from collections import defaultdict
-import time
 from datetime import datetime
 import gc
 import argparse
+import time
+import html
 
 
 def test(rep):
@@ -96,9 +97,12 @@ def task01(item):
     if extension not in ['c', 'h', 'ccp', 'ccx']:
         comments.append('#')
     my_type = 'replace'
-    if (item['rem']) == 0:
-        my_type = 'add'
+    if len(minus_strip) == 0:
+        my_type = 'add'     
     
+    import_val = False
+    if all(x.startswith('import') for x in minus_strip):
+        import_val = True
     t = { 
             'ID': item['ID'],
             'CVE': item['CVE'],
@@ -113,20 +117,23 @@ def task01(item):
             'tabulation' : False,
             'commented' : False,
             'no_rf': False,
-            'optional_path_no_patch_check': False,
+            'optional_path_no_patch_check': optional_path,
             'inconclusive' : False,
-            'import' : 'patch found',
+            'import' : import_val,
             'patch_found' : True
 
         }
+    if optional_path == True and my_type == 'add': #this makes sure we don look missing patched in infered files. 
+        del aft, bfr, rem, plus, plus_strip, minus_strip, aft_strip, bfr_strip
+        gc.collect()
+        return [None, {'CVE': item['CVE'], 'ID': item['ID'], 'file': tmp0}] #this add them to avoid
+        
     if minus_strip == plus_strip:
         t['tabulation'] = True
         del aft, bfr, rem, plus, plus_strip, minus_strip, aft_strip, bfr_strip
         gc.collect()
         return [t, {}]
-    import_val = False
-    if all(x.startswith('import') for x in minus_strip):
-        import_val = True
+    
     if all(any(line.strip().startswith(k) for k in comments) for line in plus_strip) and len(minus_strip) == 0:
         t['commented'] = True
         del aft, bfr, rem, plus, plus_strip, minus_strip, aft_strip, bfr_strip
@@ -152,7 +159,8 @@ def task01(item):
                 tmp_arr_2.append(element_f)
         if len(tmp_arr_2) > 0:
             tmp_arr = tmp_arr_2
-
+    
+    
     for file_count, tmp in enumerate(tmp_arr):
         buffer = 'none'
         encoders = ['utf-8', 'windows-1252', 'iso-8859-1', 'ascii', 'latin1']
@@ -169,9 +177,11 @@ def task01(item):
             gc.collect()
             return [None,  {'CVE': item['CVE'], 'ID': item['ID'], 'file': tmp0}]
         for ind, line in enumerate(buffer):
-            buffer[ind] = re.sub(r'\s+', ' ', line).lower().strip()
+            if line.strip().startswith('#include'):
+                line = tools.cl(line)
+            buffer[ind] = html.unescape(re.sub(r'\s+', ' ', line).lower().strip())
         buffer.append('testLine - avoiding errors on short files')
-                     
+        
         used = {
             'plus':{},
             'minus':{},
@@ -244,7 +254,7 @@ def task01(item):
                         'tablulation' : False,
                         'commented' : False,
                         'no_rf' : False,
-                        'optional_path_no_patch_check': False,
+                        'optional_path_no_patch_check': optional_path,
                         'inconclusive' : False,
                         'patch_found' : False
                     }
@@ -269,10 +279,10 @@ def task01(item):
                             'context_aft' : item['context_aft'],
                             'file' : tmp,
                             'tablulation' : False,
-                            'commented' : ret_stat,
+                            'commented' : False,
                             'no_rf': True,
-                            'import' : False,
-                            'optional_path_no_patch_check': False,
+                            'import' : ret_stat,
+                            'optional_path_no_patch_check': optional_path,
                             'inconclusive' : False,
                             'patch_found' : True
 
@@ -293,7 +303,7 @@ def task01(item):
                             'tabulation' : False,
                             'commented' : False,
                             'no_rf': False,
-                            'optional_path_no_patch_check': True,
+                            'optional_path_no_patch_check': optional_path,
                             'inconclusive' : False,
                             'import' : ret_stat,
                             'patch_found' : True
@@ -313,6 +323,7 @@ def task01(item):
                             'file' : tmp,
                             'type' : 'add',
                             'inconclusive' : False,
+                            'optional_path_no_patch_check': optional_path,
                             'import' : ret_stat,
                             'patch_found' : False
                         }
@@ -332,7 +343,7 @@ def task01(item):
                             'tabulation' : False,
                             'commented' : False,
                             'no_rf': False,
-                            'optional_path_no_patch_check': False,
+                            'optional_path_no_patch_check': optional_path,
                             'inconclusive' : False,
                             'import' : ret_stat,
                             'patch_found' : True
@@ -342,20 +353,28 @@ def task01(item):
                     if len(my_results) == 0:
                         del aft, bfr, rem, plus, plus_strip, minus_strip, aft_strip, bfr_strip, buffer
                         gc.collect()
-                        t['inconclusive'] = True
-                        return [t, []]
+                        if my_type == 'replace':
+                            t['patch_found'] = True
+                            return [t, []]
+                        else:
+                            t['inconclusive'] = True
+                            return [t, []]
     del aft, bfr, rem, plus, plus_strip, minus_strip, aft_strip, bfr_strip, buffer
     gc.collect()
     if len(my_results) == 0:
-        t['inconclusive'] = True
-        return [t, []]
+        if my_type == 'replace':
+            t['patch_found'] = True
+            return [t, []]
+        else:
+            t['inconclusive'] = True
+            return [t, []]
+
     if 'hardware' in tmp0:
         for i2 in my_results:
             if 'CVE' in my_results[i2]['CVE']:
                 return [my_results[i2], []]
         t['inconclusive'] = True
         return [t, []]
-                               
     else:
         for i2 in my_results:
             if my_results[i2]['patch_found'] == True:
@@ -369,14 +388,12 @@ def task01(item):
 
     except:    
         return [None,  {'CVE': item['CVE'], 'ID': item['ID'], 'file': tmp0}]
-   
-
-def run():
+    
+def run(argv01, argv02, ver0):
     parser = argparse.ArgumentParser(description="AndroVET")
     parser.add_argument('-i', '--input', required=True, help='Input COS root folder')
     parser.add_argument('-o', '--output', required=True, help='Output folder')
     parser.add_argument('-t', '--threshold', type=float, default=85.5, help='Similarity threshold value')
-    parser.add_argument('-s', '--skip', action='store_true', help='Skip Precision Layer IF you have skip files')
     parser.add_argument('-d', '--database', default='mydata', help='database name')
     parser.add_argument('-du', '--dbuser', default='root', help='database user')
     parser.add_argument('-dp', '--dbpass', default='', help='database password')
@@ -384,7 +401,6 @@ def run():
     args = parser.parse_args()
     
     start = datetime.now()
-    testing = args.skip
     global report
     report = list()
     global report2
@@ -399,6 +415,8 @@ def run():
     if argv2.endswith('/'):
         argv2 = argv2[:-1] 
     argv4 = args.threshold
+        
+    
     
 
     if not os.path.exists(argv1):
@@ -423,10 +441,10 @@ def run():
     print('Reading data bases...\n')
     try:
         link = mysql.connector.connect(user=f'{args.dbuser}', password=f'{args.dbpass}',
-                              host='127.0.0.1',
-                              database=f'{args.database}',
-                              use_pure=False)
-    
+            host='127.0.0.1',
+            database=f'{args.database}',
+            use_pure=False)
+
         sql_select_Query = "SELECT * from bugs WHERE ID > 0"; 
         sql_select_Query2 = "SELECT * from common WHERE ID > 0"
         cursor = link.cursor(dictionary=True)
@@ -463,43 +481,47 @@ def run():
     global buffer
     buffer = []
 
-    if testing == False:
-        with multiprocessing.Pool() as pool:
-            report = []
-            matched = []
-            with tqdm(total=len(records)) as pbar:
-                for result in pool.imap(task01, records):
-                    pbar.update(1)
-                    result_val, avoid_res = result[0], result[1]
-                    if result_val is not None:
-                        if result_val['patch_found'] == True:
-                            matched.append(result_val)
-                        else:
-                            report.append(result_val)
-                                    
-                    elif len(avoid_res) > 0:
-                        my_k = avoid_res['CVE'] 
-                        my_v = {'ID' : avoid_res['ID'], 'file': avoid_res['file']} 
-                        if my_k in failed.keys():
-                            failed[my_k].append(my_v)
-                        else:
-                            failed[my_k] = [my_v]
+    with multiprocessing.Pool() as pool:
+        report = []
+        patch_matched = []
+        with tqdm(total=len(records)) as pbar:
+            for result in pool.imap(task01, records):
+                pbar.update(1)
+                result_val, avoid_res = result[0], result[1]
+                if result_val is not None:
+                    if result_val['patch_found'] == True:
+                        patch_matched.append(result_val)
+                    else:
+                        report.append(result_val)
+                                
+                elif len(avoid_res) > 0:
+                    my_k = avoid_res['CVE'] 
+                    my_v = {'ID' : avoid_res['ID'], 'file': avoid_res['file']} 
+                    if my_k in failed.keys():
+                        failed[my_k].append(my_v)
+                    else:
+                        failed[my_k] = [my_v]
+
 
     for row in blocks:
         consider = False
         ty = 'add'        
         res = [x for x in report if x['CVE'].strip() == row['CVE'] and x['BUG'].strip() == row['bug'].strip()]
+        to_del = []
         for ind_x, x in enumerate(res):
             if x['type'] ==  'replace' and x['import'] == True:
                 comp_list = grouped_results[x['CVE']]
-                del_ind = ind_x
                 for y in comp_list:
                     add = [g.strip() for g in y['plus'].split(',+') if len(g.strip()) > 0]
                     for k in add:
                         if k.startswith('+'):
                             k = k[1:]
                         if k in x['rem']:
-                            del res[del_ind]
+                            to_del.append(ind_x)
+                            
+        res = [x for i, x in enumerate(res) if i not in to_del]
+                            
+        
         found = len(res)
         if any(x['type'] == 'replace' for x in res):
             ty = 'replace'
@@ -518,24 +540,10 @@ def run():
         }
         if len(res) > 0:
             report2.append(t)
- 
-    if testing == False:
-        test(report2)
+    
 
-    if testing == True:
-        try:
-            with open(argv2 +'/report.json', 'r') as f:
-                report2 = json.load(f)
-                f.close()
-            
-            with open(argv2 + '/cvereport.json', 'r') as f:
-                report = json.load(f)
-                f.close()
-            debug = True
-        except Exception as e:
-            print(f'We could not find your skip files, are you sure they are in the output directory?.\n{e}')
-            sys.exit()
-           
+    test(report2)
+
     print('\nStarting Abstraction Layer ...')
     
     [records, cves, bugs2] = tools.unique(report2)
@@ -553,48 +561,38 @@ def run():
             final_report.append(item['CVE'])
         else:
             add_only.append(item)
-            my_list[item['CVE'].strip()] = list_comp
+            my_list[item['CVE'].strip()] = [argv4, list_comp]
     
+
     print("PATCH ONLY CVEs = " + str(len(add_only)))
     print("REPLECEMENT CVEs = " + str(len(replace)))
     print('========================================')
     print('Bulding block vectors...\n')
     
-
-    with tqdm(total=len(my_list)) as pbar:
-        
-        for element in my_list:
-             
-            pbar.update(1)
-            final_vals = []
-            for i in my_list[element]:
-                
-                if i['import'] == True: 
-                    continue
-                #check the extension
-                ext = i['file'].split(".")[-1].strip()
-                valid = ['cpp', 'cc', 'c', 'cxx', 'java', 'kt', 'kts', 'ktm']
-                if ext in valid:
-                    [vector, vecs] = parse_vec.parse(i['plus'], i['context_bfr'], i['context_aft'], i['file'], ext, i['range'])
-                    values = []
-                    if len(vecs) > 50 or len(vecs) == 0 or vecs[0] == 'Layer_1':
-                        continue
-                    elif vector == 'comments' or vecs[0] == 'checked':
-                        values.append(100)
-                        continue
-                    for v in vecs:
-                        values.append(comp_vec.compare_arrays(vector, v))
-                    final_vals.append(max(values))
+    det = []
+    not_det = []
+    with multiprocessing.Pool() as pool:
+        with tqdm(total=len(my_list)) as pbar:
+            for result in pool.imap(tools.abstraction, my_list.items()):
+                pbar.update(1)
+                if result[0] == 1:
+                    final_report.append(result[1])    
                 else:
-                    final_vals.append(0) 
-            if len(final_vals) == 1 and final_vals[0] >= argv4:
-                detected.append(my_list[element])
-            elif len(final_vals) > 1 and tools.check_vals(final_vals, argv4) ==  True and sum(final_vals) / len(final_vals) >= 80: 
-                detected.append(my_list[element])
-            else:
-                final_report.append(element) 
+                    detected.append(result[1])
+                de = result[2]
+                det += de[0]
+                not_det += de[1]
+
+
+    patch_matched += det
+    report = [x for x in report if x not in patch_matched]
+    report2 = tools.fix_vals(report2, det)
+    with open(argv2 + "/detection_report.json", 'w') as myfile:
+        json.dump(report, myfile)
+        myfile.close()
+    with open(argv2 + "/ratios.json", 'w') as myfile:
+        json.dump(report2, myfile)    
     
-      
     ver = args.version 
     results = []
     arr = [row for row in common if row['CVE'] in final_report]
@@ -634,21 +632,26 @@ def run():
     with open(save.replace('//', '/'), 'w') as myfile0:
         try:
             for k,v in detail.items():
+                used_dat = set()
                 for member in v:
+                    key = (member['type'], str(member['CVE']), str(member['BUG']), str(member['file']))
+                    if key in used_dat:
+                        continue
+                    used_dat.add(key)
                     if member['type'] == 'add':
-                        myfile0.write(f"[+] We found traces of a missing patch for {member['CVE']} in: {member['file']}\n")
+                        myfile0.write("[+] We found traces of a missing patch for " + str(member['CVE']) + " - BUG: " + str(member['BUG']) + " in: " + str(member['file']) + "\n")
                     elif member['type'] == 'replace':
-                        myfile0.write(f"[+] We found traces of {member['CVE']} in: {member['file']}\n")
+                        myfile0.write("[-] We found traces of " + str(member['CVE'])  + " - BUG: " + str(member['BUG']) + " in: " + str(member['file']) + "\n")
 
         except Exception as e:
-            myfile0.write(f'Something went wrong: \n{e}\n If the final report cannot be generated you will find skip files...')
+            myfile0.write(f'Something went wrong: \n{e}\n If the problem persists please contact us...')
         
     save = argv2 + "/final_report.txt"
     end = datetime.now()
     skip = False
     with open(save.replace('//', '/'), 'w') as myfile:
         try:
-            myfile.write(f'REPORT FOR ' + {str(argv1.split('/')[-1])} + '\nDETECTED CVEs:\n' )
+            myfile.write('REPORT FOR ' + str(argv1.split('/')[-1]) + '\nDETECTED CVEs:\n' )
             myfile.write('Elapsed Time = ' + str(end - start) + '\n')
             string = ",".join(final_report)
             myfile.write('WE FOUND TRACES OF = ' + str(len(final_report)) +  'CVEs\nTHE COMPLETE LIST IS:\n' + string + '\nSEVERITY DISTRIBUTION:\n')
@@ -664,19 +667,11 @@ def run():
                     myfile.write(string + '\n')
                 myfile.write('\n===================================================\n')
         except Exception as e:
-            myfile0.write(f'Something went wrong: \n{e}')
-            myfile0.write(f'We created skip files for you to run only Abstraction\nIf you find the same problem again please send us the skip files and the error')
+            myfile.write(f'Something went wrong: \n{e}')
+            myfile.write(f'If you find the same problem again please send us any output file created and the error.')
             skip = True
         myfile.close()   
-    if skip == True:
-        save = argv2 + "/report.json"
-        with open(save.replace('//', '/'), 'w') as myfile:
-            json.dump(report2, myfile)
-        save = argv2 + "/cvereport.json"
-        with open(save.replace('//', '/'), 'w') as myfile:
-            json.dump(report, myfile) 
-        print('We created Skip files.\nTo use them please save them in the output folder and set -s')    
-    print('All tasks done, please refer to FinalReport.txt for our resutls\n')
+    print('All tasks done, please refer to FinalReport.txt for our ranked recommended resutls\nThe entire detection list is provided in the detection report file.')
         
 
 if __name__ == '__main__':

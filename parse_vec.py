@@ -321,8 +321,9 @@ def gen_vector(plus_s, bfr_s, aft_s, extension, prev_lines, mode=0):
     for inli, lin in enumerate(lines):
         pattern = r'/\*(.*?)\*/'
         lines[inli] = re.sub(pattern, '', lin)
-         
+    
     vector = []
+    lines = [x.strip() for x in lines if x.strip() not in exceptions]
     for lnm, line in enumerate(lines):
         line = tools.clean_params(line).strip()
         if line.startswith('Powered by') or line =='}' or len(line) == 0 or line.startswith('try') or line.startswith('} catch') :
@@ -393,7 +394,6 @@ def gen_vector(plus_s, bfr_s, aft_s, extension, prev_lines, mode=0):
                                 my_str = line[op_ind[0]:ind+1]
                                 params.append(my_str)
                                 line.replace(my_str, '')
-                                           
                         
                     p01 = line[line.find('(')+1:line.rfind(')')]
                     if '(' in p01 and ')' in p01:
@@ -427,7 +427,7 @@ def gen_vector(plus_s, bfr_s, aft_s, extension, prev_lines, mode=0):
                                 params.append(p09.strip()) 
                 values = []
                 params = tools.split2_param(params, 1)
-                params = [x.strip() for x in params if len(x.strip()) > 0]
+                params = [x.strip() for x in params if len(x.strip()) > 1]
                 for param in params:
                     if param.startswith('!'):
                         param = param[1:]
