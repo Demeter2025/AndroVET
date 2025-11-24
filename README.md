@@ -36,11 +36,11 @@ Please note, AndroVET was tailored with accuracy in mind and can consume a consi
 
 ## HOW TO USE AndroVET
 
-usage: file.py [-h] -i INPUT -o OUTPUT [-t THRESHOLD] [-s SKIP]
+usage: file.py [-h] -i INPUT -o OUTPUT [-t THRESHOLD]
                [-d DATABASE] [-du DBUSER] [-dp DBPASS] -v VERSION
 
 
-<pre><br>-h, --help    show this help message and exit <br>-i INPUT, --input INPUT    Input COS root folder <br>-o OUTPUT, --output OUTPUT    Output folder <br>-t THRESHOLD, --threshold THRESHOLD    Similarity threshold value <br>-s, --skip    Skip Precision if you have skip files <br>-d DATABASE, --database DATABASE    database name <br>-du DBUSER, --dbuser DBUSER    database user <br>-dp DBPASS, --dbpass DBPASS    database password <br>-v VERSION, --version VERSION    Set up the Android version (and below)</pre>
+<pre><br>-h, --help    show this help message and exit <br>-i INPUT, --input INPUT    Input COS root folder <br>-o OUTPUT, --output OUTPUT    Output folder <br>-t THRESHOLD, --threshold THRESHOLD    Similarity threshold value <br>-d DATABASE, --database DATABASE    database name <br>-du DBUSER, --dbuser DBUSER    database user <br>-dp DBPASS, --dbpass DBPASS    database password <br>-v VERSION, --version VERSION    Set up the Android version (and below)</pre>
 
 The default values are:
 database = 'mydata'
@@ -54,9 +54,7 @@ There are 3 required arguments : input , output, and version).
 
 ## CONTACT US
 
-This is a research open source project, feel free to use it and modify it as needed. If you find any problem executing AndroVET please contact us at researchmail016@gmail.com
-We will do our best to answer your questions.
-
+This is a research open source project, feel free to use it and modify it as needed.
 ## License
 
     Copyright [2025] [---------]
