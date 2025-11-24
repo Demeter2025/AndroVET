@@ -46,8 +46,7 @@ The default values are:
 database = 'mydata'
 dbuser = 'root'
 dbpassword = ''
-threshold = 85.5
-skip = Fasle
+threshold = 70
 
 ## REQUIRED ARGUMENTS
 There are 3 required arguments : input , output, and version). 
