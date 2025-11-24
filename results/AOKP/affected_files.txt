@@ -1,0 +1,412 @@
+[+] We found traces of a missing patch for CVE-2014-9028 - BUG: ANDROID-18872897 in: /media/csl/ACOS/AOKP/external/flac/libFLAC/stream_decoder.c
+[+] We found traces of a missing patch for CVE-2015-3878 - BUG: ANDROID-23345192 in: /media/csl/ACOS/AOKP/frameworks/base/packages/SystemUI/src/com/android/systemui/media/MediaProjectionPermissionActivity.java
+[+] We found traces of a missing patch for CVE-2015-3847 - BUG: ANDROID-22343270 in: /media/csl/ACOS/AOKP/packages/apps/Bluetooth/src/com/android/bluetooth/map/BluetoothMapContentObserver.java
+[+] We found traces of a missing patch for CVE-2015-6607 - BUG: ANDROID-20099586 in: /media/csl/ACOS/AOKP/external/sqlite/dist/orig/shell.c
+[-] We found traces of CVE-2015-6607 - BUG: ANDROID-20099586 in: /media/csl/ACOS/AOKP/external/sqlite/dist/orig/sqlite3.c
+[+] We found traces of a missing patch for CVE-2015-6607 - BUG: ANDROID-20099586 in: /media/csl/ACOS/AOKP/external/sqlite/dist/orig/sqlite3.c
+[-] We found traces of CVE-2015-6607 - BUG: ANDROID-20099586 in: /media/csl/ACOS/AOKP/external/sqlite/dist/orig/sqlite3.h
+[+] We found traces of a missing patch for CVE-2015-6607 - BUG: ANDROID-20099586 in: /media/csl/ACOS/AOKP/external/sqlite/dist/shell.c
+[-] We found traces of CVE-2015-6607 - BUG: ANDROID-20099586 in: /media/csl/ACOS/AOKP/external/sqlite/dist/sqlite3.c
+[+] We found traces of a missing patch for CVE-2015-6607 - BUG: ANDROID-20099586 in: /media/csl/ACOS/AOKP/external/sqlite/dist/sqlite3.c
+[-] We found traces of CVE-2015-6607 - BUG: ANDROID-20099586 in: /media/csl/ACOS/AOKP/external/sqlite/dist/sqlite3.h
+[+] We found traces of a missing patch for CVE-2016-0804 - BUG: ANDROID-25070434 in: /media/csl/ACOS/AOKP/frameworks/av/media/libmediaplayerservice/nuplayer/GenericSource.cpp
+[+] We found traces of a missing patch for CVE-2016-0831 - BUG: ANDROID-25778215 in: /media/csl/ACOS/AOKP/frameworks/opt/telephony/src/java/com/android/internal/telephony/PhoneSubInfoController.java
+[+] We found traces of a missing patch for CVE-2016-0847 - BUG: ANDROID-26864502 in: /media/csl/ACOS/AOKP/packages/services/Telecomm/src/com/android/server/telecom/TelecomServiceImpl.java
+[+] We found traces of a missing patch for CVE-2016-2414 - BUG: ANDROID-26413177 in: /media/csl/ACOS/AOKP/frameworks/minikin/libs/minikin/SparseBitSet.cpp
+[+] We found traces of a missing patch for CVE-2016-2428 - BUG: 26751339 in: /media/csl/ACOS/AOKP/external/aac/libAACdec/src/aacdec_drc.cpp
+[+] We found traces of a missing patch for CVE-2016-2496 - BUG: 26677796 in: /media/csl/ACOS/AOKP/frameworks/native/services/inputflinger/InputDispatcher.cpp
+[+] We found traces of a missing patch for CVE-2016-2108 - BUG: A-28175332 in: /media/csl/ACOS/AOKP/external/boringssl/src/crypto/asn1/a_int.c
+[+] We found traces of a missing patch for CVE-2016-3751 - BUG: A-23265085 in: /media/csl/ACOS/AOKP/external/libpng/CMakeLists.txt
+[+] We found traces of a missing patch for CVE-2016-3751 - BUG: A-23265085 in: /media/csl/ACOS/AOKP/external/libpng/README.android
+[+] We found traces of a missing patch for CVE-2016-3751 - BUG: A-23265085 in: /media/csl/ACOS/AOKP/external/libpng/README.version
+[-] We found traces of CVE-2016-3751 - BUG: A-23265085 in: /media/csl/ACOS/AOKP/external/libpng/contrib/gregbook/readpng2.c
+[+] We found traces of a missing patch for CVE-2016-3751 - BUG: A-23265085 in: /media/csl/ACOS/AOKP/external/libpng/contrib/libtests/pngvalid.c
+[-] We found traces of CVE-2016-3751 - BUG: A-23265085 in: /media/csl/ACOS/AOKP/external/libpng/pngread.c
+[+] We found traces of a missing patch for CVE-2016-3751 - BUG: A-23265085 in: /media/csl/ACOS/AOKP/external/libpng/pngrtran.c
+[+] We found traces of a missing patch for CVE-2016-3751 - BUG: A-23265085 in: /media/csl/ACOS/AOKP/external/libpng/pngrutil.c
+[+] We found traces of a missing patch for CVE-2016-3751 - BUG: A-23265085 in: /media/csl/ACOS/AOKP/external/libpng/pngstruct.h
+[+] We found traces of a missing patch for CVE-2016-3754 - BUG: A-28615448 in: /media/csl/ACOS/AOKP/frameworks/av/media/mediaserver/Android.mk
+[+] We found traces of a missing patch for CVE-2016-3754 - BUG: A-28615448 in: /media/csl/ACOS/AOKP/frameworks/av/media/mediaserver/main_mediaserver.cpp
+[+] We found traces of a missing patch for CVE-2016-3761 - BUG: A-28300969 in: /media/csl/ACOS/AOKP/packages/apps/Nfc/src/com/android/nfc/NfcService.java
+[+] We found traces of a missing patch for CVE-2016-3766 - BUG: A-28471206 in: /media/csl/ACOS/AOKP/frameworks/av/media/mediaserver/Android.mk
+[+] We found traces of a missing patch for CVE-2016-3766 - BUG: A-28471206 in: /media/csl/ACOS/AOKP/frameworks/av/media/mediaserver/main_mediaserver.cpp
+[+] We found traces of a missing patch for CVE-2016-3820 - BUG: A-28673410 in: /media/csl/ACOS/AOKP/external/libavc/decoder/ih264d_parse_pslice.c
+[+] We found traces of a missing patch for CVE-2016-3829 - BUG: A-29023649 in: /media/csl/ACOS/AOKP/external/libavc/decoder/ih264d_api.c
+[+] We found traces of a missing patch for CVE-2016-3834 - BUG: A-28466701 in: /media/csl/ACOS/AOKP/frameworks/av/camera/ICameraRecordingProxy.cpp
+[+] We found traces of a missing patch for CVE-2016-3834 - BUG: A-28466701 in: /media/csl/ACOS/AOKP/frameworks/av/include/camera/ICameraRecordingProxy.h
+[+] We found traces of a missing patch for CVE-2016-3834 - BUG: A-28466701 in: /media/csl/ACOS/AOKP/frameworks/av/include/media/stagefright/CameraSource.h
+[+] We found traces of a missing patch for CVE-2016-3834 - BUG: A-28466701 in: /media/csl/ACOS/AOKP/frameworks/av/media/libstagefright/CameraSource.cpp
+[+] We found traces of a missing patch for CVE-2016-3839 - BUG: A-28885210 in: /media/csl/ACOS/AOKP/system/bt/tools/hci/main.c
+[+] We found traces of a missing patch for CVE-2016-3875 - BUG: A-26251884 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/wm/WindowManagerService.java
+[+] We found traces of a missing patch for CVE-2016-3876 - BUG: A-29900345 in: /media/csl/ACOS/AOKP/frameworks/base/packages/SettingsProvider/src/com/android/providers/settings/SettingsProvider.java
+[+] We found traces of a missing patch for CVE-2016-3883 - BUG: A-28557603 in: /media/csl/ACOS/AOKP/frameworks/opt/telephony/src/java/com/android/internal/telephony/SMSDispatcher.java
+[+] We found traces of a missing patch for CVE-2016-3884 - BUG: A-29421441 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/notification/NotificationManagerService.java
+[+] We found traces of a missing patch for CVE-2016-3887 - BUG: A-29899712 in: /media/csl/ACOS/AOKP/frameworks/base/packages/SettingsProvider/src/com/android/providers/settings/SettingsProvider.java
+[+] We found traces of a missing patch for CVE-2016-3911 - BUG: A-30143607 in: /media/csl/ACOS/AOKP/frameworks/base/core/java/android/os/Process.java
+[+] We found traces of a missing patch for CVE-2016-3912 - BUG: A-30202481 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/am/ActivityManagerService.java
+[+] We found traces of a missing patch for CVE-2016-3915 - BUG: A-30591838 in: /media/csl/ACOS/AOKP/system/media/camera/src/camera_metadata.c
+[+] We found traces of a missing patch for CVE-2016-3922 - BUG: A-30202619 in: /media/csl/ACOS/AOKP/hardware/ril/libril/RilSapSocket.cpp
+[+] We found traces of a missing patch for CVE-2016-3923 - BUG: A-30647115 in: /media/csl/ACOS/AOKP/frameworks/base/services/accessibility/java/com/android/server/accessibility/AccessibilityManagerService.java
+[+] We found traces of a missing patch for CVE-2016-6701 - BUG: A-30190637 in: /media/csl/ACOS/AOKP/external/skia/src/codec/SkJpegCodec.cpp
+[+] We found traces of a missing patch for CVE-2016-6708 - BUG: A-30693465 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/am/ActivityManagerService.java
+[+] We found traces of a missing patch for CVE-2016-6708 - BUG: A-30693465 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/am/ActivityStackSupervisor.java
+[+] We found traces of a missing patch for CVE-2016-6708 - BUG: A-30693465 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/am/ActivityStarter.java
+[+] We found traces of a missing patch for CVE-2015-1283 - BUG: A-27818751 in: /media/csl/ACOS/AOKP/external/expat/lib/xmlparse.c
+[+] We found traces of a missing patch for CVE-2014-9675 - BUG: A-24296662 in: /media/csl/ACOS/AOKP/external/freetype/src/autofit/aflatin.c
+[+] We found traces of a missing patch for CVE-2014-9675 - BUG: A-24296662 in: /media/csl/ACOS/AOKP/external/freetype/src/autofit/afloader.c
+[+] We found traces of a missing patch for CVE-2014-9675 - BUG: A-24296662 in: /media/csl/ACOS/AOKP/external/freetype/src/autofit/afranges.c
+[-] We found traces of CVE-2014-9675 - BUG: A-24296662 in: /media/csl/ACOS/AOKP/external/freetype/src/gzip/ftgzip.c
+[+] We found traces of a missing patch for CVE-2014-9675 - BUG: A-24296662 in: /media/csl/ACOS/AOKP/external/freetype/src/truetype/ttgload.c
+[+] We found traces of a missing patch for CVE-2014-9675 - BUG: A-24296662 in: /media/csl/ACOS/AOKP/external/freetype/src/truetype/ttgxvar.c
+[-] We found traces of CVE-2014-9675 - BUG: A-24296662 in: /media/csl/ACOS/AOKP/external/freetype/src/truetype/ttobjs.c
+[+] We found traces of a missing patch for CVE-2016-6770 - BUG: A-30202228 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/am/ActivityManagerService.java
+[+] We found traces of a missing patch for CVE-2017-0391 - BUG: A-32322258 in: /media/csl/ACOS/AOKP/external/libhevc/decoder/ihevcd_decode.c
+[-] We found traces of CVE-2017-0392 - BUG: A-32577290 in: /media/csl/ACOS/AOKP/frameworks/av/media/extractors/mp3/VBRISeeker.cpp
+[+] We found traces of a missing patch for CVE-2016-5552 - BUG: A-31858037 in: /media/csl/ACOS/AOKP/libcore/ojluni/src/main/java/java/net/URLStreamHandler.java
+[-] We found traces of CVE-2017-0600 - BUG: A-35269635 in: /media/csl/ACOS/AOKP/frameworks/av/media/libstagefright/codecs/m4v_h263/dec/src/mb_motion_comp.cpp
+[+] We found traces of a missing patch for CVE-2017-0493 - BUG: A-32793550 in: /media/csl/ACOS/AOKP/frameworks/base/services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java
+[+] We found traces of a missing patch for CVE-2017-0669 - BUG: A-34114752 in: /media/csl/ACOS/AOKP/packages/providers/MediaProvider/src/com/android/providers/media/MediaProvider.java
+[+] We found traces of a missing patch for CVE-2017-0670 - BUG: A-36104177 in: /media/csl/ACOS/AOKP/bionic/linker/linker.cpp
+[+] We found traces of a missing patch for CVE-2017-6983 - BUG: A-63852675 in: /media/csl/ACOS/AOKP/external/sqlite/dist/orig/sqlite3.c
+[+] We found traces of a missing patch for CVE-2017-6983 - BUG: A-63852675 in: /media/csl/ACOS/AOKP/external/sqlite/dist/orig/sqlite3.h
+[+] We found traces of a missing patch for CVE-2017-6983 - BUG: A-63852675 in: /media/csl/ACOS/AOKP/external/sqlite/dist/sqlite3.c
+[+] We found traces of a missing patch for CVE-2017-6983 - BUG: A-63852675 in: /media/csl/ACOS/AOKP/external/sqlite/dist/sqlite3.h
+[+] We found traces of a missing patch for CVE-2017-0770 - BUG: A-38234812 in: /media/csl/ACOS/AOKP/frameworks/av/media/libmediaplayerservice/MediaPlayerService.cpp
+[+] We found traces of a missing patch for CVE-2017-14496 - BUG: A-64575136 in: /media/csl/ACOS/AOKP/external/dnsmasq/src/rfc1035.c
+[+] We found traces of a missing patch for CVE-2017-0830 - BUG: A-62623498 in: /media/csl/ACOS/AOKP/frameworks/base/services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java
+[+] We found traces of a missing patch for CVE-2017-13184 - BUG: A-65483324 in: /media/csl/ACOS/AOKP/frameworks/native/services/surfaceflinger/SurfaceFlinger.h
+[+] We found traces of a missing patch for CVE-2017-13259 - BUG: A-68161546 in: /media/csl/ACOS/AOKP/system/bt/stack/sdp/sdp_discovery.cc
+[+] We found traces of a missing patch for CVE-2017-13276 - BUG: A-70637599 in: /media/csl/ACOS/AOKP/external/aac/libMpegTPDec/src/tpdec_asc.cpp
+[+] We found traces of a missing patch for CVE-2017-13227 - BUG: A-69981710 in: /media/csl/ACOS/AOKP/frameworks/base/core/java/android/view/autofill/AutofillManager.java
+[+] We found traces of a missing patch for CVE-2018-9357 - BUG: A-74947856 in: /media/csl/ACOS/AOKP/system/bt/stack/bnep/bnep_api.cc
+[+] We found traces of a missing patch for CVE-2018-9359 - BUG: A-74196706 in: /media/csl/ACOS/AOKP/system/bt/stack/l2cap/l2c_main.cc
+[+] We found traces of a missing patch for CVE-2018-9360 - BUG: A-74201143 in: /media/csl/ACOS/AOKP/system/bt/stack/l2cap/l2c_main.cc
+[+] We found traces of a missing patch for CVE-2018-9361 - BUG: A-74202041 in: /media/csl/ACOS/AOKP/system/bt/stack/l2cap/l2c_main.cc
+[+] We found traces of a missing patch for CVE-2018-9362 - BUG: A-72298611 in: /media/csl/ACOS/AOKP/frameworks/opt/telephony/src/java/com/android/internal/telephony/InboundSmsHandler.java
+[-] We found traces of CVE-2018-9458 - BUG: A-71786287 in: /media/csl/ACOS/AOKP/frameworks/base/services/tests/servicestests/src/com/android/server/wm/TestWindowManagerPolicy.java
+[-] We found traces of CVE-2018-9466 - BUG: A-62151041 in: /media/csl/ACOS/AOKP/external/libxml2/doc/libxml2-refs.xml
+[+] We found traces of a missing patch for CVE-2018-9466 - BUG: A-62151041 in: /media/csl/ACOS/AOKP/external/libxml2/result/HTML/758518-entity.html
+[+] We found traces of a missing patch for CVE-2018-9466 - BUG: A-62151041 in: /media/csl/ACOS/AOKP/external/libxml2/result/HTML/758518-entity.html.err
+[+] We found traces of a missing patch for CVE-2018-9466 - BUG: A-62151041 in: /media/csl/ACOS/AOKP/external/libxml2/result/noent/comment4.xml.sax2
+[+] We found traces of a missing patch for CVE-2018-9466 - BUG: A-62151041 in: /media/csl/ACOS/AOKP/external/libxml2/result/noent/isolat1.sax2
+[+] We found traces of a missing patch for CVE-2018-9466 - BUG: A-62151041 in: /media/csl/ACOS/AOKP/external/libxml2/test/HTML/758518-entity.html
+[+] We found traces of a missing patch for CVE-2018-9466 - BUG: A-62151041 in: /media/csl/ACOS/AOKP/external/libxml2/test/HTML/758518-tag.html
+[+] We found traces of a missing patch for CVE-2018-9466 - BUG: A-62151041 in: /media/csl/ACOS/AOKP/external/libxml2/test/valid/dtds/766956.dtd
+[-] We found traces of CVE-2018-9466 - BUG: A-62151041 in: /media/csl/ACOS/AOKP/external/libxml2/xpath.c
+[-] We found traces of CVE-2018-9472 - BUG: A-79662501 in: /media/csl/ACOS/AOKP/external/libxml2/doc/libxml2-refs.xml
+[+] We found traces of a missing patch for CVE-2018-9472 - BUG: A-79662501 in: /media/csl/ACOS/AOKP/external/libxml2/result/HTML/758518-entity.html
+[+] We found traces of a missing patch for CVE-2018-9472 - BUG: A-79662501 in: /media/csl/ACOS/AOKP/external/libxml2/result/HTML/758518-entity.html.err
+[+] We found traces of a missing patch for CVE-2018-9472 - BUG: A-79662501 in: /media/csl/ACOS/AOKP/external/libxml2/result/noent/comment4.xml.sax2
+[+] We found traces of a missing patch for CVE-2018-9472 - BUG: A-79662501 in: /media/csl/ACOS/AOKP/external/libxml2/result/noent/isolat1.sax2
+[+] We found traces of a missing patch for CVE-2018-9472 - BUG: A-79662501 in: /media/csl/ACOS/AOKP/external/libxml2/test/HTML/758518-entity.html
+[+] We found traces of a missing patch for CVE-2018-9472 - BUG: A-79662501 in: /media/csl/ACOS/AOKP/external/libxml2/test/HTML/758518-tag.html
+[+] We found traces of a missing patch for CVE-2018-9472 - BUG: A-79662501 in: /media/csl/ACOS/AOKP/external/libxml2/test/valid/dtds/766956.dtd
+[-] We found traces of CVE-2018-9472 - BUG: A-79662501 in: /media/csl/ACOS/AOKP/external/libxml2/xpath.c
+[+] We found traces of a missing patch for CVE-2018-9498 - BUG: A-78354855 in: /media/csl/ACOS/AOKP/external/skia/public.bzl
+[+] We found traces of a missing patch for CVE-2018-9524 - BUG: A-34170870 in: /media/csl/ACOS/AOKP/frameworks/base/packages/SystemUI/AndroidManifest.xml
+[-] We found traces of CVE-2018-9559 - BUG: A-112731440 in: /media/csl/ACOS/AOKP/system/vold/cryptfs.cpp
+[-] We found traces of CVE-2019-1995 - BUG: A-32589229 in: /media/csl/ACOS/AOKP/packages/apps/Email/AndroidManifest.xml
+[+] We found traces of a missing patch for CVE-2019-9254 - BUG: A-130164289 in: /media/csl/ACOS/AOKP/cts/tests/app/src/android/app/cts/ServiceTest.java
+[-] We found traces of CVE-2019-2103 - BUG: A-120610669 in: /media/csl/ACOS/AOKP/frameworks/base/core/java/android/view/SurfaceControl.java
+[+] We found traces of a missing patch for CVE-2019-2124 - BUG: A-127320867 in: /media/csl/ACOS/AOKP/packages/apps/Email/src/com/android/email/activity/ComposeActivityEmailExternal.java
+[+] We found traces of a missing patch for CVE-2019-2173 - BUG: A-123013720 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/am/ActivityStarter.java
+[+] We found traces of a missing patch for CVE-2019-2201 - BUG: A-120551338 in: /media/csl/ACOS/AOKP/external/libjpeg-turbo/README.android
+[+] We found traces of a missing patch for CVE-2019-2201 - BUG: A-120551338 in: /media/csl/ACOS/AOKP/external/libjpeg-turbo/java/TJBench.java
+[+] We found traces of a missing patch for CVE-2019-2233 - BUG: A-140486529 in: /media/csl/ACOS/AOKP/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/policy/UserSwitcherController.java
+[+] We found traces of a missing patch for CVE-2019-2212 - BUG: A-139690488 in: /media/csl/ACOS/AOKP/external/libcxx/include/math.h
+[+] We found traces of a missing patch for CVE-2019-2217 - BUG: A-141003796 in: /media/csl/ACOS/AOKP/frameworks/native/libs/graphicsenv/include/graphicsenv/GraphicsEnv.h
+[+] We found traces of a missing patch for CVE-2019-2218 - BUG: A-141169173 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/pm/PackageInstallerService.java
+[-] We found traces of CVE-2019-2228 - BUG: A-111210196 in: /media/csl/ACOS/AOKP/external/libcups/cups/hash.c
+[+] We found traces of a missing patch for CVE-2020-0004 - BUG: A-120847476 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/wallpaper/WallpaperManagerService.java
+[+] We found traces of a missing patch for CVE-2020-0015 - BUG: A-139017101 in: /media/csl/ACOS/AOKP/packages/apps/CertInstaller/src/com/android/certinstaller/CertInstaller.java
+[+] We found traces of a missing patch for CVE-2019-2200 - BUG: A-67319274 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/pm/permission/PermissionManagerService.java
+[+] We found traces of a missing patch for CVE-2020-0017 - BUG: A-123232892  in: /media/csl/ACOS/AOKP/frameworks/base/core/java/android/view/textclassifier/SelectionEvent.java
+[+] We found traces of a missing patch for CVE-2020-0017 - BUG: A-123232892  in: /media/csl/ACOS/AOKP/frameworks/base/core/java/android/view/textclassifier/SystemTextClassifier.java
+[+] We found traces of a missing patch for CVE-2020-0017 - BUG: A-123232892  in: /media/csl/ACOS/AOKP/frameworks/base/core/java/android/view/textclassifier/TextClassification.java
+[+] We found traces of a missing patch for CVE-2020-0017 - BUG: A-123232892  in: /media/csl/ACOS/AOKP/frameworks/base/core/java/android/view/textclassifier/TextClassificationContext.java
+[+] We found traces of a missing patch for CVE-2020-0017 - BUG: A-123232892  in: /media/csl/ACOS/AOKP/frameworks/base/core/java/android/view/textclassifier/TextLinks.java
+[+] We found traces of a missing patch for CVE-2020-0017 - BUG: A-123232892  in: /media/csl/ACOS/AOKP/frameworks/base/core/java/android/view/textclassifier/TextSelection.java
+[+] We found traces of a missing patch for CVE-2020-0017 - BUG: A-123232892  in: /media/csl/ACOS/AOKP/frameworks/base/core/java/android/widget/TextView.java
+[+] We found traces of a missing patch for CVE-2020-0017 - BUG: A-123232892  in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/textclassifier/TextClassificationManagerService.java
+[+] We found traces of a missing patch for CVE-2020-0020 - BUG: A-143118731 in: /media/csl/ACOS/AOKP/frameworks/base/media/java/android/media/ExifInterface.java
+[-] We found traces of CVE-2020-0020 - BUG: A-143118731 in: /media/csl/ACOS/AOKP/frameworks/base/media/java/android/media/ExifInterface.java
+[+] We found traces of a missing patch for CVE-2020-0028 - BUG: A-122652057  in: /media/csl/ACOS/AOKP/frameworks/base/tests/net/java/com/android/server/ConnectivityServiceTest.java
+[+] We found traces of a missing patch for CVE-2020-0036 - BUG: A-144679405 in: /media/csl/ACOS/AOKP/frameworks/base/tests/net/java/com/android/server/ConnectivityServiceTest.java
+[+] We found traces of a missing patch for CVE-2020-0036 - BUG: A-144679405 in: /media/csl/ACOS/AOKP/frameworks/base/tests/net/java/com/android/server/connectivity/PermissionMonitorTest.java
+[+] We found traces of a missing patch for CVE-2020-0096 - BUG: 	A-145669109 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/am/ActivityStarter.java
+[+] We found traces of a missing patch for CVE-2020-0098 - BUG: 	A-144285917 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/am/ActivityManagerService.java
+[+] We found traces of a missing patch for CVE-2020-0109 - BUG: A-148059175 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/notification/NotificationManagerService.java
+[+] We found traces of a missing patch for CVE-2020-0104 - BUG: A-144430870 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/trust/TrustManagerService.java
+[+] We found traces of a missing patch for CVE-2020-0113 - BUG: A-150944913 in: /media/csl/ACOS/AOKP/frameworks/av/services/camera/libcameraservice/device3/Camera3Device.cpp
+[+] We found traces of a missing patch for CVE-2020-0119 - BUG: A-150500247 in: /media/csl/ACOS/AOKP/frameworks/base/wifi/tests/src/android/net/wifi/WifiConfigurationTest.java
+[+] We found traces of a missing patch for CVE-2020-0225 - BUG: A-142546668 in: /media/csl/ACOS/AOKP/system/bt/stack/Android.bp
+[+] We found traces of a missing patch for CVE-2020-0241 - BUG: A-151456667 in: /media/csl/ACOS/AOKP/frameworks/av/media/libmediaplayerservice/nuplayer/StreamingSource.cpp
+[+] We found traces of a missing patch for CVE-2020-0242 - BUG: A-151643722 in: /media/csl/ACOS/AOKP/frameworks/av/media/libmediaplayerservice/nuplayer/NuPlayerDriver.cpp
+[+] We found traces of a missing patch for CVE-2020-0242 - BUG: A-151643722 in: /media/csl/ACOS/AOKP/frameworks/av/media/libmediaplayerservice/nuplayer/NuPlayerDriver.h
+[+] We found traces of a missing patch for CVE-2020-0243 - BUG: A-151644303 in: /media/csl/ACOS/AOKP/frameworks/av/media/libmediaplayerservice/nuplayer/NuPlayerDriver.cpp
+[+] We found traces of a missing patch for CVE-2020-0243 - BUG: A-151644303 in: /media/csl/ACOS/AOKP/frameworks/av/media/libmediaplayerservice/nuplayer/NuPlayerDriver.h
+[+] We found traces of a missing patch for CVE-2020-0381 - BUG: A-150159669 in: /media/csl/ACOS/AOKP/external/sonivox/arm-wt-22k/host_src/eas_types.h
+[+] We found traces of a missing patch for CVE-2020-0381 - BUG: A-150159669 in: /media/csl/ACOS/AOKP/external/sonivox/arm-wt-22k/lib_src/eas_mdls.c
+[+] We found traces of a missing patch for CVE-2020-0384 - BUG: A-150159906 in: /media/csl/ACOS/AOKP/external/sonivox/arm-wt-22k/host_src/eas_types.h
+[+] We found traces of a missing patch for CVE-2020-0384 - BUG: A-150159906 in: /media/csl/ACOS/AOKP/external/sonivox/arm-wt-22k/lib_src/eas_mdls.c
+[+] We found traces of a missing patch for CVE-2020-0385 - BUG: A-150160041 in: /media/csl/ACOS/AOKP/external/sonivox/arm-wt-22k/host_src/eas_types.h
+[+] We found traces of a missing patch for CVE-2020-0385 - BUG: A-150160041 in: /media/csl/ACOS/AOKP/external/sonivox/arm-wt-22k/lib_src/eas_mdls.c
+[+] We found traces of a missing patch for CVE-2020-0386 - BUG: A-155650356 in: /media/csl/ACOS/AOKP/packages/apps/Settings/src/com/android/settings/bluetooth/RequestPermissionActivity.java
+[+] We found traces of a missing patch for CVE-2020-0394 - BUG: A-155648639 in: /media/csl/ACOS/AOKP/packages/apps/Settings/src/com/android/settings/bluetooth/BluetoothPairingDialog.java
+[+] We found traces of a missing patch for CVE-2020-0379 - BUG: A-150156492 in: /media/csl/ACOS/AOKP/system/bt/stack/btm/btm_sec.cc
+[-] We found traces of CVE-2020-0421 - BUG: A-161894517 in: /media/csl/ACOS/AOKP/system/core/libutils/String8.cpp
+[+] We found traces of a missing patch for CVE-2020-0246 - BUG: A-159062405 in: /media/csl/ACOS/AOKP/frameworks/opt/telephony/src/java/com/android/internal/telephony/euicc/EuiccController.java
+[+] We found traces of a missing patch for CVE-2020-0414 - BUG: A-157708122 in: /media/csl/ACOS/AOKP/frameworks/av/services/audioflinger/FastCapture.cpp
+[+] We found traces of a missing patch for CVE-2020-0414 - BUG: A-157708122 in: /media/csl/ACOS/AOKP/frameworks/av/services/audioflinger/FastCaptureDumpState.h
+[+] We found traces of a missing patch for CVE-2020-0414 - BUG: A-157708122 in: /media/csl/ACOS/AOKP/frameworks/av/services/audioflinger/FastCaptureState.h
+[+] We found traces of a missing patch for CVE-2020-0414 - BUG: A-157708122 in: /media/csl/ACOS/AOKP/frameworks/av/services/audioflinger/Threads.cpp
+[+] We found traces of a missing patch for CVE-2020-0443 - BUG: A-152410253 in: /media/csl/ACOS/AOKP/frameworks/base/core/java/android/os/LocaleList.java
+[+] We found traces of a missing patch for CVE-2020-0099 - BUG: A-141745510 in: /media/csl/ACOS/AOKP/frameworks/base/core/java/android/app/Presentation.java
+[+] We found traces of a missing patch for CVE-2020-0099 - BUG: A-141745510 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/wm/WindowManagerService.java
+[+] We found traces of a missing patch for CVE-2020-0440 - BUG: A-162627132 in: /media/csl/ACOS/AOKP/frameworks/base/core/tests/coretests/AndroidManifest.xml
+[+] We found traces of a missing patch for CVE-2020-0440 - BUG: A-162627132 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/display/DisplayManagerService.java
+[+] We found traces of a missing patch for CVE-2020-0469 - BUG: A-168692734 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/locksettings/LockSettingsService.java
+[+] We found traces of a missing patch for CVE-2021-0313 - BUG: A-170968514 in: /media/csl/ACOS/AOKP/frameworks/minikin/libs/minikin/LayoutUtils.cpp
+[+] We found traces of a missing patch for CVE-2021-0306 - BUG: A-154505240 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/pm/PackageManagerService.java
+[+] We found traces of a missing patch for CVE-2021-0306 - BUG: A-154505240 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/pm/permission/BasePermission.java
+[+] We found traces of a missing patch for CVE-2021-0315 - BUG: A-169763814 in: /media/csl/ACOS/AOKP/frameworks/base/core/java/android/accounts/GrantCredentialsPermissionActivity.java
+[+] We found traces of a missing patch for CVE-2021-0318 - BUG: A-168211968 in: /media/csl/ACOS/AOKP/frameworks/native/services/sensorservice/SensorEventConnection.cpp
+[+] We found traces of a missing patch for CVE-2021-0318 - BUG: A-168211968 in: /media/csl/ACOS/AOKP/frameworks/native/services/sensorservice/SensorEventConnection.h
+[+] We found traces of a missing patch for CVE-2021-0309 - BUG: A-158480899 in: /media/csl/ACOS/AOKP/frameworks/base/core/java/android/accounts/GrantCredentialsPermissionActivity.java
+[+] We found traces of a missing patch for CVE-2019-9376 - BUG: A-129287265 in: /media/csl/ACOS/AOKP/frameworks/base/core/java/android/accounts/Account.java
+[+] We found traces of a missing patch for CVE-2021-0330 - BUG: A-170732441 in: /media/csl/ACOS/AOKP/system/core/storaged/include/storaged.h
+[+] We found traces of a missing patch for CVE-2021-0330 - BUG: A-170732441 in: /media/csl/ACOS/AOKP/system/core/storaged/storaged.cpp
+[+] We found traces of a missing patch for CVE-2021-0337 - BUG: A-157474195 in: /media/csl/ACOS/AOKP/frameworks/base/core/java/com/android/internal/content/FileSystemProvider.java
+[+] We found traces of a missing patch for CVE-2021-0339 - BUG: A-145728687 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/wm/AppTransition.java
+[+] We found traces of a missing patch for CVE-2021-0339 - BUG: A-145728687 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/wm/WindowManagerService.java
+[+] We found traces of a missing patch for CVE-2021-0326 - BUG: A-172937525 in: /media/csl/ACOS/AOKP/external/wpa_supplicant_8/src/p2p/p2p.c
+[-] We found traces of CVE-2021-0328 - BUG: A-172670415 in: /media/csl/ACOS/AOKP/packages/apps/Bluetooth/src/com/android/bluetooth/gatt/GattService.java
+[+] We found traces of a missing patch for CVE-2021-0331 - BUG: A-170731783 in: /media/csl/ACOS/AOKP/packages/apps/Settings/src/com/android/settings/notification/NotificationAccessConfirmationActivity.java
+[+] We found traces of a missing patch for CVE-2021-0333 - BUG: A-168504491 in: /media/csl/ACOS/AOKP/packages/apps/Settings/src/com/android/settings/bluetooth/BluetoothPermissionActivity.java
+[+] We found traces of a missing patch for CVE-2021-0336 - BUG: A-158219161 in: /media/csl/ACOS/AOKP/packages/apps/Settings/src/com/android/settings/bluetooth/BluetoothPermissionRequest.java
+[+] We found traces of a missing patch for CVE-2021-0391 - BUG: A-172841550 in: /media/csl/ACOS/AOKP/frameworks/base/core/java/android/accounts/ChooseAccountActivity.java
+[+] We found traces of a missing patch for CVE-2021-0391 - BUG: A-172841550 in: /media/csl/ACOS/AOKP/frameworks/base/core/java/android/accounts/ChooseAccountTypeActivity.java
+[+] We found traces of a missing patch for CVE-2021-0391 - BUG: A-172841550 in: /media/csl/ACOS/AOKP/frameworks/base/core/java/android/accounts/ChooseTypeAndAccountActivity.java
+[+] We found traces of a missing patch for CVE-2017-14491 - BUG: A-158221622 in: /media/csl/ACOS/AOKP/external/dnsmasq/src/rfc1035.c
+[+] We found traces of a missing patch for CVE-2021-0426 - BUG: A-174485572 in: /media/csl/ACOS/AOKP/frameworks/base/cmds/statsd/src/logd/LogEvent.cpp
+[+] We found traces of a missing patch for CVE-2021-0426 - BUG: A-174485572 in: /media/csl/ACOS/AOKP/frameworks/base/cmds/statsd/tests/LogEvent_test.cpp
+[+] We found traces of a missing patch for CVE-2021-0427 - BUG: A-174488848 in: /media/csl/ACOS/AOKP/frameworks/base/cmds/statsd/src/logd/LogEvent.cpp
+[+] We found traces of a missing patch for CVE-2021-0427 - BUG: A-174488848 in: /media/csl/ACOS/AOKP/frameworks/base/cmds/statsd/tests/LogEvent_test.cpp
+[+] We found traces of a missing patch for CVE-2021-0442 - BUG: A-174768985 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/wm/InputMonitor.java
+[+] We found traces of a missing patch for CVE-2021-0443 - BUG: A-170474245 in: /media/csl/ACOS/AOKP/frameworks/base/core/java/com/android/internal/util/ScreenshotHelper.java
+[+] We found traces of a missing patch for CVE-2021-0437 - BUG: A-176168330 in: /media/csl/ACOS/AOKP/frameworks/av/drm/mediadrm/plugins/clearkey/default/DrmPlugin.cpp
+[+] We found traces of a missing patch for CVE-2021-0437 - BUG: A-176168330 in: /media/csl/ACOS/AOKP/frameworks/av/drm/mediadrm/plugins/clearkey/default/include/DrmPlugin.h
+[+] We found traces of a missing patch for CVE-2021-0437 - BUG: A-176168330 in: /media/csl/ACOS/AOKP/frameworks/av/drm/mediadrm/plugins/clearkey/hidl/DrmPlugin.cpp
+[+] We found traces of a missing patch for CVE-2021-0437 - BUG: A-176168330 in: /media/csl/ACOS/AOKP/frameworks/av/drm/mediadrm/plugins/clearkey/hidl/include/DrmPlugin.h
+[+] We found traces of a missing patch for CVE-2021-0429 - BUG: A-175074139 in: /media/csl/ACOS/AOKP/frameworks/hardware/interfaces/sensorservice/libsensorndkbridge/ASensorEventQueue.cpp
+[+] We found traces of a missing patch for CVE-2021-0429 - BUG: A-175074139 in: /media/csl/ACOS/AOKP/frameworks/hardware/interfaces/sensorservice/libsensorndkbridge/ASensorEventQueue.h
+[+] We found traces of a missing patch for CVE-2021-0446
+ - BUG: A-172252122 in: /media/csl/ACOS/AOKP/packages/apps/Contacts/AndroidManifest.xml
+[+] We found traces of a missing patch for CVE-2021-0446
+ - BUG: A-172252122 in: /media/csl/ACOS/AOKP/packages/apps/Contacts/src/com/android/contacts/vcard/ImportVCardActivity.java
+[+] We found traces of a missing patch for CVE-2021-0446
+ - BUG: A-172252122 in: /media/csl/ACOS/AOKP/packages/apps/Contacts/src/com/android/contacts/vcard/SelectAccountActivity.java
+[+] We found traces of a missing patch for CVE-2021-0485 - BUG: A-174302616 in: /media/csl/ACOS/AOKP/frameworks/base/core/res/res/values/dimens.xml
+[+] We found traces of a missing patch for CVE-2021-0485 - BUG: A-174302616 in: /media/csl/ACOS/AOKP/frameworks/base/core/res/res/values/symbols.xml
+[+] We found traces of a missing patch for CVE-2021-0487 - BUG: A-174046397 in: /media/csl/ACOS/AOKP/packages/providers/CalendarProvider/AndroidManifest.xml
+[+] We found traces of a missing patch for CVE-2021-0487 - BUG: A-174046397 in: /media/csl/ACOS/AOKP/packages/providers/CalendarProvider/src/com/android/providers/calendar/CalendarDebugActivity.java
+[+] We found traces of a missing patch for CVE-2021-0482 - BUG: A-173791720 in: /media/csl/ACOS/AOKP/frameworks/av/media/libstagefright/MediaCodec.cpp
+[+] We found traces of a missing patch for CVE-2021-0481 - BUG: A-172939189 in: /media/csl/ACOS/AOKP/packages/apps/Settings/src/com/android/settings/users/EditUserPhotoController.java
+[+] We found traces of a missing patch for CVE-2019-2219 - BUG: A-119041698 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/notification/NotificationManagerService.java
+[+] We found traces of a missing patch for CVE-2019-2219 - BUG: A-119041698 in: /media/csl/ACOS/AOKP/frameworks/base/services/tests/uiservicestests/src/com/android/server/notification/BuzzBeepBlinkTest.java
+[+] We found traces of a missing patch for CVE-2019-2219 - BUG: A-119041698 in: /media/csl/ACOS/AOKP/frameworks/base/services/tests/uiservicestests/src/com/android/server/notification/NotificationManagerServiceTest.java
+[+] We found traces of a missing patch for CVE-2021-0521 - BUG: A-174661955 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/pm/PackageManagerService.java
+[+] We found traces of a missing patch for CVE-2021-0508 - BUG: A-176444154 in: /media/csl/ACOS/AOKP/frameworks/av/drm/mediadrm/plugins/clearkey/default/DrmPlugin.cpp
+[+] We found traces of a missing patch for CVE-2021-0508 - BUG: A-176444154 in: /media/csl/ACOS/AOKP/frameworks/av/drm/mediadrm/plugins/clearkey/hidl/DrmPlugin.cpp
+[+] We found traces of a missing patch for CVE-2021-0520 - BUG: A-176237595 in: /media/csl/ACOS/AOKP/frameworks/av/drm/mediadrm/plugins/clearkey/hidl/DrmPlugin.cpp
+[+] We found traces of a missing patch for CVE-2021-0505 - BUG: A-179975048 in: /media/csl/ACOS/AOKP/packages/apps/Settings/src/com/android/settings/vpn2/AppDialogFragment.java
+[+] We found traces of a missing patch for CVE-2021-0505 - BUG: A-179975048 in: /media/csl/ACOS/AOKP/packages/apps/Settings/src/com/android/settings/vpn2/AppPreference.java
+[+] We found traces of a missing patch for CVE-2021-0506 - BUG: A-181962311 in: /media/csl/ACOS/AOKP/packages/apps/Settings/src/com/android/settings/ActivityPicker.java
+[+] We found traces of a missing patch for CVE-2021-0523 - BUG: A-174047492 in: /media/csl/ACOS/AOKP/packages/apps/Settings/src/com/android/settings/wifi/WifiScanModeActivity.java
+[+] We found traces of a missing patch for CVE-2021-0517 - BUG: A-179053823 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/ConnectivityService.java
+[+] We found traces of a missing patch for CVE-2021-0513 - BUG: A-156090809 in: /media/csl/ACOS/AOKP/frameworks/base/core/java/android/app/ActivityManagerInternal.java
+[+] We found traces of a missing patch for CVE-2021-0513 - BUG: A-156090809 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/am/ActiveServices.java
+[+] We found traces of a missing patch for CVE-2021-0513 - BUG: A-156090809 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/notification/NotificationManagerService.java
+[+] We found traces of a missing patch for CVE-2021-0478 - BUG: A-169255797 in: /media/csl/ACOS/AOKP/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/StatusBarIconView.java
+[+] We found traces of a missing patch for CVE-2021-0585 - BUG: A-184963385 in: /media/csl/ACOS/AOKP/system/libfmq/include/fmq/MessageQueue.h
+[+] We found traces of a missing patch for CVE-2021-0585 - BUG: A-184963385 in: /media/csl/ACOS/AOKP/system/libfmq/tests/msgq_test_client.cpp
+[+] We found traces of a missing patch for CVE-2021-0586 - BUG: A-182584940 in: /media/csl/ACOS/AOKP/packages/apps/Settings/src/com/android/settings/bluetooth/DevicePickerActivity.java
+[+] We found traces of a missing patch for CVE-2021-0599 - BUG: A-175614289 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/notification/NotificationManagerService.java
+[+] We found traces of a missing patch for CVE-2021-0599 - BUG: A-175614289 in: /media/csl/ACOS/AOKP/frameworks/base/services/tests/uiservicestests/src/com/android/server/notification/NotificationManagerServiceTest.java
+[+] We found traces of a missing patch for CVE-2021-0603 - BUG: A-182809425 in: /media/csl/ACOS/AOKP/packages/apps/Contacts/src/com/android/contacts/activities/ContactSelectionActivity.java
+[+] We found traces of a missing patch for CVE-2021-0645 - BUG: A-157320644 in: /media/csl/ACOS/AOKP/frameworks/base/packages/ExternalStorageProvider/src/com/android/externalstorage/ExternalStorageProvider.java
+[-] We found traces of CVE-2021-0642 - BUG: A-185126149 in: /media/csl/ACOS/AOKP/packages/services/Telephony/AndroidManifest.xml
+[+] We found traces of a missing patch for CVE-2021-0688 - BUG: A-161149543 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/policy/PhoneWindowManager.java
+[+] We found traces of a missing patch for CVE-2021-0682 - BUG: A-159624555 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/notification/NotificationManagerService.java
+[+] We found traces of a missing patch for CVE-2021-0682 - BUG: A-159624555 in: /media/csl/ACOS/AOKP/frameworks/base/services/tests/uiservicestests/src/com/android/server/notification/BuzzBeepBlinkTest.java
+[+] We found traces of a missing patch for CVE-2021-0703 - BUG: A-184569329 in: /media/csl/ACOS/AOKP/system/core/init/Android.bp
+[+] We found traces of a missing patch for CVE-2021-0705 - BUG: A-185388103 in: /media/csl/ACOS/AOKP/frameworks/base/core/java/android/app/Notification.java
+[+] We found traces of a missing patch for CVE-2020-15358 - BUG: A-192605364 in: /media/csl/ACOS/AOKP/external/sqlite/dist/orig/sqlite3.c
+[+] We found traces of a missing patch for CVE-2020-15358 - BUG: A-192605364 in: /media/csl/ACOS/AOKP/external/sqlite/dist/sqlite3.c
+[+] We found traces of a missing patch for CVE-2021-0483 - BUG: A-153358911 in: /media/csl/ACOS/AOKP/frameworks/av/services/oboeservice/AAudioServiceStreamBase.cpp
+[+] We found traces of a missing patch for CVE-2020-13871 - BUG: A-192606047 in: /media/csl/ACOS/AOKP/external/sqlite/dist/orig/sqlite3.c
+[-] We found traces of CVE-2020-13871 - BUG: A-192606047 in: /media/csl/ACOS/AOKP/external/sqlite/dist/orig/sqlite3.c
+[+] We found traces of a missing patch for CVE-2020-13871 - BUG: A-192606047 in: /media/csl/ACOS/AOKP/external/sqlite/dist/sqlite3.c
+[-] We found traces of CVE-2020-13871 - BUG: A-192606047 in: /media/csl/ACOS/AOKP/external/sqlite/dist/sqlite3.c
+[+] We found traces of a missing patch for CVE-2021-0650 - BUG: A-190286685 in: /media/csl/ACOS/AOKP/external/sonivox/arm-wt-22k/lib_src/eas_wtengine.c
+[-] We found traces of CVE-2021-0650 - BUG: A-190286685 in: /media/csl/ACOS/AOKP/external/sonivox/arm-wt-22k/lib_src/eas_wtengine.c
+[+] We found traces of a missing patch for CVE-2021-0918 - BUG: A-197536150 in: /media/csl/ACOS/AOKP/system/bt/stack/gatt/gatt_cl.cc
+[+] We found traces of a missing patch for CVE-2021-0434 - BUG: A-167403112  in: /media/csl/ACOS/AOKP/packages/apps/Settings/res/values/strings.xml
+[+] We found traces of a missing patch for CVE-2021-0434 - BUG: A-167403112  in: /media/csl/ACOS/AOKP/packages/apps/Settings/src/com/android/settings/bluetooth/BluetoothPermissionActivity.java
+[+] We found traces of a missing patch for CVE-2021-0704
+ - BUG: A-179338675 in: /media/csl/ACOS/AOKP/frameworks/base/core/res/res/values/strings.xml
+[+] We found traces of a missing patch for CVE-2021-0704
+ - BUG: A-179338675 in: /media/csl/ACOS/AOKP/frameworks/base/core/res/res/values/symbols.xml
+[+] We found traces of a missing patch for CVE-2021-0967
+ - BUG: A-199065614 in: /media/csl/ACOS/AOKP/external/tremolo/Tremolo/codebook.c
+[+] We found traces of a missing patch for CVE-2021-0956
+ - BUG: A-189942532 in: /media/csl/ACOS/AOKP/packages/apps/Nfc/nci/jni/NfcTag.cpp
+[+] We found traces of a missing patch for CVE-2021-0954
+ - BUG: A-143559931 in: /media/csl/ACOS/AOKP/frameworks/base/core/java/com/android/internal/app/ResolverActivity.java
+[+] We found traces of a missing patch for CVE-2021-0965
+ - BUG: A-194300867 in: /media/csl/ACOS/AOKP/packages/apps/Settings/AndroidManifest.xml
+[+] We found traces of a missing patch for CVE-2021-0969
+ - BUG: A-199922685 in: /media/csl/ACOS/AOKP/frameworks/base/packages/SettingsLib/tests/integ/src/com/android/settingslib/wifi/AccessPointTest.java
+[+] We found traces of a missing patch for CVE-2021-39630 - BUG: A-202768292 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/om/OverlayManagerService.java
+[+] We found traces of a missing patch for CVE-2020-0338 - BUG: A-123700107 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/accounts/AccountManagerService.java
+[+] We found traces of a missing patch for CVE-2021-39626 - BUG: A-194695497 in: /media/csl/ACOS/AOKP/packages/apps/Settings/src/com/android/settings/connecteddevice/ConnectedDeviceDashboardFragment.java
+[+] We found traces of a missing patch for CVE-2021-39626 - BUG: A-194695497 in: /media/csl/ACOS/AOKP/packages/apps/Settings/src/com/android/settings/connecteddevice/DiscoverableFooterPreferenceController.java
+[+] We found traces of a missing patch for CVE-2021-39626 - BUG: A-194695497 in: /media/csl/ACOS/AOKP/packages/apps/Settings/tests/robotests/src/com/android/settings/connecteddevice/DiscoverableFooterPreferenceControllerTest.java
+[+] We found traces of a missing patch for CVE-2021-0643 - BUG: A-183612370 in: /media/csl/ACOS/AOKP/frameworks/opt/telephony/src/java/com/android/internal/telephony/SubscriptionController.java
+[+] We found traces of a missing patch for CVE-2021-39619 - BUG: A-197399948 in: /media/csl/ACOS/AOKP/frameworks/base/core/java/android/app/admin/DevicePolicyManagerInternal.java
+[+] We found traces of a missing patch for CVE-2021-39619 - BUG: A-197399948 in: /media/csl/ACOS/AOKP/frameworks/base/services/usage/java/com/android/server/usage/UsageStatsService.java
+[+] We found traces of a missing patch for CVE-2021-39665 - BUG: A-204077881 in: /media/csl/ACOS/AOKP/frameworks/av/media/libstagefright/rtsp/AAVCAssembler.cpp
+[+] We found traces of a missing patch for CVE-2021-39692 - BUG: A-209611539 in: /media/csl/ACOS/AOKP/packages/apps/ManagedProvisioning/src/com/android/managedprovisioning/common/SetupLayoutActivity.java
+[+] We found traces of a missing patch for CVE-2021-39697 - BUG: A-200813547 in: /media/csl/ACOS/AOKP/packages/providers/DownloadProvider/src/com/android/providers/downloads/DownloadProvider.java
+[+] We found traces of a missing patch for CVE-2021-39697 - BUG: A-200813547 in: /media/csl/ACOS/AOKP/packages/providers/DownloadProvider/src/com/android/providers/downloads/Helpers.java
+[-] We found traces of CVE-2021-39697 - BUG: A-200813547 in: /media/csl/ACOS/AOKP/packages/providers/DownloadProvider/src/com/android/providers/downloads/Helpers.java
+[+] We found traces of a missing patch for CVE-2021-39697 - BUG: A-200813547 in: /media/csl/ACOS/AOKP/packages/providers/DownloadProvider/tests/src/com/android/providers/downloads/HelpersTest.java
+[+] We found traces of a missing patch for CVE-2021-39690 - BUG: A-204316511 in: /media/csl/ACOS/AOKP/frameworks/native/services/surfaceflinger/SurfaceFlinger.cpp
+[+] We found traces of a missing patch for CVE-2021-39690 - BUG: A-204316511 in: /media/csl/ACOS/AOKP/frameworks/native/services/surfaceflinger/SurfaceFlinger.h
+[+] We found traces of a missing patch for CVE-2021-39690 - BUG: A-204316511 in: /media/csl/ACOS/AOKP/frameworks/native/services/surfaceflinger/tests/unittests/TestableSurfaceFlinger.h
+[+] We found traces of a missing patch for CVE-2021-39704 - BUG: A-209965481 in: /media/csl/ACOS/AOKP/frameworks/base/services/tests/uiservicestests/src/com/android/server/notification/NotificationManagerServiceTest.java
+[+] We found traces of a missing patch for CVE-2021-39707 - BUG: A-200688991
+ in: /media/csl/ACOS/AOKP/packages/apps/Settings/src/com/android/settings/users/AppRestrictionsFragment.java
+[+] We found traces of a missing patch for CVE-2021-0694 - BUG: A-183147114 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/am/ActiveServices.java
+[+] We found traces of a missing patch for CVE-2021-0694 - BUG: A-183147114 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/am/ActivityManagerConstants.java
+[+] We found traces of a missing patch for CVE-2021-0694 - BUG: A-183147114 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/am/ServiceRecord.java
+[+] We found traces of a missing patch for CVE-2021-39796 - BUG: A-205595291 in: /media/csl/ACOS/AOKP/frameworks/base/core/java/com/android/internal/app/HarmfulAppWarningActivity.java
+[+] We found traces of a missing patch for CVE-2021-39805 - BUG: A-212694559 in: /media/csl/ACOS/AOKP/system/bt/stack/l2cap/l2c_ble.cc
+[+] We found traces of a missing patch for CVE-2022-20004 - BUG: A-179699767 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/slice/SliceManagerService.java
+[+] We found traces of a missing patch for CVE-2022-20005 - BUG: A-219044664 in: /media/csl/ACOS/AOKP/frameworks/base/core/java/android/content/pm/IPackageInstallerSession.aidl
+[+] We found traces of a missing patch for CVE-2022-20005 - BUG: A-219044664 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/pm/PackageInstallerSession.java
+[+] We found traces of a missing patch for CVE-2021-39700 - BUG: A-201645790 in: /media/csl/ACOS/AOKP/system/sepolicy/private/adbd.te
+[+] We found traces of a missing patch for CVE-2022-20114 - BUG: A-211114016 in: /media/csl/ACOS/AOKP/packages/services/Telecomm/src/com/android/server/telecom/ServiceBinder.java
+[+] We found traces of a missing patch for CVE-2022-20011 - BUG: A-214999128 in: /media/csl/ACOS/AOKP/frameworks/base/services/tests/uiservicestests/src/com/android/server/notification/NotificationManagerServiceTest.java
+[+] We found traces of a missing patch for CVE-2021-39670 - BUG: A-204087139 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/wallpaper/WallpaperManagerService.java
+[+] We found traces of a missing patch for CVE-2022-20112 - BUG: A-206987762 in: /media/csl/ACOS/AOKP/packages/apps/Settings/tests/robotests/src/com/android/settings/network/PrivateDnsPreferenceControllerTest.java
+[+] We found traces of a missing patch for CVE-2022-20006 - BUG: A-151095871 in: /media/csl/ACOS/AOKP/frameworks/base/packages/SystemUI/src/com/android/systemui/keyguard/KeyguardViewMediator.java
+[+] We found traces of a missing patch for CVE-2022-20006 - BUG: A-151095871 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/policy/keyguard/KeyguardServiceWrapper.java
+[+] We found traces of a missing patch for CVE-2022-20138 - BUG: A-210469972 in: /media/csl/ACOS/AOKP/frameworks/base/core/java/android/app/admin/DevicePolicyManager.java
+[+] We found traces of a missing patch for CVE-2022-20138 - BUG: A-210469972 in: /media/csl/ACOS/AOKP/frameworks/base/core/java/android/app/admin/IDevicePolicyManager.aidl
+[+] We found traces of a missing patch for CVE-2022-20138 - BUG: A-210469972 in: /media/csl/ACOS/AOKP/frameworks/base/core/res/AndroidManifest.xml
+[+] We found traces of a missing patch for CVE-2022-20138 - BUG: A-210469972 in: /media/csl/ACOS/AOKP/frameworks/base/services/devicepolicy/java/com/android/server/devicepolicy/BaseIDevicePolicyManager.java
+[+] We found traces of a missing patch for CVE-2022-20138 - BUG: A-210469972 in: /media/csl/ACOS/AOKP/frameworks/base/services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java
+[+] We found traces of a missing patch for CVE-2022-20140 - BUG: A-227618988 in: /media/csl/ACOS/AOKP/system/bt/stack/gatt/gatt_sr.cc
+[+] We found traces of a missing patch for CVE-2022-20126 - BUG: A-203431023 in: /media/csl/ACOS/AOKP/packages/apps/Bluetooth/src/com/android/bluetooth/btservice/AdapterService.java
+[+] We found traces of a missing patch for CVE-2022-20133 - BUG: A-206807679 in: /media/csl/ACOS/AOKP/packages/apps/Bluetooth/src/com/android/bluetooth/btservice/AdapterService.java
+[+] We found traces of a missing patch for CVE-2022-20147 - BUG: A-221216105 in: /media/csl/ACOS/AOKP/system/nfc/src/nfa/dm/nfa_dm_main.cc
+[+] We found traces of a missing patch for CVE-2022-20131 - BUG: A-221856662 in: /media/csl/ACOS/AOKP/system/nfc/src/nfc/nfc/nfc_ncif.cc
+[+] We found traces of a missing patch for CVE-2022-20143 - BUG: A-220735360 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/notification/ZenModeHelper.java
+[+] We found traces of a missing patch for CVE-2022-20143 - BUG: A-220735360 in: /media/csl/ACOS/AOKP/frameworks/base/services/tests/uiservicestests/src/com/android/server/notification/ZenModeHelperTest.java
+[+] We found traces of a missing patch for CVE-2022-20222 - BUG: A-228078096 in: /media/csl/ACOS/AOKP/system/bt/stack/gatt/gatt_db.cc
+[+] We found traces of a missing patch for CVE-2021-0981 - BUG: A-191981182 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/notification/NotificationManagerService.java
+[+] We found traces of a missing patch for CVE-2022-20226 - BUG: A-213644870 in: /media/csl/ACOS/AOKP/frameworks/native/libs/gui/LayerState.cpp
+[+] We found traces of a missing patch for CVE-2022-20226 - BUG: A-213644870 in: /media/csl/ACOS/AOKP/frameworks/native/libs/gui/include/gui/LayerState.h
+[+] We found traces of a missing patch for CVE-2022-20226 - BUG: A-213644870 in: /media/csl/ACOS/AOKP/frameworks/native/libs/gui/include/gui/SurfaceComposerClient.h
+[+] We found traces of a missing patch for CVE-2022-20221 - BUG: A-205571133 in: /media/csl/ACOS/AOKP/system/bt/stack/avrc/avrc_pars_tg.cc
+[+] We found traces of a missing patch for CVE-2022-20225 - BUG: A-213457638 in: /media/csl/ACOS/AOKP/frameworks/opt/telephony/tests/telephonytests/src/com/android/internal/telephony/SubscriptionControllerTest.java
+[+] We found traces of a missing patch for CVE-2022-20220 - BUG: A-219015884 in: /media/csl/ACOS/AOKP/packages/providers/ContactsProvider/src/com/android/providers/contacts/CallLogProvider.java
+[+] We found traces of a missing patch for CVE-2022-20220 - BUG: A-219015884 in: /media/csl/ACOS/AOKP/packages/providers/ContactsProvider/tests/src/com/android/providers/contacts/CallLogProviderTest.java
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/AOKP/external/expat/Android.bp
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/AOKP/external/expat/CMakeLists.txt
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/AOKP/external/expat/Changes
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/AOKP/external/expat/ConfigureChecks.cmake
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/AOKP/external/expat/Makefile.am
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/AOKP/external/expat/buildconf.sh
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/AOKP/external/expat/configure.ac
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/AOKP/external/expat/lib/xmlparse.c
+[-] We found traces of CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/AOKP/external/expat/lib/xmlparse.c
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/AOKP/external/expat/lib/xmltok.c
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/AOKP/external/expat/tests/Makefile.am
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/AOKP/external/expat/tests/runtests.c
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/AOKP/external/expat/xmlwf/xmlfile.c
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/AOKP/external/expat/xmlwf/xmlwf.c
+[+] We found traces of a missing patch for CVE-2022-23852 - BUG: A-221255869 in: /media/csl/ACOS/AOKP/external/expat/lib/xmlparse.c
+[-] We found traces of CVE-2022-23990 - BUG: A-221256678 in: /media/csl/ACOS/AOKP/external/expat/lib/xmlparse.c
+[+] We found traces of a missing patch for CVE-2022-20393 - BUG: A-233735886 in: /media/csl/ACOS/AOKP/frameworks/av/media/libstagefright/timedtext/TextDescriptions.cpp
+[+] We found traces of a missing patch for CVE-2022-20197 - BUG: A-208279300 in: /media/csl/ACOS/AOKP/frameworks/base/core/java/android/os/Parcel.java
+[+] We found traces of a missing patch for CVE-2022-20396 - BUG: A-234440688 in: /media/csl/ACOS/AOKP/packages/apps/Settings/src/com/android/settings/SettingsActivity.java
+[+] We found traces of a missing patch for CVE-2022-20419 - BUG: A-237290578 in: /media/csl/ACOS/AOKP/frameworks/base/core/java/android/app/ActivityOptions.java
+[+] We found traces of a missing patch for CVE-2022-20351 - BUG: A-224771921 in: /media/csl/ACOS/AOKP/packages/providers/ContactsProvider/src/com/android/providers/contacts/CallLogProvider.java
+[+] We found traces of a missing patch for CVE-2022-20413 - BUG: A-235850634 in: /media/csl/ACOS/AOKP/frameworks/av/services/audioflinger/Threads.cpp
+[+] We found traces of a missing patch for CVE-2022-20413 - BUG: A-235850634 in: /media/csl/ACOS/AOKP/frameworks/av/services/audioflinger/Threads.h
+[-] We found traces of CVE-2022-20412 - BUG: A-230794395 in: /media/csl/ACOS/AOKP/external/dtc/libfdt/fdt.c
+[+] We found traces of a missing patch for CVE-2016-3900 - BUG: A-29431260 in: /media/csl/ACOS/AOKP/frameworks/native/cmds/servicemanager/service_manager.c
+[+] We found traces of a missing patch for CVE-2016-6720 - BUG: A-29422020 in: /media/csl/ACOS/AOKP/frameworks/av/media/libstagefright/omx/OMXNodeInstance.cpp
+[+] We found traces of a missing patch for CVE-2017-0412 - BUG: A-33039926 in: /media/csl/ACOS/AOKP/frameworks/base/core/tests/utiltests/Android.mk
+[+] We found traces of a missing patch for CVE-2017-0752 - BUG: A-62196835 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/wm/WindowManagerService.java
+[+] We found traces of a missing patch for CVE-2017-0752 - BUG: A-62196835 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/wm/WindowState.java
+[+] We found traces of a missing patch for CVE-2017-0752 - BUG: A-62196835 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/wm/WindowStateAnimator.java
+[+] We found traces of a missing patch for CVE-2017-0779 - BUG: A-38340117 in: /media/csl/ACOS/AOKP/frameworks/av/services/audioflinger/Tracks.cpp
+[+] We found traces of a missing patch for CVE-2018-9438 - BUG: A-78644887 in: /media/csl/ACOS/AOKP/packages/providers/DownloadProvider/src/com/android/providers/downloads/SystemFacade.java
+[+] We found traces of a missing patch for CVE-2018-9438 - BUG: A-78644887 in: /media/csl/ACOS/AOKP/packages/providers/DownloadProvider/tests/src/com/android/providers/downloads/FakeSystemFacade.java
+[-] We found traces of CVE-2018-9427 - BUG: A-77486542 in: /media/csl/ACOS/AOKP/frameworks/av/media/libstagefright/omx/OMXNodeInstance.cpp
+[+] We found traces of a missing patch for CVE-2019-2123 - BUG: A-34175893 in: /media/csl/ACOS/AOKP/cts/tests/tests/os/src/android/os/cts/ParcelTest.java
+[+] We found traces of a missing patch for CVE-2019-2196 - BUG: A-135269143 in: /media/csl/ACOS/AOKP/frameworks/base/core/java/android/database/sqlite/SQLiteQueryBuilder.java
+[+] We found traces of a missing patch for CVE-2019-2198 - BUG: A-135270103 in: /media/csl/ACOS/AOKP/frameworks/base/core/java/android/database/sqlite/SQLiteQueryBuilder.java
+[+] We found traces of a missing patch for CVE-2020-0107 - BUG: A-146570216 in: /media/csl/ACOS/AOKP/packages/services/Telephony/src/com/android/phone/PhoneInterfaceManager.java
+[+] We found traces of a missing patch for CVE-2020-0108 - BUG: A-140108616 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/am/ActiveServices.java
+[+] We found traces of a missing patch for CVE-2020-0108 - BUG: A-140108616 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/am/AppErrors.java
+[+] We found traces of a missing patch for CVE-2020-0108 - BUG: A-140108616 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/am/ServiceRecord.java
+[-] We found traces of CVE-2020-0416 - BUG: A-155288585 in: /media/csl/ACOS/AOKP/packages/apps/Settings/res/xml/app_ops_permissions_details.xml
+[-] We found traces of CVE-2020-0416 - BUG: A-155288585 in: /media/csl/ACOS/AOKP/packages/apps/Settings/res/xml/change_wifi_state_details.xml
+[-] We found traces of CVE-2020-0416 - BUG: A-155288585 in: /media/csl/ACOS/AOKP/packages/apps/Settings/res/xml/draw_overlay_permissions_details.xml
+[-] We found traces of CVE-2020-0416 - BUG: A-155288585 in: /media/csl/ACOS/AOKP/packages/apps/Settings/res/xml/external_sources_details.xml
+[-] We found traces of CVE-2020-0416 - BUG: A-155288585 in: /media/csl/ACOS/AOKP/packages/apps/Settings/res/xml/picture_in_picture_permissions_details.xml
+[-] We found traces of CVE-2020-0416 - BUG: A-155288585 in: /media/csl/ACOS/AOKP/packages/apps/Settings/res/xml/write_system_settings_permissions_details.xml
+[+] We found traces of a missing patch for CVE-2020-0416 - BUG: A-155288585 in: /media/csl/ACOS/AOKP/packages/apps/Settings/src/com/android/settings/widget/AppSwitchPreference.java
+[+] We found traces of a missing patch for CVE-2020-0439 - BUG: A-140256621 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/pm/PackageManagerService.java
+[+] We found traces of a missing patch for CVE-2020-0454 - BUG: A-161370134 in: /media/csl/ACOS/AOKP/frameworks/base/wifi/java/android/net/wifi/aware/WifiAwareAgentNetworkSpecifier.java
+[+] We found traces of a missing patch for CVE-2020-0454 - BUG: A-161370134 in: /media/csl/ACOS/AOKP/frameworks/base/core/java/android/net/NetworkSpecifier.java
+[+] We found traces of a missing patch for CVE-2020-0454 - BUG: A-161370134 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/ConnectivityService.java
+[+] We found traces of a missing patch for CVE-2020-0454 - BUG: A-161370134 in: /media/csl/ACOS/AOKP/frameworks/base/tests/net/java/com/android/server/ConnectivityServiceTest.java
+[+] We found traces of a missing patch for CVE-2020-0459 - BUG: A-159373687 in: /media/csl/ACOS/AOKP/frameworks/opt/net/wifi/service/java/com/android/server/wifi/WifiConfigManager.java
+[+] We found traces of a missing patch for CVE-2020-0458 - BUG: A-160265164 in: /media/csl/ACOS/AOKP/system/media/audio_utils/include/audio_utils/spdif/SPDIFEncoder.h
+[+] We found traces of a missing patch for CVE-2021-0322 - BUG: A-159145361 in: /media/csl/ACOS/AOKP/frameworks/base/packages/SystemUI/src/com/android/systemui/SlicePermissionActivity.java
+[+] We found traces of a missing patch for CVE-2021-0341 - BUG: A-171980069 in: /media/csl/ACOS/AOKP/external/okhttp/okhttp-tests/src/test/java/com/squareup/okhttp/internal/tls/HostnameVerifierTest.java
+[+] We found traces of a missing patch for CVE-2021-0341 - BUG: A-171980069 in: /media/csl/ACOS/AOKP/external/okhttp/okhttp/src/main/java/com/squareup/okhttp/internal/tls/OkHostnameVerifier.java
+[+] We found traces of a missing patch for CVE-2021-0433 - BUG: A-171221090 in: /media/csl/ACOS/AOKP/frameworks/base/packages/CompanionDeviceManager/AndroidManifest.xml
+[+] We found traces of a missing patch for CVE-2021-0433 - BUG: A-171221090 in: /media/csl/ACOS/AOKP/frameworks/base/packages/CompanionDeviceManager/src/com/android/companiondevicemanager/DeviceChooserActivity.java
+[+] We found traces of a missing patch for CVE-2021-0480 - BUG: A-174493336 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/notification/SnoozeHelper.java
+[+] We found traces of a missing patch for CVE-2021-0480 - BUG: A-174493336 in: /media/csl/ACOS/AOKP/frameworks/base/services/tests/uiservicestests/src/com/android/server/notification/SnoozeHelperTest.java
+[+] We found traces of a missing patch for CVE-2021-0511 - BUG: A-178055795 in: /media/csl/ACOS/AOKP/art/test/Android.bp
+[+] We found traces of a missing patch for CVE-2021-0509 - BUG: A-176444161 in: /media/csl/ACOS/AOKP/frameworks/av/drm/mediadrm/plugins/clearkey/hidl/CryptoPlugin.cpp
+[+] We found traces of a missing patch for CVE-2021-0509 - BUG: A-176444161 in: /media/csl/ACOS/AOKP/frameworks/av/drm/mediadrm/plugins/clearkey/hidl/include/CryptoPlugin.h
+[+] We found traces of a missing patch for CVE-2021-0441 - BUG: A-174495520 in: /media/csl/ACOS/AOKP/packages/providers/MediaProvider/res/values/styles.xml
+[+] We found traces of a missing patch for CVE-2021-0486 - BUG: A-171430330 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/pm/PackageManagerService.java
+[+] We found traces of a missing patch for CVE-2021-0486 - BUG: A-171430330 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/pm/permission/PermissionManagerService.java
+[+] We found traces of a missing patch for CVE-2020-0368 - BUG: A-143230980 in: /media/csl/ACOS/AOKP/frameworks/base/core/java/android/provider/CallLog.java
+[+] We found traces of a missing patch for CVE-2021-0591 - BUG: A-179386960 in: /media/csl/ACOS/AOKP/packages/apps/Settings/src/com/android/settings/bluetooth/BluetoothPermissionActivity.java
+[+] We found traces of a missing patch for CVE-2021-0591 - BUG: A-179386960 in: /media/csl/ACOS/AOKP/packages/apps/Settings/src/com/android/settings/bluetooth/DevicePickerFragment.java
+[+] We found traces of a missing patch for CVE-2021-0591 - BUG: A-179386960 in: /media/csl/ACOS/AOKP/packages/apps/Settings/tests/robotests/src/com/android/settings/bluetooth/DevicePickerFragmentTest.java
+[+] We found traces of a missing patch for CVE-2021-0593 - BUG: A-179386068 in: /media/csl/ACOS/AOKP/packages/apps/Settings/src/com/android/settings/bluetooth/BluetoothPermissionActivity.java
+[+] We found traces of a missing patch for CVE-2021-0593 - BUG: A-179386068 in: /media/csl/ACOS/AOKP/packages/apps/Settings/src/com/android/settings/bluetooth/DevicePickerFragment.java
+[+] We found traces of a missing patch for CVE-2021-0593 - BUG: A-179386068 in: /media/csl/ACOS/AOKP/packages/apps/Settings/tests/robotests/src/com/android/settings/bluetooth/DevicePickerFragmentTest.java
+[+] We found traces of a missing patch for CVE-2021-0598 - BUG: A-180422108 in: /media/csl/ACOS/AOKP/packages/apps/Nfc/src/com/android/nfc/handover/ConfirmConnectActivity.java
+[+] We found traces of a missing patch for CVE-2021-39662 - BUG: A-197302116 in: /media/csl/ACOS/AOKP/packages/providers/MediaProvider/src/com/android/providers/media/MediaProvider.java
+[+] We found traces of a missing patch for CVE-2022-20219 - BUG: A-224585613 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/pm/UserDataPreparer.java
+[+] We found traces of a missing patch for CVE-2021-39696 - BUG: A-185810717 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/wm/Task.java
+[+] We found traces of a missing patch for CVE-2022-20350 - BUG: A-228178437 in: /media/csl/ACOS/AOKP/packages/apps/Settings/src/com/android/settings/notification/NotificationAccessConfirmationActivity.java
+[+] We found traces of a missing patch for CVE-2022-20358 - BUG: A-203229608 in: /media/csl/ACOS/AOKP/frameworks/base/core/java/android/content/AbstractThreadedSyncAdapter.java
+[+] We found traces of a missing patch for CVE-2022-20353 - BUG: A-221041256 in: /media/csl/ACOS/AOKP/packages/apps/Settings/src/com/android/settings/DefaultRingtonePreference.java
+[+] We found traces of a missing patch for CVE-2022-20347 - BUG: A-228450811 in: /media/csl/ACOS/AOKP/packages/apps/Settings/src/com/android/settings/connecteddevice/ConnectedDeviceDashboardFragment.java
+[+] We found traces of a missing patch for CVE-2022-20347 - BUG: A-228450811 in: /media/csl/ACOS/AOKP/packages/apps/Settings/tests/robotests/src/com/android/settings/connecteddevice/ConnectedDeviceDashboardFragmentTest.java
+[+] We found traces of a missing patch for CVE-2022-20425 - BUG: A-235823407 in: /media/csl/ACOS/AOKP/frameworks/base/services/core/java/com/android/server/notification/ZenModeHelper.java
+[-] We found traces of CVE-2017-15849 - BUG: QC-CR2046572 in: /media/csl/ACOS/AOKP/hardware/qcom/display/msm8996/sdm/libs/hwc2/hwc_display.cpp
+[+] We found traces of a missing patch for CVE-2021-1972 - BUG: QC-CR2823861 in: /media/csl/ACOS/AOKP/external/wpa_supplicant_8/src/p2p/p2p.c

@@ -1,0 +1,99 @@
+REPORT FOR ResurrectionX
+DETECTED CVEs:
+Elapsed Time = 2:59:31.395510
+WE FOUND TRACES OF = 22CVEs
+THE COMPLETE LIST IS:
+CVE-2021-0926,CVE-2019-2124,CVE-2020-0248,CVE-2020-0386,CVE-2020-0394,CVE-2019-2131,CVE-2017-0391,CVE-2017-0670,CVE-2016-3875,CVE-2015-6609,CVE-2016-0831,CVE-2021-39809,CVE-2022-20004,CVE-2021-39700,CVE-2022-20126,CVE-2022-20133,CVE-2022-20221,CVE-2022-20197,CVE-2022-20358,CVE-2022-23852,CVE-2022-20412,CVE-2022-23990
+SEVERITY DISTRIBUTION:
+SEVERITY:
+
+critical = 1
+high = 10
+medium = 10
+low = 1
+
+===================================================
+CONFIDENTIALITY:
+
+none = 4
+low = 1
+partial = 0
+high = 16
+complete = 0
+
+===================================================
+INTEGRITY:
+
+none = 10
+low = 0
+partial = 0
+high = 11
+complete = 0
+
+===================================================
+AVAILABILTY:
+
+none = 8
+low = 0
+partial = 0
+high = 13
+complete = 0
+
+===================================================
+ATTACK_COMPLEXITY:
+
+low = 21
+medium = 0
+high = 0
+
+===================================================
+ATTACK_VECTOR:
+
+local = 16
+network = 3
+adjecent_network = 1
+physical = 1
+
+===================================================
+USER_REQUIRED:
+
+required = 6
+not_required = 15
+
+===================================================
+TYPE:
+
+app spec = 0
+android = 18
+library = 3
+vendor = 0
+hardware = 0
+kernel = 0
+other = 0
+
+===================================================
+CWE:
+
+CWE-862 = {'count': 5, 'detail': 'Missing Authorization (4.14)'}
+NVD-CWE-noinfo = {'count': 6, 'detail': 'NVD-CWE-noinfo'}
+CWE-1021 = {'count': 2, 'detail': 'Improper Restriction of Rendered UI Layers or Frames (4.14)'}
+CWE-1188 = {'count': 3, 'detail': 'Initialization of a Resource with an Insecure Default (4.14)'}
+CWE-264 = {'count': 1, 'detail': 'Permissions'}
+CWE-200 = {'count': 1, 'detail': 'Exposure of Sensitive Information to an Unauthorized Actor (4.14)'}
+CWE-125 = {'count': 3, 'detail': 'Out-of-bounds Read (4.14)'}
+CWE-190 = {'count': 2, 'detail': 'Integer Overflow or Wraparound (4.14)'}
+
+===================================================
+USER_PRIVILEGES:
+
+none = 10
+low = 10
+medium = 0
+high = 1
+
+===================================================
+MISSING_INFO:
+
+CVE-2015-6609
+
+===================================================

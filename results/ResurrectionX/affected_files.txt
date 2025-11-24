@@ -1,0 +1,640 @@
+[+] We found traces of a missing patch for CVE-2014-9028 - BUG: ANDROID-18872897 in: /media/csl/ACOS/ResurrectionX/external/flac/libFLAC/stream_decoder.c
+[+] We found traces of a missing patch for CVE-2015-3878 - BUG: ANDROID-23345192 in: /media/csl/ACOS/ResurrectionX/frameworks/base/packages/SystemUI/src/com/android/systemui/media/MediaProjectionPermissionActivity.java
+[+] We found traces of a missing patch for CVE-2015-3847 - BUG: ANDROID-22343270 in: /media/csl/ACOS/ResurrectionX/packages/apps/Bluetooth/src/com/android/bluetooth/map/BluetoothMapContentObserver.java
+[+] We found traces of a missing patch for CVE-2015-6607 - BUG: ANDROID-20099586 in: /media/csl/ACOS/ResurrectionX/external/sqlite/dist/orig/shell.c
+[-] We found traces of CVE-2015-6607 - BUG: ANDROID-20099586 in: /media/csl/ACOS/ResurrectionX/external/sqlite/dist/orig/sqlite3.c
+[+] We found traces of a missing patch for CVE-2015-6607 - BUG: ANDROID-20099586 in: /media/csl/ACOS/ResurrectionX/external/sqlite/dist/orig/sqlite3.c
+[-] We found traces of CVE-2015-6607 - BUG: ANDROID-20099586 in: /media/csl/ACOS/ResurrectionX/external/sqlite/dist/orig/sqlite3.h
+[+] We found traces of a missing patch for CVE-2015-6607 - BUG: ANDROID-20099586 in: /media/csl/ACOS/ResurrectionX/external/sqlite/dist/shell.c
+[-] We found traces of CVE-2015-6607 - BUG: ANDROID-20099586 in: /media/csl/ACOS/ResurrectionX/external/sqlite/dist/sqlite3.c
+[+] We found traces of a missing patch for CVE-2015-6607 - BUG: ANDROID-20099586 in: /media/csl/ACOS/ResurrectionX/external/sqlite/dist/sqlite3.c
+[-] We found traces of CVE-2015-6607 - BUG: ANDROID-20099586 in: /media/csl/ACOS/ResurrectionX/external/sqlite/dist/sqlite3.h
+[+] We found traces of a missing patch for CVE-2015-6609 - BUG: ANDROID-22953624 in: /media/csl/ACOS/ResurrectionX/bootable/recovery/Android.mk
+[+] We found traces of a missing patch for CVE-2016-0831 - BUG: ANDROID-25778215 in: /media/csl/ACOS/ResurrectionX/frameworks/opt/telephony/src/java/com/android/internal/telephony/PhoneSubInfoController.java
+[+] We found traces of a missing patch for CVE-2016-0835 - BUG: ANDROID-26070014 in: /media/csl/ACOS/ResurrectionX/external/libmpeg2/decoder/impeg2d_dec_hdr.c
+[+] We found traces of a missing patch for CVE-2016-0842 - BUG: ANDROID-25818142 in: /media/csl/ACOS/ResurrectionX/external/libavc/decoder/ih264d_dpb_mgr.c
+[+] We found traces of a missing patch for CVE-2016-0847 - BUG: ANDROID-26864502 in: /media/csl/ACOS/ResurrectionX/packages/services/Telecomm/src/com/android/server/telecom/TelecomServiceImpl.java
+[+] We found traces of a missing patch for CVE-2016-2414 - BUG: ANDROID-26413177 in: /media/csl/ACOS/ResurrectionX/frameworks/minikin/libs/minikin/SparseBitSet.cpp
+[+] We found traces of a missing patch for CVE-2016-2428 - BUG: 26751339 in: /media/csl/ACOS/ResurrectionX/external/aac/libAACdec/src/aacdec_drc.cpp
+[+] We found traces of a missing patch for CVE-2016-2496 - BUG: 26677796 in: /media/csl/ACOS/ResurrectionX/frameworks/native/services/inputflinger/InputDispatcher.cpp
+[+] We found traces of a missing patch for CVE-2016-2496 - BUG: 26677796 in: /media/csl/ACOS/ResurrectionX/frameworks/native/services/inputflinger/InputDispatcher.h
+[+] We found traces of a missing patch for CVE-2016-2108 - BUG: A-28175332 in: /media/csl/ACOS/ResurrectionX/external/boringssl/src/crypto/asn1/a_int.c
+[+] We found traces of a missing patch for CVE-2016-3751 - BUG: A-23265085 in: /media/csl/ACOS/ResurrectionX/external/libpng/CMakeLists.txt
+[+] We found traces of a missing patch for CVE-2016-3751 - BUG: A-23265085 in: /media/csl/ACOS/ResurrectionX/external/libpng/README.android
+[+] We found traces of a missing patch for CVE-2016-3751 - BUG: A-23265085 in: /media/csl/ACOS/ResurrectionX/external/libpng/README.version
+[-] We found traces of CVE-2016-3751 - BUG: A-23265085 in: /media/csl/ACOS/ResurrectionX/external/libpng/contrib/gregbook/readpng2.c
+[+] We found traces of a missing patch for CVE-2016-3751 - BUG: A-23265085 in: /media/csl/ACOS/ResurrectionX/external/libpng/contrib/libtests/pngvalid.c
+[-] We found traces of CVE-2016-3751 - BUG: A-23265085 in: /media/csl/ACOS/ResurrectionX/external/libpng/pngread.c
+[+] We found traces of a missing patch for CVE-2016-3751 - BUG: A-23265085 in: /media/csl/ACOS/ResurrectionX/external/libpng/pngrtran.c
+[+] We found traces of a missing patch for CVE-2016-3751 - BUG: A-23265085 in: /media/csl/ACOS/ResurrectionX/external/libpng/pngrutil.c
+[+] We found traces of a missing patch for CVE-2016-3751 - BUG: A-23265085 in: /media/csl/ACOS/ResurrectionX/external/libpng/pngstruct.h
+[+] We found traces of a missing patch for CVE-2016-3761 - BUG: A-28300969 in: /media/csl/ACOS/ResurrectionX/packages/apps/Nfc/src/com/android/nfc/NfcService.java
+[+] We found traces of a missing patch for CVE-2016-3820 - BUG: A-28673410 in: /media/csl/ACOS/ResurrectionX/external/libavc/decoder/ih264d_parse_pslice.c
+[+] We found traces of a missing patch for CVE-2016-3829 - BUG: A-29023649 in: /media/csl/ACOS/ResurrectionX/external/libavc/decoder/ih264d_api.c
+[+] We found traces of a missing patch for CVE-2016-3834 - BUG: A-28466701 in: /media/csl/ACOS/ResurrectionX/frameworks/av/camera/ICameraRecordingProxy.cpp
+[+] We found traces of a missing patch for CVE-2016-3834 - BUG: A-28466701 in: /media/csl/ACOS/ResurrectionX/frameworks/av/include/camera/ICameraRecordingProxy.h
+[+] We found traces of a missing patch for CVE-2016-3838 - BUG: A-28761672 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/am/ActivityManagerService.java
+[+] We found traces of a missing patch for CVE-2016-3839 - BUG: A-28885210 in: /media/csl/ACOS/ResurrectionX/system/bt/tools/hci/main.c
+[+] We found traces of a missing patch for CVE-2016-2497 - BUG: A-27450489 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/pm/PackageManagerService.java
+[+] We found traces of a missing patch for CVE-2016-3875 - BUG: A-26251884 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/wm/WindowManagerService.java
+[+] We found traces of a missing patch for CVE-2016-3876 - BUG: A-29900345 in: /media/csl/ACOS/ResurrectionX/frameworks/base/packages/SettingsProvider/src/com/android/providers/settings/SettingsProvider.java
+[+] We found traces of a missing patch for CVE-2016-3883 - BUG: A-28557603 in: /media/csl/ACOS/ResurrectionX/frameworks/opt/telephony/src/java/com/android/internal/telephony/SMSDispatcher.java
+[+] We found traces of a missing patch for CVE-2016-3884 - BUG: A-29421441 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/notification/NotificationManagerService.java
+[+] We found traces of a missing patch for CVE-2016-3887 - BUG: A-29899712 in: /media/csl/ACOS/ResurrectionX/frameworks/base/packages/SettingsProvider/src/com/android/providers/settings/SettingsProvider.java
+[+] We found traces of a missing patch for CVE-2016-3911 - BUG: A-30143607 in: /media/csl/ACOS/ResurrectionX/frameworks/base/core/java/android/os/Process.java
+[+] We found traces of a missing patch for CVE-2016-3912 - BUG: A-30202481 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/am/ActivityManagerService.java
+[+] We found traces of a missing patch for CVE-2016-3915 - BUG: A-30591838 in: /media/csl/ACOS/ResurrectionX/system/media/camera/src/camera_metadata.c
+[+] We found traces of a missing patch for CVE-2016-3922 - BUG: A-30202619 in: /media/csl/ACOS/ResurrectionX/hardware/ril/libril/RilSapSocket.cpp
+[+] We found traces of a missing patch for CVE-2016-3923 - BUG: A-30647115 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/accessibility/java/com/android/server/accessibility/AccessibilityManagerService.java
+[+] We found traces of a missing patch for CVE-2016-6701 - BUG: A-30190637 in: /media/csl/ACOS/ResurrectionX/external/skia/src/codec/SkJpegCodec.cpp
+[+] We found traces of a missing patch for CVE-2016-6708 - BUG: A-30693465 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/am/ActivityManagerService.java
+[+] We found traces of a missing patch for CVE-2015-1283 - BUG: A-27818751 in: /media/csl/ACOS/ResurrectionX/external/expat/lib/xmlparse.c
+[+] We found traces of a missing patch for CVE-2014-9675 - BUG: A-24296662 in: /media/csl/ACOS/ResurrectionX/external/freetype/src/autofit/aflatin.c
+[+] We found traces of a missing patch for CVE-2014-9675 - BUG: A-24296662 in: /media/csl/ACOS/ResurrectionX/external/freetype/src/autofit/afloader.c
+[+] We found traces of a missing patch for CVE-2014-9675 - BUG: A-24296662 in: /media/csl/ACOS/ResurrectionX/external/freetype/src/autofit/afranges.c
+[+] We found traces of a missing patch for CVE-2014-9675 - BUG: A-24296662 in: /media/csl/ACOS/ResurrectionX/external/freetype/src/base/ftstroke.c
+[-] We found traces of CVE-2014-9675 - BUG: A-24296662 in: /media/csl/ACOS/ResurrectionX/external/freetype/src/gzip/ftgzip.c
+[+] We found traces of a missing patch for CVE-2014-9675 - BUG: A-24296662 in: /media/csl/ACOS/ResurrectionX/external/freetype/src/truetype/ttgload.c
+[+] We found traces of a missing patch for CVE-2014-9675 - BUG: A-24296662 in: /media/csl/ACOS/ResurrectionX/external/freetype/src/truetype/ttgxvar.c
+[-] We found traces of CVE-2014-9675 - BUG: A-24296662 in: /media/csl/ACOS/ResurrectionX/external/freetype/src/truetype/ttobjs.c
+[+] We found traces of a missing patch for CVE-2016-6770 - BUG: A-30202228 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/am/ActivityManagerService.java
+[+] We found traces of a missing patch for CVE-2017-0391 - BUG: A-32322258 in: /media/csl/ACOS/ResurrectionX/external/libhevc/decoder/ihevcd_decode.c
+[-] We found traces of CVE-2017-0392 - BUG: A-32577290 in: /media/csl/ACOS/ResurrectionX/frameworks/av/media/extractors/mp3/VBRISeeker.cpp
+[+] We found traces of a missing patch for CVE-2016-5552 - BUG: A-31858037 in: /media/csl/ACOS/ResurrectionX/libcore/ojluni/src/main/java/java/net/URLStreamHandler.java
+[+] We found traces of a missing patch for CVE-2017-0472 - BUG: A-33862021 in: /media/csl/ACOS/ResurrectionX/external/libhevc/decoder/ihevcd_parse_headers.c
+[+] We found traces of a missing patch for CVE-2017-0493 - BUG: A-32793550 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java
+[+] We found traces of a missing patch for CVE-2017-7376 - BUG: A-36555370 in: /media/csl/ACOS/ResurrectionX/external/libxml2/uri.c
+[+] We found traces of a missing patch for CVE-2017-0668 - BUG: A-22011579 in: /media/csl/ACOS/ResurrectionX/packages/providers/DownloadProvider/src/com/android/providers/downloads/DownloadProvider.java
+[+] We found traces of a missing patch for CVE-2017-0669 - BUG: A-34114752 in: /media/csl/ACOS/ResurrectionX/packages/providers/MediaProvider/src/com/android/providers/media/MediaProvider.java
+[+] We found traces of a missing patch for CVE-2017-0670 - BUG: A-36104177 in: /media/csl/ACOS/ResurrectionX/bionic/linker/linker.cpp
+[+] We found traces of a missing patch for CVE-2016-2109 - BUG: A-35443725 in: /media/csl/ACOS/ResurrectionX/external/boringssl/src/crypto/asn1/a_d2i_fp.c
+[+] We found traces of a missing patch for CVE-2017-0676 - BUG: A-34896431 in: /media/csl/ACOS/ResurrectionX/external/libhevc/decoder/ihevcd_parse_headers.c
+[+] We found traces of a missing patch for CVE-2017-0692 - BUG: A-36725407 in: /media/csl/ACOS/ResurrectionX/external/sonivox/arm-wt-22k/lib_src/eas_xmf.c
+[+] We found traces of a missing patch for CVE-2017-6983 - BUG: A-63852675 in: /media/csl/ACOS/ResurrectionX/external/sqlite/dist/orig/sqlite3.c
+[+] We found traces of a missing patch for CVE-2017-6983 - BUG: A-63852675 in: /media/csl/ACOS/ResurrectionX/external/sqlite/dist/orig/sqlite3.h
+[+] We found traces of a missing patch for CVE-2017-6983 - BUG: A-63852675 in: /media/csl/ACOS/ResurrectionX/external/sqlite/dist/sqlite3.c
+[+] We found traces of a missing patch for CVE-2017-6983 - BUG: A-63852675 in: /media/csl/ACOS/ResurrectionX/external/sqlite/dist/sqlite3.h
+[+] We found traces of a missing patch for CVE-2017-14496 - BUG: A-64575136 in: /media/csl/ACOS/ResurrectionX/external/dnsmasq/src/rfc1035.c
+[+] We found traces of a missing patch for CVE-2017-0830 - BUG: A-62623498 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java
+[+] We found traces of a missing patch for CVE-2017-0831 - BUG: A-37442941 in: /media/csl/ACOS/ResurrectionX/frameworks/base/api/system-current.txt
+[+] We found traces of a missing patch for CVE-2017-0831 - BUG: A-37442941 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/wm/WindowState.java
+[+] We found traces of a missing patch for CVE-2017-13157 - BUG: A-32990341 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/am/ActivityManagerService.java
+[+] We found traces of a missing patch for CVE-2017-13158 - BUG: A-32879915 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/am/ActivityManagerService.java
+[+] We found traces of a missing patch for CVE-2017-13184 - BUG: A-65483324 in: /media/csl/ACOS/ResurrectionX/frameworks/native/services/surfaceflinger/SurfaceFlinger.h
+[+] We found traces of a missing patch for CVE-2017-13259 - BUG: A-68161546 in: /media/csl/ACOS/ResurrectionX/system/bt/stack/sdp/sdp_discovery.cc
+[+] We found traces of a missing patch for CVE-2017-13276 - BUG: A-70637599 in: /media/csl/ACOS/ResurrectionX/external/aac/libMpegTPDec/src/tpdec_asc.cpp
+[+] We found traces of a missing patch for CVE-2017-13227 - BUG: A-69981710 in: /media/csl/ACOS/ResurrectionX/frameworks/base/core/java/android/view/autofill/AutofillManager.java
+[+] We found traces of a missing patch for CVE-2017-13227 - BUG: A-69981710 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/autofill/java/com/android/server/autofill/Session.java
+[+] We found traces of a missing patch for CVE-2018-9357 - BUG: A-74947856 in: /media/csl/ACOS/ResurrectionX/system/bt/stack/bnep/bnep_api.cc
+[+] We found traces of a missing patch for CVE-2018-9359 - BUG: A-74196706 in: /media/csl/ACOS/ResurrectionX/system/bt/stack/l2cap/l2c_main.cc
+[+] We found traces of a missing patch for CVE-2018-9360 - BUG: A-74201143 in: /media/csl/ACOS/ResurrectionX/system/bt/stack/l2cap/l2c_main.cc
+[+] We found traces of a missing patch for CVE-2018-9361 - BUG: A-74202041 in: /media/csl/ACOS/ResurrectionX/system/bt/stack/l2cap/l2c_main.cc
+[+] We found traces of a missing patch for CVE-2018-9362 - BUG: A-72298611 in: /media/csl/ACOS/ResurrectionX/frameworks/opt/telephony/src/java/com/android/internal/telephony/InboundSmsHandler.java
+[+] We found traces of a missing patch for CVE-2018-9458 - BUG: A-71786287 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/wm/RootWindowContainer.java
+[-] We found traces of CVE-2018-9466 - BUG: A-62151041 in: /media/csl/ACOS/ResurrectionX/external/libxml2/doc/libxml2-refs.xml
+[+] We found traces of a missing patch for CVE-2018-9466 - BUG: A-62151041 in: /media/csl/ACOS/ResurrectionX/external/libxml2/result/HTML/758518-entity.html
+[+] We found traces of a missing patch for CVE-2018-9466 - BUG: A-62151041 in: /media/csl/ACOS/ResurrectionX/external/libxml2/result/HTML/758518-entity.html.err
+[+] We found traces of a missing patch for CVE-2018-9466 - BUG: A-62151041 in: /media/csl/ACOS/ResurrectionX/external/libxml2/result/noent/comment4.xml.sax2
+[+] We found traces of a missing patch for CVE-2018-9466 - BUG: A-62151041 in: /media/csl/ACOS/ResurrectionX/external/libxml2/result/noent/isolat1.sax2
+[+] We found traces of a missing patch for CVE-2018-9466 - BUG: A-62151041 in: /media/csl/ACOS/ResurrectionX/external/libxml2/runtest.c
+[+] We found traces of a missing patch for CVE-2018-9466 - BUG: A-62151041 in: /media/csl/ACOS/ResurrectionX/external/libxml2/test/HTML/758518-entity.html
+[+] We found traces of a missing patch for CVE-2018-9466 - BUG: A-62151041 in: /media/csl/ACOS/ResurrectionX/external/libxml2/test/HTML/758518-tag.html
+[+] We found traces of a missing patch for CVE-2018-9466 - BUG: A-62151041 in: /media/csl/ACOS/ResurrectionX/external/libxml2/test/valid/dtds/766956.dtd
+[-] We found traces of CVE-2018-9466 - BUG: A-62151041 in: /media/csl/ACOS/ResurrectionX/external/libxml2/xpath.c
+[-] We found traces of CVE-2018-9472 - BUG: A-79662501 in: /media/csl/ACOS/ResurrectionX/external/libxml2/doc/libxml2-refs.xml
+[+] We found traces of a missing patch for CVE-2018-9472 - BUG: A-79662501 in: /media/csl/ACOS/ResurrectionX/external/libxml2/result/HTML/758518-entity.html
+[+] We found traces of a missing patch for CVE-2018-9472 - BUG: A-79662501 in: /media/csl/ACOS/ResurrectionX/external/libxml2/result/HTML/758518-entity.html.err
+[+] We found traces of a missing patch for CVE-2018-9472 - BUG: A-79662501 in: /media/csl/ACOS/ResurrectionX/external/libxml2/result/noent/comment4.xml.sax2
+[+] We found traces of a missing patch for CVE-2018-9472 - BUG: A-79662501 in: /media/csl/ACOS/ResurrectionX/external/libxml2/result/noent/isolat1.sax2
+[+] We found traces of a missing patch for CVE-2018-9472 - BUG: A-79662501 in: /media/csl/ACOS/ResurrectionX/external/libxml2/runtest.c
+[+] We found traces of a missing patch for CVE-2018-9472 - BUG: A-79662501 in: /media/csl/ACOS/ResurrectionX/external/libxml2/test/HTML/758518-entity.html
+[+] We found traces of a missing patch for CVE-2018-9472 - BUG: A-79662501 in: /media/csl/ACOS/ResurrectionX/external/libxml2/test/HTML/758518-tag.html
+[+] We found traces of a missing patch for CVE-2018-9472 - BUG: A-79662501 in: /media/csl/ACOS/ResurrectionX/external/libxml2/test/valid/dtds/766956.dtd
+[-] We found traces of CVE-2018-9472 - BUG: A-79662501 in: /media/csl/ACOS/ResurrectionX/external/libxml2/xpath.c
+[+] We found traces of a missing patch for CVE-2018-9475 - BUG: A-79266386 in: /media/csl/ACOS/ResurrectionX/system/bt/btif/src/btif_hf.cc
+[+] We found traces of a missing patch for CVE-2018-9498 - BUG: A-78354855 in: /media/csl/ACOS/ResurrectionX/external/skia/include/core/SkTypes.h
+[+] We found traces of a missing patch for CVE-2018-9498 - BUG: A-78354855 in: /media/csl/ACOS/ResurrectionX/external/skia/public.bzl
+[+] We found traces of a missing patch for CVE-2018-9501 - BUG: A-110034419 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/tests/robotests/src/com/android/settings/SettingsActivityTest.java
+[+] We found traces of a missing patch for CVE-2018-9524 - BUG: A-34170870 in: /media/csl/ACOS/ResurrectionX/frameworks/base/packages/SystemUI/AndroidManifest.xml
+[+] We found traces of a missing patch for CVE-2018-9524 - BUG: A-34170870 in: /media/csl/ACOS/ResurrectionX/frameworks/base/packages/SystemUI/src/com/android/systemui/media/MediaProjectionPermissionActivity.java
+[+] We found traces of a missing patch for CVE-2018-9524 - BUG: A-34170870 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/wm/WindowManagerService.java
+[+] We found traces of a missing patch for CVE-2018-9560 - BUG: A-79946737 in: /media/csl/ACOS/ResurrectionX/system/bt/stack/hid/hidd_api.cc
+[+] We found traces of a missing patch for CVE-2019-1994 - BUG: A-117770924 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/src/com/android/settings/development/qstile/DevelopmentTiles.java
+[-] We found traces of CVE-2019-1995 - BUG: A-32589229 in: /media/csl/ACOS/ResurrectionX/packages/apps/Email/AndroidManifest.xml
+[+] We found traces of a missing patch for CVE-2018-20346 - BUG: A-121156452 in: /media/csl/ACOS/ResurrectionX/external/sqlite/dist/orig/sqlite3.c
+[+] We found traces of a missing patch for CVE-2018-20346 - BUG: A-121156452 in: /media/csl/ACOS/ResurrectionX/external/sqlite/dist/sqlite3.c
+[+] We found traces of a missing patch for CVE-2019-2003 - BUG: A-116321860 in: /media/csl/ACOS/ResurrectionX/frameworks/base/core/tests/coretests/src/android/view/textclassifier/TextClassificationManagerTest.java
+[+] We found traces of a missing patch for CVE-2019-2004 - BUG: A-115739809 in: /media/csl/ACOS/ResurrectionX/frameworks/native/include/input/InputTransport.h
+[+] We found traces of a missing patch for CVE-2019-2033 - BUG: A-121327565 in: /media/csl/ACOS/ResurrectionX/system/netd/server/MDnsSdListener.cpp
+[+] We found traces of a missing patch for CVE-2019-2049 - BUG: A-120445479 in: /media/csl/ACOS/ResurrectionX/system/bt/profile/avrcp/device.cc
+[+] We found traces of a missing patch for CVE-2019-2117 - BUG: A-124107808 in: /media/csl/ACOS/ResurrectionX/packages/providers/TelephonyProvider/src/com/android/providers/telephony/TelephonyProvider.java
+[+] We found traces of a missing patch for CVE-2019-2119 - BUG: A-131622568 in: /media/csl/ACOS/ResurrectionX/system/security/keystore/key_store_service.cpp
+[+] We found traces of a missing patch for CVE-2019-2121 - BUG: A-131105245 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/am/ActivityManagerService.java
+[+] We found traces of a missing patch for CVE-2019-2131 - BUG: A-119115683 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/src/com/android/settings/notification/AppNotificationSettings.java
+[+] We found traces of a missing patch for CVE-2019-2132 - BUG: A-130568701 in: /media/csl/ACOS/ResurrectionX/frameworks/base/packages/VpnDialogs/src/com/android/vpndialogs/ConfirmDialog.java
+[+] We found traces of a missing patch for CVE-2019-9506 - BUG: A-124301137 in: /media/csl/ACOS/ResurrectionX/frameworks/base/cmds/statsd/src/atoms.proto
+[+] We found traces of a missing patch for CVE-2019-2103 - BUG: A-120610669 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/wm/ScreenRotationAnimation.java
+[+] We found traces of a missing patch for CVE-2019-2124 - BUG: A-127320867 in: /media/csl/ACOS/ResurrectionX/packages/apps/Email/src/com/android/email/activity/ComposeActivityEmailExternal.java
+[+] We found traces of a missing patch for CVE-2019-2110 - BUG: A-69703445 in: /media/csl/ACOS/ResurrectionX/frameworks/base/graphics/java/android/graphics/GraphicBuffer.java
+[+] We found traces of a missing patch for CVE-2019-2212 - BUG: A-139690488 in: /media/csl/ACOS/ResurrectionX/external/libcxx/include/math.h
+[+] We found traces of a missing patch for CVE-2019-15140 - BUG: A-140328986 in: /media/csl/ACOS/ResurrectionX/external/ImageMagick/coders/mat.c
+[-] We found traces of CVE-2019-2228 - BUG: A-111210196 in: /media/csl/ACOS/ResurrectionX/external/libcups/cups/hash.c
+[+] We found traces of a missing patch for CVE-2020-0017 - BUG: A-123232892  in: /media/csl/ACOS/ResurrectionX/frameworks/base/core/java/android/view/textclassifier/SelectionEvent.java
+[-] We found traces of CVE-2020-0109 - BUG: A-148059175 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/notification/NotificationShellCmd.java
+[+] We found traces of a missing patch for CVE-2020-0024 - BUG: 	A-137015265 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/src/com/android/settings/SettingsActivity.java
+[-] We found traces of CVE-2020-0092 - BUG: 	A-145135488 in: /media/csl/ACOS/ResurrectionX/frameworks/base/packages/SystemUI/tests/src/com/android/systemui/statusbar/notification/stack/NotificationStackScrollLayoutTest.java
+[-] We found traces of CVE-2020-0249 - BUG: A-154719656 in: /media/csl/ACOS/ResurrectionX/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/notification/InstantAppNotifier.java
+[-] We found traces of CVE-2020-0248 - BUG: A-154627439 in: /media/csl/ACOS/ResurrectionX/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/notification/InstantAppNotifier.java
+[+] We found traces of a missing patch for CVE-2020-0386 - BUG: A-155650356 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/src/com/android/settings/bluetooth/RequestPermissionActivity.java
+[+] We found traces of a missing patch for CVE-2020-0394 - BUG: A-155648639 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/src/com/android/settings/bluetooth/BluetoothPairingDialog.java
+[+] We found traces of a missing patch for CVE-2020-0379 - BUG: A-150156492 in: /media/csl/ACOS/ResurrectionX/system/bt/stack/btm/btm_sec.cc
+[+] We found traces of a missing patch for CVE-2020-0440 - BUG: A-162627132 in: /media/csl/ACOS/ResurrectionX/frameworks/base/core/tests/coretests/AndroidManifest.xml
+[+] We found traces of a missing patch for CVE-2020-0440 - BUG: A-162627132 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/display/DisplayManagerService.java
+[+] We found traces of a missing patch for CVE-2020-0469 - BUG: A-168692734 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/locksettings/LockSettingsService.java
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/Android.bp
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/config/arm/config/av1_rtcd.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/config/arm64/config/av1_rtcd.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/config/x86/config/av1_rtcd.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/config/x86_64/config/av1_rtcd.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/.clang-format
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/.cmake-format.py
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/CHANGELOG
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/CMakeLists.txt
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom/aom_codec.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom/aom_encoder.h
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom/aom_encoder.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom/aom_image.h
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom/aomcx.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom/aomcx.h
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom/aomdx.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom/exports_com
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom/exports_test
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom/src/aom_encoder.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom/src/aom_image.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom/src/aom_image.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/aom_convolve.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/aom_dsp.cmake
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/aom_dsp_common.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/aom_dsp_rtcd_defs.pl
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/arm/variance_neon.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/avg.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/bitreader.h
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/bitwriter.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/blend_a64_hmask.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/blend_a64_mask.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/blend_a64_vmask.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/fwd_txfm.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/loopfilter.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/noise_model.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/psnr.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/psnr.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/psnrhvs.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/quantize.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/quantize.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/quantize.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/sad.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/sad_av1.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/simd/v128_intrinsics_c.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/simd/v256_intrinsics_c.h
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/simd/v256_intrinsics_x86.h
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/simd/v64_intrinsics_c.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/sse.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/ssim.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/subtract.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/sum_squares.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/variance.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/x86/adaptive_quantize_sse2.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/x86/aom_asm_stubs.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/x86/avg_intrin_sse2.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/x86/blend_a64_hmask_sse4.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/x86/blend_a64_mask_avx2.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/x86/blend_a64_mask_sse4.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/x86/blend_a64_vmask_sse4.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/x86/convolve.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/x86/convolve_avx2.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/x86/fwd_txfm_impl_sse2.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/x86/fwd_txfm_sse2.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/x86/highbd_sad_sse2.asm
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/x86/intrapred_avx2.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/x86/intrapred_avx2.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/x86/intrapred_sse2.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/x86/masked_variance_intrin_ssse3.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/x86/obmc_variance_sse4.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/x86/quantize_x86.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/x86/sad4d_avx2.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/x86/sad4d_sse2.asm
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/x86/sad4d_sse2.asm
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/x86/sse_avx2.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/x86/sse_sse4.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/x86/subtract_avx2.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/x86/sum_squares_avx2.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/x86/sum_squares_sse2.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/x86/txfm_common_avx2.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/x86/txfm_common_sse2.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/x86/variance_avx2.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/x86/variance_impl_avx2.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_dsp/x86/variance_sse2.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_mem/aom_mem.cmake
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_mem/aom_mem.h
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_ports/aom_ports.cmake
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_ports/x86_abi_support.asm
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_scale/aom_scale.cmake
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_scale/generic/yv12config.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_scale/generic/yv12config.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_scale/generic/yv12extend.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_scale/yv12config.h
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_util/aom_thread.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/aom_util/aom_util.cmake
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/apps/aomdec.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/apps/aomenc.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/apps/aomenc.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/av1.cmake
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/av1.cmake
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/av1_cx_iface.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/av1_cx_iface.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/av1_dx_iface.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/av1_iface_common.h
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/alloccommon.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/arm/av1_inv_txfm_neon.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/arm/cfl_neon.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/arm/mem_neon.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/arm/selfguided_neon.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/av1_inv_txfm1d.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/av1_loopfilter.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/blockd.h
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/cdef.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/cdef.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/cfl.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/convolve.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/convolve.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/debugmodes.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/enums.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/filter.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/mv.h
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/mvref_common.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/obmc.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/pred_common.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/quant_common.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/reconinter.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/reconinter.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/reconinter.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/reconintra.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/reconintra.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/resize.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/restoration.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/restoration.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/scale.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/tile_common.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/warped_motion.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/warped_motion.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/x86/av1_inv_txfm_avx2.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/x86/cfl_avx2.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/x86/cfl_ssse3.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/x86/highbd_inv_txfm_avx2.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/x86/highbd_inv_txfm_avx2.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/x86/highbd_inv_txfm_sse4.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/x86/highbd_inv_txfm_sse4.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/x86/intra_edge_sse4.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/common/x86/wiener_convolve_avx2.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/decoder/decodeframe.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/decoder/decodeframe.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/decoder/decodeframe.h
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/decoder/decodemv.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/decoder/decodemv.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/decoder/decoder.h
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/decoder/obu.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/decoder/obu.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/aq_cyclicrefresh.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/aq_variance.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/av1_fwd_txfm1d.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/av1_quantize.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/av1_quantize.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/av1_quantize.h
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/bitstream.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/block.h
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/block.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/context_tree.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/corner_match.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/encode_strategy.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/encode_strategy.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/encodeframe.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/encodeframe.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/encodemv.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/encodemv.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/encoder.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/encoder.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/encoder.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/encodetxb.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/encodetxb.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/encodetxb.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/ethread.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/ethread.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/firstpass.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/firstpass.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/firstpass.h
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/gop_structure.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/gop_structure.h
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/hash_motion.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/hash_motion.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/level.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/level.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/mcomp.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/mcomp.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/mcomp.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/ml.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/partition_model_weights.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/partition_strategy.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/partition_strategy.h
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/pass2_strategy.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/pass2_strategy.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/pickcdef.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/pickrst.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/pickrst.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/ransac.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/ratectrl.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/ratectrl.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/ratectrl.h
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/rd.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/rd.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/rdopt.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/rdopt.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/reconinter_enc.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/speed_features.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/speed_features.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/tpl_model.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/tx_prune_model_weights.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/var_based_part.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/var_based_part.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/x86/corner_match_avx2.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/x86/corner_match_sse4.c
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/x86/highbd_fwd_txfm_sse4.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/x86/ml_sse3.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/x86/pickrst_avx2.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/av1/encoder/x86/pickrst_sse4.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/build/cmake/aom_configure.cmake
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/build/cmake/aom_configure.cmake
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/build/cmake/aom_optimization.cmake
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/common/webmdec.cc
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/examples/lightfield_decoder.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/examples/lightfield_encoder.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/test/av1_convolve_2d_test_util.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/test/av1_highbd_iht_test.cc
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/test/av1_inv_txfm1d_test.cc
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/test/av1_inv_txfm2d_test.cc
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/test/blockd_test.cc
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/test/codec_factory.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/test/comp_avg_pred_test.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/test/edge_detect_test.cc
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/test/encode_test_driver.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/test/encode_test_driver.h
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/test/error_block_test.cc
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/test/external_frame_buffer_test.cc
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/test/hiprec_convolve_test_util.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/test/level_test.cc
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/test/masked_sad_test.cc
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/test/masked_sad_test.cc
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/test/quantize_func_test.cc
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/test/sad_test.cc
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/test/test-data.sha1
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/test/test.cmake
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/test/test.cmake
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/test/test_data_util.cmake
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/test/variance_test.cc
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/test/warp_filter_test_util.cc
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/test/warp_filter_test_util.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/third_party/googletest/src/googletest/cmake/internal_utils.cmake
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/third_party/googletest/src/googletest/cmake/internal_utils.cmake
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/third_party/googletest/src/googletest/include/gtest/gtest-printers.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/third_party/googletest/src/googletest/include/gtest/gtest-spi.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/third_party/googletest/src/googletest/include/gtest/gtest-test-part.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/third_party/googletest/src/googletest/include/gtest/gtest.h
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/third_party/googletest/src/googletest/include/gtest/gtest.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/third_party/googletest/src/googletest/include/gtest/gtest_pred_impl.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/third_party/googletest/src/googletest/include/gtest/internal/gtest-death-test-internal.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/third_party/googletest/src/googletest/include/gtest/internal/gtest-filepath.h
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/third_party/googletest/src/googletest/include/gtest/internal/gtest-internal.h
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/third_party/googletest/src/googletest/include/gtest/internal/gtest-port.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/third_party/googletest/src/googletest/src/gtest-death-test.cc
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/third_party/googletest/src/googletest/src/gtest-filepath.cc
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/third_party/googletest/src/googletest/src/gtest-internal-inl.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/third_party/googletest/src/googletest/src/gtest-port.cc
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/third_party/googletest/src/googletest/src/gtest-port.cc
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/third_party/googletest/src/googletest/src/gtest-printers.cc
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/third_party/googletest/src/googletest/src/gtest.cc
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/third_party/googletest/src/googletest/src/gtest.cc
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/third_party/libwebm/mkvparser/mkvparser.cc
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/ACOS/ResurrectionX/external/libaom/libaom/third_party/libwebm/mkvparser/mkvparser.cc
+[+] We found traces of a missing patch for CVE-2021-0306 - BUG: A-154505240 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/pm/permission/BasePermission.java
+[+] We found traces of a missing patch for CVE-2021-0339 - BUG: A-145728687 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/wm/WindowManagerService.java
+[-] We found traces of CVE-2021-0328 - BUG: A-172670415 in: /media/csl/ACOS/ResurrectionX/packages/apps/Bluetooth/src/com/android/bluetooth/gatt/GattService.java
+[+] We found traces of a missing patch for CVE-2021-0426 - BUG: A-174485572 in: /media/csl/ACOS/ResurrectionX/frameworks/base/cmds/statsd/src/logd/LogEvent.cpp
+[+] We found traces of a missing patch for CVE-2021-0426 - BUG: A-174485572 in: /media/csl/ACOS/ResurrectionX/frameworks/base/cmds/statsd/tests/LogEvent_test.cpp
+[+] We found traces of a missing patch for CVE-2021-0427 - BUG: A-174488848 in: /media/csl/ACOS/ResurrectionX/frameworks/base/cmds/statsd/src/logd/LogEvent.cpp
+[+] We found traces of a missing patch for CVE-2021-0427 - BUG: A-174488848 in: /media/csl/ACOS/ResurrectionX/frameworks/base/cmds/statsd/tests/LogEvent_test.cpp
+[+] We found traces of a missing patch for CVE-2021-0442 - BUG: A-174768985 in: /media/csl/ACOS/ResurrectionX/frameworks/base/core/java/android/view/InputApplicationHandle.java
+[+] We found traces of a missing patch for CVE-2021-0442 - BUG: A-174768985 in: /media/csl/ACOS/ResurrectionX/frameworks/base/core/jni/android_hardware_input_InputApplicationHandle.cpp
+[+] We found traces of a missing patch for CVE-2021-0442 - BUG: A-174768985 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/wm/InputMonitor.java
+[+] We found traces of a missing patch for CVE-2021-0485 - BUG: A-174302616 in: /media/csl/ACOS/ResurrectionX/frameworks/base/core/res/res/values/dimens.xml
+[+] We found traces of a missing patch for CVE-2021-0485 - BUG: A-174302616 in: /media/csl/ACOS/ResurrectionX/frameworks/base/core/res/res/values/symbols.xml
+[+] We found traces of a missing patch for CVE-2019-2219 - BUG: A-119041698 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/notification/NotificationManagerService.java
+[+] We found traces of a missing patch for CVE-2019-2219 - BUG: A-119041698 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/tests/uiservicestests/src/com/android/server/notification/BuzzBeepBlinkTest.java
+[+] We found traces of a missing patch for CVE-2019-2219 - BUG: A-119041698 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/tests/uiservicestests/src/com/android/server/notification/NotificationManagerServiceTest.java
+[+] We found traces of a missing patch for CVE-2021-0521 - BUG: A-174661955 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/pm/PackageManagerService.java
+[+] We found traces of a missing patch for CVE-2021-0505 - BUG: A-179975048 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/src/com/android/settings/vpn2/AppDialogFragment.java
+[+] We found traces of a missing patch for CVE-2021-0505 - BUG: A-179975048 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/src/com/android/settings/vpn2/AppPreference.java
+[+] We found traces of a missing patch for CVE-2021-0517 - BUG: A-179053823 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/ConnectivityService.java
+[+] We found traces of a missing patch for CVE-2021-0596 - BUG: A-181346550 in: /media/csl/ACOS/ResurrectionX/packages/apps/Nfc/nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.cpp
+[+] We found traces of a missing patch for CVE-2021-0645 - BUG: A-157320644 in: /media/csl/ACOS/ResurrectionX/frameworks/base/packages/ExternalStorageProvider/src/com/android/externalstorage/ExternalStorageProvider.java
+[+] We found traces of a missing patch for CVE-2021-0595 - BUG: A-177457096 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/tests/wmtests/src/com/android/server/wm/RootWindowContainerTests.java
+[+] We found traces of a missing patch for CVE-2021-0703 - BUG: A-184569329 in: /media/csl/ACOS/ResurrectionX/system/core/init/Android.bp
+[+] We found traces of a missing patch for CVE-2021-0703 - BUG: A-184569329 in: /media/csl/ACOS/ResurrectionX/system/core/init/epoll.h
+[+] We found traces of a missing patch for CVE-2021-0705 - BUG: A-185388103 in: /media/csl/ACOS/ResurrectionX/frameworks/base/core/java/android/app/Notification.java
+[+] We found traces of a missing patch for CVE-2021-0926 - BUG: A-191053931 in: /media/csl/ACOS/ResurrectionX/packages/apps/Contacts/AndroidManifest.xml
+[+] We found traces of a missing patch for CVE-2021-0918 - BUG: A-197536150 in: /media/csl/ACOS/ResurrectionX/system/bt/stack/gatt/gatt_cl.cc
+[+] We found traces of a missing patch for CVE-2021-0704
+ - BUG: A-179338675 in: /media/csl/ACOS/ResurrectionX/frameworks/base/core/res/res/values/strings.xml
+[+] We found traces of a missing patch for CVE-2021-0704
+ - BUG: A-179338675 in: /media/csl/ACOS/ResurrectionX/frameworks/base/core/res/res/values/symbols.xml
+[+] We found traces of a missing patch for CVE-2021-0967
+ - BUG: A-199065614 in: /media/csl/ACOS/ResurrectionX/external/tremolo/Tremolo/codebook.c
+[+] We found traces of a missing patch for CVE-2021-0968
+ - BUG: A-197868577 in: /media/csl/ACOS/ResurrectionX/system/bt/osi/src/allocator.cc
+[+] We found traces of a missing patch for CVE-2021-0956
+ - BUG: A-189942532 in: /media/csl/ACOS/ResurrectionX/packages/apps/Nfc/nci/jni/NfcTag.cpp
+[+] We found traces of a missing patch for CVE-2021-0954
+ - BUG: A-143559931 in: /media/csl/ACOS/ResurrectionX/frameworks/base/core/java/com/android/internal/app/ResolverActivity.java
+[+] We found traces of a missing patch for CVE-2021-0963
+ - BUG: A-199754277 in: /media/csl/ACOS/ResurrectionX/packages/apps/KeyChain/src/com/android/keychain/KeyChainActivity.java
+[+] We found traces of a missing patch for CVE-2021-0952
+ - BUG: A-195748381 in: /media/csl/ACOS/ResurrectionX/packages/apps/Contacts/src/com/android/contacts/activities/AttachPhotoActivity.java
+[+] We found traces of a missing patch for CVE-2021-0952
+ - BUG: A-195748381 in: /media/csl/ACOS/ResurrectionX/packages/apps/Contacts/src/com/android/contacts/detail/PhotoSelectionHandler.java
+[+] We found traces of a missing patch for CVE-2021-0966
+ - BUG: A-198346478 in: /media/csl/ACOS/ResurrectionX/system/tools/aidl/generate_cpp.cpp
+[+] We found traces of a missing patch for CVE-2021-0966
+ - BUG: A-198346478 in: /media/csl/ACOS/ResurrectionX/system/tools/aidl/generate_ndk.cpp
+[+] We found traces of a missing patch for CVE-2021-0969
+ - BUG: A-199922685 in: /media/csl/ACOS/ResurrectionX/frameworks/base/packages/SettingsLib/tests/integ/src/com/android/settingslib/wifi/AccessPointTest.java
+[+] We found traces of a missing patch for CVE-2021-39630 - BUG: A-202768292 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/om/OverlayManagerService.java
+[+] We found traces of a missing patch for CVE-2020-0338 - BUG: A-123700107 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/accounts/AccountManagerService.java
+[+] We found traces of a missing patch for CVE-2021-39626 - BUG: A-194695497 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/src/com/android/settings/connecteddevice/ConnectedDeviceDashboardFragment.java
+[+] We found traces of a missing patch for CVE-2021-39626 - BUG: A-194695497 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/src/com/android/settings/connecteddevice/DiscoverableFooterPreferenceController.java
+[+] We found traces of a missing patch for CVE-2021-39626 - BUG: A-194695497 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/tests/robotests/src/com/android/settings/connecteddevice/DiscoverableFooterPreferenceControllerTest.java
+[-] We found traces of CVE-2021-39628 - BUG: A-189575031 in: /media/csl/ACOS/ResurrectionX/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/SysuiStatusBarStateController.java
+[+] We found traces of a missing patch for CVE-2021-39628 - BUG: A-189575031 in: /media/csl/ACOS/ResurrectionX/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/phone/StatusBar.java
+[+] We found traces of a missing patch for CVE-2021-39619 - BUG: A-197399948 in: /media/csl/ACOS/ResurrectionX/frameworks/base/core/java/android/app/admin/DevicePolicyManagerInternal.java
+[+] We found traces of a missing patch for CVE-2021-39619 - BUG: A-197399948 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/usage/java/com/android/server/usage/UsageStatsService.java
+[-] We found traces of CVE-2021-39671 - BUG: A-206718630 in: /media/csl/ACOS/ResurrectionX/system/tools/aidl/aidl_language_y.yy
+[+] We found traces of a missing patch for CVE-2021-39697 - BUG: A-200813547 in: /media/csl/ACOS/ResurrectionX/packages/providers/DownloadProvider/src/com/android/providers/downloads/DownloadProvider.java
+[+] We found traces of a missing patch for CVE-2021-39697 - BUG: A-200813547 in: /media/csl/ACOS/ResurrectionX/packages/providers/DownloadProvider/src/com/android/providers/downloads/Helpers.java
+[-] We found traces of CVE-2021-39697 - BUG: A-200813547 in: /media/csl/ACOS/ResurrectionX/packages/providers/DownloadProvider/src/com/android/providers/downloads/Helpers.java
+[+] We found traces of a missing patch for CVE-2021-39697 - BUG: A-200813547 in: /media/csl/ACOS/ResurrectionX/packages/providers/DownloadProvider/tests/src/com/android/providers/downloads/HelpersTest.java
+[+] We found traces of a missing patch for CVE-2021-39690 - BUG: A-204316511 in: /media/csl/ACOS/ResurrectionX/frameworks/native/services/surfaceflinger/SurfaceFlinger.cpp
+[+] We found traces of a missing patch for CVE-2021-39690 - BUG: A-204316511 in: /media/csl/ACOS/ResurrectionX/frameworks/native/services/surfaceflinger/SurfaceFlinger.h
+[+] We found traces of a missing patch for CVE-2021-39690 - BUG: A-204316511 in: /media/csl/ACOS/ResurrectionX/frameworks/native/services/surfaceflinger/tests/unittests/CompositionTest.cpp
+[+] We found traces of a missing patch for CVE-2021-39690 - BUG: A-204316511 in: /media/csl/ACOS/ResurrectionX/frameworks/native/services/surfaceflinger/tests/unittests/TestableSurfaceFlinger.h
+[+] We found traces of a missing patch for CVE-2021-0957 - BUG: A-193149550 in: /media/csl/ACOS/ResurrectionX/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout.java
+[+] We found traces of a missing patch for CVE-2021-0957 - BUG: A-193149550 in: /media/csl/ACOS/ResurrectionX/frameworks/base/packages/SystemUI/tests/src/com/android/systemui/statusbar/notification/stack/NotificationStackScrollLayoutTest.java
+[+] We found traces of a missing patch for CVE-2021-39704 - BUG: A-209965481 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/tests/uiservicestests/src/com/android/server/notification/NotificationManagerServiceTest.java
+[+] We found traces of a missing patch for CVE-2021-39707 - BUG: A-200688991
+ in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/src/com/android/settings/users/AppRestrictionsFragment.java
+[+] We found traces of a missing patch for CVE-2021-0694 - BUG: A-183147114 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/am/ActiveServices.java
+[+] We found traces of a missing patch for CVE-2021-0694 - BUG: A-183147114 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/am/ActivityManagerConstants.java
+[+] We found traces of a missing patch for CVE-2021-0694 - BUG: A-183147114 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/am/ServiceRecord.java
+[+] We found traces of a missing patch for CVE-2021-39794 - BUG: A-205836329 in: /media/csl/ACOS/ResurrectionX/frameworks/base/core/java/android/debug/AdbManager.java
+[+] We found traces of a missing patch for CVE-2021-39794 - BUG: A-205836329 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/adb/AdbDebuggingManager.java
+[+] We found traces of a missing patch for CVE-2021-39794 - BUG: A-205836329 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/tests/servicestests/src/com/android/server/adb/AdbDebuggingManagerTest.java
+[+] We found traces of a missing patch for CVE-2021-39796 - BUG: A-205595291 in: /media/csl/ACOS/ResurrectionX/frameworks/base/core/java/com/android/internal/app/HarmfulAppWarningActivity.java
+[+] We found traces of a missing patch for CVE-2021-39808 - BUG: A-209966086 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/notification/PreferencesHelper.java
+[+] We found traces of a missing patch for CVE-2021-39805 - BUG: A-212694559 in: /media/csl/ACOS/ResurrectionX/system/bt/stack/l2cap/l2c_ble.cc
+[+] We found traces of a missing patch for CVE-2021-39809 - BUG: A-205837191 in: /media/csl/ACOS/ResurrectionX/system/bt/stack/avrc/avrc_pars_ct.cc
+[+] We found traces of a missing patch for CVE-2021-39807 - BUG: A-209446496 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/src/com/android/settings/nfc/SecureNfcEnabler.java
+[+] We found traces of a missing patch for CVE-2022-20004 - BUG: A-179699767 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/slice/SliceManagerService.java
+[+] We found traces of a missing patch for CVE-2022-20005 - BUG: A-219044664 in: /media/csl/ACOS/ResurrectionX/frameworks/base/core/java/android/content/pm/IPackageInstallerSession.aidl
+[+] We found traces of a missing patch for CVE-2022-20005 - BUG: A-219044664 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/pm/PackageInstallerSession.java
+[+] We found traces of a missing patch for CVE-2021-39700 - BUG: A-201645790 in: /media/csl/ACOS/ResurrectionX/system/sepolicy/private/adbd.te
+[+] We found traces of a missing patch for CVE-2022-20114 - BUG: A-211114016 in: /media/csl/ACOS/ResurrectionX/packages/services/Telecomm/src/com/android/server/telecom/ServiceBinder.java
+[+] We found traces of a missing patch for CVE-2022-20011 - BUG: A-214999128 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/tests/uiservicestests/src/com/android/server/notification/NotificationManagerServiceTest.java
+[+] We found traces of a missing patch for CVE-2021-39670 - BUG: A-204087139 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/wallpaper/WallpaperManagerService.java
+[+] We found traces of a missing patch for CVE-2022-20112 - BUG: A-206987762 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/tests/robotests/src/com/android/settings/network/PrivateDnsPreferenceControllerTest.java
+[+] We found traces of a missing patch for CVE-2022-20006 - BUG: A-151095871 in: /media/csl/ACOS/ResurrectionX/frameworks/base/packages/SystemUI/src/com/android/systemui/keyguard/KeyguardViewMediator.java
+[+] We found traces of a missing patch for CVE-2022-20006 - BUG: A-151095871 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/policy/keyguard/KeyguardServiceWrapper.java
+[+] We found traces of a missing patch for CVE-2022-20138 - BUG: A-210469972 in: /media/csl/ACOS/ResurrectionX/frameworks/base/core/java/android/app/admin/DevicePolicyManager.java
+[+] We found traces of a missing patch for CVE-2022-20138 - BUG: A-210469972 in: /media/csl/ACOS/ResurrectionX/frameworks/base/core/java/android/app/admin/IDevicePolicyManager.aidl
+[+] We found traces of a missing patch for CVE-2022-20138 - BUG: A-210469972 in: /media/csl/ACOS/ResurrectionX/frameworks/base/core/res/AndroidManifest.xml
+[+] We found traces of a missing patch for CVE-2022-20138 - BUG: A-210469972 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/devicepolicy/java/com/android/server/devicepolicy/BaseIDevicePolicyManager.java
+[+] We found traces of a missing patch for CVE-2022-20138 - BUG: A-210469972 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java
+[+] We found traces of a missing patch for CVE-2022-20140 - BUG: A-227618988 in: /media/csl/ACOS/ResurrectionX/system/bt/stack/gatt/gatt_sr.cc
+[+] We found traces of a missing patch for CVE-2022-20126 - BUG: A-203431023 in: /media/csl/ACOS/ResurrectionX/packages/apps/Bluetooth/src/com/android/bluetooth/btservice/AdapterService.java
+[+] We found traces of a missing patch for CVE-2022-20133 - BUG: A-206807679 in: /media/csl/ACOS/ResurrectionX/packages/apps/Bluetooth/src/com/android/bluetooth/btservice/AdapterService.java
+[+] We found traces of a missing patch for CVE-2022-20143 - BUG: A-220735360 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/notification/ZenModeHelper.java
+[+] We found traces of a missing patch for CVE-2022-20143 - BUG: A-220735360 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/tests/uiservicestests/src/com/android/server/notification/ZenModeHelperTest.java
+[+] We found traces of a missing patch for CVE-2022-20222 - BUG: A-228078096 in: /media/csl/ACOS/ResurrectionX/system/bt/stack/gatt/gatt_db.cc
+[+] We found traces of a missing patch for CVE-2021-0981 - BUG: A-191981182 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/notification/NotificationManagerService.java
+[+] We found traces of a missing patch for CVE-2022-20226 - BUG: A-213644870 in: /media/csl/ACOS/ResurrectionX/frameworks/native/libs/gui/LayerState.cpp
+[+] We found traces of a missing patch for CVE-2022-20226 - BUG: A-213644870 in: /media/csl/ACOS/ResurrectionX/frameworks/native/libs/gui/include/gui/LayerState.h
+[+] We found traces of a missing patch for CVE-2022-20226 - BUG: A-213644870 in: /media/csl/ACOS/ResurrectionX/frameworks/native/libs/gui/include/gui/SurfaceComposerClient.h
+[+] We found traces of a missing patch for CVE-2022-20221 - BUG: A-205571133 in: /media/csl/ACOS/ResurrectionX/system/bt/stack/avrc/avrc_pars_tg.cc
+[+] We found traces of a missing patch for CVE-2022-20225 - BUG: A-213457638 in: /media/csl/ACOS/ResurrectionX/frameworks/opt/telephony/tests/telephonytests/src/com/android/internal/telephony/SubscriptionControllerTest.java
+[+] We found traces of a missing patch for CVE-2022-20220 - BUG: A-219015884 in: /media/csl/ACOS/ResurrectionX/packages/providers/ContactsProvider/src/com/android/providers/contacts/CallLogProvider.java
+[+] We found traces of a missing patch for CVE-2022-20220 - BUG: A-219015884 in: /media/csl/ACOS/ResurrectionX/packages/providers/ContactsProvider/tests/src/com/android/providers/contacts/CallLogProviderTest.java
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/ResurrectionX/external/expat/Android.bp
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/ResurrectionX/external/expat/CMakeLists.txt
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/ResurrectionX/external/expat/Changes
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/ResurrectionX/external/expat/ConfigureChecks.cmake
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/ResurrectionX/external/expat/Makefile.am
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/ResurrectionX/external/expat/Makefile.in
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/ResurrectionX/external/expat/aclocal.m4
+[-] We found traces of CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/ResurrectionX/external/expat/configure
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/ResurrectionX/external/expat/configure
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/ResurrectionX/external/expat/configure.ac
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/ResurrectionX/external/expat/doc/Makefile.in
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/ResurrectionX/external/expat/examples/Makefile.in
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/ResurrectionX/external/expat/lib/Makefile.in
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/ResurrectionX/external/expat/lib/xmlparse.c
+[-] We found traces of CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/ResurrectionX/external/expat/lib/xmlparse.c
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/ResurrectionX/external/expat/lib/xmltok.c
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/ResurrectionX/external/expat/tests/Makefile.am
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/ResurrectionX/external/expat/tests/Makefile.in
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/ResurrectionX/external/expat/tests/benchmark/Makefile.in
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/ResurrectionX/external/expat/tests/runtests.c
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/ResurrectionX/external/expat/xmlwf/Makefile.in
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/ResurrectionX/external/expat/xmlwf/xmlfile.c
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/ResurrectionX/external/expat/xmlwf/xmlwf.c
+[+] We found traces of a missing patch for CVE-2022-23852 - BUG: A-221255869 in: /media/csl/ACOS/ResurrectionX/external/expat/lib/xmlparse.c
+[-] We found traces of CVE-2022-23990 - BUG: A-221256678 in: /media/csl/ACOS/ResurrectionX/external/expat/lib/xmlparse.c
+[+] We found traces of a missing patch for CVE-2022-20197 - BUG: A-208279300 in: /media/csl/ACOS/ResurrectionX/frameworks/base/core/java/android/os/Parcel.java
+[+] We found traces of a missing patch for CVE-2022-20396 - BUG: A-234440688 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/src/com/android/settings/SettingsActivity.java
+[+] We found traces of a missing patch for CVE-2022-20419 - BUG: A-237290578 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/wm/ActivityRecord.java
+[-] We found traces of CVE-2022-20412 - BUG: A-230794395 in: /media/csl/ACOS/ResurrectionX/external/dtc/libfdt/fdt.c
+[+] We found traces of a missing patch for CVE-2022-20394 - BUG: A-204906124 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/inputmethod/InputMethodManagerService.java
+[+] We found traces of a missing patch for CVE-2016-3900 - BUG: A-29431260 in: /media/csl/ACOS/ResurrectionX/frameworks/native/cmds/servicemanager/service_manager.c
+[+] We found traces of a missing patch for CVE-2017-0412 - BUG: A-33039926 in: /media/csl/ACOS/ResurrectionX/frameworks/base/core/tests/utiltests/Android.mk
+[+] We found traces of a missing patch for CVE-2017-0752 - BUG: A-62196835 in: /media/csl/ACOS/ResurrectionX/frameworks/base/api/system-current.txt
+[+] We found traces of a missing patch for CVE-2017-0752 - BUG: A-62196835 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/wm/WindowManagerService.java
+[+] We found traces of a missing patch for CVE-2017-0752 - BUG: A-62196835 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/wm/WindowState.java
+[+] We found traces of a missing patch for CVE-2017-0752 - BUG: A-62196835 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/wm/WindowStateAnimator.java
+[+] We found traces of a missing patch for CVE-2018-9438 - BUG: A-78644887 in: /media/csl/ACOS/ResurrectionX/packages/providers/DownloadProvider/src/com/android/providers/downloads/SystemFacade.java
+[+] We found traces of a missing patch for CVE-2018-9438 - BUG: A-78644887 in: /media/csl/ACOS/ResurrectionX/packages/providers/DownloadProvider/tests/src/com/android/providers/downloads/FakeSystemFacade.java
+[+] We found traces of a missing patch for CVE-2018-9452 - BUG: A-78464361 in: /media/csl/ACOS/ResurrectionX/frameworks/base/core/java/android/text/TextLine.java
+[+] We found traces of a missing patch for CVE-2020-0107 - BUG: A-146570216 in: /media/csl/ACOS/ResurrectionX/packages/services/Telephony/src/com/android/phone/PhoneInterfaceManager.java
+[-] We found traces of CVE-2020-0416 - BUG: A-155288585 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/src/com/android/settings/applications/specialaccess/deviceadmin/DeviceAdminListPreferenceController.java
+[+] We found traces of a missing patch for CVE-2020-0439 - BUG: A-140256621 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/pm/PackageManagerService.java
+[+] We found traces of a missing patch for CVE-2020-0459 - BUG: A-159373687 in: /media/csl/ACOS/ResurrectionX/frameworks/opt/net/wifi/service/java/com/android/server/wifi/WifiConfigManager.java
+[+] We found traces of a missing patch for CVE-2021-0307 - BUG: A-155648771 in: /media/csl/ACOS/ResurrectionX/cts/tests/tests/permission/src/android/permission/cts/RemovePermissionTest.java
+[+] We found traces of a missing patch for CVE-2021-0511 - BUG: A-178055795 in: /media/csl/ACOS/ResurrectionX/art/build/apex/art_apex_test.py
+[+] We found traces of a missing patch for CVE-2021-0511 - BUG: A-178055795 in: /media/csl/ACOS/ResurrectionX/art/test/Android.bp
+[+] We found traces of a missing patch for CVE-2021-0441 - BUG: A-174495520 in: /media/csl/ACOS/ResurrectionX/packages/providers/MediaProvider/res/values/styles.xml
+[+] We found traces of a missing patch for CVE-2021-0486 - BUG: A-171430330 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/pm/PackageManagerService.java
+[+] We found traces of a missing patch for CVE-2021-0486 - BUG: A-171430330 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/pm/permission/PermissionManagerService.java
+[-] We found traces of CVE-2021-39631 - BUG: A-193890833 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/res/values-am/strings.xml
+[-] We found traces of CVE-2021-39631 - BUG: A-193890833 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/res/values-ar/strings.xml
+[-] We found traces of CVE-2021-39631 - BUG: A-193890833 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/res/values-bg/strings.xml
+[-] We found traces of CVE-2021-39631 - BUG: A-193890833 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/res/values-bn/strings.xml
+[-] We found traces of CVE-2021-39631 - BUG: A-193890833 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/res/values-bs/strings.xml
+[-] We found traces of CVE-2021-39631 - BUG: A-193890833 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/res/values-da/strings.xml
+[-] We found traces of CVE-2021-39631 - BUG: A-193890833 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/res/values-en-rAU/strings.xml
+[-] We found traces of CVE-2021-39631 - BUG: A-193890833 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/res/values-en-rCA/strings.xml
+[-] We found traces of CVE-2021-39631 - BUG: A-193890833 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/res/values-en-rGB/strings.xml
+[-] We found traces of CVE-2021-39631 - BUG: A-193890833 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/res/values-en-rIN/strings.xml
+[-] We found traces of CVE-2021-39631 - BUG: A-193890833 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/res/values-eu/strings.xml
+[-] We found traces of CVE-2021-39631 - BUG: A-193890833 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/res/values-hy/strings.xml
+[-] We found traces of CVE-2021-39631 - BUG: A-193890833 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/res/values-ja/strings.xml
+[-] We found traces of CVE-2021-39631 - BUG: A-193890833 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/res/values-ka/strings.xml
+[-] We found traces of CVE-2021-39631 - BUG: A-193890833 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/res/values-km/strings.xml
+[-] We found traces of CVE-2021-39631 - BUG: A-193890833 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/res/values-ko/strings.xml
+[-] We found traces of CVE-2021-39631 - BUG: A-193890833 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/res/values-ky/strings.xml
+[-] We found traces of CVE-2021-39631 - BUG: A-193890833 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/res/values-lo/strings.xml
+[-] We found traces of CVE-2021-39631 - BUG: A-193890833 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/res/values-mn/strings.xml
+[-] We found traces of CVE-2021-39631 - BUG: A-193890833 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/res/values-ms/strings.xml
+[-] We found traces of CVE-2021-39631 - BUG: A-193890833 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/res/values-my/strings.xml
+[-] We found traces of CVE-2021-39631 - BUG: A-193890833 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/res/values-nb/strings.xml
+[-] We found traces of CVE-2021-39631 - BUG: A-193890833 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/res/values-nl/strings.xml
+[-] We found traces of CVE-2021-39631 - BUG: A-193890833 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/res/values-ro/strings.xml
+[-] We found traces of CVE-2021-39631 - BUG: A-193890833 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/res/values-si/strings.xml
+[-] We found traces of CVE-2021-39631 - BUG: A-193890833 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/res/values-sl/strings.xml
+[-] We found traces of CVE-2021-39631 - BUG: A-193890833 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/res/values-sr/strings.xml
+[-] We found traces of CVE-2021-39631 - BUG: A-193890833 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/res/values-sw/strings.xml
+[-] We found traces of CVE-2021-39631 - BUG: A-193890833 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/res/values-ta/strings.xml
+[-] We found traces of CVE-2021-39631 - BUG: A-193890833 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/res/values-tl/strings.xml
+[-] We found traces of CVE-2021-39631 - BUG: A-193890833 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/res/values-uk/strings.xml
+[-] We found traces of CVE-2021-39631 - BUG: A-193890833 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/res/values-ur/strings.xml
+[-] We found traces of CVE-2021-39631 - BUG: A-193890833 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/res/values-zh-rCN/strings.xml
+[-] We found traces of CVE-2021-39631 - BUG: A-193890833 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/res/values-zh-rHK/strings.xml
+[-] We found traces of CVE-2021-39631 - BUG: A-193890833 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/res/values-zh-rTW/strings.xml
+[-] We found traces of CVE-2021-39631 - BUG: A-193890833 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/res/values-zu/strings.xml
+[+] We found traces of a missing patch for CVE-2021-39803 - BUG: A-193790350 in: /media/csl/ACOS/ResurrectionX/frameworks/av/media/codec2/vndk/C2AllocatorIon.cpp
+[+] We found traces of a missing patch for CVE-2021-39662 - BUG: A-197302116 in: /media/csl/ACOS/ResurrectionX/packages/providers/MediaProvider/src/com/android/providers/media/MediaProvider.java
+[+] We found traces of a missing patch for CVE-2022-20219 - BUG: A-224585613 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/pm/UserDataPreparer.java
+[+] We found traces of a missing patch for CVE-2021-39696 - BUG: A-185810717 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/wm/Task.java
+[+] We found traces of a missing patch for CVE-2021-39696 - BUG: A-185810717 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/tests/wmtests/src/com/android/server/wm/TaskTests.java
+[+] We found traces of a missing patch for CVE-2022-20344 - BUG: A-232541124 in: /media/csl/ACOS/ResurrectionX/frameworks/native/services/surfaceflinger/Scheduler/EventThread.cpp
+[+] We found traces of a missing patch for CVE-2022-20350 - BUG: A-228178437 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/src/com/android/settings/notification/NotificationAccessConfirmationActivity.java
+[+] We found traces of a missing patch for CVE-2022-20358 - BUG: A-203229608 in: /media/csl/ACOS/ResurrectionX/frameworks/base/core/java/android/content/AbstractThreadedSyncAdapter.java
+[+] We found traces of a missing patch for CVE-2022-20353 - BUG: A-221041256 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/src/com/android/settings/DefaultRingtonePreference.java
+[+] We found traces of a missing patch for CVE-2022-20347 - BUG: A-228450811 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/src/com/android/settings/connecteddevice/ConnectedDeviceDashboardFragment.java
+[+] We found traces of a missing patch for CVE-2022-20347 - BUG: A-228450811 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/tests/robotests/src/com/android/settings/connecteddevice/ConnectedDeviceDashboardFragmentTest.java
+[+] We found traces of a missing patch for CVE-2022-20360 - BUG: A-228314987 in: /media/csl/ACOS/ResurrectionX/packages/apps/Settings/src/com/android/settings/nfc/SecureNfcPreferenceController.java
+[+] We found traces of a missing patch for CVE-2022-20425 - BUG: A-235823407 in: /media/csl/ACOS/ResurrectionX/frameworks/base/services/core/java/com/android/server/notification/ZenModeHelper.java
+[-] We found traces of CVE-2017-15849 - BUG: QC-CR2046572 in: /media/csl/ACOS/ResurrectionX/hardware/qcom/display/msm8996/sdm/libs/hwc2/hwc_display.cpp
+[+] We found traces of a missing patch for CVE-2019-10569 - BUG: QC-CR2315791 in: /media/csl/ACOS/ResurrectionX/hardware/qcom/audio/post_proc/Android.mk

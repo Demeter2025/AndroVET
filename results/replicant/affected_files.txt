@@ -1,0 +1,373 @@
+[+] We found traces of a missing patch for CVE-2015-3878 - BUG: ANDROID-23345192 in: /media/csl/ACOS/replicant/frameworks/base/packages/SystemUI/src/com/android/systemui/media/MediaProjectionPermissionActivity.java
+[+] We found traces of a missing patch for CVE-2015-3847 - BUG: ANDROID-22343270 in: /media/csl/ACOS/replicant/packages/apps/Bluetooth/src/com/android/bluetooth/map/BluetoothMapContentObserver.java
+[-] We found traces of CVE-2015-6607 - BUG: ANDROID-20099586 in: /media/csl/ACOS/replicant/external/sqlite/dist/orig/sqlite3.c
+[-] We found traces of CVE-2015-6607 - BUG: ANDROID-20099586 in: /media/csl/ACOS/replicant/external/sqlite/dist/sqlite3.c
+[+] We found traces of a missing patch for CVE-2015-6613 - BUG: ANDROID-24371736 in: /media/csl/ACOS/replicant/system/bt/hci/src/btsnoop_net.c
+[+] We found traces of a missing patch for CVE-2015-6628 - BUG: ANDROID-24074485 in: /media/csl/ACOS/replicant/frameworks/av/media/libmedia/ICrypto.cpp
+[-] We found traces of CVE-2015-6641 - BUG: ANDROID-23607427 in: /media/csl/ACOS/replicant/packages/apps/Settings/src/com/android/settings/bluetooth/BluetoothPairingDialog.java
+[+] We found traces of a missing patch for CVE-2016-0830 - BUG: ANDROID-26071376 in: /media/csl/ACOS/replicant/system/bt/btif/src/btif_config.c
+[+] We found traces of a missing patch for CVE-2016-2428 - BUG: 26751339 in: /media/csl/ACOS/replicant/external/aac/libAACdec/src/aacdec_drc.cpp
+[-] We found traces of CVE-2016-2463 - BUG: 27855419 in: /media/csl/ACOS/replicant/frameworks/av/media/libstagefright/codecs/on2/h264dec/source/H264SwDecApi.c
+[+] We found traces of a missing patch for CVE-2016-2495 - BUG: 28076789 in: /media/csl/ACOS/replicant/frameworks/av/media/libstagefright/include/SampleTable.h
+[+] We found traces of a missing patch for CVE-2016-2496 - BUG: 26677796 in: /media/csl/ACOS/replicant/frameworks/native/services/inputflinger/InputDispatcher.cpp
+[-] We found traces of CVE-2016-3751 - BUG: A-23265085 in: /media/csl/ACOS/replicant/external/libpng/contrib/gregbook/readpng2.c
+[-] We found traces of CVE-2016-3751 - BUG: A-23265085 in: /media/csl/ACOS/replicant/external/libpng/pngread.c
+[+] We found traces of a missing patch for CVE-2016-3761 - BUG: A-28300969 in: /media/csl/ACOS/replicant/packages/apps/Nfc/src/com/android/nfc/NfcService.java
+[-] We found traces of CVE-2016-3819 - BUG: A-28533562 in: /media/csl/ACOS/replicant/frameworks/av/media/libstagefright/codecs/on2/h264dec/source/h264bsd_dpb.c
+[+] We found traces of a missing patch for CVE-2016-3820 - BUG: A-28673410 in: /media/csl/ACOS/replicant/external/libavc/decoder/ih264d_parse_pslice.c
+[+] We found traces of a missing patch for CVE-2016-3829 - BUG: A-29023649 in: /media/csl/ACOS/replicant/external/libavc/decoder/ih264d_api.c
+[+] We found traces of a missing patch for CVE-2016-3876 - BUG: A-29900345 in: /media/csl/ACOS/replicant/frameworks/base/packages/SettingsProvider/src/com/android/providers/settings/SettingsProvider.java
+[+] We found traces of a missing patch for CVE-2016-3885 - BUG: A-29555636 in: /media/csl/ACOS/replicant/system/core/debuggerd/debuggerd.cpp
+[+] We found traces of a missing patch for CVE-2016-3887 - BUG: A-29899712 in: /media/csl/ACOS/replicant/frameworks/base/packages/SettingsProvider/src/com/android/providers/settings/SettingsProvider.java
+[-] We found traces of CVE-2016-3915 - BUG: A-30591838 in: /media/csl/ACOS/replicant/system/media/camera/src/camera_metadata.c
+[+] We found traces of a missing patch for CVE-2016-3923 - BUG: A-30647115 in: /media/csl/ACOS/replicant/frameworks/base/services/accessibility/java/com/android/server/accessibility/AccessibilityManagerService.java
+[+] We found traces of a missing patch for CVE-2016-6701 - BUG: A-30190637 in: /media/csl/ACOS/replicant/external/skia/src/codec/SkJpegCodec.cpp
+[+] We found traces of a missing patch for CVE-2016-6701 - BUG: A-30190637 in: /media/csl/ACOS/replicant/external/skia/tests/CodexTest.cpp
+[+] We found traces of a missing patch for CVE-2016-6706 - BUG: A-31385713 in: /media/csl/ACOS/replicant/frameworks/av/media/libstagefright/omx/OMXNodeInstance.cpp
+[+] We found traces of a missing patch for CVE-2016-6708 - BUG: A-30693465 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/am/ActivityManagerService.java
+[+] We found traces of a missing patch for CVE-2016-6708 - BUG: A-30693465 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/am/ActivityStackSupervisor.java
+[+] We found traces of a missing patch for CVE-2016-6708 - BUG: A-30693465 in: /media/csl/ACOS/replicant/frameworks/base/services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java
+[+] We found traces of a missing patch for CVE-2016-6718 - BUG: A-30455516 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/accounts/AccountManagerService.java
+[+] We found traces of a missing patch for CVE-2014-9675 - BUG: A-24296662 in: /media/csl/ACOS/replicant/external/freetype/src/autofit/aflatin.c
+[+] We found traces of a missing patch for CVE-2014-9675 - BUG: A-24296662 in: /media/csl/ACOS/replicant/external/freetype/src/autofit/afranges.c
+[-] We found traces of CVE-2014-9675 - BUG: A-24296662 in: /media/csl/ACOS/replicant/external/freetype/src/gzip/ftgzip.c
+[+] We found traces of a missing patch for CVE-2014-9675 - BUG: A-24296662 in: /media/csl/ACOS/replicant/external/freetype/src/truetype/ttgxvar.c
+[+] We found traces of a missing patch for CVE-2017-0391 - BUG: A-32322258 in: /media/csl/ACOS/replicant/external/libhevc/decoder/ihevcd_decode.c
+[+] We found traces of a missing patch for CVE-2017-0395 - BUG: A-32219099 in: /media/csl/ACOS/replicant/packages/apps/ContactsCommon/res/values/strings.xml
+[+] We found traces of a missing patch for CVE-2017-0395 - BUG: A-32219099 in: /media/csl/ACOS/replicant/packages/apps/ContactsCommon/src/com/android/contacts/common/activity/RequestPermissionsActivityBase.java
+[+] We found traces of a missing patch for CVE-2017-0395 - BUG: A-32219099 in: /media/csl/ACOS/replicant/packages/apps/ContactsCommon/src/com/android/contacts/common/util/AccountSelectionUtil.java
+[+] We found traces of a missing patch for CVE-2017-0395 - BUG: A-32219099 in: /media/csl/ACOS/replicant/packages/apps/ContactsCommon/src/com/android/contacts/common/vcard/ImportVCardActivity.java
+[+] We found traces of a missing patch for CVE-2017-0405 - BUG: A-31960359 in: /media/csl/ACOS/replicant/frameworks/native/libs/gui/BufferQueueCore.cpp
+[+] We found traces of a missing patch for CVE-2017-0413 - BUG: A-32161610 in: /media/csl/ACOS/replicant/packages/apps/Messaging/src/com/android/messaging/ui/mediapicker/DocumentImagePicker.java
+[-] We found traces of CVE-2017-0414 - BUG: A-32807795 in: /media/csl/ACOS/replicant/packages/apps/Messaging/AndroidManifest.xml
+[+] We found traces of a missing patch for CVE-2017-0414 - BUG: A-32807795 in: /media/csl/ACOS/replicant/packages/apps/Messaging/src/com/android/messaging/datamodel/MediaScratchFileProvider.java
+[+] We found traces of a missing patch for CVE-2017-0414 - BUG: A-32807795 in: /media/csl/ACOS/replicant/packages/apps/Messaging/src/com/android/messaging/datamodel/MmsFileProvider.java
+[+] We found traces of a missing patch for CVE-2017-0424 - BUG: A-32322450 in: /media/csl/ACOS/replicant/packages/apps/Messaging/jni/GifTranscoder.cpp
+[+] We found traces of a missing patch for CVE-2017-0474 - BUG: A-32589224 in: /media/csl/ACOS/replicant/external/libvpx/libvpx/vp9/decoder/vp9_decodeframe.c
+[+] We found traces of a missing patch for CVE-2017-0492 - BUG: A-30150688 in: /media/csl/ACOS/replicant/frameworks/base/core/java/android/widget/Toast.java
+[+] We found traces of a missing patch for CVE-2017-0592 - BUG: A-34970788 in: /media/csl/ACOS/replicant/frameworks/av/media/libstagefright/FLACExtractor.cpp
+[-] We found traces of CVE-2017-0600 - BUG: A-35269635 in: /media/csl/ACOS/replicant/frameworks/av/media/libstagefright/codecs/m4v_h263/dec/src/mb_motion_comp.cpp
+[+] We found traces of a missing patch for CVE-2017-0601 - BUG: A-35258579 in: /media/csl/ACOS/replicant/frameworks/base/core/res/AndroidManifest.xml
+[+] We found traces of a missing patch for CVE-2017-0493 - BUG: A-32793550 in: /media/csl/ACOS/replicant/frameworks/base/core/java/android/app/admin/IDevicePolicyManager.aidl
+[+] We found traces of a missing patch for CVE-2017-0493 - BUG: A-32793550 in: /media/csl/ACOS/replicant/frameworks/base/core/java/com/android/internal/widget/LockPatternUtils.java
+[+] We found traces of a missing patch for CVE-2017-0493 - BUG: A-32793550 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/LockSettingsService.java
+[+] We found traces of a missing patch for CVE-2017-0493 - BUG: A-32793550 in: /media/csl/ACOS/replicant/frameworks/base/services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java
+[+] We found traces of a missing patch for CVE-2016-2109 - BUG: A-35443725 in: /media/csl/ACOS/replicant/external/boringssl/src/crypto/asn1/a_d2i_fp.c
+[+] We found traces of a missing patch for CVE-2017-0672 - BUG: A-34778578 in: /media/csl/ACOS/replicant/external/skia/tests/CodexTest.cpp
+[+] We found traces of a missing patch for CVE-2017-0678 - BUG: A-36576151 in: /media/csl/ACOS/replicant/frameworks/av/media/libstagefright/MPEG4Extractor.cpp
+[+] We found traces of a missing patch for CVE-2017-0703 - BUG: A-33123882 in: /media/csl/ACOS/replicant/packages/apps/Settings/src/com/android/settings/accounts/ManageAccountsSettings.java
+[+] We found traces of a missing patch for CVE-2017-0727 - BUG: A-33004354 in: /media/csl/ACOS/replicant/frameworks/native/libs/gui/BufferQueueProducer.cpp
+[+] We found traces of a missing patch for CVE-2017-0737 - BUG: A-37563942 in: /media/csl/ACOS/replicant/frameworks/av/media/libstagefright/omx/GraphicBufferSource.cpp
+[+] We found traces of a missing patch for CVE-2017-0805 - BUG: A-37237701 in: /media/csl/ACOS/replicant/frameworks/av/media/libstagefright/omx/GraphicBufferSource.cpp
+[+] We found traces of a missing patch for CVE-2017-6983 - BUG: A-63852675 in: /media/csl/ACOS/replicant/external/sqlite/dist/orig/sqlite3.c
+[+] We found traces of a missing patch for CVE-2017-6983 - BUG: A-63852675 in: /media/csl/ACOS/replicant/external/sqlite/dist/orig/sqlite3.h
+[+] We found traces of a missing patch for CVE-2017-6983 - BUG: A-63852675 in: /media/csl/ACOS/replicant/external/sqlite/dist/sqlite3.c
+[+] We found traces of a missing patch for CVE-2017-6983 - BUG: A-63852675 in: /media/csl/ACOS/replicant/external/sqlite/dist/sqlite3.h
+[+] We found traces of a missing patch for CVE-2017-0771 - BUG: A-37624243 in: /media/csl/ACOS/replicant/external/skia/tests/BadIcoTest.cpp
+[+] We found traces of a missing patch for CVE-2017-14496 - BUG: A-64575136 in: /media/csl/ACOS/replicant/external/dnsmasq/src/rfc1035.c
+[+] We found traces of a missing patch for CVE-2017-0831 - BUG: A-37442941 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/wm/WindowManagerService.java
+[+] We found traces of a missing patch for CVE-2017-13082 - BUG: A-67737262 in: /media/csl/ACOS/replicant/external/wpa_supplicant_8/src/ap/ieee802_11.c
+[+] We found traces of a missing patch for CVE-2017-13082 - BUG: A-67737262 in: /media/csl/ACOS/replicant/external/wpa_supplicant_8/src/ap/wpa_auth.c
+[+] We found traces of a missing patch for CVE-2017-13157 - BUG: A-32990341 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/am/ActivityManagerService.java
+[+] We found traces of a missing patch for CVE-2017-13158 - BUG: A-32879915 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/am/ActivityManagerService.java
+[+] We found traces of a missing patch for CVE-2017-13184 - BUG: A-65483324 in: /media/csl/ACOS/replicant/frameworks/native/services/surfaceflinger/MessageQueue.cpp
+[+] We found traces of a missing patch for CVE-2017-13184 - BUG: A-65483324 in: /media/csl/ACOS/replicant/frameworks/native/services/surfaceflinger/SurfaceFlinger.cpp
+[+] We found traces of a missing patch for CVE-2017-13184 - BUG: A-65483324 in: /media/csl/ACOS/replicant/frameworks/native/services/surfaceflinger/SurfaceFlinger.h
+[+] We found traces of a missing patch for CVE-2017-13199 - BUG: A-33846679 in: /media/csl/ACOS/replicant/frameworks/base/core/jni/android/graphics/Bitmap.cpp
+[+] We found traces of a missing patch for CVE-2017-13285 - BUG: A-69177126 in: /media/csl/ACOS/replicant/external/svox/pico/tts/svox_ssml_parser.cpp
+[+] We found traces of a missing patch for CVE-2017-13286 - BUG: A-69683251 in: /media/csl/ACOS/replicant/frameworks/base/core/java/android/hardware/camera2/params/OutputConfiguration.java
+[+] We found traces of a missing patch for CVE-2017-13314 - BUG: A-63000005 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/NetworkManagementService.java
+[+] We found traces of a missing patch for CVE-2017-13227 - BUG: A-69981710 in: /media/csl/ACOS/replicant/frameworks/base/core/java/android/app/assist/AssistStructure.java
+[+] We found traces of a missing patch for CVE-2018-5383 - BUG: A-72377774 in: /media/csl/ACOS/replicant/system/bt/stack/smp/p_256_ecc_pp.h
+[+] We found traces of a missing patch for CVE-2018-9458 - BUG: A-71786287 in: /media/csl/ACOS/replicant/frameworks/base/core/java/android/view/WindowManagerPolicy.java
+[+] We found traces of a missing patch for CVE-2018-9458 - BUG: A-71786287 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/policy/PhoneWindowManager.java
+[+] We found traces of a missing patch for CVE-2018-9458 - BUG: A-71786287 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/policy/keyguard/KeyguardStateMonitor.java
+[+] We found traces of a missing patch for CVE-2018-9458 - BUG: A-71786287 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/wm/WindowManagerService.java
+[-] We found traces of CVE-2018-9466 - BUG: A-62151041 in: /media/csl/ACOS/replicant/external/libxml2/doc/libxml2-refs.xml
+[+] We found traces of a missing patch for CVE-2018-9466 - BUG: A-62151041 in: /media/csl/ACOS/replicant/external/libxml2/result/HTML/758518-entity.html
+[+] We found traces of a missing patch for CVE-2018-9466 - BUG: A-62151041 in: /media/csl/ACOS/replicant/external/libxml2/result/HTML/758518-entity.html.err
+[+] We found traces of a missing patch for CVE-2018-9466 - BUG: A-62151041 in: /media/csl/ACOS/replicant/external/libxml2/result/noent/comment4.xml.sax2
+[+] We found traces of a missing patch for CVE-2018-9466 - BUG: A-62151041 in: /media/csl/ACOS/replicant/external/libxml2/result/noent/isolat1.sax2
+[+] We found traces of a missing patch for CVE-2018-9466 - BUG: A-62151041 in: /media/csl/ACOS/replicant/external/libxml2/test/HTML/758518-entity.html
+[+] We found traces of a missing patch for CVE-2018-9466 - BUG: A-62151041 in: /media/csl/ACOS/replicant/external/libxml2/test/HTML/758518-tag.html
+[+] We found traces of a missing patch for CVE-2018-9466 - BUG: A-62151041 in: /media/csl/ACOS/replicant/external/libxml2/test/valid/dtds/766956.dtd
+[-] We found traces of CVE-2018-9466 - BUG: A-62151041 in: /media/csl/ACOS/replicant/external/libxml2/xpath.c
+[+] We found traces of a missing patch for CVE-2018-9467 - BUG: A-110955991 in: /media/csl/ACOS/replicant/libcore/luni/src/test/java/libcore/java/net/URLTest.java
+[-] We found traces of CVE-2018-9472 - BUG: A-79662501 in: /media/csl/ACOS/replicant/external/libxml2/doc/libxml2-refs.xml
+[+] We found traces of a missing patch for CVE-2018-9472 - BUG: A-79662501 in: /media/csl/ACOS/replicant/external/libxml2/result/HTML/758518-entity.html
+[+] We found traces of a missing patch for CVE-2018-9472 - BUG: A-79662501 in: /media/csl/ACOS/replicant/external/libxml2/result/HTML/758518-entity.html.err
+[+] We found traces of a missing patch for CVE-2018-9472 - BUG: A-79662501 in: /media/csl/ACOS/replicant/external/libxml2/result/noent/comment4.xml.sax2
+[+] We found traces of a missing patch for CVE-2018-9472 - BUG: A-79662501 in: /media/csl/ACOS/replicant/external/libxml2/result/noent/isolat1.sax2
+[+] We found traces of a missing patch for CVE-2018-9472 - BUG: A-79662501 in: /media/csl/ACOS/replicant/external/libxml2/test/HTML/758518-entity.html
+[+] We found traces of a missing patch for CVE-2018-9472 - BUG: A-79662501 in: /media/csl/ACOS/replicant/external/libxml2/test/HTML/758518-tag.html
+[+] We found traces of a missing patch for CVE-2018-9472 - BUG: A-79662501 in: /media/csl/ACOS/replicant/external/libxml2/test/valid/dtds/766956.dtd
+[-] We found traces of CVE-2018-9472 - BUG: A-79662501 in: /media/csl/ACOS/replicant/external/libxml2/xpath.c
+[+] We found traces of a missing patch for CVE-2018-9498 - BUG: A-78354855 in: /media/csl/ACOS/replicant/external/skia/include/core/SkTypes.h
+[+] We found traces of a missing patch for CVE-2018-9498 - BUG: A-78354855 in: /media/csl/ACOS/replicant/external/skia/src/core/SkMallocPixelRef.cpp
+[+] We found traces of a missing patch for CVE-2018-9498 - BUG: A-78354855 in: /media/csl/ACOS/replicant/external/skia/src/core/SkMath.cpp
+[-] We found traces of CVE-2018-9498 - BUG: A-78354855 in: /media/csl/ACOS/replicant/external/skia/src/ports/SkMemory_malloc.cpp
+[+] We found traces of a missing patch for CVE-2018-9524 - BUG: A-34170870 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/wm/WindowManagerService.java
+[+] We found traces of a missing patch for CVE-2018-9527 - BUG: A-112159345 in: /media/csl/ACOS/replicant/external/tremolo/Tremolo/floor0.c
+[+] We found traces of a missing patch for CVE-2018-9547 - BUG: A-114223584 in: /media/csl/ACOS/replicant/frameworks/native/libs/ui/GraphicBuffer.cpp
+[+] We found traces of a missing patch for CVE-2018-9560 - BUG: A-79946737 in: /media/csl/ACOS/replicant/system/bt/stack/include/hiddefs.h
+[+] We found traces of a missing patch for CVE-2019-1988 - BUG: A-118372692 in: /media/csl/ACOS/replicant/external/skia/src/codec/SkJpegDecoderMgr.cpp
+[+] We found traces of a missing patch for CVE-2019-1993 - BUG: A-119819889 in: /media/csl/ACOS/replicant/frameworks/base/core/java/android/bluetooth/BluetoothHidDeviceAppSdpSettings.java
+[-] We found traces of CVE-2019-1995 - BUG: A-32589229 in: /media/csl/ACOS/replicant/packages/apps/Email/AndroidManifest.xml
+[+] We found traces of a missing patch for CVE-2018-20346 - BUG: A-121156452 in: /media/csl/ACOS/replicant/external/sqlite/dist/orig/sqlite3.c
+[+] We found traces of a missing patch for CVE-2018-20346 - BUG: A-121156452 in: /media/csl/ACOS/replicant/external/sqlite/dist/sqlite3.c
+[+] We found traces of a missing patch for CVE-2019-2004 - BUG: A-115739809 in: /media/csl/ACOS/replicant/frameworks/native/include/input/InputTransport.h
+[+] We found traces of a missing patch for CVE-2019-2005 - BUG: A-68777217 in: /media/csl/ACOS/replicant/packages/apps/PackageInstaller/src/com/android/packageinstaller/permission/ui/GrantPermissionsActivity.java
+[+] We found traces of a missing patch for CVE-2019-2033 - BUG: A-121327565 in: /media/csl/ACOS/replicant/system/netd/server/MDnsSdListener.cpp
+[+] We found traces of a missing patch for CVE-2019-2043 - BUG: A-120484087 in: /media/csl/ACOS/replicant/packages/apps/Settings/src/com/android/settings/SmsDefaultDialog.java
+[+] We found traces of a missing patch for CVE-2019-2046 - BUG: A-117556220 in: /media/csl/ACOS/replicant/external/v8/src/objects.h
+[+] We found traces of a missing patch for CVE-2019-2090 - BUG: A-128599183 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/pm/PackageManagerService.java
+[+] We found traces of a missing patch for CVE-2019-2091 - BUG: A-128599660 in: /media/csl/ACOS/replicant/frameworks/base/services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java
+[+] We found traces of a missing patch for CVE-2019-2092 - BUG: A-128599668 in: /media/csl/ACOS/replicant/frameworks/base/services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java
+[+] We found traces of a missing patch for CVE-2019-2094 - BUG: A-129068792 in: /media/csl/ACOS/replicant/frameworks/av/media/libmediaplayerservice/nuplayer/NuPlayerCCDecoder.cpp
+[+] We found traces of a missing patch for CVE-2019-2095 - BUG: A-124232283 in: /media/csl/ACOS/replicant/external/skia/include/core/SkPixelRef.h
+[+] We found traces of a missing patch for CVE-2019-2095 - BUG: A-124232283 in: /media/csl/ACOS/replicant/external/skia/src/core/SkPathRef.cpp
+[+] We found traces of a missing patch for CVE-2019-2095 - BUG: A-124232283 in: /media/csl/ACOS/replicant/external/skia/src/core/SkPixelRef.cpp
+[+] We found traces of a missing patch for CVE-2019-2098 - BUG: A-128599467 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/notification/NotificationManagerService.java
+[+] We found traces of a missing patch for CVE-2019-2105 - BUG: A-116114182 in: /media/csl/ACOS/replicant/external/sfntly/README.android
+[+] We found traces of a missing patch for CVE-2019-2107 - BUG: A-130024844 in: /media/csl/ACOS/replicant/external/libhevc/decoder/ihevcd_parse_headers.c
+[+] We found traces of a missing patch for CVE-2019-2117 - BUG: A-124107808 in: /media/csl/ACOS/replicant/packages/providers/TelephonyProvider/src/com/android/providers/telephony/TelephonyProvider.java
+[+] We found traces of a missing patch for CVE-2019-2106 - BUG: A-130023983 in: /media/csl/ACOS/replicant/external/libhevc/common/ihevc_defs.h
+[+] We found traces of a missing patch for CVE-2019-2106 - BUG: A-130023983 in: /media/csl/ACOS/replicant/external/libhevc/decoder/ihevcd_parse_headers.c
+[+] We found traces of a missing patch for CVE-2019-2121 - BUG: A-131105245 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/am/ActivityManagerService.java
+[+] We found traces of a missing patch for CVE-2019-2125 - BUG: A-132275252 in: /media/csl/ACOS/replicant/packages/services/Telecomm/src/com/android/server/telecom/components/ChangeDefaultDialerDialog.java
+[+] We found traces of a missing patch for CVE-2019-2128 - BUG: A-132647222 in: /media/csl/ACOS/replicant/frameworks/av/media/libstagefright/codecs/amrwbenc/src/c4t64fx.c
+[+] We found traces of a missing patch for CVE-2019-2130 - BUG: A-132073833 in: /media/csl/ACOS/replicant/external/chromium-libpac/src/proxy_resolver_v8.cc
+[+] We found traces of a missing patch for CVE-2019-2130 - BUG: A-132073833 in: /media/csl/ACOS/replicant/external/chromium-libpac/test/proxy_test_script.h
+[+] We found traces of a missing patch for CVE-2019-2131 - BUG: A-119115683 in: /media/csl/ACOS/replicant/packages/apps/Settings/src/com/android/settings/notification/AppNotificationSettings.java
+[+] We found traces of a missing patch for CVE-2019-2132 - BUG: A-130568701 in: /media/csl/ACOS/replicant/frameworks/base/packages/VpnDialogs/AndroidManifest.xml
+[+] We found traces of a missing patch for CVE-2019-2132 - BUG: A-130568701 in: /media/csl/ACOS/replicant/frameworks/base/packages/VpnDialogs/src/com/android/vpndialogs/ConfirmDialog.java
+[+] We found traces of a missing patch for CVE-2019-2127 - BUG: A-124899895 in: /media/csl/ACOS/replicant/frameworks/av/services/audiopolicy/common/managerdefinitions/src/AudioPolicyMix.cpp
+[-] We found traces of CVE-2019-2103 - BUG: A-120610669 in: /media/csl/ACOS/replicant/frameworks/base/core/java/android/view/SurfaceControl.java
+[+] We found traces of a missing patch for CVE-2019-2103 - BUG: A-120610669 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/wm/ScreenRotationAnimation.java
+[+] We found traces of a missing patch for CVE-2019-2193 - BUG: A-132261064 in: /media/csl/ACOS/replicant/frameworks/base/core/java/android/provider/Settings.java
+[+] We found traces of a missing patch for CVE-2019-2197 - BUG: A-138529441 in: /media/csl/ACOS/replicant/frameworks/base/packages/SettingsLib/src/com/android/settingslib/bluetooth/CachedBluetoothDevice.java
+[+] We found traces of a missing patch for CVE-2019-2205 - BUG: A-139806216 in: /media/csl/ACOS/replicant/external/chromium-libpac/test/proxy_test_script.h
+[+] We found traces of a missing patch for CVE-2019-2233 - BUG: A-140486529 in: /media/csl/ACOS/replicant/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/policy/UserSwitcherController.java
+[+] We found traces of a missing patch for CVE-2019-2209 - BUG: A-139287605 in: /media/csl/ACOS/replicant/packages/apps/Bluetooth/src/com/android/bluetooth/btservice/AdapterService.java
+[+] We found traces of a missing patch for CVE-2019-2218 - BUG: A-141169173 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/pm/PackageInstallerService.java
+[+] We found traces of a missing patch for CVE-2019-2220 - BUG: A-138636979 in: /media/csl/ACOS/replicant/frameworks/av/services/audioflinger/RecordTracks.h
+[+] We found traces of a missing patch for CVE-2019-2220 - BUG: A-138636979 in: /media/csl/ACOS/replicant/frameworks/av/services/audioflinger/TrackBase.h
+[+] We found traces of a missing patch for CVE-2019-2220 - BUG: A-138636979 in: /media/csl/ACOS/replicant/frameworks/av/services/audioflinger/Tracks.cpp
+[+] We found traces of a missing patch for CVE-2019-2223 - BUG: A-140692129 in: /media/csl/ACOS/replicant/external/libhevc/decoder/ihevcd_parse_slice_header.c
+[+] We found traces of a missing patch for CVE-2019-2229 - BUG: A-139803872 in: /media/csl/ACOS/replicant/packages/apps/Email/AndroidManifest.xml
+[+] We found traces of a missing patch for CVE-2020-0003 - BUG: A-140195904 in: /media/csl/ACOS/replicant/packages/apps/PackageInstaller/src/com/android/packageinstaller/PackageInstallerActivity.java
+[+] We found traces of a missing patch for CVE-2020-0004 - BUG: A-120847476 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/wallpaper/WallpaperManagerService.java
+[+] We found traces of a missing patch for CVE-2020-0015 - BUG: A-139017101 in: /media/csl/ACOS/replicant/packages/apps/CertInstaller/AndroidManifest.xml
+[+] We found traces of a missing patch for CVE-2020-0015 - BUG: A-139017101 in: /media/csl/ACOS/replicant/packages/apps/CertInstaller/src/com/android/certinstaller/CertInstaller.java
+[+] We found traces of a missing patch for CVE-2020-0017 - BUG: A-123232892  in: /media/csl/ACOS/replicant/frameworks/base/core/java/android/widget/TextView.java
+[+] We found traces of a missing patch for CVE-2020-0020 - BUG: A-143118731 in: /media/csl/ACOS/replicant/frameworks/base/media/java/android/media/ExifInterface.java
+[+] We found traces of a missing patch for CVE-2020-0005 - BUG: A-141552859 in: /media/csl/ACOS/replicant/system/bt/stack/include/hcidefs.h
+[+] We found traces of a missing patch for CVE-2020-0026 - BUG: A-140419401 in: /media/csl/ACOS/replicant/frameworks/native/libs/binder/Parcel.cpp
+[+] We found traces of a missing patch for CVE-2020-0034 - BUG: A-62458770 in: /media/csl/ACOS/replicant/external/libvpx/libvpx/test/invalid_file_test.cc
+[+] We found traces of a missing patch for CVE-2020-0034 - BUG: A-62458770 in: /media/csl/ACOS/replicant/external/libvpx/libvpx/test/test-data.mk
+[+] We found traces of a missing patch for CVE-2020-0034 - BUG: A-62458770 in: /media/csl/ACOS/replicant/external/libvpx/libvpx/test/test-data.sha1
+[+] We found traces of a missing patch for CVE-2020-0035 - BUG: A-140622024 in: /media/csl/ACOS/replicant/packages/providers/TelephonyProvider/src/com/android/providers/telephony/TelephonyProvider.java
+[+] We found traces of a missing patch for CVE-2020-0098 - BUG: 	A-144285917 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/am/ActivityManagerService.java
+[-] We found traces of CVE-2020-0101 - BUG: A-144767096 in: /media/csl/ACOS/replicant/frameworks/av/media/libmedia/ICrypto.cpp
+[+] We found traces of a missing patch for CVE-2020-0109 - BUG: A-148059175 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/notification/NotificationManagerService.java
+[+] We found traces of a missing patch for CVE-2020-0024 - BUG: 	A-137015265 in: /media/csl/ACOS/replicant/packages/apps/Settings/src/com/android/settings/SettingsActivity.java
+[+] We found traces of a missing patch for CVE-2020-0104 - BUG: A-144430870 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/trust/TrustManagerService.java
+[+] We found traces of a missing patch for CVE-2020-0113 - BUG: A-150944913 in: /media/csl/ACOS/replicant/frameworks/av/services/camera/libcameraservice/device3/Camera3Device.cpp
+[+] We found traces of a missing patch for CVE-2020-0224 - BUG: A-147664838 in: /media/csl/ACOS/replicant/external/chromium-libpac/test/proxy_test_script.h
+[+] We found traces of a missing patch for CVE-2020-0239 - BUG: A-151095863 in: /media/csl/ACOS/replicant/frameworks/base/core/java/android/provider/DocumentsProvider.java
+[+] We found traces of a missing patch for CVE-2020-0241 - BUG: A-151456667 in: /media/csl/ACOS/replicant/frameworks/av/media/libmediaplayerservice/nuplayer/StreamingSource.cpp
+[+] We found traces of a missing patch for CVE-2020-0242 - BUG: A-151643722 in: /media/csl/ACOS/replicant/frameworks/av/media/libmediaplayerservice/nuplayer/NuPlayerDriver.cpp
+[+] We found traces of a missing patch for CVE-2020-0242 - BUG: A-151643722 in: /media/csl/ACOS/replicant/frameworks/av/media/libmediaplayerservice/nuplayer/NuPlayerDriver.h
+[+] We found traces of a missing patch for CVE-2020-0243 - BUG: A-151644303 in: /media/csl/ACOS/replicant/frameworks/av/media/libmediaplayerservice/nuplayer/NuPlayerDriver.cpp
+[+] We found traces of a missing patch for CVE-2020-0243 - BUG: A-151644303 in: /media/csl/ACOS/replicant/frameworks/av/media/libmediaplayerservice/nuplayer/NuPlayerDriver.h
+[-] We found traces of CVE-2020-0256 - BUG: A-152874864 in: /media/csl/ACOS/replicant/external/gptfdisk/gpt.cc
+[+] We found traces of a missing patch for CVE-2020-0381 - BUG: A-150159669 in: /media/csl/ACOS/replicant/external/sonivox/arm-wt-22k/host_src/eas_types.h
+[+] We found traces of a missing patch for CVE-2020-0381 - BUG: A-150159669 in: /media/csl/ACOS/replicant/external/sonivox/arm-wt-22k/lib_src/eas_mdls.c
+[+] We found traces of a missing patch for CVE-2020-0384 - BUG: A-150159906 in: /media/csl/ACOS/replicant/external/sonivox/arm-wt-22k/host_src/eas_types.h
+[+] We found traces of a missing patch for CVE-2020-0384 - BUG: A-150159906 in: /media/csl/ACOS/replicant/external/sonivox/arm-wt-22k/lib_src/eas_mdls.c
+[+] We found traces of a missing patch for CVE-2020-0385 - BUG: A-150160041 in: /media/csl/ACOS/replicant/external/sonivox/arm-wt-22k/host_src/eas_types.h
+[+] We found traces of a missing patch for CVE-2020-0385 - BUG: A-150160041 in: /media/csl/ACOS/replicant/external/sonivox/arm-wt-22k/lib_src/eas_mdls.c
+[+] We found traces of a missing patch for CVE-2020-0386 - BUG: A-155650356 in: /media/csl/ACOS/replicant/packages/apps/Settings/src/com/android/settings/bluetooth/RequestPermissionActivity.java
+[+] We found traces of a missing patch for CVE-2020-0394 - BUG: A-155648639 in: /media/csl/ACOS/replicant/packages/apps/Settings/src/com/android/settings/bluetooth/BluetoothPairingDialog.java
+[-] We found traces of CVE-2020-0421 - BUG: A-161894517 in: /media/csl/ACOS/replicant/system/core/libutils/String8.cpp
+[+] We found traces of a missing patch for CVE-2020-0412 - BUG: A-160390416 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/am/ActivityManagerService.java
+[+] We found traces of a missing patch for CVE-2020-0414 - BUG: A-157708122 in: /media/csl/ACOS/replicant/frameworks/av/services/audioflinger/FastCapture.cpp
+[+] We found traces of a missing patch for CVE-2020-0414 - BUG: A-157708122 in: /media/csl/ACOS/replicant/frameworks/av/services/audioflinger/FastCaptureDumpState.h
+[+] We found traces of a missing patch for CVE-2020-0414 - BUG: A-157708122 in: /media/csl/ACOS/replicant/frameworks/av/services/audioflinger/FastCaptureState.h
+[+] We found traces of a missing patch for CVE-2020-0414 - BUG: A-157708122 in: /media/csl/ACOS/replicant/frameworks/av/services/audioflinger/Threads.cpp
+[+] We found traces of a missing patch for CVE-2020-0452 - BUG: A-159625731 in: /media/csl/ACOS/replicant/external/libexif/libexif/exif-entry.c
+[+] We found traces of a missing patch for CVE-2020-0437 - BUG: A-162741784 in: /media/csl/ACOS/replicant/packages/apps/CellBroadcastReceiver/AndroidManifest.xml
+[+] We found traces of a missing patch for CVE-2020-0437 - BUG: A-162741784 in: /media/csl/ACOS/replicant/packages/apps/CellBroadcastReceiver/src/com/android/cellbroadcastreceiver/CellBroadcastReceiver.java
+[+] We found traces of a missing patch for CVE-2020-0099 - BUG: A-141745510 in: /media/csl/ACOS/replicant/frameworks/base/core/java/android/app/Presentation.java
+[+] We found traces of a missing patch for CVE-2020-0099 - BUG: A-141745510 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/wm/WindowManagerService.java
+[+] We found traces of a missing patch for CVE-2020-0440 - BUG: A-162627132 in: /media/csl/ACOS/replicant/frameworks/base/core/tests/coretests/AndroidManifest.xml
+[+] We found traces of a missing patch for CVE-2020-0440 - BUG: A-162627132 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/display/DisplayManagerService.java
+[-] We found traces of CVE-2020-0444 - BUG: A-150693166 in: /media/csl/ACOS/replicant/kernel/samsung/tuna/kernel/auditfilter.c
+[+] We found traces of a missing patch for CVE-2021-0306 - BUG: A-154505240 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/pm/PackageManagerService.java
+[+] We found traces of a missing patch for CVE-2021-0315 - BUG: A-169763814 in: /media/csl/ACOS/replicant/frameworks/base/core/java/android/accounts/GrantCredentialsPermissionActivity.java
+[+] We found traces of a missing patch for CVE-2021-0309 - BUG: A-158480899 in: /media/csl/ACOS/replicant/frameworks/base/core/java/android/accounts/GrantCredentialsPermissionActivity.java
+[+] We found traces of a missing patch for CVE-2019-9376 - BUG: A-129287265 in: /media/csl/ACOS/replicant/frameworks/base/core/java/android/accounts/Account.java
+[-] We found traces of CVE-2016-6328 - BUG: A-162602132 in: /media/csl/ACOS/replicant/external/libexif/libexif/pentax/mnote-pentax-entry.c
+[-] We found traces of CVE-2021-0302 - BUG: A-155287782 in: /media/csl/ACOS/replicant/packages/apps/PackageInstaller/AndroidManifest.xml
+[+] We found traces of a missing patch for CVE-2021-0302 - BUG: A-155287782 in: /media/csl/ACOS/replicant/packages/apps/PackageInstaller/res/values/themes.xml
+[-] We found traces of CVE-2021-0305 - BUG: A-154015447 in: /media/csl/ACOS/replicant/packages/apps/PackageInstaller/AndroidManifest.xml
+[+] We found traces of a missing patch for CVE-2021-0305 - BUG: A-154015447 in: /media/csl/ACOS/replicant/packages/apps/PackageInstaller/res/values/themes.xml
+[+] We found traces of a missing patch for CVE-2021-0337 - BUG: A-157474195 in: /media/csl/ACOS/replicant/frameworks/base/packages/ExternalStorageProvider/src/com/android/externalstorage/ExternalStorageProvider.java
+[+] We found traces of a missing patch for CVE-2021-0339 - BUG: A-145728687 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/wm/AppTransition.java
+[+] We found traces of a missing patch for CVE-2021-0339 - BUG: A-145728687 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/wm/WindowManagerService.java
+[+] We found traces of a missing patch for CVE-2021-0326 - BUG: A-172937525 in: /media/csl/ACOS/replicant/external/wpa_supplicant_8/src/p2p/p2p.c
+[+] We found traces of a missing patch for CVE-2021-0328 - BUG: A-172670415 in: /media/csl/ACOS/replicant/packages/apps/Bluetooth/src/com/android/bluetooth/gatt/GattService.java
+[+] We found traces of a missing patch for CVE-2021-0333 - BUG: A-168504491 in: /media/csl/ACOS/replicant/packages/apps/Settings/src/com/android/settings/bluetooth/BluetoothPermissionActivity.java
+[+] We found traces of a missing patch for CVE-2021-0336 - BUG: A-158219161 in: /media/csl/ACOS/replicant/packages/apps/Settings/src/com/android/settings/bluetooth/BluetoothPermissionRequest.java
+[+] We found traces of a missing patch for CVE-2021-0391 - BUG: A-172841550 in: /media/csl/ACOS/replicant/frameworks/base/core/java/android/accounts/ChooseAccountActivity.java
+[+] We found traces of a missing patch for CVE-2021-0391 - BUG: A-172841550 in: /media/csl/ACOS/replicant/frameworks/base/core/java/android/accounts/ChooseAccountTypeActivity.java
+[+] We found traces of a missing patch for CVE-2021-0391 - BUG: A-172841550 in: /media/csl/ACOS/replicant/frameworks/base/core/java/android/accounts/ChooseTypeAndAccountActivity.java
+[+] We found traces of a missing patch for CVE-2017-14491 - BUG: A-158221622 in: /media/csl/ACOS/replicant/external/dnsmasq/src/rfc1035.c
+[-] We found traces of CVE-2021-0394 - BUG: A-172655291 in: /media/csl/ACOS/replicant/art/runtime/jni_internal.cc
+[+] We found traces of a missing patch for CVE-2021-0394 - BUG: A-172655291 in: /media/csl/ACOS/replicant/art/runtime/jni_internal_test.cc
+[+] We found traces of a missing patch for CVE-2021-0442 - BUG: A-174768985 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/wm/InputMonitor.java
+[+] We found traces of a missing patch for CVE-2021-0446
+ - BUG: A-172252122 in: /media/csl/ACOS/replicant/packages/apps/Contacts/AndroidManifest.xml
+[+] We found traces of a missing patch for CVE-2021-0485 - BUG: A-174302616 in: /media/csl/ACOS/replicant/frameworks/base/core/res/res/values/dimens.xml
+[+] We found traces of a missing patch for CVE-2021-0485 - BUG: A-174302616 in: /media/csl/ACOS/replicant/frameworks/base/core/res/res/values/symbols.xml
+[+] We found traces of a missing patch for CVE-2021-0487 - BUG: A-174046397 in: /media/csl/ACOS/replicant/packages/providers/CalendarProvider/AndroidManifest.xml
+[+] We found traces of a missing patch for CVE-2021-0487 - BUG: A-174046397 in: /media/csl/ACOS/replicant/packages/providers/CalendarProvider/src/com/android/providers/calendar/CalendarDebugActivity.java
+[+] We found traces of a missing patch for CVE-2021-0482 - BUG: A-173791720 in: /media/csl/ACOS/replicant/frameworks/av/media/libstagefright/MediaCodec.cpp
+[+] We found traces of a missing patch for CVE-2021-0481 - BUG: A-172939189 in: /media/csl/ACOS/replicant/packages/apps/Settings/src/com/android/settings/users/EditUserPhotoController.java
+[+] We found traces of a missing patch for CVE-2019-2219 - BUG: A-119041698 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/notification/NotificationManagerService.java
+[+] We found traces of a missing patch for CVE-2021-0521 - BUG: A-174661955 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/pm/PackageManagerService.java
+[+] We found traces of a missing patch for CVE-2021-0505 - BUG: A-179975048 in: /media/csl/ACOS/replicant/packages/apps/Settings/src/com/android/settings/vpn2/AppDialogFragment.java
+[+] We found traces of a missing patch for CVE-2021-0505 - BUG: A-179975048 in: /media/csl/ACOS/replicant/packages/apps/Settings/src/com/android/settings/vpn2/AppPreference.java
+[+] We found traces of a missing patch for CVE-2021-0506 - BUG: A-181962311 in: /media/csl/ACOS/replicant/packages/apps/Settings/src/com/android/settings/ActivityPicker.java
+[+] We found traces of a missing patch for CVE-2021-0523 - BUG: A-174047492 in: /media/csl/ACOS/replicant/packages/apps/Settings/src/com/android/settings/wifi/WifiScanModeActivity.java
+[+] We found traces of a missing patch for CVE-2021-0517 - BUG: A-179053823 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/ConnectivityService.java
+[+] We found traces of a missing patch for CVE-2021-0513 - BUG: A-156090809 in: /media/csl/ACOS/replicant/frameworks/base/core/java/android/app/ActivityManagerInternal.java
+[+] We found traces of a missing patch for CVE-2021-0513 - BUG: A-156090809 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/am/ActiveServices.java
+[+] We found traces of a missing patch for CVE-2021-0513 - BUG: A-156090809 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/notification/NotificationManagerService.java
+[+] We found traces of a missing patch for CVE-2021-0478 - BUG: A-169255797 in: /media/csl/ACOS/replicant/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/StatusBarIconView.java
+[+] We found traces of a missing patch for CVE-2021-0586 - BUG: A-182584940 in: /media/csl/ACOS/replicant/packages/apps/Settings/src/com/android/settings/bluetooth/DevicePickerActivity.java
+[+] We found traces of a missing patch for CVE-2021-0604 - BUG: A-179910660 in: /media/csl/ACOS/replicant/packages/apps/Bluetooth/src/com/android/bluetooth/opp/BluetoothOppSendFileInfo.java
+[+] We found traces of a missing patch for CVE-2021-0604 - BUG: A-179910660 in: /media/csl/ACOS/replicant/packages/apps/Bluetooth/src/com/android/bluetooth/opp/BluetoothOppUtility.java
+[+] We found traces of a missing patch for CVE-2021-0603 - BUG: A-182809425 in: /media/csl/ACOS/replicant/packages/apps/Contacts/src/com/android/contacts/activities/ContactSelectionActivity.java
+[+] We found traces of a missing patch for CVE-2021-0645 - BUG: A-157320644 in: /media/csl/ACOS/replicant/frameworks/base/packages/ExternalStorageProvider/src/com/android/externalstorage/ExternalStorageProvider.java
+[+] We found traces of a missing patch for CVE-2021-0519 - BUG: A-176533109 in: /media/csl/ACOS/replicant/external/libavc/encoder/ih264e_bitstream.h
+[+] We found traces of a missing patch for CVE-2021-0641 - BUG: A-185235454 in: /media/csl/ACOS/replicant/frameworks/opt/telephony/src/java/com/android/internal/telephony/SubscriptionController.java
+[-] We found traces of CVE-2021-0642 - BUG: A-185126149 in: /media/csl/ACOS/replicant/packages/services/Telephony/AndroidManifest.xml
+[+] We found traces of a missing patch for CVE-2021-0688 - BUG: A-161149543 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/policy/PhoneWindowManager.java
+[+] We found traces of a missing patch for CVE-2021-0682 - BUG: A-159624555 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/notification/NotificationManagerService.java
+[+] We found traces of a missing patch for CVE-2021-0705 - BUG: A-185388103 in: /media/csl/ACOS/replicant/frameworks/base/core/java/android/app/Notification.java
+[+] We found traces of a missing patch for CVE-2020-15358 - BUG: A-192605364 in: /media/csl/ACOS/replicant/external/sqlite/dist/orig/sqlite3.c
+[+] We found traces of a missing patch for CVE-2020-15358 - BUG: A-192605364 in: /media/csl/ACOS/replicant/external/sqlite/dist/sqlite3.c
+[+] We found traces of a missing patch for CVE-2021-0926 - BUG: A-191053931 in: /media/csl/ACOS/replicant/packages/apps/Contacts/AndroidManifest.xml
+[+] We found traces of a missing patch for CVE-2020-13871 - BUG: A-192606047 in: /media/csl/ACOS/replicant/external/sqlite/dist/orig/sqlite3.c
+[-] We found traces of CVE-2020-13871 - BUG: A-192606047 in: /media/csl/ACOS/replicant/external/sqlite/dist/orig/sqlite3.c
+[+] We found traces of a missing patch for CVE-2020-13871 - BUG: A-192606047 in: /media/csl/ACOS/replicant/external/sqlite/dist/sqlite3.c
+[-] We found traces of CVE-2020-13871 - BUG: A-192606047 in: /media/csl/ACOS/replicant/external/sqlite/dist/sqlite3.c
+[+] We found traces of a missing patch for CVE-2021-0650 - BUG: A-190286685 in: /media/csl/ACOS/replicant/external/sonivox/arm-wt-22k/lib_src/eas_wtengine.c
+[-] We found traces of CVE-2021-0650 - BUG: A-190286685 in: /media/csl/ACOS/replicant/external/sonivox/arm-wt-22k/lib_src/eas_wtengine.c
+[+] We found traces of a missing patch for CVE-2021-0434 - BUG: A-167403112  in: /media/csl/ACOS/replicant/packages/apps/Settings/res/values/strings.xml
+[+] We found traces of a missing patch for CVE-2021-0434 - BUG: A-167403112  in: /media/csl/ACOS/replicant/packages/apps/Settings/src/com/android/settings/bluetooth/BluetoothPermissionActivity.java
+[+] We found traces of a missing patch for CVE-2021-0704
+ - BUG: A-179338675 in: /media/csl/ACOS/replicant/frameworks/base/core/res/res/values/strings.xml
+[+] We found traces of a missing patch for CVE-2021-0704
+ - BUG: A-179338675 in: /media/csl/ACOS/replicant/frameworks/base/core/res/res/values/symbols.xml
+[+] We found traces of a missing patch for CVE-2021-0967
+ - BUG: A-199065614 in: /media/csl/ACOS/replicant/external/tremolo/Tremolo/codebook.c
+[+] We found traces of a missing patch for CVE-2021-0954
+ - BUG: A-143559931 in: /media/csl/ACOS/replicant/frameworks/base/core/java/com/android/internal/app/ResolverActivity.java
+[+] We found traces of a missing patch for CVE-2021-0963
+ - BUG: A-199754277 in: /media/csl/ACOS/replicant/packages/apps/KeyChain/AndroidManifest.xml
+[+] We found traces of a missing patch for CVE-2021-0963
+ - BUG: A-199754277 in: /media/csl/ACOS/replicant/packages/apps/KeyChain/src/com/android/keychain/KeyChainActivity.java
+[+] We found traces of a missing patch for CVE-2021-0965
+ - BUG: A-194300867 in: /media/csl/ACOS/replicant/packages/apps/Settings/AndroidManifest.xml
+[+] We found traces of a missing patch for CVE-2021-0952
+ - BUG: A-195748381 in: /media/csl/ACOS/replicant/packages/apps/Contacts/src/com/android/contacts/activities/AttachPhotoActivity.java
+[+] We found traces of a missing patch for CVE-2021-0952
+ - BUG: A-195748381 in: /media/csl/ACOS/replicant/packages/apps/Contacts/src/com/android/contacts/detail/PhotoSelectionHandler.java
+[+] We found traces of a missing patch for CVE-2020-0338 - BUG: A-123700107 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/accounts/AccountManagerService.java
+[+] We found traces of a missing patch for CVE-2021-0643 - BUG: A-183612370 in: /media/csl/ACOS/replicant/frameworks/opt/telephony/src/java/com/android/internal/telephony/SubscriptionController.java
+[+] We found traces of a missing patch for CVE-2021-39619 - BUG: A-197399948 in: /media/csl/ACOS/replicant/frameworks/base/core/java/android/app/admin/DevicePolicyManagerInternal.java
+[+] We found traces of a missing patch for CVE-2021-39619 - BUG: A-197399948 in: /media/csl/ACOS/replicant/frameworks/base/services/usage/java/com/android/server/usage/UsageStatsService.java
+[+] We found traces of a missing patch for CVE-2021-39665 - BUG: A-204077881 in: /media/csl/ACOS/replicant/frameworks/av/media/libstagefright/rtsp/AAVCAssembler.cpp
+[+] We found traces of a missing patch for CVE-2021-39692 - BUG: A-209611539 in: /media/csl/ACOS/replicant/packages/apps/ManagedProvisioning/AndroidManifest.xml
+[+] We found traces of a missing patch for CVE-2021-39697 - BUG: A-200813547 in: /media/csl/ACOS/replicant/packages/providers/DownloadProvider/src/com/android/providers/downloads/DownloadProvider.java
+[+] We found traces of a missing patch for CVE-2021-39697 - BUG: A-200813547 in: /media/csl/ACOS/replicant/packages/providers/DownloadProvider/src/com/android/providers/downloads/Helpers.java
+[-] We found traces of CVE-2021-39697 - BUG: A-200813547 in: /media/csl/ACOS/replicant/packages/providers/DownloadProvider/src/com/android/providers/downloads/Helpers.java
+[+] We found traces of a missing patch for CVE-2021-39697 - BUG: A-200813547 in: /media/csl/ACOS/replicant/packages/providers/DownloadProvider/tests/src/com/android/providers/downloads/HelpersTest.java
+[+] We found traces of a missing patch for CVE-2021-39690 - BUG: A-204316511 in: /media/csl/ACOS/replicant/frameworks/native/services/surfaceflinger/SurfaceFlinger.cpp
+[+] We found traces of a missing patch for CVE-2021-39707 - BUG: A-200688991
+ in: /media/csl/ACOS/replicant/packages/apps/Settings/src/com/android/settings/users/AppRestrictionsFragment.java
+[-] We found traces of CVE-2021-3655 - BUG: A-197154735
+ in: /media/csl/ACOS/replicant/kernel/samsung/tuna/net/sctp/sm_make_chunk.c
+[+] We found traces of a missing patch for CVE-2021-0694 - BUG: A-183147114 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/am/ActiveServices.java
+[+] We found traces of a missing patch for CVE-2021-0694 - BUG: A-183147114 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/am/ServiceRecord.java
+[+] We found traces of a missing patch for CVE-2022-20005 - BUG: A-219044664 in: /media/csl/ACOS/replicant/frameworks/base/core/java/android/content/pm/IPackageInstallerSession.aidl
+[+] We found traces of a missing patch for CVE-2022-20005 - BUG: A-219044664 in: /media/csl/ACOS/replicant/frameworks/base/core/java/android/content/pm/PackageInstaller.java
+[+] We found traces of a missing patch for CVE-2022-20005 - BUG: A-219044664 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/pm/PackageInstallerSession.java
+[+] We found traces of a missing patch for CVE-2021-39670 - BUG: A-204087139 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/wallpaper/WallpaperManagerService.java
+[+] We found traces of a missing patch for CVE-2022-20006 - BUG: A-151095871 in: /media/csl/ACOS/replicant/frameworks/base/packages/SystemUI/src/com/android/systemui/keyguard/KeyguardViewMediator.java
+[+] We found traces of a missing patch for CVE-2022-20006 - BUG: A-151095871 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/policy/keyguard/KeyguardServiceWrapper.java
+[-] We found traces of CVE-2022-20006 - BUG: A-151095871 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/policy/keyguard/KeyguardStateMonitor.java
+[+] We found traces of a missing patch for CVE-2022-20138 - BUG: A-210469972 in: /media/csl/ACOS/replicant/frameworks/base/core/java/android/app/admin/DevicePolicyManager.java
+[+] We found traces of a missing patch for CVE-2022-20138 - BUG: A-210469972 in: /media/csl/ACOS/replicant/frameworks/base/core/java/android/app/admin/IDevicePolicyManager.aidl
+[+] We found traces of a missing patch for CVE-2022-20138 - BUG: A-210469972 in: /media/csl/ACOS/replicant/frameworks/base/core/res/AndroidManifest.xml
+[+] We found traces of a missing patch for CVE-2021-0981 - BUG: A-191981182 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/notification/NotificationManagerService.java
+[+] We found traces of a missing patch for CVE-2022-20220 - BUG: A-219015884 in: /media/csl/ACOS/replicant/packages/providers/ContactsProvider/src/com/android/providers/contacts/CallLogProvider.java
+[+] We found traces of a missing patch for CVE-2022-20220 - BUG: A-219015884 in: /media/csl/ACOS/replicant/packages/providers/ContactsProvider/tests/src/com/android/providers/contacts/CallLogProviderTest.java
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/replicant/external/expat/Changes
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/replicant/external/expat/lib/xmlparse.c
+[-] We found traces of CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/replicant/external/expat/lib/xmlparse.c
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/replicant/external/expat/lib/xmltok.c
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/ACOS/replicant/external/expat/tests/runtests.c
+[+] We found traces of a missing patch for CVE-2022-23852 - BUG: A-221255869 in: /media/csl/ACOS/replicant/external/expat/lib/xmlparse.c
+[-] We found traces of CVE-2022-23990 - BUG: A-221256678 in: /media/csl/ACOS/replicant/external/expat/lib/xmlparse.c
+[+] We found traces of a missing patch for CVE-2022-20393 - BUG: A-233735886 in: /media/csl/ACOS/replicant/frameworks/av/media/libstagefright/timedtext/TextDescriptions.cpp
+[+] We found traces of a missing patch for CVE-2022-20197 - BUG: A-208279300 in: /media/csl/ACOS/replicant/frameworks/base/core/java/android/os/Parcel.java
+[+] We found traces of a missing patch for CVE-2022-20396 - BUG: A-234440688 in: /media/csl/ACOS/replicant/packages/apps/Settings/src/com/android/settings/SettingsActivity.java
+[+] We found traces of a missing patch for CVE-2022-20419 - BUG: A-237290578 in: /media/csl/ACOS/replicant/frameworks/base/core/java/android/app/ActivityOptions.java
+[+] We found traces of a missing patch for CVE-2022-20351 - BUG: A-224771921 in: /media/csl/ACOS/replicant/packages/providers/ContactsProvider/src/com/android/providers/contacts/CallLogProvider.java
+[+] We found traces of a missing patch for CVE-2022-20413 - BUG: A-235850634 in: /media/csl/ACOS/replicant/frameworks/av/services/audioflinger/Threads.cpp
+[+] We found traces of a missing patch for CVE-2022-20413 - BUG: A-235850634 in: /media/csl/ACOS/replicant/frameworks/av/services/audioflinger/Threads.h
+[+] We found traces of a missing patch for CVE-2016-3900 - BUG: A-29431260 in: /media/csl/ACOS/replicant/frameworks/native/cmds/servicemanager/service_manager.c
+[+] We found traces of a missing patch for CVE-2017-0880 - BUG: A-65646012 in: /media/csl/ACOS/replicant/external/skia/src/ports/SkOSFile_posix.cpp
+[+] We found traces of a missing patch for CVE-2017-0880 - BUG: A-65646012 in: /media/csl/ACOS/replicant/external/skia/src/ports/SkOSFile_win.cpp
+[+] We found traces of a missing patch for CVE-2018-9438 - BUG: A-78644887 in: /media/csl/ACOS/replicant/packages/providers/DownloadProvider/src/com/android/providers/downloads/RealSystemFacade.java
+[+] We found traces of a missing patch for CVE-2018-9438 - BUG: A-78644887 in: /media/csl/ACOS/replicant/packages/providers/DownloadProvider/src/com/android/providers/downloads/SystemFacade.java
+[+] We found traces of a missing patch for CVE-2018-9427 - BUG: A-77486542 in: /media/csl/ACOS/replicant/frameworks/av/media/libstagefright/omx/OMXNodeInstance.cpp
+[+] We found traces of a missing patch for CVE-2018-9490 - BUG: A-111274046 in: /media/csl/ACOS/replicant/external/chromium-libpac/Android.mk
+[+] We found traces of a missing patch for CVE-2018-9490 - BUG: A-111274046 in: /media/csl/ACOS/replicant/external/chromium-libpac/test/proxy_test_script.h
+[+] We found traces of a missing patch for CVE-2018-9493 - BUG: A-111085900 in: /media/csl/ACOS/replicant/frameworks/base/core/java/android/database/sqlite/SQLiteQueryBuilder.java
+[+] We found traces of a missing patch for CVE-2019-2096 - BUG: A-123237974 in: /media/csl/ACOS/replicant/frameworks/av/services/audioflinger/AudioFlinger.cpp
+[-] We found traces of CVE-2019-2096 - BUG: A-123237974 in: /media/csl/ACOS/replicant/frameworks/av/services/audioflinger/AudioFlinger.cpp
+[+] We found traces of a missing patch for CVE-2019-2123 - BUG: A-34175893 in: /media/csl/ACOS/replicant/cts/tests/tests/os/AndroidManifest.xml
+[+] We found traces of a missing patch for CVE-2019-2123 - BUG: A-34175893 in: /media/csl/ACOS/replicant/cts/tests/tests/os/src/android/os/cts/ParcelTest.java
+[+] We found traces of a missing patch for CVE-2019-2211 - BUG: A-135269669 in: /media/csl/ACOS/replicant/packages/providers/TvProvider/src/com/android/providers/tv/TvProvider.java
+[+] We found traces of a missing patch for CVE-2019-2196 - BUG: A-135269143 in: /media/csl/ACOS/replicant/frameworks/base/core/java/android/app/DownloadManager.java
+[+] We found traces of a missing patch for CVE-2019-2196 - BUG: A-135269143 in: /media/csl/ACOS/replicant/frameworks/base/core/java/android/database/sqlite/SQLiteQueryBuilder.java
+[+] We found traces of a missing patch for CVE-2019-2198 - BUG: A-135270103 in: /media/csl/ACOS/replicant/frameworks/base/core/java/android/app/DownloadManager.java
+[+] We found traces of a missing patch for CVE-2019-2198 - BUG: A-135270103 in: /media/csl/ACOS/replicant/frameworks/base/core/java/android/database/sqlite/SQLiteQueryBuilder.java
+[+] We found traces of a missing patch for CVE-2020-0107 - BUG: A-146570216 in: /media/csl/ACOS/replicant/packages/services/Telephony/src/com/android/phone/PhoneInterfaceManager.java
+[+] We found traces of a missing patch for CVE-2020-0108 - BUG: A-140108616 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/am/ActiveServices.java
+[+] We found traces of a missing patch for CVE-2020-0108 - BUG: A-140108616 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/am/ServiceRecord.java
+[+] We found traces of a missing patch for CVE-2020-0215 - BUG: A-140417248 in: /media/csl/ACOS/replicant/packages/apps/Nfc/src/com/android/nfc/handover/ConfirmConnectActivity.java
+[-] We found traces of CVE-2020-0416 - BUG: A-155288585 in: /media/csl/ACOS/replicant/packages/apps/Settings/res/xml/app_ops_permissions_details.xml
+[+] We found traces of a missing patch for CVE-2020-0458 - BUG: A-160265164 in: /media/csl/ACOS/replicant/system/media/audio_utils/include/audio_utils/spdif/SPDIFEncoder.h
+[+] We found traces of a missing patch for CVE-2021-0341 - BUG: A-171980069 in: /media/csl/ACOS/replicant/external/okhttp/okhttp-tests/src/test/java/com/squareup/okhttp/internal/tls/HostnameVerifierTest.java
+[+] We found traces of a missing patch for CVE-2021-0341 - BUG: A-171980069 in: /media/csl/ACOS/replicant/external/okhttp/okhttp/src/main/java/com/squareup/okhttp/internal/tls/OkHostnameVerifier.java
+[+] We found traces of a missing patch for CVE-2021-0511 - BUG: A-178055795 in: /media/csl/ACOS/replicant/art/build/Android.gtest.mk
+[+] We found traces of a missing patch for CVE-2021-0511 - BUG: A-178055795 in: /media/csl/ACOS/replicant/art/dex2oat/dex2oat.cc
+[+] We found traces of a missing patch for CVE-2021-0441 - BUG: A-174495520 in: /media/csl/ACOS/replicant/packages/providers/MediaProvider/res/values/styles.xml
+[+] We found traces of a missing patch for CVE-2020-0368 - BUG: A-143230980 in: /media/csl/ACOS/replicant/frameworks/base/core/java/android/provider/CallLog.java
+[+] We found traces of a missing patch for CVE-2021-0591 - BUG: A-179386960 in: /media/csl/ACOS/replicant/packages/apps/Settings/src/com/android/settings/bluetooth/BluetoothPermissionActivity.java
+[+] We found traces of a missing patch for CVE-2021-0591 - BUG: A-179386960 in: /media/csl/ACOS/replicant/packages/apps/Settings/src/com/android/settings/bluetooth/DevicePickerFragment.java
+[+] We found traces of a missing patch for CVE-2021-0593 - BUG: A-179386068 in: /media/csl/ACOS/replicant/packages/apps/Settings/src/com/android/settings/bluetooth/BluetoothPermissionActivity.java
+[+] We found traces of a missing patch for CVE-2021-0593 - BUG: A-179386068 in: /media/csl/ACOS/replicant/packages/apps/Settings/src/com/android/settings/bluetooth/DevicePickerFragment.java
+[+] We found traces of a missing patch for CVE-2021-0598 - BUG: A-180422108 in: /media/csl/ACOS/replicant/packages/apps/Nfc/AndroidManifest.xml
+[+] We found traces of a missing patch for CVE-2021-0598 - BUG: A-180422108 in: /media/csl/ACOS/replicant/packages/apps/Nfc/src/com/android/nfc/handover/ConfirmConnectActivity.java
+[+] We found traces of a missing patch for CVE-2021-39662 - BUG: A-197302116 in: /media/csl/ACOS/replicant/packages/providers/MediaProvider/src/com/android/providers/media/MediaProvider.java
+[+] We found traces of a missing patch for CVE-2021-39696 - BUG: A-185810717 in: /media/csl/ACOS/replicant/frameworks/base/services/core/java/com/android/server/wm/Task.java
+[+] We found traces of a missing patch for CVE-2022-20358 - BUG: A-203229608 in: /media/csl/ACOS/replicant/frameworks/base/core/java/android/content/AbstractThreadedSyncAdapter.java
+[+] We found traces of a missing patch for CVE-2022-20353 - BUG: A-221041256 in: /media/csl/ACOS/replicant/packages/apps/Settings/src/com/android/settings/DefaultRingtonePreference.java
+[+] We found traces of a missing patch for CVE-2021-1972 - BUG: QC-CR2823861 in: /media/csl/ACOS/replicant/external/wpa_supplicant_8/src/p2p/p2p.c
+[+] We found traces of a missing patch for CVE-2021-0320 - BUG: A-169933423 in: /media/csl/ACOS/replicant/system/security/keystore/keystore_keymaster_enforcement.h

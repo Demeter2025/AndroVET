@@ -1,0 +1,310 @@
+[+] We found traces of a missing patch for CVE-2015-3878 - BUG: ANDROID-23345192 in: /media/csl/COS/LinageOS_20_0/frameworks/base/packages/SystemUI/src/com/android/systemui/media/MediaProjectionPermissionActivity.java
+[+] We found traces of a missing patch for CVE-2015-6607 - BUG: ANDROID-20099586 in: /media/csl/COS/LinageOS_20_0/external/sqlite/dist/orig/shell.c
+[-] We found traces of CVE-2015-6607 - BUG: ANDROID-20099586 in: /media/csl/COS/LinageOS_20_0/external/sqlite/dist/orig/sqlite3.c
+[+] We found traces of a missing patch for CVE-2015-6607 - BUG: ANDROID-20099586 in: /media/csl/COS/LinageOS_20_0/external/sqlite/dist/orig/sqlite3.c
+[-] We found traces of CVE-2015-6607 - BUG: ANDROID-20099586 in: /media/csl/COS/LinageOS_20_0/external/sqlite/dist/orig/sqlite3.h
+[+] We found traces of a missing patch for CVE-2015-6607 - BUG: ANDROID-20099586 in: /media/csl/COS/LinageOS_20_0/external/sqlite/dist/shell.c
+[-] We found traces of CVE-2015-6607 - BUG: ANDROID-20099586 in: /media/csl/COS/LinageOS_20_0/external/sqlite/dist/sqlite3.c
+[+] We found traces of a missing patch for CVE-2015-6607 - BUG: ANDROID-20099586 in: /media/csl/COS/LinageOS_20_0/external/sqlite/dist/sqlite3.c
+[-] We found traces of CVE-2015-6607 - BUG: ANDROID-20099586 in: /media/csl/COS/LinageOS_20_0/external/sqlite/dist/sqlite3.h
+[+] We found traces of a missing patch for CVE-2015-6609 - BUG: ANDROID-22953624 in: /media/csl/COS/LinageOS_20_0/bootable/recovery/Android.mk
+[+] We found traces of a missing patch for CVE-2016-0804 - BUG: ANDROID-25070434 in: /media/csl/COS/LinageOS_20_0/frameworks/av/media/libmediaplayerservice/nuplayer/GenericSource.cpp
+[+] We found traces of a missing patch for CVE-2016-0831 - BUG: ANDROID-25778215 in: /media/csl/COS/LinageOS_20_0/frameworks/opt/telephony/src/java/com/android/internal/telephony/PhoneSubInfoController.java
+[+] We found traces of a missing patch for CVE-2016-0835 - BUG: ANDROID-26070014 in: /media/csl/COS/LinageOS_20_0/external/libmpeg2/decoder/impeg2d_dec_hdr.c
+[+] We found traces of a missing patch for CVE-2016-0842 - BUG: ANDROID-25818142 in: /media/csl/COS/LinageOS_20_0/external/libavc/decoder/ih264d_dpb_mgr.c
+[+] We found traces of a missing patch for CVE-2016-0847 - BUG: ANDROID-26864502 in: /media/csl/COS/LinageOS_20_0/packages/services/Telecomm/src/com/android/server/telecom/TelecomServiceImpl.java
+[+] We found traces of a missing patch for CVE-2016-2414 - BUG: ANDROID-26413177 in: /media/csl/COS/LinageOS_20_0/frameworks/minikin/libs/minikin/SparseBitSet.cpp
+[+] We found traces of a missing patch for CVE-2016-2422 - BUG: ANDROID-26324357 in: /media/csl/COS/LinageOS_20_0/packages/apps/CertInstaller/src/com/android/certinstaller/CredentialHelper.java
+[+] We found traces of a missing patch for CVE-2016-2428 - BUG: 26751339 in: /media/csl/COS/LinageOS_20_0/external/aac/libAACdec/src/aacdec_drc.cpp
+[+] We found traces of a missing patch for CVE-2016-2457 - BUG: 27411179 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/core/java/com/android/server/pm/UserManagerService.java
+[+] We found traces of a missing patch for CVE-2016-3751 - BUG: A-23265085 in: /media/csl/COS/LinageOS_20_0/external/libpng/CMakeLists.txt
+[+] We found traces of a missing patch for CVE-2016-3751 - BUG: A-23265085 in: /media/csl/COS/LinageOS_20_0/external/libpng/README
+[+] We found traces of a missing patch for CVE-2016-3751 - BUG: A-23265085 in: /media/csl/COS/LinageOS_20_0/external/libpng/README.android
+[-] We found traces of CVE-2016-3751 - BUG: A-23265085 in: /media/csl/COS/LinageOS_20_0/external/libpng/contrib/gregbook/readpng2.c
+[+] We found traces of a missing patch for CVE-2016-3751 - BUG: A-23265085 in: /media/csl/COS/LinageOS_20_0/external/libpng/contrib/libtests/pngvalid.c
+[-] We found traces of CVE-2016-3751 - BUG: A-23265085 in: /media/csl/COS/LinageOS_20_0/external/libpng/pngread.c
+[+] We found traces of a missing patch for CVE-2016-3751 - BUG: A-23265085 in: /media/csl/COS/LinageOS_20_0/external/libpng/pngrtran.c
+[+] We found traces of a missing patch for CVE-2016-3751 - BUG: A-23265085 in: /media/csl/COS/LinageOS_20_0/external/libpng/pngrutil.c
+[+] We found traces of a missing patch for CVE-2016-3751 - BUG: A-23265085 in: /media/csl/COS/LinageOS_20_0/external/libpng/pngstruct.h
+[+] We found traces of a missing patch for CVE-2016-3754 - BUG: A-28615448 in: /media/csl/COS/LinageOS_20_0/frameworks/av/media/mediaserver/main_mediaserver.cpp
+[+] We found traces of a missing patch for CVE-2016-3761 - BUG: A-28300969 in: /media/csl/COS/LinageOS_20_0/packages/apps/Nfc/src/com/android/nfc/NfcService.java
+[+] We found traces of a missing patch for CVE-2016-3766 - BUG: A-28471206 in: /media/csl/COS/LinageOS_20_0/frameworks/av/media/mediaserver/main_mediaserver.cpp
+[+] We found traces of a missing patch for CVE-2016-3820 - BUG: A-28673410 in: /media/csl/COS/LinageOS_20_0/external/libavc/decoder/ih264d_parse_pslice.c
+[+] We found traces of a missing patch for CVE-2016-3829 - BUG: A-29023649 in: /media/csl/COS/LinageOS_20_0/external/libavc/decoder/ih264d_api.c
+[+] We found traces of a missing patch for CVE-2016-3834 - BUG: A-28466701 in: /media/csl/COS/LinageOS_20_0/frameworks/av/camera/ICameraRecordingProxy.cpp
+[+] We found traces of a missing patch for CVE-2016-3834 - BUG: A-28466701 in: /media/csl/COS/LinageOS_20_0/frameworks/av/media/libstagefright/CameraSource.cpp
+[+] We found traces of a missing patch for CVE-2016-3838 - BUG: A-28761672 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/core/java/com/android/server/am/ActivityManagerService.java
+[+] We found traces of a missing patch for CVE-2016-3875 - BUG: A-26251884 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/core/java/com/android/server/wm/WindowManagerService.java
+[+] We found traces of a missing patch for CVE-2016-3876 - BUG: A-29900345 in: /media/csl/COS/LinageOS_20_0/frameworks/base/packages/SettingsProvider/src/com/android/providers/settings/SettingsProvider.java
+[+] We found traces of a missing patch for CVE-2016-3883 - BUG: A-28557603 in: /media/csl/COS/LinageOS_20_0/frameworks/opt/telephony/src/java/com/android/internal/telephony/SMSDispatcher.java
+[+] We found traces of a missing patch for CVE-2016-3884 - BUG: A-29421441 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/core/java/com/android/server/notification/NotificationManagerService.java
+[+] We found traces of a missing patch for CVE-2016-3887 - BUG: A-29899712 in: /media/csl/COS/LinageOS_20_0/frameworks/base/packages/SettingsProvider/src/com/android/providers/settings/SettingsProvider.java
+[+] We found traces of a missing patch for CVE-2016-3898 - BUG: A-29832693 in: /media/csl/COS/LinageOS_20_0/packages/services/Telephony/AndroidManifest.xml
+[+] We found traces of a missing patch for CVE-2016-3911 - BUG: A-30143607 in: /media/csl/COS/LinageOS_20_0/frameworks/base/core/java/android/os/Process.java
+[+] We found traces of a missing patch for CVE-2016-3912 - BUG: A-30202481 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/core/java/com/android/server/am/ActivityManagerService.java
+[+] We found traces of a missing patch for CVE-2016-3915 - BUG: A-30591838 in: /media/csl/COS/LinageOS_20_0/system/media/camera/src/camera_metadata.c
+[+] We found traces of a missing patch for CVE-2016-3922 - BUG: A-30202619 in: /media/csl/COS/LinageOS_20_0/hardware/ril/libril/RilSapSocket.cpp
+[+] We found traces of a missing patch for CVE-2016-3923 - BUG: A-30647115 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/accessibility/java/com/android/server/accessibility/AccessibilityManagerService.java
+[+] We found traces of a missing patch for CVE-2016-3924 - BUG: A-30204301 in: /media/csl/COS/LinageOS_20_0/frameworks/av/services/audioflinger/Effects.cpp
+[+] We found traces of a missing patch for CVE-2016-6701 - BUG: A-30190637 in: /media/csl/COS/LinageOS_20_0/external/skia/src/codec/SkJpegCodec.cpp
+[+] We found traces of a missing patch for CVE-2016-6708 - BUG: A-30693465 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/core/java/com/android/server/am/ActivityManagerService.java
+[+] We found traces of a missing patch for CVE-2016-6715 - BUG: A-29833954 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/core/java/com/android/server/media/MediaSessionService.java
+[+] We found traces of a missing patch for CVE-2015-1283 - BUG: A-27818751 in: /media/csl/COS/LinageOS_20_0/external/expat/lib/xmlparse.c
+[+] We found traces of a missing patch for CVE-2014-9675 - BUG: A-24296662 in: /media/csl/COS/LinageOS_20_0/external/freetype/src/autofit/aflatin.c
+[+] We found traces of a missing patch for CVE-2014-9675 - BUG: A-24296662 in: /media/csl/COS/LinageOS_20_0/external/freetype/src/autofit/afloader.c
+[+] We found traces of a missing patch for CVE-2014-9675 - BUG: A-24296662 in: /media/csl/COS/LinageOS_20_0/external/freetype/src/autofit/afranges.c
+[+] We found traces of a missing patch for CVE-2014-9675 - BUG: A-24296662 in: /media/csl/COS/LinageOS_20_0/external/freetype/src/base/ftstroke.c
+[-] We found traces of CVE-2014-9675 - BUG: A-24296662 in: /media/csl/COS/LinageOS_20_0/external/freetype/src/gzip/ftgzip.c
+[+] We found traces of a missing patch for CVE-2014-9675 - BUG: A-24296662 in: /media/csl/COS/LinageOS_20_0/external/freetype/src/sfnt/sfobjs.c
+[+] We found traces of a missing patch for CVE-2014-9675 - BUG: A-24296662 in: /media/csl/COS/LinageOS_20_0/external/freetype/src/smooth/ftgrays.c
+[+] We found traces of a missing patch for CVE-2014-9675 - BUG: A-24296662 in: /media/csl/COS/LinageOS_20_0/external/freetype/src/truetype/ttgload.c
+[+] We found traces of a missing patch for CVE-2014-9675 - BUG: A-24296662 in: /media/csl/COS/LinageOS_20_0/external/freetype/src/truetype/ttgxvar.c
+[-] We found traces of CVE-2014-9675 - BUG: A-24296662 in: /media/csl/COS/LinageOS_20_0/external/freetype/src/truetype/ttobjs.c
+[+] We found traces of a missing patch for CVE-2016-6770 - BUG: A-30202228 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/core/java/com/android/server/am/ActivityManagerService.java
+[+] We found traces of a missing patch for CVE-2017-0383 - BUG: A-31677614 in: /media/csl/COS/LinageOS_20_0/frameworks/native/include/binder/Parcel.h
+[+] We found traces of a missing patch for CVE-2017-0386 - BUG: A-32255299 in: /media/csl/COS/LinageOS_20_0/external/libnl/lib/attr.c
+[+] We found traces of a missing patch for CVE-2017-0391 - BUG: A-32322258 in: /media/csl/COS/LinageOS_20_0/external/libhevc/decoder/ihevcd_decode.c
+[-] We found traces of CVE-2017-0392 - BUG: A-32577290 in: /media/csl/COS/LinageOS_20_0/frameworks/av/media/extractors/mp3/VBRISeeker.cpp
+[+] We found traces of a missing patch for CVE-2016-5552 - BUG: A-31858037 in: /media/csl/COS/LinageOS_20_0/libcore/ojluni/src/main/java/java/net/URLStreamHandler.java
+[+] We found traces of a missing patch for CVE-2017-0416 - BUG: A-32886609 in: /media/csl/COS/LinageOS_20_0/frameworks/av/services/audioflinger/Effects.cpp
+[+] We found traces of a missing patch for CVE-2017-0417 - BUG: A-32705438 in: /media/csl/COS/LinageOS_20_0/frameworks/av/services/audioflinger/Effects.cpp
+[+] We found traces of a missing patch for CVE-2017-0418 - BUG: A-32703959 in: /media/csl/COS/LinageOS_20_0/frameworks/av/services/audioflinger/Effects.cpp
+[+] We found traces of a missing patch for CVE-2017-0421 - BUG: A-32555637 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/core/java/com/android/server/am/ActivityManagerService.java
+[+] We found traces of a missing patch for CVE-2017-0472 - BUG: A-33862021 in: /media/csl/COS/LinageOS_20_0/external/libhevc/decoder/ihevcd_parse_headers.c
+[+] We found traces of a missing patch for CVE-2017-0479 - BUG: A-32707507 in: /media/csl/COS/LinageOS_20_0/frameworks/av/services/audioflinger/Effects.cpp
+[+] We found traces of a missing patch for CVE-2017-0492 - BUG: A-30150688 in: /media/csl/COS/LinageOS_20_0/frameworks/base/core/java/android/widget/Toast.java
+[+] We found traces of a missing patch for CVE-2017-0499 - BUG: A-32095713 in: /media/csl/COS/LinageOS_20_0/frameworks/av/services/audioflinger/Effects.cpp
+[+] We found traces of a missing patch for CVE-2017-0598 - BUG: A-34128677 in: /media/csl/COS/LinageOS_20_0/frameworks/base/libs/androidfw/CursorWindow.cpp
+[-] We found traces of CVE-2017-0600 - BUG: A-35269635 in: /media/csl/COS/LinageOS_20_0/frameworks/av/media/codecs/m4v_h263/dec/src/mb_motion_comp.cpp
+[+] We found traces of a missing patch for CVE-2017-0493 - BUG: A-32793550 in: /media/csl/COS/LinageOS_20_0/frameworks/base/core/java/android/app/admin/IDevicePolicyManager.aidl
+[+] We found traces of a missing patch for CVE-2017-0493 - BUG: A-32793550 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java
+[+] We found traces of a missing patch for CVE-2017-0668 - BUG: A-22011579 in: /media/csl/COS/LinageOS_20_0/packages/providers/DownloadProvider/src/com/android/providers/downloads/DownloadProvider.java
+[+] We found traces of a missing patch for CVE-2017-0669 - BUG: A-34114752 in: /media/csl/COS/LinageOS_20_0/packages/providers/MediaProvider/src/com/android/providers/media/MediaProvider.java
+[+] We found traces of a missing patch for CVE-2017-0670 - BUG: A-36104177 in: /media/csl/COS/LinageOS_20_0/bionic/linker/linker.cpp
+[+] We found traces of a missing patch for CVE-2017-0676 - BUG: A-34896431 in: /media/csl/COS/LinageOS_20_0/external/libhevc/decoder/ihevcd_parse_headers.c
+[+] We found traces of a missing patch for CVE-2017-0692 - BUG: A-36725407 in: /media/csl/COS/LinageOS_20_0/external/sonivox/arm-wt-22k/lib_src/eas_xmf.c
+[+] We found traces of a missing patch for CVE-2017-6983 - BUG: A-63852675 in: /media/csl/COS/LinageOS_20_0/external/sqlite/dist/orig/sqlite3.c
+[+] We found traces of a missing patch for CVE-2017-6983 - BUG: A-63852675 in: /media/csl/COS/LinageOS_20_0/external/sqlite/dist/orig/sqlite3.h
+[+] We found traces of a missing patch for CVE-2017-6983 - BUG: A-63852675 in: /media/csl/COS/LinageOS_20_0/external/sqlite/dist/sqlite3.c
+[+] We found traces of a missing patch for CVE-2017-6983 - BUG: A-63852675 in: /media/csl/COS/LinageOS_20_0/external/sqlite/dist/sqlite3.h
+[+] We found traces of a missing patch for CVE-2017-0770 - BUG: A-38234812 in: /media/csl/COS/LinageOS_20_0/frameworks/av/media/libmediaplayerservice/MediaPlayerService.cpp
+[+] We found traces of a missing patch for CVE-2017-0784 - BUG: A-37287958 in: /media/csl/COS/LinageOS_20_0/packages/apps/Nfc/src/com/android/nfc/BeamShareActivity.java
+[+] We found traces of a missing patch for CVE-2017-14496 - BUG: A-64575136 in: /media/csl/COS/LinageOS_20_0/external/dnsmasq/src/rfc1035.c
+[+] We found traces of a missing patch for CVE-2017-0830 - BUG: A-62623498 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java
+[+] We found traces of a missing patch for CVE-2017-0831 - BUG: A-37442941 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/core/java/com/android/server/wm/WindowState.java
+[+] We found traces of a missing patch for CVE-2017-13078 - BUG: A-67737262 in: /media/csl/COS/LinageOS_20_0/external/wpa_supplicant_8/src/rsn_supp/wpa.c
+[+] We found traces of a missing patch for CVE-2017-13079 - BUG: A-67737262 in: /media/csl/COS/LinageOS_20_0/external/wpa_supplicant_8/src/rsn_supp/wpa.c
+[+] We found traces of a missing patch for CVE-2017-13080 - BUG: A-67737262 in: /media/csl/COS/LinageOS_20_0/external/wpa_supplicant_8/src/rsn_supp/wpa.c
+[+] We found traces of a missing patch for CVE-2017-13081 - BUG: A-67737262 in: /media/csl/COS/LinageOS_20_0/external/wpa_supplicant_8/src/rsn_supp/wpa.c
+[+] We found traces of a missing patch for CVE-2017-13082 - BUG: A-67737262 in: /media/csl/COS/LinageOS_20_0/external/wpa_supplicant_8/src/ap/wpa_auth_i.h
+[+] We found traces of a missing patch for CVE-2017-13157 - BUG: A-32990341 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/core/java/com/android/server/accounts/AccountManagerService.java
+[+] We found traces of a missing patch for CVE-2017-13157 - BUG: A-32990341 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/core/java/com/android/server/am/ActivityManagerService.java
+[+] We found traces of a missing patch for CVE-2017-13158 - BUG: A-32879915 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/core/java/com/android/server/accounts/AccountManagerService.java
+[+] We found traces of a missing patch for CVE-2017-13158 - BUG: A-32879915 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/core/java/com/android/server/am/ActivityManagerService.java
+[+] We found traces of a missing patch for CVE-2017-13276 - BUG: A-70637599 in: /media/csl/COS/LinageOS_20_0/external/aac/libMpegTPDec/src/tpdec_asc.cpp
+[+] We found traces of a missing patch for CVE-2017-13314 - BUG: A-63000005 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/core/java/com/android/server/NetworkManagementService.java
+[+] We found traces of a missing patch for CVE-2017-13227 - BUG: A-69981710 in: /media/csl/COS/LinageOS_20_0/frameworks/base/core/java/android/view/autofill/AutofillManager.java
+[+] We found traces of a missing patch for CVE-2017-13227 - BUG: A-69981710 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/autofill/java/com/android/server/autofill/Session.java
+[+] We found traces of a missing patch for CVE-2018-9362 - BUG: A-72298611 in: /media/csl/COS/LinageOS_20_0/frameworks/opt/telephony/src/java/com/android/internal/telephony/InboundSmsHandler.java
+[+] We found traces of a missing patch for CVE-2018-9458 - BUG: A-71786287 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/core/java/com/android/server/wm/RootWindowContainer.java
+[+] We found traces of a missing patch for CVE-2018-9466 - BUG: A-62151041 in: /media/csl/COS/LinageOS_20_0/external/libxml2/Makefile.am
+[+] We found traces of a missing patch for CVE-2018-9466 - BUG: A-62151041 in: /media/csl/COS/LinageOS_20_0/external/libxml2/doc/APIchunk18.html
+[+] We found traces of a missing patch for CVE-2018-9466 - BUG: A-62151041 in: /media/csl/COS/LinageOS_20_0/external/libxml2/doc/APIchunk2.html
+[+] We found traces of a missing patch for CVE-2018-9466 - BUG: A-62151041 in: /media/csl/COS/LinageOS_20_0/external/libxml2/doc/APIchunk20.html
+[-] We found traces of CVE-2018-9466 - BUG: A-62151041 in: /media/csl/COS/LinageOS_20_0/external/libxml2/doc/libxml2-api.xml
+[-] We found traces of CVE-2018-9466 - BUG: A-62151041 in: /media/csl/COS/LinageOS_20_0/external/libxml2/doc/libxml2-refs.xml
+[+] We found traces of a missing patch for CVE-2018-9466 - BUG: A-62151041 in: /media/csl/COS/LinageOS_20_0/external/libxml2/doc/libxml2-refs.xml
+[-] We found traces of CVE-2018-9466 - BUG: A-62151041 in: /media/csl/COS/LinageOS_20_0/external/libxml2/parserInternals.c
+[+] We found traces of a missing patch for CVE-2018-9466 - BUG: A-62151041 in: /media/csl/COS/LinageOS_20_0/external/libxml2/result/HTML/758518-entity.html
+[+] We found traces of a missing patch for CVE-2018-9466 - BUG: A-62151041 in: /media/csl/COS/LinageOS_20_0/external/libxml2/result/HTML/758518-entity.html.err
+[+] We found traces of a missing patch for CVE-2018-9466 - BUG: A-62151041 in: /media/csl/COS/LinageOS_20_0/external/libxml2/result/noent/comment4.xml.sax2
+[+] We found traces of a missing patch for CVE-2018-9466 - BUG: A-62151041 in: /media/csl/COS/LinageOS_20_0/external/libxml2/result/noent/isolat1.sax2
+[+] We found traces of a missing patch for CVE-2018-9466 - BUG: A-62151041 in: /media/csl/COS/LinageOS_20_0/external/libxml2/runtest.c
+[+] We found traces of a missing patch for CVE-2018-9466 - BUG: A-62151041 in: /media/csl/COS/LinageOS_20_0/external/libxml2/test/HTML/758518-entity.html
+[+] We found traces of a missing patch for CVE-2018-9466 - BUG: A-62151041 in: /media/csl/COS/LinageOS_20_0/external/libxml2/test/HTML/758518-tag.html
+[+] We found traces of a missing patch for CVE-2018-9466 - BUG: A-62151041 in: /media/csl/COS/LinageOS_20_0/external/libxml2/test/valid/dtds/766956.dtd
+[+] We found traces of a missing patch for CVE-2018-9466 - BUG: A-62151041 in: /media/csl/COS/LinageOS_20_0/external/libxml2/xmlreader.c
+[-] We found traces of CVE-2018-9466 - BUG: A-62151041 in: /media/csl/COS/LinageOS_20_0/external/libxml2/xpath.c
+[+] We found traces of a missing patch for CVE-2018-9472 - BUG: A-79662501 in: /media/csl/COS/LinageOS_20_0/external/libxml2/Makefile.am
+[+] We found traces of a missing patch for CVE-2018-9472 - BUG: A-79662501 in: /media/csl/COS/LinageOS_20_0/external/libxml2/doc/APIchunk18.html
+[+] We found traces of a missing patch for CVE-2018-9472 - BUG: A-79662501 in: /media/csl/COS/LinageOS_20_0/external/libxml2/doc/APIchunk2.html
+[+] We found traces of a missing patch for CVE-2018-9472 - BUG: A-79662501 in: /media/csl/COS/LinageOS_20_0/external/libxml2/doc/APIchunk20.html
+[-] We found traces of CVE-2018-9472 - BUG: A-79662501 in: /media/csl/COS/LinageOS_20_0/external/libxml2/doc/libxml2-api.xml
+[-] We found traces of CVE-2018-9472 - BUG: A-79662501 in: /media/csl/COS/LinageOS_20_0/external/libxml2/doc/libxml2-refs.xml
+[+] We found traces of a missing patch for CVE-2018-9472 - BUG: A-79662501 in: /media/csl/COS/LinageOS_20_0/external/libxml2/doc/libxml2-refs.xml
+[-] We found traces of CVE-2018-9472 - BUG: A-79662501 in: /media/csl/COS/LinageOS_20_0/external/libxml2/parserInternals.c
+[+] We found traces of a missing patch for CVE-2018-9472 - BUG: A-79662501 in: /media/csl/COS/LinageOS_20_0/external/libxml2/result/HTML/758518-entity.html
+[+] We found traces of a missing patch for CVE-2018-9472 - BUG: A-79662501 in: /media/csl/COS/LinageOS_20_0/external/libxml2/result/HTML/758518-entity.html.err
+[+] We found traces of a missing patch for CVE-2018-9472 - BUG: A-79662501 in: /media/csl/COS/LinageOS_20_0/external/libxml2/result/noent/comment4.xml.sax2
+[+] We found traces of a missing patch for CVE-2018-9472 - BUG: A-79662501 in: /media/csl/COS/LinageOS_20_0/external/libxml2/result/noent/isolat1.sax2
+[+] We found traces of a missing patch for CVE-2018-9472 - BUG: A-79662501 in: /media/csl/COS/LinageOS_20_0/external/libxml2/runtest.c
+[+] We found traces of a missing patch for CVE-2018-9472 - BUG: A-79662501 in: /media/csl/COS/LinageOS_20_0/external/libxml2/test/HTML/758518-entity.html
+[+] We found traces of a missing patch for CVE-2018-9472 - BUG: A-79662501 in: /media/csl/COS/LinageOS_20_0/external/libxml2/test/HTML/758518-tag.html
+[+] We found traces of a missing patch for CVE-2018-9472 - BUG: A-79662501 in: /media/csl/COS/LinageOS_20_0/external/libxml2/test/valid/dtds/766956.dtd
+[+] We found traces of a missing patch for CVE-2018-9472 - BUG: A-79662501 in: /media/csl/COS/LinageOS_20_0/external/libxml2/xmlreader.c
+[-] We found traces of CVE-2018-9472 - BUG: A-79662501 in: /media/csl/COS/LinageOS_20_0/external/libxml2/xpath.c
+[+] We found traces of a missing patch for CVE-2018-9487 - BUG: A-69873852 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/core/java/com/android/server/connectivity/Vpn.java
+[+] We found traces of a missing patch for CVE-2018-9498 - BUG: A-78354855 in: /media/csl/COS/LinageOS_20_0/external/skia/include/core/SkTypes.h
+[+] We found traces of a missing patch for CVE-2018-9498 - BUG: A-78354855 in: /media/csl/COS/LinageOS_20_0/external/skia/public.bzl
+[+] We found traces of a missing patch for CVE-2018-9501 - BUG: A-110034419 in: /media/csl/COS/LinageOS_20_0/packages/apps/Settings/src/com/android/settings/password/ChooseLockGeneric.java
+[+] We found traces of a missing patch for CVE-2018-9501 - BUG: A-110034419 in: /media/csl/COS/LinageOS_20_0/packages/apps/Settings/src/com/android/settings/search/actionbar/SearchMenuController.java
+[+] We found traces of a missing patch for CVE-2018-9501 - BUG: A-110034419 in: /media/csl/COS/LinageOS_20_0/packages/apps/Settings/tests/robotests/src/com/android/settings/SettingsActivityTest.java
+[+] We found traces of a missing patch for CVE-2018-9501 - BUG: A-110034419 in: /media/csl/COS/LinageOS_20_0/packages/apps/Settings/tests/robotests/src/com/android/settings/search/actionbar/SearchMenuControllerTest.java
+[+] We found traces of a missing patch for CVE-2018-9524 - BUG: A-34170870 in: /media/csl/COS/LinageOS_20_0/frameworks/base/packages/SystemUI/AndroidManifest.xml
+[+] We found traces of a missing patch for CVE-2018-9524 - BUG: A-34170870 in: /media/csl/COS/LinageOS_20_0/frameworks/base/packages/SystemUI/src/com/android/systemui/media/MediaProjectionPermissionActivity.java
+[+] We found traces of a missing patch for CVE-2018-9524 - BUG: A-34170870 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/core/java/com/android/server/wm/WindowManagerService.java
+[+] We found traces of a missing patch for CVE-2019-1994 - BUG: A-117770924 in: /media/csl/COS/LinageOS_20_0/packages/apps/Settings/src/com/android/settings/development/qstile/DevelopmentTiles.java
+[+] We found traces of a missing patch for CVE-2018-20346 - BUG: A-121156452 in: /media/csl/COS/LinageOS_20_0/external/sqlite/dist/orig/sqlite3.c
+[+] We found traces of a missing patch for CVE-2018-20346 - BUG: A-121156452 in: /media/csl/COS/LinageOS_20_0/external/sqlite/dist/sqlite3.c
+[+] We found traces of a missing patch for CVE-2019-2003 - BUG: A-116321860 in: /media/csl/COS/LinageOS_20_0/frameworks/base/core/tests/coretests/src/android/view/textclassifier/TextClassificationManagerTest.java
+[+] We found traces of a missing patch for CVE-2019-2004 - BUG: A-115739809 in: /media/csl/COS/LinageOS_20_0/frameworks/native/include/input/InputTransport.h
+[+] We found traces of a missing patch for CVE-2019-2004 - BUG: A-115739809 in: /media/csl/COS/LinageOS_20_0/frameworks/native/libs/input/tests/StructLayout_test.cpp
+[+] We found traces of a missing patch for CVE-2019-2033 - BUG: A-121327565 in: /media/csl/COS/LinageOS_20_0/system/netd/server/MDnsSdListener.cpp
+[+] We found traces of a missing patch for CVE-2019-2091 - BUG: A-128599660 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java
+[+] We found traces of a missing patch for CVE-2019-2095 - BUG: A-124232283 in: /media/csl/COS/LinageOS_20_0/external/skia/include/core/SkPixelRef.h
+[+] We found traces of a missing patch for CVE-2019-2095 - BUG: A-124232283 in: /media/csl/COS/LinageOS_20_0/external/skia/include/private/SkPathRef.h
+[+] We found traces of a missing patch for CVE-2019-2095 - BUG: A-124232283 in: /media/csl/COS/LinageOS_20_0/external/skia/src/core/SkPathRef.cpp
+[+] We found traces of a missing patch for CVE-2019-2095 - BUG: A-124232283 in: /media/csl/COS/LinageOS_20_0/external/skia/src/core/SkPixelRef.cpp
+[+] We found traces of a missing patch for CVE-2019-2117 - BUG: A-124107808 in: /media/csl/COS/LinageOS_20_0/packages/providers/TelephonyProvider/src/com/android/providers/telephony/TelephonyProvider.java
+[+] We found traces of a missing patch for CVE-2019-2121 - BUG: A-131105245 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/core/java/com/android/server/am/ActivityManagerService.java
+[+] We found traces of a missing patch for CVE-2019-2128 - BUG: A-132647222 in: /media/csl/COS/LinageOS_20_0/frameworks/av/media/libstagefright/codecs/amrwbenc/Android.bp
+[+] We found traces of a missing patch for CVE-2019-2132 - BUG: A-130568701 in: /media/csl/COS/LinageOS_20_0/frameworks/base/packages/VpnDialogs/src/com/android/vpndialogs/ConfirmDialog.java
+[+] We found traces of a missing patch for CVE-2019-2127 - BUG: A-124899895 in: /media/csl/COS/LinageOS_20_0/frameworks/av/services/audiopolicy/common/managerdefinitions/src/AudioPolicyMix.cpp
+[+] We found traces of a missing patch for CVE-2019-2110 - BUG: A-69703445 in: /media/csl/COS/LinageOS_20_0/frameworks/base/graphics/java/android/graphics/GraphicBuffer.java
+[+] We found traces of a missing patch for CVE-2019-2201 - BUG: A-120551338 in: /media/csl/COS/LinageOS_20_0/external/libjpeg-turbo/README.android
+[+] We found traces of a missing patch for CVE-2019-2212 - BUG: A-139690488 in: /media/csl/COS/LinageOS_20_0/external/libcxx/include/math.h
+[+] We found traces of a missing patch for CVE-2019-9464 - BUG: A-141028068  in: /media/csl/COS/LinageOS_20_0/cts/tests/tests/permission/src/android/permission/cts/LocationAccessCheckTest.java
+[+] We found traces of a missing patch for CVE-2019-2217 - BUG: A-141003796 in: /media/csl/COS/LinageOS_20_0/frameworks/native/libs/graphicsenv/include/graphicsenv/GraphicsEnv.h
+[+] We found traces of a missing patch for CVE-2019-2220 - BUG: A-138636979 in: /media/csl/COS/LinageOS_20_0/frameworks/av/services/audioflinger/RecordTracks.h
+[+] We found traces of a missing patch for CVE-2019-2220 - BUG: A-138636979 in: /media/csl/COS/LinageOS_20_0/frameworks/av/services/audioflinger/Tracks.cpp
+[+] We found traces of a missing patch for CVE-2019-15140 - BUG: A-140328986 in: /media/csl/COS/LinageOS_20_0/external/ImageMagick/coders/mat.c
+[+] We found traces of a missing patch for CVE-2019-2228 - BUG: A-111210196 in: /media/csl/COS/LinageOS_20_0/external/libcups/cups/hash.c
+[-] We found traces of CVE-2019-2228 - BUG: A-111210196 in: /media/csl/COS/LinageOS_20_0/external/libcups/cups/hash.c
+[+] We found traces of a missing patch for CVE-2019-2228 - BUG: A-111210196 in: /media/csl/COS/LinageOS_20_0/external/libcups/cups/http.c
+[+] We found traces of a missing patch for CVE-2019-2228 - BUG: A-111210196 in: /media/csl/COS/LinageOS_20_0/external/libcups/cups/md5.c
+[+] We found traces of a missing patch for CVE-2020-0004 - BUG: A-120847476 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/core/java/com/android/server/wallpaper/WallpaperManagerService.java
+[+] We found traces of a missing patch for CVE-2020-0015 - BUG: A-139017101 in: /media/csl/COS/LinageOS_20_0/packages/apps/CertInstaller/AndroidManifest.xml
+[+] We found traces of a missing patch for CVE-2019-2200 - BUG: A-67319274 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/core/java/com/android/server/pm/permission/PermissionManagerService.java
+[+] We found traces of a missing patch for CVE-2020-0017 - BUG: A-123232892  in: /media/csl/COS/LinageOS_20_0/frameworks/base/core/java/android/view/textclassifier/ConversationActions.java
+[+] We found traces of a missing patch for CVE-2020-0017 - BUG: A-123232892  in: /media/csl/COS/LinageOS_20_0/frameworks/base/core/java/android/view/textclassifier/SelectionEvent.java
+[+] We found traces of a missing patch for CVE-2020-0017 - BUG: A-123232892  in: /media/csl/COS/LinageOS_20_0/frameworks/base/core/java/android/view/textclassifier/SystemTextClassifier.java
+[+] We found traces of a missing patch for CVE-2020-0017 - BUG: A-123232892  in: /media/csl/COS/LinageOS_20_0/frameworks/base/core/java/android/view/textclassifier/TextClassification.java
+[+] We found traces of a missing patch for CVE-2020-0017 - BUG: A-123232892  in: /media/csl/COS/LinageOS_20_0/frameworks/base/core/java/android/view/textclassifier/TextClassificationContext.java
+[+] We found traces of a missing patch for CVE-2020-0017 - BUG: A-123232892  in: /media/csl/COS/LinageOS_20_0/frameworks/base/core/java/android/view/textclassifier/TextLanguage.java
+[+] We found traces of a missing patch for CVE-2020-0017 - BUG: A-123232892  in: /media/csl/COS/LinageOS_20_0/frameworks/base/core/java/android/view/textclassifier/TextLinks.java
+[+] We found traces of a missing patch for CVE-2020-0017 - BUG: A-123232892  in: /media/csl/COS/LinageOS_20_0/frameworks/base/core/java/android/view/textclassifier/TextSelection.java
+[+] We found traces of a missing patch for CVE-2020-0017 - BUG: A-123232892  in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/core/java/com/android/server/textclassifier/TextClassificationManagerService.java
+[+] We found traces of a missing patch for CVE-2020-0080 - BUG: A-144092031 in: /media/csl/COS/LinageOS_20_0/frameworks/base/packages/SystemUI/tests/src/com/android/systemui/appops/AppOpsControllerTest.java
+[+] We found traces of a missing patch for CVE-2020-0098 - BUG: 	A-144285917 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/core/java/com/android/server/wm/ActivityStarter.java
+[-] We found traces of CVE-2020-0109 - BUG: A-148059175 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/core/java/com/android/server/notification/NotificationShellCmd.java
+[+] We found traces of a missing patch for CVE-2020-0024 - BUG: 	A-137015265 in: /media/csl/COS/LinageOS_20_0/packages/apps/Settings/src/com/android/settings/SettingsActivity.java
+[+] We found traces of a missing patch for CVE-2020-0092 - BUG: 	A-145135488 in: /media/csl/COS/LinageOS_20_0/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout.java
+[+] We found traces of a missing patch for CVE-2020-0092 - BUG: 	A-145135488 in: /media/csl/COS/LinageOS_20_0/frameworks/base/packages/SystemUI/tests/src/com/android/systemui/statusbar/notification/stack/NotificationStackScrollLayoutTest.java
+[+] We found traces of a missing patch for CVE-2020-0104 - BUG: A-144430870 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/core/java/com/android/server/trust/TrustManagerService.java
+[+] We found traces of a missing patch for CVE-2020-0113 - BUG: A-150944913 in: /media/csl/COS/LinageOS_20_0/frameworks/av/services/camera/libcameraservice/device3/Camera3Device.cpp
+[+] We found traces of a missing patch for CVE-2020-0239 - BUG: A-151095863 in: /media/csl/COS/LinageOS_20_0/frameworks/base/core/java/android/provider/DocumentsProvider.java
+[-] We found traces of CVE-2020-0249 - BUG: A-154719656 in: /media/csl/COS/LinageOS_20_0/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/notification/InstantAppNotifier.java
+[+] We found traces of a missing patch for CVE-2020-0242 - BUG: A-151643722 in: /media/csl/COS/LinageOS_20_0/frameworks/av/media/libmediaplayerservice/nuplayer/NuPlayerDriver.cpp
+[+] We found traces of a missing patch for CVE-2020-0243 - BUG: A-151644303 in: /media/csl/COS/LinageOS_20_0/frameworks/av/media/libmediaplayerservice/nuplayer/NuPlayerDriver.cpp
+[-] We found traces of CVE-2020-0248 - BUG: A-154627439 in: /media/csl/COS/LinageOS_20_0/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/notification/InstantAppNotifier.java
+[-] We found traces of CVE-2020-0250 - BUG: A-154934934 in: /media/csl/COS/LinageOS_20_0/packages/services/Telephony/src/com/android/phone/PhoneInterfaceManager.java
+[+] We found traces of a missing patch for CVE-2020-0386 - BUG: A-155650356 in: /media/csl/COS/LinageOS_20_0/packages/apps/Settings/src/com/android/settings/bluetooth/RequestPermissionActivity.java
+[+] We found traces of a missing patch for CVE-2020-0394 - BUG: A-155648639 in: /media/csl/COS/LinageOS_20_0/packages/apps/Settings/src/com/android/settings/bluetooth/BluetoothPairingDialog.java
+[-] We found traces of CVE-2020-0470 - BUG: A-166268541 in: /media/csl/COS/LinageOS_20_0/external/libaom/libaom/aom_dsp/aom_dsp.cmake
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/COS/LinageOS_20_0/external/libaom/libaom/aom_dsp/x86/blend_a64_vmask_sse4.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/COS/LinageOS_20_0/external/libaom/libaom/apps/aomenc.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/COS/LinageOS_20_0/external/libaom/libaom/av1/av1.cmake
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/COS/LinageOS_20_0/external/libaom/libaom/av1/av1_cx_iface.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/COS/LinageOS_20_0/external/libaom/libaom/av1/common/av1_common_int.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/COS/LinageOS_20_0/external/libaom/libaom/av1/common/av1_loopfilter.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/COS/LinageOS_20_0/external/libaom/libaom/av1/common/convolve.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/COS/LinageOS_20_0/external/libaom/libaom/av1/common/enums.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/COS/LinageOS_20_0/external/libaom/libaom/av1/common/pred_common.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/COS/LinageOS_20_0/external/libaom/libaom/av1/common/reconinter.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/COS/LinageOS_20_0/external/libaom/libaom/av1/encoder/aq_cyclicrefresh.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/COS/LinageOS_20_0/external/libaom/libaom/av1/encoder/block.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/COS/LinageOS_20_0/external/libaom/libaom/av1/encoder/corner_match.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/COS/LinageOS_20_0/external/libaom/libaom/av1/encoder/encode_strategy.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/COS/LinageOS_20_0/external/libaom/libaom/av1/encoder/encodeframe.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/COS/LinageOS_20_0/external/libaom/libaom/av1/encoder/encoder.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/COS/LinageOS_20_0/external/libaom/libaom/av1/encoder/encoder.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/COS/LinageOS_20_0/external/libaom/libaom/av1/encoder/encodetxb.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/COS/LinageOS_20_0/external/libaom/libaom/av1/encoder/ethread.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/COS/LinageOS_20_0/external/libaom/libaom/av1/encoder/gop_structure.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/COS/LinageOS_20_0/external/libaom/libaom/av1/encoder/partition_strategy.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/COS/LinageOS_20_0/external/libaom/libaom/av1/encoder/pass2_strategy.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/COS/LinageOS_20_0/external/libaom/libaom/av1/encoder/ratectrl.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/COS/LinageOS_20_0/external/libaom/libaom/av1/encoder/ratectrl.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/COS/LinageOS_20_0/external/libaom/libaom/av1/encoder/rd.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/COS/LinageOS_20_0/external/libaom/libaom/av1/encoder/speed_features.h
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/COS/LinageOS_20_0/external/libaom/libaom/av1/encoder/tpl_model.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/COS/LinageOS_20_0/external/libaom/libaom/av1/encoder/var_based_part.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/COS/LinageOS_20_0/external/libaom/libaom/av1/encoder/x86/corner_match_avx2.c
+[+] We found traces of a missing patch for CVE-2020-0470 - BUG: A-166268541 in: /media/csl/COS/LinageOS_20_0/external/libaom/libaom/av1/encoder/x86/corner_match_sse4.c
+[+] We found traces of a missing patch for CVE-2021-0339 - BUG: A-145728687 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/core/java/com/android/server/wm/WindowManagerService.java
+[+] We found traces of a missing patch for CVE-2021-0336 - BUG: A-158219161 in: /media/csl/COS/LinageOS_20_0/packages/apps/Settings/src/com/android/settings/bluetooth/BluetoothPermissionRequest.java
+[+] We found traces of a missing patch for CVE-2021-0400 - BUG: A-177561690 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/core/java/com/android/server/location/gnss/GnssLocationProvider.java
+[+] We found traces of a missing patch for CVE-2021-0442 - BUG: A-174768985 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/core/java/com/android/server/wm/InputMonitor.java
+[+] We found traces of a missing patch for CVE-2021-0485 - BUG: A-174302616 in: /media/csl/COS/LinageOS_20_0/frameworks/base/core/res/res/values/dimens.xml
+[+] We found traces of a missing patch for CVE-2021-0485 - BUG: A-174302616 in: /media/csl/COS/LinageOS_20_0/frameworks/base/core/res/res/values/symbols.xml
+[+] We found traces of a missing patch for CVE-2019-2219 - BUG: A-119041698 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/core/java/com/android/server/notification/NotificationManagerService.java
+[+] We found traces of a missing patch for CVE-2019-2219 - BUG: A-119041698 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/tests/uiservicestests/src/com/android/server/notification/BuzzBeepBlinkTest.java
+[+] We found traces of a missing patch for CVE-2019-2219 - BUG: A-119041698 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/tests/uiservicestests/src/com/android/server/notification/NotificationManagerServiceTest.java
+[+] We found traces of a missing patch for CVE-2021-0521 - BUG: A-174661955 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/core/java/com/android/server/pm/PackageManagerService.java
+[+] We found traces of a missing patch for CVE-2021-0520 - BUG: A-176237595 in: /media/csl/COS/LinageOS_20_0/frameworks/av/drm/mediadrm/plugins/clearkey/hidl/DrmPlugin.cpp
+[+] We found traces of a missing patch for CVE-2021-0520 - BUG: A-176237595 in: /media/csl/COS/LinageOS_20_0/frameworks/av/drm/mediadrm/plugins/clearkey/hidl/MemoryFileSystem.cpp
+[+] We found traces of a missing patch for CVE-2021-0520 - BUG: A-176237595 in: /media/csl/COS/LinageOS_20_0/frameworks/av/drm/mediadrm/plugins/clearkey/hidl/include/MemoryFileSystem.h
+[+] We found traces of a missing patch for CVE-2021-0478 - BUG: A-169255797 in: /media/csl/COS/LinageOS_20_0/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/StatusBarIconView.java
+[+] We found traces of a missing patch for CVE-2021-0585 - BUG: A-184963385 in: /media/csl/COS/LinageOS_20_0/system/libfmq/include/fmq/MessageQueue.h
+[+] We found traces of a missing patch for CVE-2021-0596 - BUG: A-181346550 in: /media/csl/COS/LinageOS_20_0/packages/apps/Nfc/nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.cpp
+[+] We found traces of a missing patch for CVE-2021-0645 - BUG: A-157320644 in: /media/csl/COS/LinageOS_20_0/frameworks/base/packages/ExternalStorageProvider/src/com/android/externalstorage/ExternalStorageProvider.java
+[+] We found traces of a missing patch for CVE-2021-0646 - BUG: A-153352319 in: /media/csl/COS/LinageOS_20_0/external/sqlite/dist/Android.bp
+[+] We found traces of a missing patch for CVE-2021-0595 - BUG: A-177457096 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/tests/wmtests/src/com/android/server/wm/RootWindowContainerTests.java
+[+] We found traces of a missing patch for CVE-2021-0705 - BUG: A-185388103 in: /media/csl/COS/LinageOS_20_0/frameworks/base/core/java/android/app/Notification.java
+[+] We found traces of a missing patch for CVE-2021-0483 - BUG: A-153358911 in: /media/csl/COS/LinageOS_20_0/frameworks/av/services/oboeservice/AAudioServiceStreamBase.cpp
+[+] We found traces of a missing patch for CVE-2021-0963
+ - BUG: A-199754277 in: /media/csl/COS/LinageOS_20_0/packages/apps/KeyChain/src/com/android/keychain/KeyChainActivity.java
+[+] We found traces of a missing patch for CVE-2021-0966
+ - BUG: A-198346478 in: /media/csl/COS/LinageOS_20_0/system/tools/aidl/generate_cpp.cpp
+[+] We found traces of a missing patch for CVE-2021-0966
+ - BUG: A-198346478 in: /media/csl/COS/LinageOS_20_0/system/tools/aidl/generate_ndk.cpp
+[+] We found traces of a missing patch for CVE-2021-39671 - BUG: A-206718630 in: /media/csl/COS/LinageOS_20_0/system/tools/aidl/aidl_unittest.cpp
+[+] We found traces of a missing patch for CVE-2021-39692 - BUG: A-209611539 in: /media/csl/COS/LinageOS_20_0/packages/apps/ManagedProvisioning/AndroidManifest.xml
+[+] We found traces of a missing patch for CVE-2021-0957 - BUG: A-193149550 in: /media/csl/COS/LinageOS_20_0/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/notification/stack/NotificationStackScrollLayoutController.java
+[+] We found traces of a missing patch for CVE-2022-20006 - BUG: A-151095871 in: /media/csl/COS/LinageOS_20_0/frameworks/base/packages/SystemUI/src/com/android/systemui/keyguard/KeyguardViewMediator.java
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/COS/LinageOS_20_0/external/expat/Makefile.am
+[+] We found traces of a missing patch for CVE-2022-22822 - BUG: A-219942275 in: /media/csl/COS/LinageOS_20_0/external/expat/Makefile.in
+[+] We found traces of a missing patch for CVE-2022-20415 - BUG: A-231322873 in: /media/csl/COS/LinageOS_20_0/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/notification/interruption/NotificationInterruptLogger.kt
+[+] We found traces of a missing patch for CVE-2016-6720 - BUG: A-29422020 in: /media/csl/COS/LinageOS_20_0/frameworks/av/media/libstagefright/omx/OMXNodeInstance.cpp
+[+] We found traces of a missing patch for CVE-2017-0480 - BUG: A-32705429 in: /media/csl/COS/LinageOS_20_0/frameworks/av/services/audioflinger/Effects.cpp
+[+] We found traces of a missing patch for CVE-2017-0752 - BUG: A-62196835 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/core/java/com/android/server/wm/WindowManagerService.java
+[+] We found traces of a missing patch for CVE-2017-0752 - BUG: A-62196835 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/core/java/com/android/server/wm/WindowState.java
+[+] We found traces of a missing patch for CVE-2017-0752 - BUG: A-62196835 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/core/java/com/android/server/wm/WindowStateAnimator.java
+[+] We found traces of a missing patch for CVE-2017-0779 - BUG: A-38340117 in: /media/csl/COS/LinageOS_20_0/frameworks/av/services/audioflinger/Tracks.cpp
+[+] We found traces of a missing patch for CVE-2017-0880 - BUG: A-65646012 in: /media/csl/COS/LinageOS_20_0/external/skia/src/codec/SkIcoCodec.h
+[+] We found traces of a missing patch for CVE-2018-9438 - BUG: A-78644887 in: /media/csl/COS/LinageOS_20_0/packages/providers/DownloadProvider/src/com/android/providers/downloads/SystemFacade.java
+[+] We found traces of a missing patch for CVE-2018-9438 - BUG: A-78644887 in: /media/csl/COS/LinageOS_20_0/packages/providers/DownloadProvider/tests/src/com/android/providers/downloads/FakeSystemFacade.java
+[-] We found traces of CVE-2018-9427 - BUG: A-77486542 in: /media/csl/COS/LinageOS_20_0/frameworks/av/media/libstagefright/omx/OMXNodeInstance.cpp
+[+] We found traces of a missing patch for CVE-2018-9452 - BUG: A-78464361 in: /media/csl/COS/LinageOS_20_0/frameworks/base/core/java/android/text/TextLine.java
+[+] We found traces of a missing patch for CVE-2019-2196 - BUG: A-135269143 in: /media/csl/COS/LinageOS_20_0/frameworks/base/core/java/android/app/DownloadManager.java
+[+] We found traces of a missing patch for CVE-2019-2196 - BUG: A-135269143 in: /media/csl/COS/LinageOS_20_0/frameworks/base/core/java/android/database/sqlite/SQLiteQueryBuilder.java
+[+] We found traces of a missing patch for CVE-2019-2198 - BUG: A-135270103 in: /media/csl/COS/LinageOS_20_0/frameworks/base/core/java/android/app/DownloadManager.java
+[+] We found traces of a missing patch for CVE-2019-2198 - BUG: A-135270103 in: /media/csl/COS/LinageOS_20_0/frameworks/base/core/java/android/database/sqlite/SQLiteQueryBuilder.java
+[+] We found traces of a missing patch for CVE-2020-0107 - BUG: A-146570216 in: /media/csl/COS/LinageOS_20_0/packages/services/Telephony/src/com/android/phone/PhoneInterfaceManager.java
+[+] We found traces of a missing patch for CVE-2020-0108 - BUG: A-140108616 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/core/java/com/android/server/am/ActiveServices.java
+[+] We found traces of a missing patch for CVE-2020-0439 - BUG: A-140256621 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/core/java/com/android/server/pm/PackageManagerService.java
+[+] We found traces of a missing patch for CVE-2020-0424 - BUG: A-161362564 in: /media/csl/COS/LinageOS_20_0/packages/modules/DnsResolver/res_send.cpp
+[+] We found traces of a missing patch for CVE-2021-0511 - BUG: A-178055795 in: /media/csl/COS/LinageOS_20_0/art/build/Android.gtest.mk
+[+] We found traces of a missing patch for CVE-2021-0511 - BUG: A-178055795 in: /media/csl/COS/LinageOS_20_0/art/build/apex/art_apex_test.py
+[+] We found traces of a missing patch for CVE-2021-0511 - BUG: A-178055795 in: /media/csl/COS/LinageOS_20_0/art/dex2oat/dex2oat.cc
+[+] We found traces of a missing patch for CVE-2021-0511 - BUG: A-178055795 in: /media/csl/COS/LinageOS_20_0/art/test/Android.bp
+[+] We found traces of a missing patch for CVE-2021-0441 - BUG: A-174495520 in: /media/csl/COS/LinageOS_20_0/packages/providers/MediaProvider/res/values/styles.xml
+[+] We found traces of a missing patch for CVE-2021-0486 - BUG: A-171430330 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/core/java/com/android/server/pm/permission/PermissionManagerService.java
+[+] We found traces of a missing patch for CVE-2021-0486 - BUG: A-171430330 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/core/java/com/android/server/pm/permission/PermissionManagerServiceInternal.java
+[+] We found traces of a missing patch for CVE-2021-39803 - BUG: A-193790350 in: /media/csl/COS/LinageOS_20_0/frameworks/av/media/codec2/vndk/C2AllocatorIon.cpp
+[+] We found traces of a missing patch for CVE-2022-20344 - BUG: A-232541124 in: /media/csl/COS/LinageOS_20_0/frameworks/native/services/surfaceflinger/Scheduler/EventThread.cpp
+[+] We found traces of a missing patch for CVE-2022-20353 - BUG: A-221041256 in: /media/csl/COS/LinageOS_20_0/packages/apps/Settings/src/com/android/settings/DefaultRingtonePreference.java
+[+] We found traces of a missing patch for CVE-2021-39673 - BUG: A-195410559 in: /media/csl/COS/LinageOS_20_0/packages/modules/Bluetooth/system/gd/hci/le_address_manager.cc
+[-] We found traces of CVE-2017-15849 - BUG: QC-CR2046572 in: /media/csl/COS/LinageOS_20_0/hardware/qcom/display/msm8996/sdm/libs/hwc2/hwc_display.cpp
+[+] We found traces of a missing patch for CVE-2019-10569 - BUG: QC-CR2315791 in: /media/csl/COS/LinageOS_20_0/hardware/qcom/audio/post_proc/Android.mk
+[+] We found traces of a missing patch for CVE-2021-0306 - BUG: A-154505240 in: /media/csl/COS/LinageOS_20_0/frameworks/base/services/core/java/com/android/server/pm/PackageManagerService.java
